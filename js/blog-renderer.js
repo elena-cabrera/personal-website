@@ -4,12 +4,18 @@
  */
 (function() {
   // Get the slug from the current path
-  // e.g., /the-scr-framework -> the-scr-framework
+  // e.g., /blog/posts/the-scr-framework -> the-scr-framework
   function getSlugFromPath() {
     const path = window.location.pathname;
-    // Remove leading and trailing slashes, then get the first segment
+    // Remove leading and trailing slashes, then filter out empty segments and index.html
     const segments = path.split('/').filter(s => s && s !== 'index.html');
-    return segments[0] || null;
+    // Find the index of 'posts' and get the next segment (the slug)
+    const postsIndex = segments.indexOf('posts');
+    if (postsIndex !== -1 && postsIndex < segments.length - 1) {
+      return segments[postsIndex + 1];
+    }
+    // Fallback: if path doesn't match expected structure, try last segment
+    return segments[segments.length - 1] || null;
   }
 
   // Format date from YYYY-MM-DD to "Month DD, YYYY"

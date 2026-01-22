@@ -16,15 +16,14 @@ My personal website built with vanilla HTML and Tailwind CSS.
 │   ├── template.html          # Reusable blog post template
 │   └── posts/
 │       └── {slug}/            # Individual blog post directory
+│           ├── index.html     # Blog post page (uses template system)
 │           ├── content.html   # Blog post content (article body)
 │           └── images/        # Post-specific images
-├── js/
-│   ├── blog.js                # Generates blog cards on homepage
-│   ├── blog-renderer.js       # Renders blog posts from template + content
-│   ├── components.js          # Shared components (nav, footer, theme toggle)
-│   └── theme.js               # Theme toggle logic
-└── {slug}/                    # Blog post pages (e.g., the-scr-framework/)
-    └── index.html             # Blog post page (uses template system)
+└── js/
+    ├── blog.js                # Generates blog cards on homepage
+    ├── blog-renderer.js       # Renders blog posts from template + content
+    ├── components.js          # Shared components (nav, footer, theme toggle)
+    └── theme.js               # Theme toggle logic
 ```
 
 ## Setup
@@ -124,15 +123,15 @@ Place any images specific to this post in `blog/posts/my-new-post/images/` and r
 
 ### Step 5: Create Blog Post Page
 
-Create the blog post page at `{slug}/index.html`. You can copy from an existing post:
+Create the blog post page at `blog/posts/{slug}/index.html`. You can copy from an existing post:
 
 ```bash
-cp -r the-scr-framework my-new-post
+cp -r blog/posts/the-scr-framework blog/posts/my-new-post
 ```
 
 Then update the file if needed (though it should work automatically with the template system).
 
-**Note:** The blog post page uses the template system - it loads `blog/template.html` structure and injects content from `blog/posts/{slug}/content.html` automatically via JavaScript.
+**Note:** The blog post page uses the template system - it loads `blog/template.html` structure and injects content from `blog/posts/{slug}/content.html` automatically via JavaScript. Blog posts are accessible at `/blog/posts/{slug}/`.
 
 ### Step 6: Verify
 
@@ -154,7 +153,7 @@ The homepage automatically generates blog cards by:
 ### Blog Post Rendering
 
 Blog posts are rendered by:
-1. `js/blog-renderer.js` extracts the slug from the URL path
+1. `js/blog-renderer.js` extracts the slug from the URL path (`/blog/posts/{slug}/`)
 2. Loads metadata from `blog/posts.json`
 3. Loads content from `blog/posts/{slug}/content.html`
 4. Injects content into the template structure

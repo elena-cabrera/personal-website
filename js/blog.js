@@ -16,7 +16,7 @@
     return `
       <li class="group rounded-lg p-1 -m-2 hover:bg-gray-100 dark:hover:bg-zinc-900 hover:shadow-sm hover:scale-[1.005] transition-all duration-200">
         <a
-          href="/${post.slug}"
+          href="/blog/posts/${post.slug}"
           class="flex gap-4 items-center font-medium text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
         >
           <img
