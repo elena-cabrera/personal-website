@@ -55,6 +55,14 @@
             <li class="text-gray-400 hidden sm:block">/</li>
             <li>
               <a
+                href="${config.showBackButton ? '/' : ''}#projects"
+                class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
+                >projects</a
+              >
+            </li>
+            <li class="text-gray-400 hidden sm:block">/</li>
+            <li>
+              <a
                 href="${config.showBackButton ? '/' : ''}#blog"
                 class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
                 >blog</a
