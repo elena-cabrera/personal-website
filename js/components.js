@@ -7,20 +7,33 @@
   function getNavConfig() {
     const body = document.body;
     const showBackButton = body.dataset.showBackButton === 'true';
-    return { showBackButton };
+    const isAltDesign = body.dataset.design === 'alt';
+    return { showBackButton, isAltDesign };
   }
 
   // Render navigation bar
   function renderNav() {
     const config = getNavConfig();
+    const navClass = config.isAltDesign
+      ? 'nav-alt sticky top-0 z-10 transition-colors'
+      : 'sticky top-0 bg-white/80 dark:bg-zinc-900/70 backdrop-blur-sm z-10 transition-colors';
+    const innerClass = config.isAltDesign
+      ? 'nav-alt-inner max-w-2xl mx-auto px-4'
+      : 'max-w-2xl mx-auto px-4 py-4';
+    const linkClass = config.isAltDesign
+      ? 'text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors'
+      : 'text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors';
+    const separatorClass = config.isAltDesign
+      ? 'nav-separator text-gray-400 hidden sm:block'
+      : 'text-gray-400 hidden sm:block';
     const navHtml = `
-      <nav class="sticky top-0 bg-white/80 dark:bg-zinc-900/70 backdrop-blur-sm z-10 transition-colors">
-        <div class="max-w-2xl mx-auto px-4 py-4">
+      <nav class="${navClass}">
+        <div class="${innerClass}">
           ${config.showBackButton ? `
           <div class="flex items-center justify-between">
             <a
               href="/"
-              class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
+              class="${linkClass}"
               aria-label="Back to home"
             >
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
@@ -32,47 +45,47 @@
             <li>
               <a
                 href="${config.showBackButton ? '/' : ''}#about-me"
-                class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
+                class="${linkClass}"
                 >about me</a
               >
             </li>
-            <li class="text-gray-400 hidden sm:block">/</li>
+            <li class="${separatorClass}">/</li>
             <li>
               <a
                 href="${config.showBackButton ? '/' : ''}#work"
-                class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
+                class="${linkClass}"
                 >work</a
               >
             </li>
-            <li class="text-gray-400 hidden sm:block">/</li>
+            <li class="${separatorClass}">/</li>
             <li>
               <a
                 href="${config.showBackButton ? '/' : ''}#tech-stack"
-                class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
+                class="${linkClass}"
                 >tech stack</a
               >
             </li>
-            <li class="text-gray-400 hidden sm:block">/</li>
+            <li class="${separatorClass}">/</li>
             <li>
               <a
                 href="${config.showBackButton ? '/' : ''}#projects"
-                class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
+                class="${linkClass}"
                 >projects</a
               >
             </li>
-            <li class="text-gray-400 hidden sm:block">/</li>
+            <li class="${separatorClass}">/</li>
             <li>
               <a
                 href="${config.showBackButton ? '/' : ''}#blog"
-                class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
+                class="${linkClass}"
                 >blog</a
               >
             </li>
-            <li class="text-gray-400 hidden sm:block">/</li>
+            <li class="${separatorClass}">/</li>
             <li>
               <a
                 href="${config.showBackButton ? '/' : ''}#contact"
-                class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
+                class="${linkClass}"
                 >contact</a
               >
             </li>
@@ -86,21 +99,31 @@
 
   // Render footer
   function renderFooter() {
+    const config = getNavConfig();
+    const footerClass = config.isAltDesign
+      ? 'footer-alt text-sm text-gray-500 dark:text-zinc-400 border-t border-gray-200 dark:border-zinc-800 py-4 px-4 max-w-2xl mx-auto transition-colors'
+      : 'text-sm text-gray-500 dark:text-zinc-400 border-t border-gray-200 dark:border-zinc-800 py-4 px-4 max-w-2xl mx-auto transition-colors';
+    const designSwitcher = config.isAltDesign
+      ? `<p class="design-switcher">Viewing alt design · <a href="/">original</a></p>`
+      : `<p class="design-switcher" style="font-size:0.75rem;color:#a1a1aa;margin-top:0.75rem;">Try the <a href="/index-alt.html" style="color:#71717a;text-decoration:underline;text-underline-offset:2px;">alt design</a></p>`;
     return `
-      <footer
-        class="text-sm text-gray-500 dark:text-zinc-400 border-t border-gray-200 dark:border-zinc-800 py-4 px-4 max-w-2xl mx-auto transition-colors"
-      >
+      <footer class="${footerClass}">
         Made with ☕ in Spain by Elena <br />
         © 2026 Elena Cabrera Casquet. All rights reserved.
+        ${designSwitcher}
       </footer>
     `;
   }
 
   // Render theme toggle button
   function renderThemeToggle() {
+    const config = getNavConfig();
+    const toggleClass = config.isAltDesign
+      ? 'theme-toggle theme-toggle-alt fixed bottom-4 right-4 z-20 rounded-full bg-white/90 dark:bg-zinc-800/90 text-zinc-700 dark:text-zinc-200 shadow-md backdrop-blur transition-colors'
+      : 'theme-toggle fixed bottom-4 right-4 z-20 rounded-full bg-white/90 dark:bg-zinc-800/90 text-zinc-700 dark:text-zinc-200 shadow-md backdrop-blur transition-colors';
     return `
       <!-- Floating theme toggle -->
-      <label for="switch" class="theme-toggle fixed bottom-4 right-4 z-20 rounded-full bg-white/90 dark:bg-zinc-800/90 text-zinc-700 dark:text-zinc-200 shadow-md backdrop-blur transition-colors">
+      <label for="switch" class="${toggleClass}">
         <input type="checkbox" class="input" id="switch" />
         <div class="icon icon--sun">
           <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
