@@ -1,0 +1,261 @@
+/**
+ * Alternative design variant — inspired by clean analytics dashboard UI.
+ * Activated via data-design="alt" on <body>.
+ */
+
+[data-design="alt"] {
+  --surface-page: #f4f4f5;
+  --surface-card: #ffffff;
+  --surface-muted: #f9fafb;
+  --surface-input: #f3f4f6;
+  --border-subtle: #ececef;
+  --border-soft: #e5e7eb;
+  --text-primary: #18181b;
+  --text-secondary: #71717a;
+  --text-muted: #a1a1aa;
+  --accent-blue: #6366f1;
+  --accent-green: #22c55e;
+  --accent-purple: #a855f7;
+  --accent-orange: #f97316;
+  --radius-card: 1rem;
+  --radius-lg: 0.75rem;
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.04), 0 4px 16px rgb(0 0 0 / 0.04);
+  --shadow-elevated: 0 4px 6px -1px rgb(0 0 0 / 0.06), 0 10px 24px -4px rgb(0 0 0 / 0.08);
+}
+
+[data-design="alt"].dark {
+  --surface-page: #09090b;
+  --surface-card: #18181b;
+  --surface-muted: #27272a;
+  --surface-input: #27272a;
+  --border-subtle: #27272a;
+  --border-soft: #3f3f46;
+  --text-primary: #fafafa;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.2), 0 4px 16px rgb(0 0 0 / 0.15);
+  --shadow-elevated: 0 4px 6px -1px rgb(0 0 0 / 0.3), 0 10px 24px -4px rgb(0 0 0 / 0.25);
+}
+
+[data-design="alt"] {
+  background-color: var(--surface-page) !important;
+  color: var(--text-primary);
+}
+
+[data-design="alt"] .content-panel {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 2rem 1.75rem;
+}
+
+@media (min-width: 640px) {
+  [data-design="alt"] .content-panel {
+    padding: 2.5rem 2.25rem;
+  }
+}
+
+[data-design="alt"] .section-label {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+[data-design="alt"] .section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.25rem;
+}
+
+[data-design="alt"] .section-subtitle {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+}
+
+[data-design="alt"] .card-surface {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  transition: box-shadow 0.2s ease, transform 0.2s ease, border-color 0.2s ease;
+}
+
+[data-design="alt"] .card-surface:hover {
+  box-shadow: var(--shadow-elevated);
+  border-color: var(--border-soft);
+}
+
+[data-design="alt"] .card-surface-interactive:hover {
+  transform: translateY(-1px);
+}
+
+[data-design="alt"] .row-divider {
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1.75rem;
+  margin-bottom: 1.75rem;
+}
+
+[data-design="alt"] .row-divider:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+[data-design="alt"] .tag-pill {
+  background: var(--surface-muted);
+  border: 1px solid var(--border-subtle);
+  border-radius: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--text-secondary);
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+[data-design="alt"] .tag-pill:hover {
+  background: var(--surface-input);
+  border-color: var(--border-soft);
+}
+
+[data-design="alt"] .meta-text {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+}
+
+[data-design="alt"] .accent-bar {
+  display: block;
+  height: 3px;
+  border-radius: 9999px;
+  margin-top: 0.375rem;
+  background: linear-gradient(
+    90deg,
+    var(--accent-green) 0%,
+    var(--accent-purple) 50%,
+    var(--accent-orange) 100%
+  );
+  opacity: 0.65;
+  max-width: 4rem;
+}
+
+[data-design="alt"] .gradient-thumb {
+  background: linear-gradient(135deg, #dbeafe 0%, #e9d5ff 50%, #fed7aa 100%);
+}
+
+[data-design="alt"].dark .gradient-thumb {
+  background: linear-gradient(135deg, #1e3a5f 0%, #4c1d95 50%, #7c2d12 100%);
+}
+
+[data-design="alt"] .gradient-thumb--alt {
+  background: linear-gradient(135deg, #bbf7d0 0%, #bfdbfe 50%, #ddd6fe 100%);
+}
+
+[data-design="alt"].dark .gradient-thumb--alt {
+  background: linear-gradient(135deg, #14532d 0%, #1e3a8a 50%, #581c87 100%);
+}
+
+[data-design="alt"] .profile-ring {
+  box-shadow: 0 0 0 3px var(--surface-card), 0 0 0 4px var(--border-subtle);
+}
+
+[data-design="alt"] .nav-alt {
+  background: var(--surface-page) !important;
+  border-bottom: none;
+}
+
+[data-design="alt"] .nav-alt-inner {
+  background: var(--surface-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-card);
+  margin-top: 0.75rem;
+  padding: 0.625rem 1rem;
+}
+
+[data-design="alt"] .nav-alt a {
+  color: var(--text-secondary) !important;
+  border-radius: 0.375rem;
+  padding: 0.25rem 0.5rem;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+[data-design="alt"] .nav-alt a:hover {
+  color: var(--text-primary) !important;
+  background: var(--surface-muted);
+}
+
+[data-design="alt"] .nav-alt .nav-separator {
+  color: var(--border-soft) !important;
+}
+
+[data-design="alt"] .footer-alt {
+  background: transparent !important;
+  border-top: none !important;
+  color: var(--text-muted) !important;
+  padding-top: 1.5rem;
+}
+
+[data-design="alt"] .theme-toggle-alt {
+  background: var(--surface-card) !important;
+  border: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-card) !important;
+}
+
+[data-design="alt"] .design-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.75rem;
+}
+
+[data-design="alt"] .design-switcher a {
+  color: var(--text-secondary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+[data-design="alt"] .design-switcher a:hover {
+  color: var(--text-primary);
+}
+
+[data-design="alt"] p {
+  color: var(--text-secondary);
+}
+
+[data-design="alt"] .text-body {
+  color: var(--text-secondary);
+}
+
+[data-design="alt"] h1,
+[data-design="alt"] h2,
+[data-design="alt"] h3,
+[data-design="alt"] .heading-primary {
+  color: var(--text-primary);
+}
+
+[data-design="alt"] a.link-primary {
+  color: var(--text-secondary);
+  transition: color 0.15s ease;
+}
+
+[data-design="alt"] a.link-primary:hover {
+  color: var(--text-primary);
+}
+
+[data-design="alt"] .project-card-body {
+  padding: 1rem 1.125rem 1.125rem;
+}
+
+[data-design="alt"] .blog-thumb {
+  border-radius: var(--radius-lg);
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.06);
+}

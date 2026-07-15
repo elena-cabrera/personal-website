@@ -13,6 +13,36 @@
   // Generate HTML for a single blog card
   function createBlogCard(post) {
     const formattedDate = formatDate(post.date);
+    const isAltDesign = document.body.dataset.design === 'alt';
+
+    if (isAltDesign) {
+      return `
+      <li class="card-surface card-surface-interactive overflow-hidden">
+        <a
+          href="/blog/posts/${post.slug}"
+          class="flex gap-4 items-center p-3 link-primary"
+        >
+          <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0 gradient-thumb blog-thumb">
+            <img
+              src="${post.thumbnail}"
+              alt="Blog post thumbnail"
+              class="w-full h-full object-cover mix-blend-overlay opacity-90"
+            />
+          </div>
+          <div class="min-w-0">
+            <h3 class="text-lg font-semibold heading-primary mb-0.5 truncate">
+              ${post.title}
+            </h3>
+            <p class="meta-text mb-1">
+              ${formattedDate} · ${post.category}
+            </p>
+            <span class="accent-bar" aria-hidden="true"></span>
+          </div>
+        </a>
+      </li>
+    `;
+    }
+
     return `
       <li class="group rounded-lg p-1 -m-2 hover:bg-gray-100 dark:hover:bg-zinc-900 hover:shadow-sm hover:scale-[1.005] transition-all duration-200">
         <a

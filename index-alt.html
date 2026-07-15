@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function() {
+        try {
+          const stored = localStorage.getItem('theme');
+          const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const useDark = stored ? stored === 'dark' : prefersDark;
+          const root = document.documentElement;
+          root.classList.toggle('dark', useDark);
+        } catch (e) {
+          // no-op
+        }
+      })();
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Elena Cabrera Casquet</title>
+    <link rel="icon" type="image/png" href="/assets/images/profile/memoji.png" />
+    <link rel="stylesheet" href="/css/design-alt.css" />
+    <style>
+      .theme-toggle {
+        display: grid;
+        place-items: center;
+        cursor: pointer;
+        line-height: 1;
+        padding: 0.25rem;
+      }
+      .theme-toggle input {
+        display: none;
+      }
+      .theme-toggle .icon {
+        grid-column: 1 / 1;
+        grid-row: 1 / 1;
+        transition: transform 500ms;
+        line-height: 0.1;
+      }
+      .theme-toggle .icon--sun {
+        transition-delay: 200ms;
+        color: currentColor;
+      }
+      .theme-toggle .icon--moon {
+        transform: scale(0);
+        color: currentColor;
+      }
+      .theme-toggle input:checked + .icon--sun {
+        transform: rotate(360deg) scale(0);
+      }
+      .theme-toggle input:checked ~ .icon--moon {
+        transition-delay: 200ms;
+        transform: scale(1) rotate(360deg);
+      }
+      p {
+        letter-spacing: -0.01em;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="ce25274f-3090-403d-bd0b-c6d649ff1d8b"></script>
+  </head>
+  <body class="transition-colors" data-design="alt">
+    <div data-component="nav"></div>
+    <main class="px-4 py-8 sm:py-10 max-w-2xl mx-auto">
+      <div class="content-panel flex flex-col gap-10 sm:gap-12">
+        <section id="hero">
+          <img
+            src="/assets/images/profile/me.jpg"
+            alt="Elena Cabrera Casquet profile picture"
+            class="w-20 h-20 rounded-full object-cover profile-ring"
+          />
+          <h1 class="section-title mt-4">hi, I'm Elena</h1>
+          <p class="text-body mb-1">
+            I am a Product Builder. I enjoy solving problems using software and product thinking.
+          </p>
+          <p class="flex gap-2 items-center mt-3">
+            <a
+              class="hover:opacity-80 transition-opacity text-zinc-900 dark:text-zinc-100"
+              href="https://www.linkedin.com/in/elena-cabrera-casquet/"
+              aria-label="LinkedIn"
+            >
+              <svg preserveAspectRatio="xMidYMid" viewBox="0 0 256 256" class="w-5 h-5">
+                <path
+                  d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a
+              class="hover:opacity-80 transition-opacity text-zinc-900 dark:text-zinc-100"
+              href="https://github.com/elena-cabrera"
+              aria-label="GitHub"
+            >
+              <svg viewBox="0 0 1024 1024" fill="none" class="w-5 h-5">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z"
+                  transform="scale(64)"
+                  fill="currentColor"
+                />
+              </svg>
+            </a>
+            <a
+              class="hover:opacity-80 transition-opacity text-zinc-900 dark:text-zinc-100"
+              href="https://x.com/elena928_"
+              aria-label="X"
+            >
+              <svg fill="none" viewBox="0 0 1200 1227" class="w-4 h-4" stroke="currentColor">
+                <path
+                  fill="currentColor"
+                  d="M714.163 519.284 1160.89 0h-105.86L667.137 450.887 357.328 0H0l468.492 681.821L0 1226.37h105.866l409.625-476.152 327.181 476.152H1200L714.137 519.284h.026ZM569.165 687.828l-47.468-67.894-377.686-540.24h162.604l304.797 435.991 47.468 67.894 396.2 566.721H892.476L569.165 687.854v-.026Z"
+                />
+              </svg>
+            </a>
+          </p>
+        </section>
+
+        <section id="about-me" class="scroll-mt-20">
+          <p class="section-label">About</p>
+          <div class="space-y-3 text-body">
+            <p>
+              Based in Madrid, but originally from Lanzarote (Canary Islands). I studied Industrial Electronics and Automation Engineering at UPM and later got a Master's degree in Big Data at ICAI.
+            </p>
+            <p>
+              Always enjoyed building stuff and learning new things, I guess
+              that's why I'm drawn to startups and entrepreneurship.
+            </p>
+            <p>
+              I love reading, cooking, and traveling. I also enjoy spending time
+              with my loved ones and my dog, especially out in nature.
+              Occasionally surfing… but honestly, not very good at it.
+            </p>
+          </div>
+        </section>
+
+        <section id="work" class="scroll-mt-20">
+          <p class="section-label">Experience</p>
+          <p class="section-subtitle">
+            I started my career as a Business Consultant and transitioned into a
+            Product Engineer role at a startup, where I've been able to combine my
+            technical skills with my communication and leadership skills.
+          </p>
+          <ul class="mt-2">
+            <li class="row-divider">
+              <p class="meta-text">Nov. 2023 — Present</p>
+              <h3 class="text-lg font-semibold heading-primary mt-1">Lead Product Engineer</h3>
+              <a href="https://www.switchfleet.com/" class="link-primary font-medium">SwitchFleet</a>
+              <p class="mt-2 text-body text-sm leading-relaxed">
+                I lead the Product Team at SwitchFleet, a Spanish startup that
+                creates software solutions for helping companies measure and
+                reduce their fleet's carbon footprint. I'm responsible for the
+                product strategy and delivery.
+              </p>
+            </li>
+            <li class="row-divider">
+              <p class="meta-text">Sep. 2021 — Sep. 2023</p>
+              <h3 class="text-lg font-semibold heading-primary mt-1">New Technologies Consultant</h3>
+              <a href="https://www.managementsolutions.com/" class="link-primary font-medium">Management Solutions</a>
+              <p class="mt-2 text-body text-sm leading-relaxed">
+                Led digital transformation projects at a top-tier European bank,
+                focusing on technology and risks. Designed and implemented global
+                fraud detection systems and coordinated their rollout across markets.
+              </p>
+            </li>
+            <li class="row-divider">
+              <p class="meta-text">Feb. 2021 — Aug. 2021</p>
+              <h3 class="text-lg font-semibold heading-primary mt-1">Utilities Consultant Internship</h3>
+              <a href="https://www.nttdata.com/" class="link-primary font-medium">NTT Data</a>
+              <p class="mt-2 text-body text-sm leading-relaxed">
+                Kick off, GAP analysis, requirements and scope definition of the
+                migration of a major utility's trading system at an IBEX 35 energy company.
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <section id="tech-stack" class="scroll-mt-20">
+          <p class="section-label">Stack</p>
+          <p class="section-subtitle">
+            As a developer, I've worked with the following technologies. I
+            particularly enjoy working with Python and FastAPI.
+          </p>
+          <ul class="flex flex-wrap gap-2">
+            <li class="tag-pill">Python</li>
+            <li class="tag-pill">FastAPI</li>
+            <li class="tag-pill">PostgreSQL</li>
+            <li class="tag-pill">Docker</li>
+            <li class="tag-pill">Git</li>
+            <li class="tag-pill">Vue.js</li>
+            <li class="tag-pill">Nuxt.js</li>
+            <li class="tag-pill">React</li>
+            <li class="tag-pill">Next.js</li>
+            <li class="tag-pill">Tailwind CSS</li>
+            <li class="tag-pill">TypeScript</li>
+            <li class="tag-pill">JavaScript</li>
+            <li class="tag-pill">HTML</li>
+            <li class="tag-pill">CSS</li>
+          </ul>
+        </section>
+
+        <section id="projects" class="scroll-mt-20">
+          <p class="section-label">Projects</p>
+          <ul class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-1 list-none pl-0">
+            <li class="card-surface card-surface-interactive overflow-hidden">
+              <a
+                href="https://markdown-os.elenacabrera.xyz"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="block link-primary"
+              >
+                <div class="aspect-video overflow-hidden gradient-thumb">
+                  <img
+                    src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fmarkdown-os.elenacabrera.xyz%2F/width/800/"
+                    alt="markdown-os preview"
+                    class="w-full h-full object-cover object-top mix-blend-overlay opacity-90"
+                    loading="lazy"
+                  />
+                </div>
+                <div class="project-card-body">
+                  <h3 class="text-base font-semibold heading-primary mb-1">markdown-os</h3>
+                  <p class="text-sm text-body">
+                    View and edit Markdown files in the browser.
+                  </p>
+                  <span class="accent-bar" aria-hidden="true"></span>
+                </div>
+              </a>
+            </li>
+            <li class="card-surface overflow-hidden">
+              <div class="block">
+                <div class="aspect-video gradient-thumb gradient-thumb--alt flex items-center justify-center">
+                  <span class="text-zinc-400 dark:text-zinc-500 text-3xl" aria-hidden="true">…</span>
+                </div>
+                <div class="project-card-body">
+                  <h3 class="text-base font-semibold text-zinc-400 dark:text-zinc-500 mb-1">more coming…</h3>
+                  <p class="text-sm text-body">More projects on the way.</p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <section id="blog" class="scroll-mt-20">
+          <p class="section-label">Writing</p>
+          <ul class="space-y-3 mt-1">
+            <!-- Blog cards will be automatically generated here -->
+          </ul>
+        </section>
+
+        <section id="contact" class="scroll-mt-20">
+          <p class="section-label">Contact</p>
+          <p class="text-body">
+            Always looking for a nice chat with interesting people. If you want
+            to, you can reach out and say hi on
+            <a href="https://www.linkedin.com/in/elena-cabrera-casquet/" class="link-primary font-medium">LinkedIn</a>.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <div data-component="footer"></div>
+    <div data-component="theme-toggle"></div>
+    <script src="/js/components.js"></script>
+    <script src="/js/theme.js"></script>
+    <script src="/js/blog.js"></script>
+  </body>
+</html>
