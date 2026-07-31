@@ -1,17 +1,33 @@
 /**
- * Play a soft click sound whenever any link or timeline control is activated.
+ * Play a soft click sound on interactive controls.
  * Delays same-tab navigations slightly so the sound isn't cut off by unload.
+ *
+ * Covered: links, scroll timeline, theme toggle, work read more/less.
  */
 (function () {
   const SOUND_SRC = '/assets/sounds/mouse-click.mp3';
   const VOLUME = 0.45;
   const NAV_DELAY_MS = 90;
+  // Guard against label→checkbox synthesizing a second click
+  const PLAY_GAP_MS = 80;
+  const CONTROL_SELECTOR = [
+    '.scroll-timeline [data-section-id]',
+    '.scroll-timeline__track',
+    '.theme-toggle',
+    '.work-expand-btn',
+  ].join(', ');
 
   const base = new Audio(SOUND_SRC);
   base.preload = 'auto';
   base.volume = VOLUME;
 
+  let lastPlayAt = 0;
+
   function playClick() {
+    const now = performance.now();
+    if (now - lastPlayAt < PLAY_GAP_MS) return Promise.resolve();
+    lastPlayAt = now;
+
     const instance = new Audio(SOUND_SRC);
     instance.volume = VOLUME;
     return instance.play().catch(() => {});
@@ -36,10 +52,13 @@
     return null;
   }
 
-  function findTimelineControl(event) {
+  function findControl(event) {
     const target = event.target;
     if (!target || typeof target.closest !== 'function') return null;
-    return target.closest('.scroll-timeline [data-section-id], .scroll-timeline__track');
+    // Resolve to the label root so checkbox + label share one identity
+    const theme = target.closest('.theme-toggle');
+    if (theme) return theme;
+    return target.closest(CONTROL_SELECTOR);
   }
 
   function isPlainLeftClick(event) {
@@ -66,6 +85,18 @@
     }
   }
 
+  function markPlayed(el) {
+    el.dataset.clickSoundPlayed = '1';
+  }
+
+  function consumePlayed(el) {
+    if (el.dataset.clickSoundPlayed === '1') {
+      delete el.dataset.clickSoundPlayed;
+      return true;
+    }
+    return false;
+  }
+
   document.addEventListener(
     'pointerdown',
     (event) => {
@@ -74,14 +105,14 @@
       const link = findLink(event);
       if (link) {
         playClick();
-        link.dataset.clickSoundPlayed = '1';
+        markPlayed(link);
         return;
       }
 
-      const timelineControl = findTimelineControl(event);
-      if (timelineControl) {
+      const control = findControl(event);
+      if (control) {
         playClick();
-        timelineControl.dataset.clickSoundPlayed = '1';
+        markPlayed(control);
       }
     },
     true
@@ -92,11 +123,7 @@
     (event) => {
       const link = findLink(event);
       if (link) {
-        if (link.dataset.clickSoundPlayed === '1') {
-          delete link.dataset.clickSoundPlayed;
-        } else {
-          playClick();
-        }
+        if (!consumePlayed(link)) playClick();
 
         if (!isPlainLeftClick(event) || event.defaultPrevented) return;
         if (!leavesCurrentDocument(link)) return;
@@ -109,12 +136,8 @@
         return;
       }
 
-      const timelineControl = findTimelineControl(event);
-      if (!timelineControl) return;
-
-      if (timelineControl.dataset.clickSoundPlayed === '1') {
-        delete timelineControl.dataset.clickSoundPlayed;
-      } else {
+      const control = findControl(event);
+      if (control && !consumePlayed(control)) {
         playClick();
       }
     },

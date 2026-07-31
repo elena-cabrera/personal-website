@@ -14,67 +14,38 @@
   function renderNav() {
     const config = getNavConfig();
     const navHtml = `
-      <nav class="sticky top-0 bg-white/80 dark:bg-zinc-900/70 backdrop-blur-sm z-10 transition-colors">
-        <div class="max-w-2xl mx-auto px-4 py-4">
+      <nav class="site-nav bg-white/65 dark:bg-zinc-950/55 transition-colors">
+        <div class="max-w-[46rem] mx-auto px-4 py-1.5">
           ${config.showBackButton ? `
-          <div class="flex items-center justify-between">
+          <div class="flex items-center justify-between gap-4">
             <a
               href="/"
-              class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
               aria-label="Back to home"
             >
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
                 <path d="M19 12H5M12 19l-7-7 7-7"/>
               </svg>
             </a>
           ` : ''}
-          <ul class="flex flex-wrap gap-1.5 sm:gap-1.5 text-sm sm:text-sm items-center justify-center sm:justify-end${config.showBackButton ? '' : ''}">
+          <ul class="flex flex-wrap gap-x-1 gap-y-0 items-center ${config.showBackButton ? 'justify-end' : 'justify-center sm:justify-end'}">
             <li>
-              <a
-                href="${config.showBackButton ? '/' : ''}#about-me"
-                class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
-                >about me</a
-              >
+              <a href="${config.showBackButton ? '/' : ''}#about-me">about</a>
             </li>
-            <li class="text-gray-400 hidden sm:block">/</li>
+            <li class="site-nav__sep hidden sm:block" aria-hidden="true">/</li>
             <li>
-              <a
-                href="${config.showBackButton ? '/' : ''}#work"
-                class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
-                >work</a
-              >
+              <a href="${config.showBackButton ? '/' : ''}#work">work</a>
             </li>
-            <li class="text-gray-400 hidden sm:block">/</li>
+            <li class="site-nav__sep hidden sm:block" aria-hidden="true">/</li>
             <li>
-              <a
-                href="${config.showBackButton ? '/' : ''}#tech-stack"
-                class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
-                >tech stack</a
-              >
+              <a href="${config.showBackButton ? '/' : ''}#tech-stack">stack</a>
             </li>
-            <li class="text-gray-400 hidden sm:block">/</li>
+            <li class="site-nav__sep hidden sm:block" aria-hidden="true">/</li>
             <li>
-              <a
-                href="${config.showBackButton ? '/' : ''}#projects"
-                class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
-                >projects</a
-              >
+              <a href="${config.showBackButton ? '/' : ''}#projects">projects</a>
             </li>
-            <li class="text-gray-400 hidden sm:block">/</li>
+            <li class="site-nav__sep hidden sm:block" aria-hidden="true">/</li>
             <li>
-              <a
-                href="${config.showBackButton ? '/' : ''}#blog"
-                class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
-                >blog</a
-              >
-            </li>
-            <li class="text-gray-400 hidden sm:block">/</li>
-            <li>
-              <a
-                href="${config.showBackButton ? '/' : ''}#contact"
-                class="text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
-                >contact</a
-              >
+              <a href="${config.showBackButton ? '/' : ''}#blog">blog</a>
             </li>
           </ul>
           ${config.showBackButton ? '</div>' : ''}
@@ -88,7 +59,7 @@
   function renderFooter() {
     return `
       <footer
-        class="text-sm text-gray-500 dark:text-zinc-400 border-t border-gray-200 dark:border-zinc-800 py-4 px-4 max-w-2xl mx-auto transition-colors"
+        class="text-xs text-gray-400 dark:text-zinc-500 border-t border-gray-100 dark:border-zinc-900 py-5 px-4 max-w-[46rem] mx-auto transition-colors"
       >
         © 2026 Elena Cabrera Casquet. All rights reserved.
       </footer>

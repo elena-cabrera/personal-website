@@ -30,6 +30,7 @@
           extend: {
             fontFamily: {
               sans: ["Inter", "sans-serif"],
+              mono: ["Geist Mono", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
             },
           },
         },
@@ -37,6 +38,7 @@
     </script>
     <title id="blog-title">Blog Post - Elena's blog</title>
     <link rel="icon" type="image/png" href="/assets/images/profile/memoji.png" />
+    <link rel="stylesheet" href="/css/typography.css" />
     <style>
       .theme-toggle {
         display: grid;
@@ -83,7 +85,7 @@
   </head>
   <body class="bg-white text-gray-900 dark:bg-zinc-950 dark:text-zinc-100 transition-colors" data-show-back-button="true">
     <div data-component="nav"></div>
-    <main class="px-4 py-12 flex flex-col gap-12 max-w-2xl mx-auto">
+    <main class="px-4 py-12 flex flex-col gap-12 max-w-[46rem] mx-auto">
       <article>
         <header class="mb-8">
           <h1 id="blog-post-title" class="text-3xl font-semibold text-gray-900 dark:text-white transition-colors mb-4">

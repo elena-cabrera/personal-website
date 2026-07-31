@@ -14,7 +14,7 @@
   function createBlogCard(post) {
     const formattedDate = formatDate(post.date);
     return `
-      <li class="group rounded-lg p-1 -m-2 hover:bg-gray-100 dark:hover:bg-zinc-900 hover:shadow-sm transition-all duration-200">
+      <li class="group rounded-lg p-1 -m-2 hover:bg-gray-100 dark:hover:bg-zinc-900 hover:shadow-sm transition-all duration-200" data-reveal>
         <a
           href="/blog/posts/${post.slug}"
           class="flex gap-4 items-center font-medium text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
@@ -22,13 +22,13 @@
           <img
             src="${post.thumbnail}"
             alt="Blog post thumbnail"
-            class="w-20 h-20 rounded-lg object-cover flex-shrink-0 group-hover:scale-105 transition-transform duration-200"
+            class="w-20 h-20 rounded-lg object-cover flex-shrink-0"
           />
           <div>
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white transition-colors mb-1">
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-colors mb-1">
               ${post.title}
             </h3>
-            <p class="text-sm text-gray-600 dark:text-zinc-400 font-medium tracking-wide transition-colors mb-2">
+            <p class="text-sm text-gray-500 dark:text-zinc-500 font-medium tracking-wide transition-colors mb-2">
               ${formattedDate} · ${post.category}
             </p>
           </div>

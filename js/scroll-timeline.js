@@ -1,6 +1,7 @@
 /**
  * Minimal scroll timeline — ruler-style section navigator.
  * Dialing follows scroll, or mouse position while hovering the track.
+ * Hovering anywhere shows a section tooltip on the right.
  * Click anywhere in a section segment to jump to that section.
  */
 (function () {
@@ -10,7 +11,6 @@
     { id: 'tech-stack', label: 'tech stack' },
     { id: 'projects', label: 'projects' },
     { id: 'blog', label: 'blog' },
-    { id: 'contact', label: 'contact' },
   ];
 
   const TICKS_BETWEEN = 5;
@@ -28,6 +28,7 @@
   let cachedSectionTops = [];
   let hoverTop = 0;
   let hoverRange = 1;
+  let lastTooltipSectionId = null;
 
   function jumpToSection(sectionId) {
     const target = document.getElementById(sectionId);
@@ -55,6 +56,11 @@
     const track = document.createElement('div');
     track.className = 'scroll-timeline__track';
 
+    const hoverTooltip = document.createElement('div');
+    hoverTooltip.className = 'scroll-timeline__hover-tooltip';
+    hoverTooltip.setAttribute('aria-hidden', 'true');
+    track.appendChild(hoverTooltip);
+
     const lines = [];
 
     SECTIONS.forEach((section, sectionIndex) => {
@@ -68,12 +74,6 @@
       bar.className = 'scroll-timeline__bar';
       bar.setAttribute('aria-hidden', 'true');
       mark.appendChild(bar);
-
-      const tooltip = document.createElement('span');
-      tooltip.className = 'scroll-timeline__tooltip';
-      tooltip.textContent = section.label;
-      tooltip.setAttribute('aria-hidden', 'true');
-      mark.appendChild(tooltip);
 
       mark.addEventListener('click', (event) => {
         event.stopPropagation();
@@ -127,7 +127,7 @@
 
     nav.appendChild(track);
     document.body.appendChild(nav);
-    return { nav, track, lines };
+    return { nav, track, lines, hoverTooltip };
   }
 
   function cacheGeometry(lines, sectionEls, track) {
@@ -204,6 +204,34 @@
     return closest.sectionId;
   }
 
+  function labelForSectionId(sectionId) {
+    return SECTIONS.find((section) => section.id === sectionId)?.label ?? '';
+  }
+
+  function showHoverTooltip(hoverTooltip, track, sectionId, clientY) {
+    const label = labelForSectionId(sectionId);
+    if (!label) return;
+
+    const trackRect = track.getBoundingClientRect();
+    const y = Math.min(Math.max(clientY - trackRect.top, 0), trackRect.height);
+    const alreadyVisible = hoverTooltip.dataset.visible === '1';
+
+    if (lastTooltipSectionId !== sectionId) {
+      hoverTooltip.textContent = label;
+      lastTooltipSectionId = sectionId;
+    }
+
+    hoverTooltip.style.top = `${y}px`;
+    hoverTooltip.dataset.visible = '1';
+    hoverTooltip.dataset.instant = alreadyVisible ? '1' : '0';
+  }
+
+  function hideHoverTooltip(hoverTooltip) {
+    hoverTooltip.dataset.visible = '0';
+    delete hoverTooltip.dataset.instant;
+    lastTooltipSectionId = null;
+  }
+
   function scaleFromDistance(distance) {
     if (distance >= SCALE_RADIUS) return 1;
     const t = 1 - distance / SCALE_RADIUS;
@@ -249,7 +277,7 @@
     const sectionEls = SECTIONS.map(({ id }) => document.getElementById(id)).filter(Boolean);
     if (sectionEls.length === 0) return;
 
-    const { track, lines } = buildTimeline();
+    const { track, lines, hoverTooltip } = buildTimeline();
     let ticking = false;
     let resizeQueued = false;
 
@@ -271,6 +299,9 @@
       'pointermove',
       (event) => {
         const next = getHoverProgress(event.clientY);
+        const sectionId = sectionIdAtVisualProgress(lines, next);
+        showHoverTooltip(hoverTooltip, track, sectionId, event.clientY);
+
         if (hoverProgress !== null && Math.abs(next - hoverProgress) < 0.008) return;
         hoverProgress = next;
         scheduleUpdate();
@@ -280,6 +311,7 @@
 
     track.addEventListener('pointerleave', () => {
       hoverProgress = null;
+      hideHoverTooltip(hoverTooltip);
       scheduleUpdate();
     });
 

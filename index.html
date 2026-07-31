@@ -30,6 +30,7 @@
           extend: {
             fontFamily: {
               sans: ["Inter", "sans-serif"],
+              mono: ["Geist Mono", "ui-monospace", "SFMono-Regular", "Menlo", "monospace"],
             },
           },
         },
@@ -37,6 +38,7 @@
     </script>
     <title>Elena Cabrera Casquet</title>
     <link rel="icon" type="image/png" href="/assets/images/profile/memoji.png" />
+    <link rel="stylesheet" href="/css/typography.css" />
     <style>
       .theme-toggle {
         display: grid;
@@ -75,8 +77,84 @@
       p {
         letter-spacing: -0.01em;
       }
+      .prose-body {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: #52525b;
+      }
+      .dark .prose-body {
+        color: #a1a1aa;
+      }
+      .prose-em {
+        font-weight: inherit;
+        color: #27272a;
+      }
+      .dark .prose-em {
+        color: #e4e4e7;
+      }
+      .work-expand-clip {
+        overflow: hidden;
+      }
+      .work-expand-btn {
+        margin-top: 0.35rem;
+        padding: 0;
+        border: 0;
+        background: none;
+        cursor: pointer;
+        font-size: 0.8rem;
+        color: #71717a;
+        letter-spacing: 0.01em;
+        transition: color 160ms ease, transform 140ms cubic-bezier(0.23, 1, 0.32, 1);
+      }
+      .work-expand-btn:hover {
+        color: #3f3f46;
+      }
+      .work-expand-btn:active {
+        transform: scale(0.97);
+      }
+      .dark .work-expand-btn {
+        color: #71717a;
+      }
+      .dark .work-expand-btn:hover {
+        color: #d4d4d8;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .work-expand-btn {
+          transition: color 160ms ease;
+        }
+        .work-expand-btn:active {
+          transform: none;
+        }
+      }
       html {
         scroll-behavior: smooth;
+      }
+
+      /* Scroll / load reveals (only after JS opts in) */
+      html.js-reveal [data-reveal],
+      html.js-reveal [data-reveal-row] .work-date,
+      html.js-reveal [data-reveal-row] .min-w-0 {
+        opacity: 0;
+        transition:
+          opacity var(--reveal-duration, 260ms) var(--reveal-ease, cubic-bezier(0.23, 1, 0.32, 1));
+        transition-delay: calc(var(--reveal-delay, 0) * 1ms);
+      }
+      html.js-reveal [data-reveal-row] .min-w-0 {
+        transition-delay: 0ms;
+      }
+      html.js-reveal [data-reveal].is-revealed,
+      html.js-reveal [data-reveal-row].is-revealed .work-date,
+      html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
+        opacity: 1;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        html.js-reveal [data-reveal],
+        html.js-reveal [data-reveal-row] .work-date,
+        html.js-reveal [data-reveal-row] .min-w-0 {
+          opacity: 1;
+          transition: none;
+          transition-delay: 0ms;
+        }
       }
       .tech-sticker {
         display: flex;
@@ -146,6 +224,7 @@
         }
       }
       .scroll-timeline__track {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -225,47 +304,58 @@
       .dark .scroll-timeline__line--mark:focus-visible .scroll-timeline__bar {
         background: #f4f4f5;
       }
-      .scroll-timeline__tooltip {
+      .scroll-timeline__hover-tooltip {
         position: absolute;
-        left: calc(100% + 0.65rem);
-        top: 50%;
-        transform: translateY(-50%) translateX(-2px);
+        left: calc(100% + 0.55rem);
+        top: 0;
+        z-index: 2;
         white-space: nowrap;
-        font-size: 0.7rem;
-        letter-spacing: 0.01em;
+        font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+        font-size: 0.65rem;
+        font-weight: 400;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
         color: #3f3f46;
-        background: rgba(255, 255, 255, 0.92);
+        background: rgba(255, 255, 255, 0.94);
         border: 1px solid rgba(0, 0, 0, 0.06);
         border-radius: 0.35rem;
-        padding: 0.2rem 0.45rem;
+        padding: 0.22rem 0.45rem;
         opacity: 0;
         visibility: hidden;
         pointer-events: none;
+        transform: translateY(-50%) translateX(-3px) scale(0.97);
+        transform-origin: left center;
         transition:
-          opacity 140ms ease,
+          opacity 140ms cubic-bezier(0.23, 1, 0.32, 1),
           transform 140ms cubic-bezier(0.23, 1, 0.32, 1),
           visibility 140ms;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
       }
-      .dark .scroll-timeline__tooltip {
+      .dark .scroll-timeline__hover-tooltip {
         color: #e4e4e7;
         background: rgba(39, 39, 42, 0.94);
         border-color: rgba(255, 255, 255, 0.08);
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
       }
-      .scroll-timeline__line--mark:hover .scroll-timeline__tooltip,
-      .scroll-timeline__line--mark:focus-visible .scroll-timeline__tooltip {
+      .scroll-timeline__hover-tooltip[data-visible="1"] {
         opacity: 1;
         visibility: visible;
-        transform: translateY(-50%) translateX(0);
+        transform: translateY(-50%) translateX(0) scale(1);
+      }
+      .scroll-timeline__hover-tooltip[data-instant="1"] {
+        transition-duration: 0ms;
       }
       @media (prefers-reduced-motion: reduce) {
         .scroll-timeline__line,
         .scroll-timeline__bar {
           transition: background-color 160ms ease;
         }
-        .scroll-timeline__tooltip {
+        .scroll-timeline__hover-tooltip {
           transition: opacity 140ms ease, visibility 140ms;
+          transform: translateY(-50%);
+        }
+        .scroll-timeline__hover-tooltip[data-visible="1"] {
+          transform: translateY(-50%);
         }
       }
     </style>
@@ -273,7 +363,7 @@
   </head>
   <body class="bg-white text-gray-900 dark:bg-zinc-950 dark:text-zinc-100 transition-colors">
     <div data-component="nav"></div>
-    <main class="px-4 py-12 flex flex-col gap-12 max-w-2xl mx-auto">
+    <main class="px-4 py-16 flex flex-col gap-20 max-w-[46rem] mx-auto">
       <section id="hero" class="flex gap-4 items-start">
         <img
           src="/assets/images/profile/me.jpg"
@@ -281,7 +371,7 @@
           class="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl object-cover flex-shrink-0"
         />
         <div class="min-w-0">
-          <p class="text-base sm:text-lg leading-snug text-gray-600 dark:text-zinc-400 transition-colors">
+          <p class="text-base sm:text-lg leading-relaxed text-gray-600 dark:text-zinc-400 transition-colors">
             <span class="font-semibold text-gray-900 dark:text-white transition-colors">hi, I'm Elena.</span>
             I am a Builder. I enjoy creating software products and solving problems in creative ways.
           </p>
@@ -333,15 +423,16 @@
         </div>
       </section>
 
-      <section id="about-me" class="scroll-mt-14">
-        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white transition-colors">about me</h2>
-        <div class="space-y-2">
-          <p class="dark:text-zinc-300 transition-colors">
-            Based in Madrid, but originally from Lanzarote. Always enjoyed
+      <section id="about-me" class="scroll-mt-14" data-reveal-group>
+        <h2 class="section-title" data-reveal>about me</h2>
+        <div class="space-y-4">
+          <p class="prose-body transition-colors" data-reveal>
+            Based in <span class="prose-em">Madrid</span>, but originally from
+            <span class="prose-em">Lanzarote</span>. Always enjoyed
             building stuff and learning new things, I guess that's why I'm drawn
             to startups and entrepreneurship.
           </p>
-          <p class="dark:text-zinc-300 transition-colors">
+          <p class="prose-body transition-colors" data-reveal>
             I love reading, cooking, and traveling. I also enjoy spending time
             with my loved ones and my dog, especially out in nature.
             Occasionally surfing… but honestly, not very good at it.
@@ -349,130 +440,159 @@
         </div>
       </section>
 
-      <section id="work" class="scroll-mt-14">
-        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white transition-colors">work</h2>
-        <p>
+      <section id="work" class="scroll-mt-14" data-reveal-group>
+        <h2 class="section-title" data-reveal>work</h2>
+        <p class="prose-body transition-colors" data-reveal>
           I started my career as a Business Consultant and transitioned into a
-          Product Engineer role at a startup, where I've been able to combine my
-          technical skills with my communication and leadership skills, finding
-          that I love bringing products from idea to reality.
+          <span class="prose-em">Product Engineer</span> role at a
+          <span class="prose-em">startup</span>, where I've been able to combine my
+          <span class="prose-em">technical</span> skills with my
+          <span class="prose-em">communication and leadership</span> skills, finding
+          that I love bringing products <span class="prose-em">from idea to reality</span>.
         </p>
-        <ul class="space-y-12 mt-6">
-          <li>
-            <p class="text-sm text-gray-600 dark:text-zinc-400 font-medium tracking-wide transition-colors">
-              Nov. 2023 - Present
-            </p>
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white transition-colors">
-              Lead Product Engineer
-            </h3>
-            <a
-              href="https://www.switchfleet.com/"
-              class="font-medium text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
-              >SwitchFleet</a
-            >
-            <p class="mt-1">
-              I lead the Product Team at SwitchFleet, a Spanish startup that
-              creates software solutions for helping companies measure and
-              reduce their fleet's carbon footprint. I'm responsible for the
-              product strategy and delivery. Since I joined, I've developed the
-              company's data pipeline and built a B2B SaaS web application from
-              scratch, from the initial idea to the MVP and beyond.
-            </p>
+        <ul class="mt-10 space-y-8 list-none pl-0">
+          <li class="grid grid-cols-1 sm:grid-cols-[7.5rem_1fr] gap-x-5 gap-y-2 items-start" data-reveal-row>
+            <span class="work-date">2023 — Now</span>
+            <div class="min-w-0">
+              <h3 class="work-role transition-colors">
+                <span>Lead Product Engineer</span>
+                <span class="work-role__at">@</span>
+                <a href="https://www.switchfleet.com/" class="work-company">
+                  <img
+                    src="/assets/images/work/switchfleet.png"
+                    alt=""
+                    width="16"
+                    height="16"
+                    class="work-company__logo"
+                    loading="lazy"
+                  />
+                  <span>SwitchFleet</span>
+                </a>
+              </h3>
+              <div class="mt-1.5" data-work-expand>
+                <p class="work-expandable prose-body transition-colors">
+                  I lead the Product Team at SwitchFleet, a Spanish startup that
+                  creates software solutions for helping companies measure and
+                  reduce their fleet's carbon footprint. I'm responsible for the
+                  product strategy and delivery. Since I joined, I've developed the
+                  company's data pipeline and built a B2B SaaS web application from
+                  scratch, from the initial idea to the MVP and beyond.
+                </p>
+                <button type="button" class="work-expand-btn" hidden>read more</button>
+              </div>
+            </div>
           </li>
-          <li>
-            <p class="text-sm text-gray-600 dark:text-zinc-400 font-medium tracking-wide transition-colors">
-              Sep. 2021 - Sep. 2023
-            </p>
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white transition-colors">
-              New Technologies Consultant
-            </h3>
-            <a
-              href="https://www.managementsolutions.com/"
-              class="font-medium text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
-              >Management Solutions</a
-            >
-            <p class="mt-1">
-              Led digital transformation projects at a top-tier European bank,
-              focusing on technology and risks. Designed and implemented global
-              fraud detection systems and coordinated their rollout across
-              markets, including SWIFT operations and real-time alert systems.
-              Managed the integration of a new equity derivatives orchestrator
-              aligning business and tech teams following the Agile / Scrum
-              methodology.
-            </p>
+          <li class="grid grid-cols-1 sm:grid-cols-[7.5rem_1fr] gap-x-5 gap-y-2 items-start" data-reveal-row>
+            <span class="work-date">2021 — 2023</span>
+            <div class="min-w-0">
+              <h3 class="work-role transition-colors">
+                <span>New Technologies Consultant</span>
+                <span class="work-role__at">@</span>
+                <a href="https://www.managementsolutions.com/" class="work-company">
+                  <img
+                    src="/assets/images/work/management-solutions.png"
+                    alt=""
+                    width="16"
+                    height="16"
+                    class="work-company__logo"
+                    loading="lazy"
+                  />
+                  <span>Management Solutions</span>
+                </a>
+              </h3>
+              <div class="mt-1.5" data-work-expand>
+                <p class="work-expandable prose-body transition-colors">
+                  Led digital transformation projects at a top-tier European bank,
+                  focusing on technology and risks. Designed and implemented global
+                  fraud detection systems and coordinated their rollout across
+                  markets, including SWIFT operations and real-time alert systems.
+                  Managed the integration of a new equity derivatives orchestrator
+                  aligning business and tech teams following the Agile / Scrum
+                  methodology.
+                </p>
+                <button type="button" class="work-expand-btn" hidden>read more</button>
+              </div>
+            </div>
           </li>
-          <li>
-            <p class="text-sm text-gray-600 dark:text-zinc-400 font-medium tracking-wide transition-colors">
-              Feb. 2021 - Aug. 2021
-            </p>
-            <h3 class="text-xl font-semibold text-gray-900 dark:text-white transition-colors">
-              Utilities Consultant Internship
-            </h3>
-            <a
-              href="https://www.nttdata.com/"
-              class="font-medium text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
-              >NTT Data</a
-            >
-            <p class="mt-1">
-              Kick off, GAP analysis, requirements and scope definition of the
-              migration of a major utility's trading system at an IBEX 35 energy
-              company.
-            </p>
+          <li class="grid grid-cols-1 sm:grid-cols-[7.5rem_1fr] gap-x-5 gap-y-2 items-start" data-reveal-row>
+            <span class="work-date">2021</span>
+            <div class="min-w-0">
+              <h3 class="work-role transition-colors">
+                <span>Utilities Consultant Internship</span>
+                <span class="work-role__at">@</span>
+                <a href="https://www.nttdata.com/" class="work-company">
+                  <img
+                    src="/assets/images/work/nttdata.png"
+                    alt=""
+                    width="16"
+                    height="16"
+                    class="work-company__logo"
+                    loading="lazy"
+                  />
+                  <span>NTT Data</span>
+                </a>
+              </h3>
+              <p class="mt-1.5 prose-body transition-colors">
+                Kick off, GAP analysis, requirements and scope definition of the
+                migration of a major utility's trading system at an IBEX 35 energy
+                company.
+              </p>
+            </div>
           </li>
         </ul>
       </section>
 
-      <section id="tech-stack" class="scroll-mt-14">
-        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white transition-colors">tech stack</h2>
-        <p>
+      <section id="tech-stack" class="scroll-mt-14" data-reveal-group>
+        <h2 class="section-title" data-reveal>tech stack</h2>
+        <p class="prose-body transition-colors" data-reveal>
           As a developer, I've worked with the following technologies. I
           particularly enjoy working with Python and FastAPI, but I'm also
           comfortable with frontend technologies.
         </p>
-        <ul class="mt-5 flex flex-wrap justify-between gap-y-5 list-none pl-0">
-          <li class="tech-sticker">
+        <ul class="mt-6 flex flex-wrap justify-between gap-y-5 list-none pl-0">
+          <li class="tech-sticker" data-reveal>
             <div class="tech-sticker__logo">
               <img src="/assets/images/stack/python.webp" alt="" loading="lazy" />
             </div>
-            <span class="text-xs text-gray-600 dark:text-zinc-400 transition-colors">Python</span>
+            <span class="text-xs text-gray-500 dark:text-zinc-500 transition-colors">Python</span>
           </li>
-          <li class="tech-sticker">
+          <li class="tech-sticker" data-reveal>
             <div class="tech-sticker__logo">
               <img src="/assets/images/stack/fastapi.png" alt="" loading="lazy" />
             </div>
-            <span class="text-xs text-gray-600 dark:text-zinc-400 transition-colors">FastAPI</span>
+            <span class="text-xs text-gray-500 dark:text-zinc-500 transition-colors">FastAPI</span>
           </li>
-          <li class="tech-sticker">
+          <li class="tech-sticker" data-reveal>
             <div class="tech-sticker__logo">
               <img src="/assets/images/stack/vuejs.webp" alt="" loading="lazy" />
             </div>
-            <span class="text-xs text-gray-600 dark:text-zinc-400 transition-colors">Vue.js</span>
+            <span class="text-xs text-gray-500 dark:text-zinc-500 transition-colors">Vue.js</span>
           </li>
-          <li class="tech-sticker">
+          <li class="tech-sticker" data-reveal>
             <div class="tech-sticker__logo">
               <img src="/assets/images/stack/react.webp" alt="" loading="lazy" />
             </div>
-            <span class="text-xs text-gray-600 dark:text-zinc-400 transition-colors">React</span>
+            <span class="text-xs text-gray-500 dark:text-zinc-500 transition-colors">React</span>
           </li>
-          <li class="tech-sticker">
+          <li class="tech-sticker" data-reveal>
             <div class="tech-sticker__logo">
               <img src="/assets/images/stack/nextjs.svg" alt="" loading="lazy" />
             </div>
-            <span class="text-xs text-gray-600 dark:text-zinc-400 transition-colors">Next.js</span>
+            <span class="text-xs text-gray-500 dark:text-zinc-500 transition-colors">Next.js</span>
           </li>
-          <li class="tech-sticker">
+          <li class="tech-sticker" data-reveal>
             <div class="tech-sticker__logo">
               <img src="/assets/images/stack/docker.svg" alt="" loading="lazy" />
             </div>
-            <span class="text-xs text-gray-600 dark:text-zinc-400 transition-colors">Docker</span>
+            <span class="text-xs text-gray-500 dark:text-zinc-500 transition-colors">Docker</span>
           </li>
         </ul>
       </section>
 
-      <section id="projects" class="scroll-mt-14">
-        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white transition-colors">projects</h2>
-        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-3 list-none pl-0">
-          <li class="group rounded-lg p-1 -m-2 hover:bg-gray-100 dark:hover:bg-zinc-900 hover:shadow-sm transition-all duration-200">
+      <section id="projects" class="scroll-mt-14" data-reveal-group>
+        <h2 class="section-title" data-reveal>projects</h2>
+        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2 list-none pl-0">
+          <li class="group rounded-lg p-1 -m-2 hover:bg-gray-100 dark:hover:bg-zinc-900 hover:shadow-sm transition-all duration-200" data-reveal>
             <a
               href="https://markdown-os.elenacabrera.xyz"
               target="_blank"
@@ -483,30 +603,30 @@
                 <img
                   src="https://v1.screenshot.11ty.dev/https%3A%2F%2Fmarkdown-os.elenacabrera.xyz%2F/width/800/"
                   alt="markdown-os preview"
-                  class="w-full h-full object-cover object-top group-hover:scale-[1.02] transition-transform duration-300"
+                  class="w-full h-full object-cover object-top"
                   loading="lazy"
                 />
               </div>
               <div class="p-4">
-                <h3 class="text-xl font-semibold text-gray-900 dark:text-white transition-colors mb-1">
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white transition-colors mb-1">
                   markdown-os
                 </h3>
-                <p class="text-sm text-gray-600 dark:text-zinc-400 transition-colors">
+                <p class="text-sm text-gray-500 dark:text-zinc-400 transition-colors">
                   View and edit Markdown files in the browser, improving on IDE default preview.
                 </p>
               </div>
             </a>
           </li>
-          <li class="rounded-lg p-1 -m-2 hover:bg-gray-100 dark:hover:bg-zinc-900 hover:shadow-sm transition-all duration-200 cursor-default">
+          <li class="rounded-lg p-1 -m-2 hover:bg-gray-100 dark:hover:bg-zinc-900 hover:shadow-sm transition-all duration-200 cursor-default" data-reveal>
             <div class="block overflow-hidden rounded-lg">
               <div class="aspect-video bg-zinc-200 dark:bg-zinc-800 rounded-t-lg flex items-center justify-center">
                 <span class="text-gray-400 dark:text-zinc-500 text-4xl" aria-hidden="true">…</span>
               </div>
               <div class="p-4">
-                <h3 class="text-xl font-semibold text-gray-400 dark:text-zinc-500 transition-colors mb-1">
+                <h3 class="text-lg font-semibold text-gray-400 dark:text-zinc-500 transition-colors mb-1">
                   more coming…
                 </h3>
-                <p class="text-sm text-gray-500 dark:text-zinc-500 transition-colors">
+                <p class="text-sm text-gray-400 dark:text-zinc-500 transition-colors">
                   More projects on the way.
                 </p>
               </div>
@@ -515,27 +635,20 @@
         </ul>
       </section>
 
-      <section id="blog" class="scroll-mt-14">
-        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white transition-colors">blog</h2>
-        <ul class="space-y-6 mt-3">
+      <section id="blog" class="scroll-mt-14" data-reveal-group>
+        <h2 class="section-title" data-reveal>blog</h2>
+        <ul class="space-y-6 mt-2">
           <!-- Blog cards will be automatically generated here -->
         </ul>
       </section>
 
-      <section id="contact" class="scroll-mt-14">
-        <h2 class="text-2xl font-semibold text-gray-900 dark:text-white transition-colors">contact</h2>
-        <p>
-          Always looking for a nice chat with interesting people. If you want
-          to, you can reach out and say hi on
-          <a
-            href="https://www.linkedin.com/in/elena-cabrera-casquet/"
-            class="font-medium text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
-          >
-            LinkedIn
-          </a>
-          .
-        </p>
-      </section>
+      <p id="contact" class="scroll-mt-14 prose-body transition-colors" data-reveal>
+        Always looking for a nice chat. Sremove ay hi on
+        <a
+          href="https://www.linkedin.com/in/elena-cabrera-casquet/"
+          class="font-medium text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
+        >LinkedIn</a>.
+      </p>
     </main>
 
     <div data-component="footer"></div>
@@ -543,7 +656,9 @@
     <script src="/js/components.js"></script>
     <script src="/js/theme.js"></script>
     <script src="/js/blog.js"></script>
+    <script src="/js/work-expand.js"></script>
     <script src="/js/scroll-timeline.js"></script>
     <script src="/js/click-sound.js"></script>
+    <script src="/js/reveal.js"></script>
   </body>
 </html>
