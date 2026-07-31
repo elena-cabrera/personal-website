@@ -41,22 +41,6 @@
     return rect.top < window.innerHeight * 0.92 && rect.bottom > 0;
   }
 
-  function watchBlogCards(blog) {
-    const list = blog.querySelector('ul');
-    if (!list) return;
-
-    const mo = new MutationObserver(() => {
-      if (!list.children.length) return;
-      mo.disconnect();
-      if (blog.dataset.revealed !== '1') return;
-      list.querySelectorAll(':scope > [data-reveal]').forEach((el) => {
-        el.classList.add('is-revealed');
-      });
-    });
-
-    mo.observe(list, { childList: true });
-  }
-
   function init() {
     if (prefersReducedMotion) return;
 
@@ -103,9 +87,6 @@
     );
 
     pending.forEach((group) => observer.observe(group));
-
-    const blog = document.querySelector('#blog[data-reveal-group]');
-    if (blog) watchBlogCards(blog);
   }
 
   if (document.readyState === 'loading') {

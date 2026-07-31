@@ -1,0 +1,49 @@
+---
+interface Props {
+  slug: string;
+  title: string;
+  date: Date;
+  category: string;
+  thumbnail: string;
+}
+
+const { slug, title, date, category, thumbnail } = Astro.props;
+
+const formattedDate = date.toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+  timeZone: 'UTC',
+});
+---
+
+<li
+  class="group rounded-lg p-1 -mx-2 hover:bg-gray-100 dark:hover:bg-zinc-900 transition-colors duration-200"
+  data-reveal
+>
+  <a
+    href={`/blog/posts/${slug}`}
+    class="flex gap-4 items-center font-medium text-gray-700 hover:text-gray-900 dark:text-zinc-300 dark:hover:text-white transition-colors"
+  >
+    <img
+      src={thumbnail}
+      alt="Blog post thumbnail"
+      width="80"
+      height="80"
+      class="size-20 shrink-0 rounded-lg object-cover"
+      loading="lazy"
+    />
+    <div class="min-w-0">
+      <h3
+        class="text-lg font-semibold text-gray-900 dark:text-white transition-colors mb-1"
+      >
+        {title}
+      </h3>
+      <p
+        class="text-sm text-gray-500 dark:text-zinc-500 font-medium tracking-wide transition-colors"
+      >
+        {formattedDate} · {category}
+      </p>
+    </div>
+  </a>
+</li>
