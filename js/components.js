@@ -90,7 +90,6 @@
       <footer
         class="text-sm text-gray-500 dark:text-zinc-400 border-t border-gray-200 dark:border-zinc-800 py-4 px-4 max-w-2xl mx-auto transition-colors"
       >
-        Made with ☕ in Spain by Elena <br />
         © 2026 Elena Cabrera Casquet. All rights reserved.
       </footer>
     `;
