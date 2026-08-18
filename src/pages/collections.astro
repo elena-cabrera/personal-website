@@ -1,0 +1,104 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import CollectionCard from '../components/CollectionCard.astro';
+import {
+  collectionItems,
+  statusLabels,
+  typeLabels,
+  typeOrder,
+  uniqueTags,
+} from '../data/collections';
+
+const tags = uniqueTags(collectionItems);
+const typeCounts = Object.fromEntries(
+  typeOrder.map((type) => [type, collectionItems.filter((item) => item.type === type).length])
+);
+---
+
+<BaseLayout
+  title="Collections — Elena Cabrera Casquet"
+  description="Tools, books, and references I keep around."
+  showBackButton={true}
+  wide={true}
+>
+  <main class="px-6 py-16 max-w-6xl mx-auto" data-collections>
+    <header class="max-w-[46rem]">
+      <h1 class="section-title">collections</h1>
+      <p class="prose-body transition-colors">
+        Tools, books, and references I keep around. Not linked from the rest of the site
+        on purpose — search, filter by type, or click a tag.
+      </p>
+    </header>
+
+    <div class="collections-toolbar">
+      <label class="sr-only" for="collections-search">Search collections</label>
+      <input
+        id="collections-search"
+        class="collections-search"
+        type="search"
+        placeholder="search"
+        autocomplete="off"
+        spellcheck="false"
+        data-collections-search
+      />
+
+      <div class="collections-row">
+        <span class="collections-row__label">type</span>
+        <div class="collections-chips" role="group" aria-label="Filter by type">
+          <button type="button" class="collections-chip is-active" data-type-filter="all">
+            all
+          </button>
+          {
+            typeOrder.map((type) => (
+              <button type="button" class="collections-chip" data-type-filter={type}>
+                {typeLabels[type]}
+                <span class="collections-chip__count">{typeCounts[type]}</span>
+              </button>
+            ))
+          }
+        </div>
+      </div>
+
+      <div class="collections-row" data-status-row>
+        <span class="collections-row__label">shelf</span>
+        <div class="collections-chips" role="group" aria-label="Filter books by shelf">
+          {
+            Object.entries(statusLabels).map(([status, label]) => (
+              <button type="button" class="collections-chip" data-status-filter={status}>
+                {label}
+              </button>
+            ))
+          }
+        </div>
+      </div>
+
+      <div class="collections-row">
+        <span class="collections-row__label">tags</span>
+        <div class="collections-chips collections-chips--wrap" role="group" aria-label="Filter by tag">
+          {
+            tags.map((tag) => (
+              <button type="button" class="collections-tag" data-tag-filter={tag}>
+                {tag}
+              </button>
+            ))
+          }
+        </div>
+      </div>
+
+      <p class="collections-count" data-collections-count>
+        {collectionItems.length}
+      </p>
+    </div>
+
+    <ul class="collections-grid list-none pl-0" data-collections-grid>
+      {collectionItems.map((item) => <CollectionCard item={item} />)}
+    </ul>
+    <p class="collections-empty prose-body" data-collections-empty hidden>
+      Nothing matches.
+    </p>
+  </main>
+
+  <script>
+    import '../scripts/collections-filter.js';
+  </script>
+</BaseLayout>

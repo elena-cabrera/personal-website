@@ -8,12 +8,14 @@ interface Props {
   title?: string;
   description?: string;
   showBackButton?: boolean;
+  wide?: boolean;
 }
 
 const {
   title = 'Elena Cabrera Casquet',
   description = 'I am a Builder. I enjoy creating software products and solving problems in creative ways.',
   showBackButton = false,
+  wide = false,
 } = Astro.props;
 ---
 
@@ -52,9 +54,9 @@ const {
   <body
     class="bg-white text-gray-900 dark:bg-zinc-950 dark:text-zinc-100 transition-colors"
   >
-    <Nav showBackButton={showBackButton} />
+    <Nav showBackButton={showBackButton} wide={wide} />
     <slot />
-    <Footer />
+    <Footer wide={wide} />
     <ThemeToggle />
     <script is:inline src="/js/click-sound.js"></script>
     <script>
