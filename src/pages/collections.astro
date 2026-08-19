@@ -3,7 +3,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import CollectionCard from '../components/CollectionCard.astro';
 import {
   collectionItems,
-  statusLabels,
   typeLabels,
   typeOrder,
   uniqueTags,
@@ -53,19 +52,6 @@ const typeCounts = Object.fromEntries(
               <button type="button" class="collections-chip" data-type-filter={type}>
                 {typeLabels[type]}
                 <span class="collections-chip__count">{typeCounts[type]}</span>
-              </button>
-            ))
-          }
-        </div>
-      </div>
-
-      <div class="collections-row" data-status-row>
-        <span class="collections-row__label">shelf</span>
-        <div class="collections-chips" role="group" aria-label="Filter books by shelf">
-          {
-            Object.entries(statusLabels).map(([status, label]) => (
-              <button type="button" class="collections-chip" data-status-filter={status}>
-                {label}
               </button>
             ))
           }

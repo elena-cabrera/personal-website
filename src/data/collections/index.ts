@@ -3,8 +3,8 @@ import { inspiration } from './inspiration';
 import { tools } from './tools';
 import type { CollectionItem, CollectionType } from './types';
 
-export type { BookStatus, CollectionItem, CollectionType } from './types';
-export { bookStatuses, collectionTypes } from './types';
+export type { CollectionItem, CollectionType } from './types';
+export { collectionTypes } from './types';
 
 export const collectionItems: CollectionItem[] = [...tools, ...inspiration, ...books];
 
@@ -15,12 +15,6 @@ export const typeLabels: Record<CollectionType, string> = {
 };
 
 export const typeOrder: CollectionType[] = ['tool', 'book', 'inspiration'];
-
-export const statusLabels = {
-  read: 'read',
-  reading: 'reading',
-  'to-read': 'to-read',
-} as const;
 
 export function hostname(url: string): string {
   try {
