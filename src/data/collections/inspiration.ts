@@ -1,0 +1,73 @@
+import type { CollectionItem } from './types';
+
+export const inspiration: CollectionItem[] = [
+  {
+    id: 'inspo-dribbble',
+    type: 'inspiration',
+    title: 'Dribbble',
+    url: 'https://dribbble.com/',
+    description: 'Visual inspiration',
+    tags: ['inspiration', 'design'],
+  },
+  {
+    id: 'inspo-mobbin',
+    type: 'inspiration',
+    title: 'Mobbin',
+    url: 'https://mobbin.com/discover/apps/web/latest',
+    description: 'App screens',
+    tags: ['inspiration', 'ui'],
+  },
+  {
+    id: 'inspo-navbar',
+    type: 'inspiration',
+    title: 'Navbar Gallery',
+    url: 'https://www.navbar.gallery/browse',
+    tags: ['inspiration', 'ui'],
+  },
+  {
+    id: 'inspo-bento',
+    type: 'inspiration',
+    title: 'Bento Grids',
+    url: 'https://bentogrids.com/',
+    tags: ['inspiration', 'ui'],
+  },
+  {
+    id: 'inspo-h1',
+    type: 'inspiration',
+    title: 'H1 Gallery',
+    url: 'https://h1gallery.com/',
+    description: 'Hero sections',
+    tags: ['inspiration', 'ui'],
+  },
+  {
+    id: 'inspo-cta',
+    type: 'inspiration',
+    title: 'CTA.gallery',
+    url: 'https://www.cta.gallery/',
+    description: 'Call-to-action patterns',
+    tags: ['inspiration', 'ui'],
+  },
+  {
+    id: 'inspo-footer',
+    type: 'inspiration',
+    title: 'Footer Gallery',
+    url: 'https://www.footer.design/',
+    tags: ['inspiration', 'ui'],
+  },
+  {
+    id: 'inspo-404s',
+    type: 'inspiration',
+    title: '404s.design',
+    url: 'https://www.404s.design/',
+    description: 'Error page designs',
+    tags: ['inspiration', 'ui'],
+  },
+  {
+    id: 'inspo-aura',
+    type: 'inspiration',
+    title: 'Aura',
+    url: 'https://www.aura.build/browse/components?order=popular&time=month&page=1',
+    description: 'Landing templates',
+    tags: ['inspiration', 'ui'],
+  },
+];
