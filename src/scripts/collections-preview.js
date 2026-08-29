@@ -79,12 +79,19 @@ function showPreview(card, clientX, clientY) {
 
   if (url !== currentUrl) {
     currentUrl = url;
+    preview.classList.add('is-loading');
     frame.src = url;
   }
 
   positionPreview(clientX, clientY);
   preview.classList.add('is-visible');
 }
+
+frame.addEventListener('load', () => {
+  // Ignore blank clears; only reveal once a real page has painted.
+  if (!currentUrl) return;
+  preview.classList.remove('is-loading');
+});
 
 function hidePreview() {
   hideTimer = window.setTimeout(() => {
@@ -97,7 +104,7 @@ function clearPreview() {
   window.clearTimeout(hideTimer);
   activeCard = null;
   currentUrl = '';
-  preview.classList.remove('is-visible');
+  preview.classList.remove('is-visible', 'is-loading');
   frame.removeAttribute('src');
 }
 

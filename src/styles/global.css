@@ -886,6 +886,10 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
   transform: translateY(0) scale(1);
 }
 
+.collection-preview.is-loading .collection-preview__frame {
+  opacity: 0;
+}
+
 .dark .collection-preview {
   background: #18181b;
   border-color: #fff;
@@ -904,6 +908,8 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
   transform: scale(0.25);
   transform-origin: top left;
   pointer-events: none;
+  opacity: 1;
+  transition: opacity 120ms ease;
 }
 
 @media (prefers-reduced-motion: reduce) {
