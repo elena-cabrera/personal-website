@@ -143,4 +143,12 @@ export const personal: CollectionItem[] = [
     url: 'https://www.felipecardona.com/',
     tags: ['personal', 'ui'],
   },
+  {
+    id: 'personal-mike-barton',
+    type: 'personal',
+    title: 'Mike Barton',
+    url: 'https://www.mikes.cv/',
+    description: 'Software designer',
+    tags: ['personal', 'design'],
+  },
 ];
