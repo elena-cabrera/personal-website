@@ -1,6 +1,7 @@
 import { books } from './books';
 import { inspiration } from './inspiration';
 import { landings } from './landings';
+import { personal } from './personal';
 import { tools } from './tools';
 import type { CollectionItem, CollectionType } from './types';
 
@@ -11,6 +12,7 @@ export const collectionItems: CollectionItem[] = [
   ...tools,
   ...inspiration,
   ...landings,
+  ...personal,
   ...books,
 ];
 
@@ -19,9 +21,16 @@ export const typeLabels: Record<CollectionType, string> = {
   book: 'books',
   inspiration: 'inspiration',
   landing: 'landing pages',
+  personal: 'personal websites',
 };
 
-export const typeOrder: CollectionType[] = ['tool', 'book', 'inspiration', 'landing'];
+export const typeOrder: CollectionType[] = [
+  'tool',
+  'book',
+  'inspiration',
+  'landing',
+  'personal',
+];
 
 export function hostname(url: string): string {
   try {
