@@ -70,12 +70,4 @@ export const inspiration: CollectionItem[] = [
     description: 'Landing templates',
     tags: ['inspiration', 'ui'],
   },
-  {
-    id: 'inspo-superlogical',
-    type: 'inspiration',
-    title: 'Superlogical',
-    url: 'https://superlogical.com/',
-    description: 'Landing page',
-    tags: ['inspiration', 'ui'],
-  },
 ];

@@ -1,4 +1,10 @@
-export const collectionTypes = ['tool', 'book', 'inspiration'] as const;
+export const collectionTypes = [
+  'tool',
+  'book',
+  'inspiration',
+  'landing',
+  'personal',
+] as const;
 
 export type CollectionType = (typeof collectionTypes)[number];
 

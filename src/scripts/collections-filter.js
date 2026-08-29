@@ -10,7 +10,7 @@ const items = [...root.querySelectorAll('[data-collection-item]')];
 const typeButtons = [...root.querySelectorAll('[data-type-filter]')];
 const tagButtons = [...root.querySelectorAll('[data-tag-filter]')];
 
-const TYPE_VALUES = new Set(['tool', 'book', 'inspiration']);
+const TYPE_VALUES = new Set(['tool', 'book', 'inspiration', 'landing', 'personal']);
 
 function parseState() {
   const params = new URLSearchParams(window.location.search);
