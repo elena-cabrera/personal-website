@@ -1,7 +1,6 @@
 export const collectionTypes = [
   'tool',
   'book',
-  'article',
   'inspiration',
   'landing',
   'personal',
