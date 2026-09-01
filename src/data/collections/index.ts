@@ -1,4 +1,3 @@
-import { articles } from './articles';
 import { books } from './books';
 import { inspiration } from './inspiration';
 import { landings } from './landings';
@@ -11,7 +10,6 @@ export { collectionTypes } from './types';
 
 export const collectionItems: CollectionItem[] = [
   ...tools,
-  ...articles,
   ...inspiration,
   ...landings,
   ...personal,
@@ -21,7 +19,6 @@ export const collectionItems: CollectionItem[] = [
 export const typeLabels: Record<CollectionType, string> = {
   tool: 'tools',
   book: 'books',
-  article: 'articles',
   inspiration: 'inspiration',
   landing: 'landing pages',
   personal: 'personal websites',
@@ -30,7 +27,6 @@ export const typeLabels: Record<CollectionType, string> = {
 export const typeOrder: CollectionType[] = [
   'tool',
   'book',
-  'article',
   'inspiration',
   'landing',
   'personal',
