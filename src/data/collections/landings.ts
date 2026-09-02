@@ -57,4 +57,11 @@ export const landings: CollectionItem[] = [
     url: 'https://ngrok.com/',
     tags: ['landing', 'ui'],
   },
+  {
+    id: 'landing-ramp',
+    type: 'landing',
+    title: 'Ramp',
+    url: 'https://ramp.com/',
+    tags: ['landing', 'ui'],
+  },
 ];
