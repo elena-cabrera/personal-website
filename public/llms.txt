@@ -1,0 +1,210 @@
+# Landing page design references
+
+Curated landing pages Elena keeps as design references. Each entry links to a subpage with live screenshots and captions.
+
+Site: https://elenacabrera.xyz
+Collections: https://elenacabrera.xyz/collections?type=landing
+
+## Superlogical
+- URL: https://superlogical.com/
+- Subpage: https://elenacabrera.xyz/collections/landings/superlogical
+- Tags: devtools, productivity, ai
+- Design focus: Ultra-minimal devtool landing that sells a technical vision through long-form editorial copy and a single bold gradient visual anchor instead of product UI chrome.
+- Screenshots:
+  - Split hero with gradient: Left-aligned headline and layered keyword stack sit opposite a tall rounded gradient block, establishing a typographic-first hero with almost no chrome.
+  - Three-step product vision: A manifesto section lays out a numbered three-part plan beside the same gradient motif, using restrained hierarchy and generous whitespace to sell a technical vision.
+  - Founder pedigree grid: Team bios with headshots and heavyweight prior-company credentials create authority through pedigree rather than logos or metrics.
+  - Investor list and waitlist: Named investor columns and a minimal underline-style email capture close the page, using social proof density plus a low-friction beta signup.
+
+## Typo
+- URL: https://www.typo.so/
+- Subpage: https://elenacabrera.xyz/collections/landings/typo
+- Tags: productivity, ai
+- Design focus: Soft, cloud-themed consumer SaaS landing that uses floating modular cards and bento layouts to show a flexible workspace product.
+- Screenshots:
+  - Username claim hero: A sky-background hero centers a username claim field while orbiting content cards preview integrations like Spotify and audio, selling modularity through scattered UI tiles.
+  - Product canvas preview: A large rounded product mockup demonstrates the bento workspace layout with profile blocks, media widgets, and folder navigation under a concise value headline.
+  - Persona icon columns: Four equal columns with 3D icons segment the audience into Creator, Builder, Artist, and Brand, using playful illustration to broaden appeal.
+  - Orbital feature hub: A radial layout places the brand at the center with orbiting capability icons for AI, storage, shop, and blogging, visualizing an all-in-one platform.
+  - Quote testimonial row: Minimal bordered cards in a horizontal row carry short user quotes with lots of negative space, keeping social proof light and airy.
+  - Privacy and share features: A split grid pairs short feature copy with simple UI controls like a public/private toggle and circular share menu to explain publishing workflows.
+  - Community closing CTA: A centered headline and pill button are ringed by user avatars, using circular social proof to reinforce a personal, community-driven product.
+
+## EliseAI
+- URL: https://eliseai.com/healthai
+- Subpage: https://elenacabrera.xyz/collections/landings/eliseai
+- Tags: ai, health, enterprise
+- Design focus: Enterprise healthcare AI landing that combines bold gradient heroes, compliance badges, and proof-heavy mid-page sections.
+- Screenshots:
+  - Healthcare demo hero: A blue gradient hero pairs a demo-booking form with HIPAA and G2 trust marks and a floating scheduling card mockup showing VoiceAI output.
+  - Customer video carousel: A centered headline introduces a horizontal video testimonial carousel with client logos overlaid on thumbnails, prioritizing founder/operator proof.
+  - VoiceAI product split: A dark split section contrasts copy and CTA on the left with a phone mockup on the right, then transitions into a white feature headline block below.
+  - Specialty coverage grid: A 2x2 grid maps healthcare specialties to photo-backed cards with Learn More links, tailoring the product to vertical use cases.
+  - Benefits and integrations: A dark three-column icon grid quantifies operational benefits before a white integrations section cites EHR compatibility and SOC 2/HIPAA compliance.
+  - Competitive comparison table: A highlighted EliseAI column with checkmarks versus gray competitor columns uses a classic us-vs-them table to communicate feature superiority.
+  - Resource links and FAQ: Three case-study link columns sit above a large FAQ accordion, handling late-funnel objections with expandable technical questions.
+
+## Visitors
+- URL: https://visitors.now/
+- Subpage: https://elenacabrera.xyz/collections/landings/visitors
+- Tags: analytics
+- Design focus: Polished indie-analytics SaaS page with floating nav, lavender gradients, and product-led hero previews.
+- Screenshots:
+  - Dashboard hero preview: A centered headline and dual CTAs sit above a logo strip and tabbed dashboard mockup embedded in a soft purple gradient, showing the product immediately.
+  - Color-coded feature bento: A 2x2 card grid uses distinct accent colors and mini charts or globe visuals to explain revenue attribution, realtime tracking, profiles, and performance metrics.
+  - Competitor comparison table: A highlighted Visitors column compares GDPR, revenue, and journey features against GA, Plausible, and Fathom in a clean matrix layout.
+  - Usage-based pricing: A split pricing card combines a monthly/yearly toggle, event slider, and included-features checklist with a simulated globe visualization on the right.
+  - FAQ accordion: A minimalist accordion addresses privacy, limits, and Google Analytics comparisons, with one expanded answer explaining no-cookie compliance.
+
+## Kapia
+- URL: https://kapia.co/
+- Subpage: https://elenacabrera.xyz/collections/landings/kapia
+- Tags: ai, enterprise, productivity
+- Design focus: Premium enterprise AI landing that mixes fine-art backgrounds, editorial typography, and abstract process UI mockups.
+- Screenshots:
+  - Painterly hero: Left-aligned enterprise copy and a Talk to us CTA sit over a full-width impressionist cloud painting, giving the AI product a calm, high-trust aesthetic.
+  - Knowledge gap diagram: A central diagram connects sticky notes, folders, and contracts into the Kapia hub above a large headline about business knowledge living outside manuals.
+  - Understand process map: A split feature block pairs explanatory copy with a process-map UI mockup overlaid on art, showing how operational logic is extracted and reviewed.
+
+## Midday
+- URL: https://midday.ai/
+- Subpage: https://elenacabrera.xyz/collections/landings/midday
+- Tags: fintech, invoicing, productivity
+- Design focus: Clean fintech/productivity landing with serif hero typography, step-based product walkthroughs, and structured case-study social proof.
+- Screenshots:
+  - Serif hero with acquisition badge: A centered serif headline and single black CTA sit beneath a pill announcement badge, with faint integration logos providing quiet credibility before a dark product preview band.
+  - How it works stepper: A vertical step list on the left highlights the active workflow stage while a crisp transaction table mockup on the right demonstrates unified banking data.
+  - Feature grid headline: A centered section title introduces the full product surface area— invoicing, transactions, time tracking— before a bento-style capability grid below.
+  - Invoicing feature card: Large rounded cards pair short benefit copy with embedded invoice UI previews, using alternating layouts to walk through core finance workflows.
+  - Accounting time-savings proof: A bold 4–6 hours savings callout anchors a section about accounting readiness, quantifying operational benefit with oversized numerals instead of testimonial quotes.
+  - Built with users band: A community-forward section uses avatar stacks and short founder quotes to show the product is shaped alongside real operators, not shipped in isolation.
+  - Footer navigation close: A multi-column footer with Features, Product, Company, and Resources links closes the page with information density and minimal visual noise.
+
+## Arche
+- URL: https://thearcheproject.com/
+- Subpage: https://elenacabrera.xyz/collections/landings/arche
+- Tags: ai, devtools, productivity
+- Design focus: Warm, editorial open-source AI landing that combines serif headlines, retro photography, and crisp product diagrams.
+- Screenshots:
+  - Gradient hero with install: A centered serif headline with textured orange emphasis words sits above Mac download and curl-install commands on a peach-to-cream radial gradient.
+  - Retro problem cards: Three tall cards use grainy vintage photos and short pain-point labels like the glue and the silos before a bold mission statement about irreplaceable decisions.
+  - One harness diagram: An alternating text-and-diagram section shows fragmented copy-paste between Claude, Cursor, ChatGPT, and Notion flowing into a single Arche harness.
+  - Integrations library grid: A dense 4-column connector grid lists major SaaS tools with one-line capability descriptions, signaling breadth through recognizable logos and uniform cards.
+  - Open-source mission: A centered manifesto section with a highlighted needs to exist headline and three bordered principle cards explains why the project is public and self-hostable.
+  - FAQ accordion: A warm-background FAQ uses serif heading typography and simple plus icons in a spacious vertical list aimed at differentiation from ChatGPT and Notion.
+  - Final action CTA: A gradient footer block pairs a pixel-styled Death to busywork headline with See it in action and Self-host now buttons for dual conversion paths.
+
+## ngrok
+- URL: https://ngrok.com/
+- Subpage: https://elenacabrera.xyz/collections/landings/ngrok
+- Tags: devtools, ai, enterprise
+- Design focus: Dark, premium devinfra landing that mixes serif hero typography, rainbow accents, and CLI-first onboarding.
+- Screenshots:
+  - Gradient serif hero: A black hero uses rainbow-gradient headline text, a glowing free-start CTA, enterprise logo strip, and the start of a two-product cards section below.
+  - Dual gateway products: Side-by-side yellow and green cards use simplified system diagrams to compare AI Gateway model routing against general Gateway security and traffic routing.
+  - CLI quickstart and quotes: A grid-framed brew install command and platform icons lead into a horizontal row of short developer tweet-style testimonials.
+  - Testimonial wall: A masonry grid of dark quote cards from engineers and directors at known companies creates high-volume social proof before a security headline.
+  - Compliance and closing CTA: A two-row compliance checklist with green checks transitions into a glowing aura-backed final CTA with free start and pricing buttons.
+  - Footer product links: A structured dark footer organizes product, solutions, and docs links beneath the closing conversion band, keeping navigation scannable at page end.
+
+## Ramp
+- URL: https://ramp.com/
+- Subpage: https://elenacabrera.xyz/collections/landings/ramp
+- Tags: fintech, ai, enterprise
+- Design focus: Enterprise fintech landing with lime accent CTAs, live product UI in the hero, and data-visualization sections that turn complex finance workflows into scannable proof.
+- Screenshots:
+  - AI spend dashboard hero: A split hero pairs a bold savings headline with a detailed token-spend dashboard mockup— line chart, KPI tiles, and model breakdown bars— on a subtle dot-grid background.
+  - Efficiency comparison chart: A stippled bar chart card visualizes cost-per-token differences between efficient and inefficient teams beside explanatory copy and a See how you compare link.
+  - Savings stats and testimonials: Oversized percentage stats in dark cards lead into a three-column testimonial row from finance leaders, mixing quantitative proof with operator quotes.
+  - Weekly briefing feature: An alternating layout places a briefing UI mockup opposite copy about translating tokens into explainable dollars, showing product depth through realistic dashboard chrome.
+  - Ramp Router API: A minimal gray product card with task prompts and a loading indicator supports a concise API value prop about cutting inference costs through one endpoint.
+  - FAQ and closing CTA: A ruled FAQ accordion addresses AI spend objections before a repeated email-capture CTA closes the page with the core Time is money headline.
+  - Logo strip social proof: A horizontal logo marquee of ambitious companies reinforces scale claims above late-page feature sections, using grayscale marks for understated credibility.
+
+## Aside
+- URL: https://aside.com/
+- Subpage: https://elenacabrera.xyz/collections/landings/aside
+- Tags: ai, browser, productivity
+- Design focus: Apple-clean AI browser landing that leads with product UI, benchmark proof, and security feature grids.
+- Screenshots:
+  - Browser product hero: A cloud-sky hero centers a full browser mockup with agent tabs, Ask AI search, model picker, and recent tasks beneath a YC badge and download CTA.
+  - Use-case card trio: Three pastel-backed cards show login, messaging, and spreadsheet workflows with prompt labels above UI snippets, explaining agent capability through scenarios.
+  - Benchmark bar chart: A horizontal bar chart highlights Aside at 99% against Browser Use, GPT, Claude, and ChatGPT Atlas, using data visualization as competitive social proof.
+  - Agent password manager: A feature hero uses masked-password wordplay in the headline and three UI vignettes to explain autofill for agents without exposing credentials to AI.
+  - Privacy four-column grid: Four equal columns with small UI illustrations cover local processing, encryption, sandbox permissions, and bring-your-own-model subscriptions.
+  - Gradient closing CTA: A soft blue dotted-gradient banner carries a final human-and-agent headline and download button above a structured multi-column footer.
+
+## Granola
+- URL: https://www.granola.ai/
+- Subpage: https://elenacabrera.xyz/collections/landings/granola
+- Tags: ai, productivity
+- Design focus: Premium meeting-productivity landing with serif headlines, floating nav, and product-in-context mockups that emphasize calm, human-first AI.
+- Screenshots:
+  - Product-in-context hero: A serif headline and subline sit left while layered app and call UI mockups float right, immediately showing the no-bot meeting workflow on a clean white canvas.
+  - Logo strip social proof: A dark band with Trusted by teams we admire centers a two-row logo grid of well-known startups, using high-contrast marks for understated credibility.
+  - Meeting workflow stepper: A vertical Before / In / After step list pairs with a live meeting UI mockup, walking the visitor through note capture without leaving the call.
+  - Perfect meeting memory: A saturated green hero block introduces Granola Chat with a minimal input card and team badge, using color blocking to separate a secondary product surface.
+  - Humans in the room: Split copy explains the no-bot positioning beside a large in-context app screenshot over landscape photography, blending product UI with atmospheric imagery.
+  - Private by default sharing: A serif headline about privacy pairs with a share-sheet mockup showing internal recipients, demonstrating default-private notes with optional export.
+  - Calendar sync widget: A macOS menu-bar style widget mockup shows one-click Join & take notes above a calendar event, selling OS-level integration through realistic chrome.
+
+## heyclicky
+- URL: https://www.heyclicky.com/
+- Subpage: https://elenacabrera.xyz/collections/landings/heyclicky
+- Tags: ai, productivity
+- Design focus: Playful, personality-driven AI consumer landing that mimics a messy Mac desktop with skeuomorphic windows and lowercase copy.
+- Screenshots:
+  - Chaotic desktop hero: A graph-paper background scatters floating video windows, stickers, and kaomoji around a centered lowercase headline and Mac download buttons.
+  - Alternating feature rows: Split sections pair waveform speech bubbles and bold lowercase copy with macOS window-framed demo videos in an alternating left-right rhythm.
+  - Tweet testimonial grid: Social proof appears as pastel macOS-window cards containing real tweet screenshots, plus a floating join-them CTA bar over the grid.
+  - Glassmorphism pricing: Three translucent plan cards sit on a cloud-sky background with a monthly/yearly toggle, a popular badge on Pro, and macOS window chrome.
+  - FAQ accordion: A centered FAQ uses rounded rows, lowercase questions, and an expanded first answer describing screen visibility and agent behavior.
+
+## Acctual
+- URL: https://www.acctual.com/
+- Subpage: https://elenacabrera.xyz/collections/landings/acctual
+- Tags: fintech, invoicing, crypto
+- Design focus: Warm, lifestyle-forward fintech landing that mixes desk photography, serif testimonials, and product UI previews.
+- Screenshots:
+  - Desk-style invoice hero: A centered headline and fee callouts are framed by photorealistic desk objects and overlapping invoice cards, grounding the product in tactile office context.
+  - Audience persona grid: A 3x2 card grid segments freelancers, agencies, consultants, contractors, eCommerce, and cross-border users with colored icons and concise benefit copy.
+  - Testimonial and payment split: A serif testimonial under star ratings leads into a two-column feature section explaining one-link multi-method payments beside lifestyle photography.
+  - Lifestyle payment proof: A large photo of sushi and a phone with payment notifications supports a USDC speed testimonial, using lifestyle imagery to make payouts feel instant and real.
+  - Accounting sync feature: A grey rounded feature block highlights QuickBooks and Xero reconciliation with logo rows and adjacent PCI/SSL trust columns below another customer quote.
+  - Lifestyle FAQ lead-in: A paper invoice photographed in a wildflower field transitions into a simple FAQ accordion, blending editorial photography with objection handling.
+
+## Corgi
+- URL: https://www.corgi.insure/
+- Subpage: https://elenacabrera.xyz/collections/landings/corgi
+- Tags: insurance, fintech, enterprise, ai
+- Design focus: Startup insurance landing that combines orange brand energy, lifecycle-based packaging, and playful corgi illustration with serious B2B structure.
+- Screenshots:
+  - Dark hero with AI visual: A rounded dark hero card explains the AI-native full-stack platform beside a drag-and-drop document simplification graphic and a Series B fundraise banner.
+  - Startup journey packages: Four horizontal stage cards from Pre-Seed to Custom Package use woodcut-style growth illustrations and policy tag chips to map coverage to company maturity.
+  - Legacy versus Corgi compare: Two large white cards on a dark background contrast slow broker workflows with Corgi's glowing centralized platform diagram and full-stack positioning.
+  - Self-serve quote CTA: An orange-bordered application mockup with playful file-drop UI sits beside copy and a Start your application button for instant self-serve binding.
+
+## Tempo
+- URL: https://tempo.xyz/
+- Subpage: https://elenacabrera.xyz/collections/landings/tempo
+- Tags: fintech, crypto, enterprise
+- Design focus: High-end institutional crypto landing that relies on serif editorial typography, monochrome palettes, and abstract 3D wireframe art.
+- Screenshots:
+  - Editorial blockchain hero: A split hero pairs a serif headline and Stripe/Paradigm credibility line with a wireframe globe graphic and a small product video thumbnail.
+  - Enterprise logo grid: A dense three-column logo wall of fintech and enterprise brands provides understated social proof beside a large abstract geometric illustration.
+  - Numbered solutions list: Large serif section titles with numbered entries for payroll, embedded finance, microtransactions, and agentic commerce create a catalog-style solutions layout.
+  - Protocol feature list: Numbered technical features like dedicated payment lanes and stablecoin-native gas are paired with translucent stacked-pane 3D art in a two-column composition.
+  - Newsletter and footer: A motion-blurred image band hosts a minimal email signup above a four-column footer covering solutions, developers, resources, and social links.
+
+## Goldsand
+- URL: https://goldsand.fi/
+- Subpage: https://elenacabrera.xyz/collections/landings/goldsand
+- Tags: fintech, crypto
+- Design focus: Calm, trust-first consumer fintech landing that combines serif headlines, app-store CTAs, and educational charts for ethical finance products.
+- Screenshots:
+  - App download hero: A minimalist centered hero states the 7% no-interest value prop with iOS and Google Play buttons and a partial phone mockup revealing the balance UI.
+  - Expert testimonial cards: A horizontal row of white quote cards with gold stars and expert headshots builds credibility around design quality and halal finance positioning.
+  - Feature bento grid: A 2x2 grid mixes short benefit headlines with a phone UI mockup, simple step graphic, and gold shield icon to explain deposits, growth, and security.
+  - Yield comparison chart: A serif headline and fee-sharing explanation sit beside a three-bar chart that visually elevates Goldsand above banks and investment products.
+  - 20-year projection card: A large rounded card compares expected value with and without Goldsand using green/red figures, a line chart, and adjacent security partner copy.
+  - FAQ accordion: Stacked pill-shaped FAQ rows with plus icons address returns, costs, risk, and team access before a partial bottom CTA card appears.

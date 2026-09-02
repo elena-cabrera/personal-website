@@ -1,12 +1,13 @@
 import { books } from './books';
 import { inspiration } from './inspiration';
-import { landings } from './landings';
+import { getLandingBySlug, isLandingItem, landings, landingSubpagePath } from './landings';
 import { personal } from './personal';
 import { tools } from './tools';
-import type { CollectionItem, CollectionType } from './types';
+import type { CollectionItem, CollectionType, LandingItem } from './types';
 
-export type { CollectionItem, CollectionType } from './types';
+export type { CollectionItem, CollectionType, LandingItem, LandingScreenshot } from './types';
 export { collectionTypes } from './types';
+export { getLandingBySlug, isLandingItem, landings, landingSubpagePath };
 
 export const collectionItems: CollectionItem[] = [
   ...tools,

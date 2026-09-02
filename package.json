@@ -7,7 +7,8 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "generate:llms": "node --experimental-strip-types scripts/generate-llms-txt.mjs",
+    "build": "npm run generate:llms && astro build",
     "preview": "astro preview",
     "astro": "astro"
   },

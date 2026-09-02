@@ -72,8 +72,8 @@ function showPreview(card, clientX, clientY) {
   window.clearTimeout(hideTimer);
 
   const link = card.querySelector('a[href]');
-  const url = link?.getAttribute('href') ?? '';
-  if (!url || url.startsWith('#')) return;
+  const url = card.dataset.previewUrl || (link?.getAttribute('href') ?? '');
+  if (!url || url.startsWith('#') || url.startsWith('/')) return;
 
   activeCard = card;
 

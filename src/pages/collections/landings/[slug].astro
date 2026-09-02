@@ -1,0 +1,94 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getLandingBySlug, landings, landingSubpagePath } from '../../../data/collections/landings';
+import { faviconUrl } from '../../../data/collections';
+
+export function getStaticPaths() {
+  return landings.map((landing) => ({
+    params: { slug: landing.slug },
+    props: { landing },
+  }));
+}
+
+const { landing } = Astro.props;
+
+if (!landing) {
+  return Astro.redirect('/collections?type=landing');
+}
+
+const businessTags = landing.tags.filter((tag) => tag !== 'landing' && tag !== 'ui');
+---
+
+<BaseLayout
+  title={`${landing.title} — Landing reference`}
+  description={landing.description}
+  showBackButton={true}
+  wide={true}
+>
+  <main class="px-6 py-16 max-w-4xl mx-auto landing-detail">
+    <header class="landing-detail__header">
+      <p class="landing-detail__eyebrow">
+        <a href="/collections?type=landing">collections</a>
+        <span aria-hidden="true"> / </span>
+        <span>landing pages</span>
+      </p>
+      <div class="landing-detail__title-row">
+        <img
+          src={faviconUrl(landing.url)}
+          alt=""
+          width="20"
+          height="20"
+          class="landing-detail__icon"
+          loading="lazy"
+        />
+        <h1 class="section-title">{landing.title}</h1>
+      </div>
+      <p class="prose-body">{landing.description}</p>
+      <p class="landing-detail__tags">
+        {
+          businessTags.map((tag) => (
+            <a href={`/collections?type=landing&tag=${encodeURIComponent(tag)}`}>{tag}</a>
+          ))
+        }
+      </p>
+      <p>
+        <a
+          href={landing.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="landing-detail__visit"
+        >
+          Visit site ↗
+        </a>
+      </p>
+    </header>
+
+    <section class="landing-detail__gallery" aria-label="Landing page screenshots">
+      {
+        landing.screenshots.map((shot) => (
+          <figure class="landing-detail__shot">
+            <img src={shot.src} alt={shot.title} loading="lazy" width="1440" height="900" />
+            <figcaption>
+              <h2>{shot.title}</h2>
+              <p>{shot.caption}</p>
+            </figcaption>
+          </figure>
+        ))
+      }
+    </section>
+
+    <footer class="landing-detail__footer">
+      <p class="prose-body">
+        Agent index:
+        <a href="/llms.txt">llms.txt</a>
+        ·
+        <a href="/collections/llms.txt">collections/llms.txt</a>
+      </p>
+      <p>
+        <a href={landingSubpagePath(landing.slug)} class="landing-detail__permalink">
+          {Astro.site?.origin ?? ''}{landingSubpagePath(landing.slug)}
+        </a>
+      </p>
+    </footer>
+  </main>
+</BaseLayout>

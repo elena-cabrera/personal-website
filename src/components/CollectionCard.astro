@@ -1,6 +1,7 @@
 ---
 import { faviconUrl } from '../data/collections';
 import type { CollectionItem } from '../data/collections';
+import { isLandingItem, landingSubpagePath } from '../data/collections';
 
 interface Props {
   item: CollectionItem;
@@ -21,6 +22,9 @@ const search = [
   .toLowerCase();
 
 const isBook = item.type === 'book';
+const isLanding = isLandingItem(item);
+const href = isLanding ? landingSubpagePath(item.slug) : item.url;
+const previewUrl = item.url;
 ---
 
 <li
@@ -29,11 +33,12 @@ const isBook = item.type === 'book';
   data-type={item.type}
   data-tags={item.tags.join(' ')}
   data-search={search}
+  data-preview-url={previewUrl}
 >
   <a
-    href={item.url}
-    target="_blank"
-    rel="noopener noreferrer"
+    href={href}
+    target={isLanding ? undefined : '_blank'}
+    rel={isLanding ? undefined : 'noopener noreferrer'}
     class="flex gap-3 items-start"
   >
     {
