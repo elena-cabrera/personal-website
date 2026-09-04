@@ -822,4 +822,64 @@ export const landingManifest: LandingManifestEntry[] = [
       },
     ],
   },
+  {
+    slug: 'vidiv',
+    title: 'Vidiv',
+    url: 'https://vidiv.com/',
+    tags: ['landing', 'ui', 'ai', 'enterprise'],
+    description:
+      'Vidiv builds AI conversational agents for phone and chat that handle customer service, lead qualification, and outbound calls across channels and 30+ languages for Spanish enterprises.',
+    designFocus:
+      'Soft, nature-backed Spanish enterprise AI landing that pairs serif hero typography with friction grids, channel photography, and compliance-forward proof sections.',
+    screenshots: [
+      {
+        file: asset('vidiv', '01-hero.webp'),
+        title: 'Nature-backed voice hero',
+        caption:
+          'A leaf-blur sky background frames a serif Tu empresa, siempre despierta headline, dual Solicitar demo / Ver plataforma CTAs, and a small Agentes de voz con IA badge.',
+      },
+      {
+        file: asset('vidiv', '02-section.webp'),
+        title: 'Four-friction problem grid',
+        caption:
+          'A ruled 2x2 grid under Por qué ahora uses oversized 1 / 24/7 / 0 / 100% numerals to map technology, cost, response-time, and traceability frictions before a mid-page demo CTA.',
+      },
+      {
+        file: asset('vidiv', '03-section.webp'),
+        title: 'Sector story and channels',
+        caption:
+          'A Voice SDR use-case block with workplace photography and a +12 leads overlay leads into Donde esté tu cliente, anchored by a close-up phone call visual.',
+      },
+      {
+        file: asset('vidiv', '04-section.webp'),
+        title: 'Scalable features band',
+        caption:
+          'Funciones que escalan opens with conversational-design copy beside a frosted chat mockup on a soft botanical gradient, selling brand-voice control and appointment handling.',
+      },
+      {
+        file: asset('vidiv', '05-section.webp'),
+        title: 'Channels and model governance',
+        caption:
+          'Two numbered rows cover omnichannel continuity with icon tiles, then governed LLM selection via Claude/Gemini/ChatGPT/AWS toggles for private, RAG-connected models.',
+      },
+      {
+        file: asset('vidiv', '06-section.webp'),
+        title: 'Co-build and enterprise compliance',
+        caption:
+          'A collaborative lounge photo accompanies El mejor agente se construye contigo checklist, then Listos para enterprise lists GDPR, EU AI Act, ISO 27001, and custom SLA marks.',
+      },
+      {
+        file: asset('vidiv', '07-section.webp'),
+        title: 'Delivery timeline and stories',
+        caption:
+          'A five-phase delivery tracker with day markers and three value cards (first version, controlled pilot, dedicated team) precede a Historias de IA conversacional resource row.',
+      },
+      {
+        file: asset('vidiv', '08-section.webp'),
+        title: 'FAQ and conversation CTA',
+        caption:
+          'A Preguntas frecuentes accordion leads into a botanical Empecemos por una conversación panel with demo CTAs and a floating Demo en 15 min checklist card.',
+      },
+    ],
+  },
 ];

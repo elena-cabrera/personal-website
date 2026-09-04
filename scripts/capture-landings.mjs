@@ -38,6 +38,7 @@ const SITES = [
   { slug: 'tempo', url: 'https://tempo.xyz/' },
   { slug: 'goldsand', url: 'https://goldsand.fi/' },
   { slug: 'anyformat', url: 'https://www.anyformat.ai/es' },
+  { slug: 'vidiv', url: 'https://vidiv.com/' },
 ];
 
 const slugFilter = process.argv.slice(2).filter((arg) => !arg.startsWith('-'));
@@ -152,6 +153,13 @@ async function captureSite(browser, site) {
       timeout: 45000,
     });
     await page.waitForTimeout(2500);
+    // Cloudflare / bot interstitials can resolve after a few seconds
+    for (let i = 0; i < 25; i++) {
+      const title = await page.title().catch(() => '');
+      const scrollHeight = await page.evaluate(() => document.documentElement.scrollHeight);
+      if (scrollHeight > 1200 && !/checking your browser/i.test(title)) break;
+      await page.waitForTimeout(1000);
+    }
     await dismissCookies(page);
     await page.waitForTimeout(800);
 
