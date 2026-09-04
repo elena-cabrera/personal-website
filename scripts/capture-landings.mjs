@@ -37,7 +37,17 @@ const SITES = [
   { slug: 'corgi', url: 'https://www.corgi.insure/' },
   { slug: 'tempo', url: 'https://tempo.xyz/' },
   { slug: 'goldsand', url: 'https://goldsand.fi/' },
+  { slug: 'anyformat', url: 'https://www.anyformat.ai/es' },
 ];
+
+const slugFilter = process.argv.slice(2).filter((arg) => !arg.startsWith('-'));
+const sitesToCapture =
+  slugFilter.length > 0 ? SITES.filter((site) => slugFilter.includes(site.slug)) : SITES;
+
+if (slugFilter.length > 0 && sitesToCapture.length === 0) {
+  console.error(`No matching slugs in SITES for: ${slugFilter.join(', ')}`);
+  process.exit(1);
+}
 
 async function toWebp(buffer, dest) {
   if (sharp) {
@@ -54,6 +64,8 @@ async function dismissCookies(page) {
     'button:has-text("Accept")',
     'button:has-text("Accept all")',
     'button:has-text("Accept All")',
+    'button:has-text("Aceptar")',
+    'button:has-text("Aceptar todas")',
     'button:has-text("I agree")',
     'button:has-text("Got it")',
     'button:has-text("OK")',
@@ -194,7 +206,7 @@ const browser = await chromium.launch({
 });
 
 const all = [];
-for (const site of SITES) {
+for (const site of sitesToCapture) {
   all.push(await captureSite(browser, site));
 }
 await browser.close();

@@ -762,4 +762,64 @@ export const landingManifest: LandingManifestEntry[] = [
       },
     ],
   },
+  {
+    slug: 'anyformat',
+    title: 'anyformat',
+    url: 'https://www.anyformat.ai/es',
+    tags: ['landing', 'ui', 'ai', 'enterprise'],
+    description:
+      'anyformat is an AI document processing platform that parses, extracts, classifies, splits, and validates messy documents into clean structured data, with EU data residency, ISO 27001, and self-hosting options.',
+    designFocus:
+      'Enterprise document-AI landing that pairs bilingual product storytelling with composable workflow tabs, benchmark tables against frontier models, and trust signals around EU residency.',
+    screenshots: [
+      {
+        file: asset('anyformat', '01-hero.webp'),
+        title: 'Split document-AI hero',
+        caption:
+          'A left-aligned Spanish headline and dual CTAs sit beside a 3D isometric document-on-platform illustration, selling parse-extract-validate workflows with EU residency and ISO 27001 callouts.',
+      },
+      {
+        file: asset('anyformat', '02-section.webp'),
+        title: 'Composable workflow tabs',
+        caption:
+          'A pill tab bar for Parsear / Extraer / Clasificar / Dividir / Validar / Orquestar drives a split feature block with a scanning-document visual and stacked capability cards for structured markdown output.',
+      },
+      {
+        file: asset('anyformat', '03-section.webp'),
+        title: 'Parser benchmark table',
+        caption:
+          'A comparison table ranks anyformat against Claude, GPT, Azure DI, and Textract on parse score and cost-per-page, then transitions into a Made for production not demos section header.',
+      },
+      {
+        file: asset('anyformat', '04-section.webp'),
+        title: 'SDK and agent skill install',
+        caption:
+          'A dark terminal mockup of Claude Code building an extract workflow sits beside TypeScript/Python SDK, CLI, and Agent Skill install cards for a developer-first integration story.',
+      },
+      {
+        file: asset('anyformat', '05-section.webp'),
+        title: 'Mode toggle and annie loop',
+        caption:
+          'Two product cards show Fast/Standard/Agentic mode switching with a waveform graphic and an annie optimization chart that lifts precision across iterations.',
+      },
+      {
+        file: asset('anyformat', '06-section.webp'),
+        title: 'Security and industry tabs',
+        caption:
+          'A dark EU-residency security band leads into a light industry tab strip—AP, logistics, finance, healthcare—with an invoice illustration for accounts-payable use cases.',
+      },
+      {
+        file: asset('anyformat', '07-section.webp'),
+        title: 'FAQ accordion',
+        caption:
+          'A spacious Preguntas Frecuentes list expands the first answer defining anyformat as document intelligence for enterprise teams, covering IDP, OCR, and LLM differentiation.',
+      },
+      {
+        file: asset('anyformat', '08-section.webp'),
+        title: 'Dark closing CTA',
+        caption:
+          'A high-contrast black rounded panel pairs Empieza por tus documentos más difíciles with free-start and demo buttons plus a metallic chameleon mark, closing on no-card free credits.',
+      },
+    ],
+  },
 ];
