@@ -223,3 +223,18 @@ Collections: https://elenacabrera.xyz/collections?type=landing
   - Security and industry tabs: A dark EU-residency security band leads into a light industry tab strip—AP, logistics, finance, healthcare—with an invoice illustration for accounts-payable use cases.
   - FAQ accordion: A spacious Preguntas Frecuentes list expands the first answer defining anyformat as document intelligence for enterprise teams, covering IDP, OCR, and LLM differentiation.
   - Dark closing CTA: A high-contrast black rounded panel pairs Empieza por tus documentos más difíciles with free-start and demo buttons plus a metallic chameleon mark, closing on no-card free credits.
+
+## Vidiv
+- URL: https://vidiv.com/
+- Subpage: https://elenacabrera.xyz/collections/landings/vidiv
+- Tags: ai, enterprise
+- Design focus: Soft, nature-backed Spanish enterprise AI landing that pairs serif hero typography with friction grids, channel photography, and compliance-forward proof sections.
+- Screenshots:
+  - Nature-backed voice hero: A leaf-blur sky background frames a serif Tu empresa, siempre despierta headline, dual Solicitar demo / Ver plataforma CTAs, and a small Agentes de voz con IA badge.
+  - Four-friction problem grid: A ruled 2x2 grid under Por qué ahora uses oversized 1 / 24/7 / 0 / 100% numerals to map technology, cost, response-time, and traceability frictions before a mid-page demo CTA.
+  - Sector story and channels: A Voice SDR use-case block with workplace photography and a +12 leads overlay leads into Donde esté tu cliente, anchored by a close-up phone call visual.
+  - Scalable features band: Funciones que escalan opens with conversational-design copy beside a frosted chat mockup on a soft botanical gradient, selling brand-voice control and appointment handling.
+  - Channels and model governance: Two numbered rows cover omnichannel continuity with icon tiles, then governed LLM selection via Claude/Gemini/ChatGPT/AWS toggles for private, RAG-connected models.
+  - Co-build and enterprise compliance: A collaborative lounge photo accompanies El mejor agente se construye contigo checklist, then Listos para enterprise lists GDPR, EU AI Act, ISO 27001, and custom SLA marks.
+  - Delivery timeline and stories: A five-phase delivery tracker with day markers and three value cards (first version, controlled pilot, dedicated team) precede a Historias de IA conversacional resource row.
+  - FAQ and conversation CTA: A Preguntas frecuentes accordion leads into a botanical Empecemos por una conversación panel with demo CTAs and a floating Demo en 15 min checklist card.
