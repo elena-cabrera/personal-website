@@ -573,6 +573,14 @@ export const tools: CollectionItem[] = [
     url: 'https://wise.design/components',
     tags: ['components', 'ui'],
   },
+  {
+    id: 'tool-opensource-ui',
+    type: 'tool',
+    title: 'Opensource UI',
+    url: 'https://opensourceui.in',
+    description: 'Free React & Next.js components (Tailwind + TypeScript)',
+    tags: ['components', 'ui'],
+  },
 
   // Icons
   {
