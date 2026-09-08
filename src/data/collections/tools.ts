@@ -579,7 +579,7 @@ export const tools: CollectionItem[] = [
     title: 'Opensource UI',
     url: 'https://opensourceui.in',
     description: 'Apple-style device mockups (iPhone, Watch, browser, iPod) + UI widgets',
-    tags: ['components', 'ui'],
+    tags: ['mockup', 'components', 'ui'],
   },
 
   // Icons
