@@ -578,7 +578,7 @@ export const tools: CollectionItem[] = [
     type: 'tool',
     title: 'Opensource UI',
     url: 'https://opensourceui.in',
-    description: 'Free React & Next.js components (Tailwind + TypeScript)',
+    description: 'Apple-style device mockups (iPhone, Watch, browser, iPod) + UI widgets',
     tags: ['components', 'ui'],
   },
 
