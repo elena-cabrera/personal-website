@@ -581,6 +581,14 @@ export const tools: CollectionItem[] = [
     description: 'Apple-style device mockups (iPhone, Watch, browser, iPod) + UI widgets',
     tags: ['mockup', 'components', 'ui'],
   },
+  {
+    id: 'tool-shadercn',
+    type: 'tool',
+    title: 'shadercn',
+    url: 'https://www.shadercn.run/',
+    description: 'ChatGPT-style speaking shader orbs (shadcn/ui copy-paste)',
+    tags: ['components', 'ui', 'ai'],
+  },
 
   // Icons
   {
