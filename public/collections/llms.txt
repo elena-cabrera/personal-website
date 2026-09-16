@@ -238,3 +238,18 @@ Collections: https://elenacabrera.xyz/collections?type=landing
   - Co-build and enterprise compliance: A collaborative lounge photo accompanies El mejor agente se construye contigo checklist, then Listos para enterprise lists GDPR, EU AI Act, ISO 27001, and custom SLA marks.
   - Delivery timeline and stories: A five-phase delivery tracker with day markers and three value cards (first version, controlled pilot, dedicated team) precede a Historias de IA conversacional resource row.
   - FAQ and conversation CTA: A Preguntas frecuentes accordion leads into a botanical Empecemos por una conversación panel with demo CTAs and a floating Demo en 15 min checklist card.
+
+## Dockset
+- URL: https://dockset.app/
+- Subpage: https://elenacabrera.xyz/collections/landings/dockset
+- Tags: productivity
+- Design focus: Cute minimalist macOS utility landing that centers an interactive Custom Dock hero where visitors click live widgets, then walks through widget galleries and Focus-aware layout switching.
+- Screenshots:
+  - Orbiting widget hero: A centered serif Your Dock. Reimagined. headline and Apple Get Dockset CTA sit amid softly shadowed floating widgets—Stock, Now Playing, Focus, Calendar, sticky note—selling the product through orbiting UI chrome.
+  - Interactive Custom Dock demo: A glassmorphic Dockset Custom Dock strip with mode toggles (macOS Dock / Custom Dock / Both) lets visitors click widgets; an expanded Stripe revenue card pops out over the frosted desktop mock.
+  - Custom versus familiar Dock: A two-path section under A little more your Mac. contrasts Custom Dock widget previews with a familiar macOS Dock layout path, using octopus and Apple badges as mode markers.
+  - Included widgets gallery: Lots of widgets. All included. packs Stock, Calendar, Reminders, Now Playing, and more into a rounded light-gray bento, showing breadth without a feature-bullet dump.
+  - Focus layout switching: Your day changes. Your Dock can too. pairs Focus/keyboard switching copy with a Work-mode dock mock and shortcut chips, then opens into little-things feature cards.
+  - Little-things feature grid: A six-card grid under The little things, taken care of uses mini dock illustrations for folders, shortcuts, position, AirDrop, and backup—quality-of-life proof in quiet cards.
+  - Quote testimonial row: What people are saying. centers three light-gray quote cards with X handles, keeping social proof short and airy before the FAQ accordion begins.
+  - Closing CTA with mascot: A warm textured Make yourself at home. band hosts a Get Dockset for Mac button, one-time pricing, and a faded octopus watermark, closing the cute-minimalist narrative.

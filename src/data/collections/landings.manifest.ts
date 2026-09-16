@@ -882,4 +882,64 @@ export const landingManifest: LandingManifestEntry[] = [
       },
     ],
   },
+  {
+    slug: 'dockset',
+    title: 'Dockset',
+    url: 'https://dockset.app/',
+    tags: ['landing', 'ui', 'productivity'],
+    description:
+      'Dockset is a macOS app for saving and switching Dock layouts, plus a separate Custom Dock with widgets like Stock, Calendar, Now Playing, Stripe, and Shopify.',
+    designFocus:
+      'Cute minimalist macOS utility landing that centers an interactive Custom Dock hero where visitors click live widgets, then walks through widget galleries and Focus-aware layout switching.',
+    screenshots: [
+      {
+        file: asset('dockset', '01-hero.webp'),
+        title: 'Orbiting widget hero',
+        caption:
+          'A centered serif Your Dock. Reimagined. headline and Apple Get Dockset CTA sit amid softly shadowed floating widgets—Stock, Now Playing, Focus, Calendar, sticky note—selling the product through orbiting UI chrome.',
+      },
+      {
+        file: asset('dockset', '02-section.webp'),
+        title: 'Interactive Custom Dock demo',
+        caption:
+          'A glassmorphic Dockset Custom Dock strip with mode toggles (macOS Dock / Custom Dock / Both) lets visitors click widgets; an expanded Stripe revenue card pops out over the frosted desktop mock.',
+      },
+      {
+        file: asset('dockset', '03-section.webp'),
+        title: 'Custom versus familiar Dock',
+        caption:
+          'A two-path section under A little more your Mac. contrasts Custom Dock widget previews with a familiar macOS Dock layout path, using octopus and Apple badges as mode markers.',
+      },
+      {
+        file: asset('dockset', '04-section.webp'),
+        title: 'Included widgets gallery',
+        caption:
+          'Lots of widgets. All included. packs Stock, Calendar, Reminders, Now Playing, and more into a rounded light-gray bento, showing breadth without a feature-bullet dump.',
+      },
+      {
+        file: asset('dockset', '05-section.webp'),
+        title: 'Focus layout switching',
+        caption:
+          'Your day changes. Your Dock can too. pairs Focus/keyboard switching copy with a Work-mode dock mock and shortcut chips, then opens into little-things feature cards.',
+      },
+      {
+        file: asset('dockset', '06-section.webp'),
+        title: 'Little-things feature grid',
+        caption:
+          'A six-card grid under The little things, taken care of uses mini dock illustrations for folders, shortcuts, position, AirDrop, and backup—quality-of-life proof in quiet cards.',
+      },
+      {
+        file: asset('dockset', '07-section.webp'),
+        title: 'Quote testimonial row',
+        caption:
+          'What people are saying. centers three light-gray quote cards with X handles, keeping social proof short and airy before the FAQ accordion begins.',
+      },
+      {
+        file: asset('dockset', '08-section.webp'),
+        title: 'Closing CTA with mascot',
+        caption:
+          'A warm textured Make yourself at home. band hosts a Get Dockset for Mac button, one-time pricing, and a faded octopus watermark, closing the cute-minimalist narrative.',
+      },
+    ],
+  },
 ];
