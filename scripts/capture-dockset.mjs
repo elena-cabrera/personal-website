@@ -42,6 +42,14 @@ async function headingTops(page) {
       const t = (el.textContent || '').replace(/\s+/g, ' ').trim();
       out[t] = Math.round(el.getBoundingClientRect().top + window.scrollY);
     }
+    for (const el of document.querySelectorAll('p, span, div, h4')) {
+      const t = (el.textContent || '').replace(/\s+/g, ' ').trim();
+      if (/^The little things/i.test(t) && t.length < 80) {
+        out['The little things, taken care of'] = Math.round(
+          el.getBoundingClientRect().top + window.scrollY
+        );
+      }
+    }
     out.__scrollHeight = document.documentElement.scrollHeight;
     return out;
   });
