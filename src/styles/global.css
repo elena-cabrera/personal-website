@@ -1161,7 +1161,7 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
   top: 50%;
   width: 1.6em;
   height: 1.6em;
-  transform: translateY(-58%) rotate(-8deg);
+  transform: translateY(-50%);
   filter:
     drop-shadow(0 0 1px #fff)
     drop-shadow(0 0 1px #fff)
@@ -1176,7 +1176,7 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
 }
 
 .hobby-tag.is-open .hobby-tag__icon {
-  transform: translateY(-66%) rotate(6deg) scale(1.12);
+  transform: translateY(-58%) rotate(12deg) scale(1.1);
   transition: transform 420ms var(--hobby-ease-spring);
 }
 
@@ -1248,7 +1248,7 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
     transform: none;
   }
   .hobby-tag.is-open .hobby-tag__icon {
-    transform: translateY(-58%) rotate(-8deg);
+    transform: translateY(-50%);
   }
   .hobby-tag__card,
   .hobby-tag.is-open .hobby-tag__card {
