@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe3ff"/>
+      <stop offset="0.55" stop-color="#7cc4f2"/>
+      <stop offset="1" stop-color="#2f86c9"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#sky)"/>
+  <circle cx="300" cy="120" r="46" fill="#fff4c2"/>
+  <path d="M0 330 C 70 290 130 290 200 330 S 330 370 400 330 V500 H0Z" fill="#3d9be0"/>
+  <path d="M0 380 C 70 340 130 340 200 380 S 330 420 400 380 V500 H0Z" fill="#1f6fb2"/>
+  <text x="200" y="460" text-anchor="middle" font-family="ui-monospace, Menlo, monospace" font-size="18" letter-spacing="2" fill="#ffffff" fill-opacity="0.85">PHOTO SOON</text>
+</svg>

@@ -1,0 +1,71 @@
+---
+/**
+ * Inline pill used inside prose. Shows a sticker icon and, on hover / focus /
+ * tap, a small photo card that floats above and lazily follows the pointer.
+ */
+interface Props {
+  label: string;
+  icon: 'surfing' | 'cooking' | 'dog';
+  image: string;
+  tilt?: number;
+}
+
+const { label, icon, image, tilt = -4 } = Astro.props;
+---
+
+<button type="button" class="hobby-tag" data-hobby-tag aria-expanded="false" style={`--tilt: ${tilt}deg`}>
+  <span class="hobby-tag__icon" aria-hidden="true">
+    {
+      icon === 'surfing' && (
+        <svg viewBox="0 0 32 32">
+          <rect x="3" y="3" width="26" height="26" rx="8" fill="#3b9cf0" />
+          <path
+            d="M6 20c2.4-1.8 4.6-1.8 7 0s4.6 1.8 7 0 4.6-1.8 6 0"
+            fill="none"
+            stroke="#fff"
+            stroke-width="2.6"
+            stroke-linecap="round"
+          />
+          <path
+            d="M7 14c1.6-4.6 7.4-6.4 11-3.4-2.6-.2-4.4 1-4.6 3.2"
+            fill="none"
+            stroke="#d6ecff"
+            stroke-width="2.6"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      )
+    }
+    {
+      icon === 'cooking' && (
+        <svg viewBox="0 0 32 32">
+          <rect x="3" y="3" width="26" height="26" rx="8" fill="#fb923c" />
+          <circle cx="14" cy="17" r="7.5" fill="#fff" />
+          <circle cx="14" cy="17" r="3.2" fill="#facc15" />
+          <path d="M21 13.5l5.5-4" stroke="#fff" stroke-width="3" stroke-linecap="round" />
+        </svg>
+      )
+    }
+    {
+      icon === 'dog' && (
+        <svg viewBox="0 0 32 32">
+          <rect x="3" y="3" width="26" height="26" rx="8" fill="#a16207" />
+          <g fill="#fff">
+            <ellipse cx="16" cy="19.5" rx="5" ry="4.2" />
+            <ellipse cx="9.6" cy="14" rx="2.1" ry="2.7" />
+            <ellipse cx="13.6" cy="10.6" rx="2.1" ry="2.7" />
+            <ellipse cx="18.4" cy="10.6" rx="2.1" ry="2.7" />
+            <ellipse cx="22.4" cy="14" rx="2.1" ry="2.7" />
+          </g>
+        </svg>
+      )
+    }
+  </span>
+  <span class="hobby-tag__label">{label}</span>
+  <span class="hobby-tag__float" aria-hidden="true">
+    <span class="hobby-tag__card">
+      <img src={image} alt="" width="400" height="500" loading="lazy" decoding="async" />
+    </span>
+  </span>
+</button>
