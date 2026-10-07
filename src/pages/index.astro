@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import BlogCard from '../components/BlogCard.astro';
+import HobbyTag from '../components/HobbyTag.astro';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog')).sort(
@@ -79,9 +80,13 @@ const posts = (await getCollection('blog')).sort(
           entrepreneurship.
         </p>
         <p class="prose-body transition-colors" data-reveal>
-          I love reading, cooking, and traveling. I also enjoy spending time with my
-          loved ones and my dog, especially out in nature. Occasionally surfing… but
-          honestly, not very good at it.
+          I love reading,
+          <HobbyTag label="cooking" icon="cooking" image="/assets/images/hobbies/cooking.svg" tilt={-5} />,
+          and traveling. I also enjoy spending time with my loved ones and
+          <HobbyTag label="my dog" icon="dog" image="/assets/images/hobbies/dog.svg" tilt={4} />,
+          especially out in nature. Occasionally
+          <HobbyTag label="surfing" icon="surfing" image="/assets/images/hobbies/surfing.svg" tilt={-3} />…
+          but honestly, not very good at it.
         </p>
       </div>
     </section>
@@ -348,5 +353,6 @@ const posts = (await getCollection('blog')).sort(
     import '../scripts/work-expand.js';
     import '../scripts/scroll-timeline.js';
     import '../scripts/reveal.js';
+    import '../scripts/hobby-tags.js';
   </script>
 </BaseLayout>
