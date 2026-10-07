@@ -13,7 +13,7 @@ export function getStaticPaths() {
 const { landing } = Astro.props;
 
 if (!landing) {
-  return Astro.redirect('/collections?type=landing');
+  return Astro.redirect('/collections/?type=landing');
 }
 
 const businessTags = landing.tags.filter((tag) => tag !== 'landing' && tag !== 'ui');
@@ -28,7 +28,7 @@ const businessTags = landing.tags.filter((tag) => tag !== 'landing' && tag !== '
   <main class="px-6 py-16 max-w-4xl mx-auto landing-detail">
     <header class="landing-detail__header">
       <p class="landing-detail__eyebrow">
-        <a href="/collections?type=landing">collections</a>
+        <a href="/collections/?type=landing">collections</a>
         <span aria-hidden="true"> / </span>
         <span>landing pages</span>
       </p>
@@ -47,7 +47,7 @@ const businessTags = landing.tags.filter((tag) => tag !== 'landing' && tag !== '
       <p class="landing-detail__tags">
         {
           businessTags.map((tag) => (
-            <a href={`/collections?type=landing&tag=${encodeURIComponent(tag)}`}>{tag}</a>
+            <a href={`/collections/?type=landing&tag=${encodeURIComponent(tag)}`}>{tag}</a>
           ))
         }
       </p>

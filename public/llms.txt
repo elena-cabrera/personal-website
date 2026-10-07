@@ -7,7 +7,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Superlogical
 - URL: https://superlogical.com/
-- Subpage: https://elenacabrera.xyz/collections/landings/superlogical
+- Subpage: https://elenacabrera.xyz/collections/landings/superlogical/
 - Tags: devtools, productivity, ai
 - Design focus: Ultra-minimal devtool landing that sells a technical vision through long-form editorial copy and a single bold gradient visual anchor instead of product UI chrome.
 - Screenshots:
@@ -18,7 +18,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Typo
 - URL: https://www.typo.so/
-- Subpage: https://elenacabrera.xyz/collections/landings/typo
+- Subpage: https://elenacabrera.xyz/collections/landings/typo/
 - Tags: productivity, ai
 - Design focus: Soft, cloud-themed consumer SaaS landing that uses floating modular cards and bento layouts to show a flexible workspace product.
 - Screenshots:
@@ -32,7 +32,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## EliseAI
 - URL: https://eliseai.com/healthai
-- Subpage: https://elenacabrera.xyz/collections/landings/eliseai
+- Subpage: https://elenacabrera.xyz/collections/landings/eliseai/
 - Tags: ai, health, enterprise
 - Design focus: Enterprise healthcare AI landing that combines bold gradient heroes, compliance badges, and proof-heavy mid-page sections.
 - Screenshots:
@@ -46,7 +46,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Visitors
 - URL: https://visitors.now/
-- Subpage: https://elenacabrera.xyz/collections/landings/visitors
+- Subpage: https://elenacabrera.xyz/collections/landings/visitors/
 - Tags: analytics
 - Design focus: Polished indie-analytics SaaS page with floating nav, lavender gradients, and product-led hero previews.
 - Screenshots:
@@ -58,7 +58,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Kapia
 - URL: https://kapia.co/
-- Subpage: https://elenacabrera.xyz/collections/landings/kapia
+- Subpage: https://elenacabrera.xyz/collections/landings/kapia/
 - Tags: ai, enterprise, productivity
 - Design focus: Premium enterprise AI landing that mixes fine-art backgrounds, editorial typography, and abstract process UI mockups.
 - Screenshots:
@@ -68,7 +68,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Midday
 - URL: https://midday.ai/
-- Subpage: https://elenacabrera.xyz/collections/landings/midday
+- Subpage: https://elenacabrera.xyz/collections/landings/midday/
 - Tags: fintech, invoicing, productivity
 - Design focus: Clean fintech/productivity landing with serif hero typography, step-based product walkthroughs, and structured case-study social proof.
 - Screenshots:
@@ -82,7 +82,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Arche
 - URL: https://thearcheproject.com/
-- Subpage: https://elenacabrera.xyz/collections/landings/arche
+- Subpage: https://elenacabrera.xyz/collections/landings/arche/
 - Tags: ai, devtools, productivity
 - Design focus: Warm, editorial open-source AI landing that combines serif headlines, retro photography, and crisp product diagrams.
 - Screenshots:
@@ -96,7 +96,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## ngrok
 - URL: https://ngrok.com/
-- Subpage: https://elenacabrera.xyz/collections/landings/ngrok
+- Subpage: https://elenacabrera.xyz/collections/landings/ngrok/
 - Tags: devtools, ai, enterprise
 - Design focus: Dark, premium devinfra landing that mixes serif hero typography, rainbow accents, and CLI-first onboarding.
 - Screenshots:
@@ -109,7 +109,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Ramp
 - URL: https://ramp.com/
-- Subpage: https://elenacabrera.xyz/collections/landings/ramp
+- Subpage: https://elenacabrera.xyz/collections/landings/ramp/
 - Tags: fintech, ai, enterprise
 - Design focus: Enterprise fintech landing with lime accent CTAs, live product UI in the hero, and data-visualization sections that turn complex finance workflows into scannable proof.
 - Screenshots:
@@ -123,7 +123,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Aside
 - URL: https://aside.com/
-- Subpage: https://elenacabrera.xyz/collections/landings/aside
+- Subpage: https://elenacabrera.xyz/collections/landings/aside/
 - Tags: ai, browser, productivity
 - Design focus: Apple-clean AI browser landing that leads with product UI, benchmark proof, and security feature grids.
 - Screenshots:
@@ -136,7 +136,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Granola
 - URL: https://www.granola.ai/
-- Subpage: https://elenacabrera.xyz/collections/landings/granola
+- Subpage: https://elenacabrera.xyz/collections/landings/granola/
 - Tags: ai, productivity
 - Design focus: Premium meeting-productivity landing with serif headlines, floating nav, and product-in-context mockups that emphasize calm, human-first AI.
 - Screenshots:
@@ -150,7 +150,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## heyclicky
 - URL: https://www.heyclicky.com/
-- Subpage: https://elenacabrera.xyz/collections/landings/heyclicky
+- Subpage: https://elenacabrera.xyz/collections/landings/heyclicky/
 - Tags: ai, productivity
 - Design focus: Playful, personality-driven AI consumer landing that mimics a messy Mac desktop with skeuomorphic windows and lowercase copy.
 - Screenshots:
@@ -162,7 +162,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Acctual
 - URL: https://www.acctual.com/
-- Subpage: https://elenacabrera.xyz/collections/landings/acctual
+- Subpage: https://elenacabrera.xyz/collections/landings/acctual/
 - Tags: fintech, invoicing, crypto
 - Design focus: Warm, lifestyle-forward fintech landing that mixes desk photography, serif testimonials, and product UI previews.
 - Screenshots:
@@ -175,7 +175,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Corgi
 - URL: https://www.corgi.insure/
-- Subpage: https://elenacabrera.xyz/collections/landings/corgi
+- Subpage: https://elenacabrera.xyz/collections/landings/corgi/
 - Tags: insurance, fintech, enterprise, ai
 - Design focus: Startup insurance landing that combines orange brand energy, lifecycle-based packaging, and playful corgi illustration with serious B2B structure.
 - Screenshots:
@@ -186,7 +186,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Tempo
 - URL: https://tempo.xyz/
-- Subpage: https://elenacabrera.xyz/collections/landings/tempo
+- Subpage: https://elenacabrera.xyz/collections/landings/tempo/
 - Tags: fintech, crypto, enterprise
 - Design focus: High-end institutional crypto landing that relies on serif editorial typography, monochrome palettes, and abstract 3D wireframe art.
 - Screenshots:
@@ -198,7 +198,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Goldsand
 - URL: https://goldsand.fi/
-- Subpage: https://elenacabrera.xyz/collections/landings/goldsand
+- Subpage: https://elenacabrera.xyz/collections/landings/goldsand/
 - Tags: fintech, crypto
 - Design focus: Calm, trust-first consumer fintech landing that combines serif headlines, app-store CTAs, and educational charts for ethical finance products.
 - Screenshots:
@@ -211,7 +211,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## anyformat
 - URL: https://www.anyformat.ai/es
-- Subpage: https://elenacabrera.xyz/collections/landings/anyformat
+- Subpage: https://elenacabrera.xyz/collections/landings/anyformat/
 - Tags: ai, enterprise
 - Design focus: Enterprise document-AI landing that pairs bilingual product storytelling with composable workflow tabs, benchmark tables against frontier models, and trust signals around EU residency.
 - Screenshots:
@@ -226,7 +226,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Vidiv
 - URL: https://vidiv.com/
-- Subpage: https://elenacabrera.xyz/collections/landings/vidiv
+- Subpage: https://elenacabrera.xyz/collections/landings/vidiv/
 - Tags: ai, enterprise
 - Design focus: Soft, nature-backed Spanish enterprise AI landing that pairs serif hero typography with friction grids, channel photography, and compliance-forward proof sections.
 - Screenshots:
@@ -241,7 +241,7 @@ Collections: https://elenacabrera.xyz/collections?type=landing
 
 ## Dockset
 - URL: https://dockset.app/
-- Subpage: https://elenacabrera.xyz/collections/landings/dockset
+- Subpage: https://elenacabrera.xyz/collections/landings/dockset/
 - Tags: productivity
 - Design focus: Cute minimalist macOS utility landing that centers an interactive Custom Dock hero where visitors click live widgets, then walks through widget galleries and Focus-aware layout switching.
 - Screenshots:
