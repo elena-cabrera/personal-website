@@ -40,7 +40,8 @@ async function upgrade(logos) {
     });
     createSticker(target, {
       ...STICKER_OPTIONS,
-      source: { type: 'image', src: logo.dataset.stickerSrc },
+      // Sticker Forge only accepts absolute (http, data or blob) image URLs.
+      source: { type: 'image', src: new URL(logo.dataset.stickerSrc, document.baseURI).href },
       tilt: index % 2 ? 4 : -4,
     }).catch(() => target.remove());
   });
