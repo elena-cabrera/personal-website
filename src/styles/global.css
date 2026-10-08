@@ -334,6 +334,42 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
   transform: translateY(-1px) scale(1.02) rotate(2deg);
 }
 
+/* Peelable WebGL sticker (Sticker Forge); the canvas is larger than the logo
+   slot so the curl and shadow have room without shifting the layout. */
+.tech-sticker__logo {
+  position: relative;
+}
+
+.tech-sticker__canvas {
+  position: absolute;
+  inset: -1.25rem;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.tech-sticker__canvas canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+.tech-sticker__logo.is-live .tech-sticker__canvas {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.tech-sticker__logo.is-live img {
+  visibility: hidden;
+}
+
+.tech-sticker__logo.is-live,
+.tech-sticker:hover .tech-sticker__logo.is-live,
+.tech-sticker:active .tech-sticker__logo.is-live {
+  transform: none;
+  filter: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .tech-sticker__logo {
     transition: none;
