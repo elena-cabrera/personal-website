@@ -5,10 +5,13 @@
  */
 const MODULE_SRC = '/vendor/sticker-forge/sticker-forge.es.js';
 
+const PULLED_OFF_RESET_MS = 450;
+const SETTLE_RESET_MS = 1500;
+
 const STICKER_OPTIONS = {
   outline: { width: 14, color: '#ffffff' },
   shadow: { opacity: 0.2, blur: 6, distance: 4 },
-  peel: { radius: 0.18, stiffness: 0.7, grabWidth: 14, release: 'reset' },
+  peel: { radius: 0.18, stiffness: 0.7, grabWidth: 40, release: 'reset' },
   sound: { enabled: true, volume: 0.4 },
   back: { color: '#f7f5f2', gloss: 0.6, roughness: 0.35 },
   quality: 'medium',
@@ -21,6 +24,25 @@ function supportsWebGL() {
   } catch {
     return false;
   }
+}
+
+// Pulling a sticker past full peel drags it off its slot, and the release
+// spring only flattens the curl without moving it back. Snap it home once the
+// pointer is released and the spring has had time to settle.
+function keepOnPage(target, sticker) {
+  let timer = 0;
+  target.addEventListener('peelend', (event) => {
+    clearTimeout(timer);
+    const pulledOff = event.detail.progress >= 0.99;
+    timer = setTimeout(
+      () => {
+        if (!sticker.getState().dragging) sticker.reset();
+      },
+      pulledOff ? PULLED_OFF_RESET_MS : SETTLE_RESET_MS
+    );
+  });
+  target.addEventListener('peelstart', () => clearTimeout(timer));
+  target.addEventListener('detachcomplete', () => sticker.reset());
 }
 
 async function upgrade(logos) {
@@ -43,7 +65,9 @@ async function upgrade(logos) {
       // Sticker Forge only accepts absolute (http, data or blob) image URLs.
       source: { type: 'image', src: new URL(logo.dataset.stickerSrc, document.baseURI).href },
       tilt: index % 2 ? 4 : -4,
-    }).catch(() => target.remove());
+    })
+      .then((sticker) => keepOnPage(target, sticker))
+      .catch(() => target.remove());
   });
 }
 

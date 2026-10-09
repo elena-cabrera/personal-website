@@ -354,6 +354,11 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
   touch-action: none;
 }
 
+/* Sticker Forge focuses the canvas on grab; it is not keyboard operable. */
+.tech-sticker__canvas canvas:focus {
+  outline: none;
+}
+
 .tech-sticker__logo.is-live .tech-sticker__canvas {
   opacity: 1;
   pointer-events: auto;
