@@ -20,7 +20,7 @@ function buildLlmsTxt() {
   ];
 
   for (const entry of landingManifest) {
-    const subpage = `${SITE}/collections/landings/${entry.slug}`;
+    const subpage = `${SITE}/collections/landings/${entry.slug}/`;
     const tags = businessTags(entry.tags).join(', ');
 
     lines.push(`## ${entry.title}`);

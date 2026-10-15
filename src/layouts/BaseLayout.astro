@@ -17,6 +17,8 @@ const {
   showBackButton = false,
   wide = false,
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
 
 <!doctype html>
@@ -45,6 +47,7 @@ const {
       })();
     </script>
     <title>{title}</title>
+    <link rel="canonical" href={canonicalURL} />
     <link rel="icon" type="image/png" href="/assets/images/profile/memoji.png" />
     <script
       defer

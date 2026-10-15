@@ -18,7 +18,7 @@ export const landings: LandingItem[] = landingManifest.map((entry) => ({
 }));
 
 export function landingSubpagePath(slug: string): string {
-  return `/collections/landings/${slug}`;
+  return `/collections/landings/${slug}/`;
 }
 
 export function getLandingBySlug(slug: string): LandingItem | undefined {
