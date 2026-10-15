@@ -4,10 +4,14 @@
  * Audio; any sound can be swapped for a recorded sample.
  */
 const VOICES = {
-  // Rounded sine blips: a small rise on lift, a falling "plop" on stick.
+  // A rounded sine blip on lift.
   bubble: {
     lift: [{ type: 'sine', from: 330, to: 540, duration: 0.09, gain: 0.1 }],
-    stick: [{ type: 'sine', from: 560, to: 240, duration: 0.12, gain: 0.16 }],
+    // A dry press: a muted thump of filtered noise over a short low body.
+    stick: [
+      { noise: true, from: 1100, to: 450, q: 0.8, duration: 0.035, gain: 0.32, attack: 0.002 },
+      { type: 'sine', from: 150, to: 95, duration: 0.045, gain: 0.14, attack: 0.002 },
+    ],
   },
   // Paper-like: a soft filtered swish, then a muted tap.
   paper: {
@@ -51,7 +55,7 @@ export function renderSound(context, layers, start = context.currentTime, volume
     const end = at + layer.duration;
     const envelope = context.createGain();
     envelope.gain.setValueAtTime(0.0001, at);
-    envelope.gain.exponentialRampToValueAtTime(layer.gain * volume, at + 0.008);
+    envelope.gain.exponentialRampToValueAtTime(layer.gain * volume, at + (layer.attack ?? 0.008));
     envelope.gain.exponentialRampToValueAtTime(0.0001, end);
     envelope.connect(context.destination);
 
