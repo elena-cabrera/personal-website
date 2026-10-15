@@ -3,6 +3,8 @@
  * The static <img> stays as the fallback until each sticker is ready, and
  * the ~800 KB bundle is only fetched when the section is about to scroll in.
  */
+import { createStickerSounds } from './sticker-sounds.js';
+
 const MODULE_SRC = '/vendor/sticker-forge/sticker-forge.es.js';
 
 const CARRY_PROGRESS = 0.98;
@@ -12,12 +14,16 @@ const STICKER_OPTIONS = {
   outline: { width: 14, color: '#ffffff' },
   shadow: { opacity: 0.2, blur: 6, distance: 4 },
   peel: { radius: 0.18, stiffness: 0.7, grabWidth: 40, release: 'reset' },
-  sound: { enabled: true, volume: 0.4 },
+  // The bundled peel recording is replaced by the soft sounds below.
+  sound: { enabled: false },
   back: { color: '#f7f5f2', gloss: 0.6, roughness: 0.35 },
   quality: 'medium',
 };
 
 let topZ = 1;
+
+// Voices: 'bubble', 'paper' or 'chime' (see sticker-sounds.js).
+const sounds = createStickerSounds('bubble');
 
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
@@ -79,6 +85,7 @@ function makeMovable(logo, target, sticker, area) {
     logo.style.zIndex = String(++topZ);
     carry.remove();
     carry = null;
+    sounds.play('stick');
     target.style.visibility = '';
   };
 
@@ -94,6 +101,7 @@ function makeMovable(logo, target, sticker, area) {
   };
 
   target.addEventListener('peelstart', () => {
+    sounds.play('lift');
     clearTimeout(settleTimer);
     pointer = null;
     window.addEventListener('pointermove', trackPointer);
@@ -106,6 +114,7 @@ function makeMovable(logo, target, sticker, area) {
   });
   target.addEventListener('peelend', () => {
     if (carry) return;
+    sounds.play('stick', 0.6);
     window.removeEventListener('pointermove', trackPointer);
     clearTimeout(settleTimer);
     settleTimer = setTimeout(() => {
