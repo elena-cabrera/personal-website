@@ -22,8 +22,11 @@ const STICKER_OPTIONS = {
 
 let topZ = 1;
 
-// Voices: 'bubble', 'paper' or 'chime' (see sticker-sounds.js).
-const sounds = createStickerSounds('bubble');
+// Voices: 'bubble', 'paper' or 'chime' (see sticker-sounds.js). The lift is a
+// recorded protective-film peel (freesound_community, Pixabay licence).
+const sounds = createStickerSounds('bubble', 1, {
+  lift: new URL('/assets/sounds/sticker-peel.mp3', document.baseURI).href,
+});
 
 const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
 
@@ -133,6 +136,7 @@ async function upgrade(logos) {
     return;
   }
 
+  sounds.preload();
   const area = logos[0].closest('ul');
   logos.forEach((logo, index) => {
     const tilt = index % 2 ? 4 : -4;

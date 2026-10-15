@@ -1,7 +1,7 @@
 /**
- * Soft synthesized sounds for the tech stack stickers: a light "lift" when a
- * sticker starts peeling and a "stick" when it is pressed back down. Built
- * with Web Audio so there is nothing to download and no crackle.
+ * Sounds for the tech stack stickers: a "lift" when a sticker starts peeling
+ * and a "stick" when it is pressed back down. Voices are synthesized with Web
+ * Audio; any sound can be swapped for a recorded sample.
  */
 const VOICES = {
   // Rounded sine blips: a small rise on lift, a falling "plop" on stick.
@@ -70,15 +70,48 @@ export function renderSound(context, layers, start = context.currentTime, volume
   }
 }
 
-export function createStickerSounds(voice = 'bubble', volume = 1) {
+/**
+ * `samples` maps a sound name to an audio file URL; it plays instead of the
+ * synthesized voice once decoded (the voice covers the first moments).
+ */
+export function createStickerSounds(voice = 'bubble', volume = 1, samples = {}) {
   const sounds = VOICES[voice] || VOICES.bubble;
+  const buffers = {};
   let context = null;
+
+  const getContext = () => {
+    context ??= new (window.AudioContext || window.webkitAudioContext)();
+    return context;
+  };
+
   return {
+    // Fetch and decode samples ahead of the first interaction.
+    preload() {
+      for (const [name, src] of Object.entries(samples)) {
+        fetch(src)
+          .then((response) => response.arrayBuffer())
+          .then((data) => getContext().decodeAudioData(data))
+          .then((buffer) => {
+            buffers[name] = buffer;
+          })
+          .catch(() => {});
+      }
+    },
     play(name, gain = 1) {
       try {
-        context ??= new (window.AudioContext || window.webkitAudioContext)();
-        if (context.state === 'suspended') context.resume();
-        renderSound(context, sounds[name], context.currentTime + 0.005, volume * gain);
+        const ctx = getContext();
+        if (ctx.state === 'suspended') ctx.resume();
+        const buffer = buffers[name];
+        if (!buffer) {
+          renderSound(ctx, sounds[name], ctx.currentTime + 0.005, volume * gain);
+          return;
+        }
+        const source = ctx.createBufferSource();
+        const level = ctx.createGain();
+        source.buffer = buffer;
+        level.gain.value = volume * gain;
+        source.connect(level).connect(ctx.destination);
+        source.start();
       } catch {
         // Audio is decoration only.
       }
