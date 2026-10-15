@@ -27,6 +27,13 @@ const VOICES = {
   },
 };
 
+// Scrubbing: the playhead catches up with the peel over SCRUB_LAG seconds,
+// within a playback-rate range that keeps the recording natural.
+const SCRUB_LAG = 0.1;
+const SCRUB_MIN_RATE = 0.4;
+const SCRUB_MAX_RATE = 2;
+const SCRUB_DEADBAND = 0.004;
+
 let noiseBuffer = null;
 
 function getNoise(context) {
@@ -96,6 +103,65 @@ export function createStickerSounds(voice = 'bubble', volume = 1, samples = {}) 
           })
           .catch(() => {});
       }
+    },
+    /**
+     * Scrub a sample with a 0..1 progress: the playhead chases
+     * `progress * duration`, so a fast peel plays it fast, a slow peel slowly,
+     * holding still goes quiet and an early release fades it out unfinished.
+     */
+    scrub(name, gain = 1) {
+      const buffer = buffers[name];
+      if (!buffer) {
+        this.play(name, gain);
+        return { update() {}, end() {} };
+      }
+      const ctx = getContext();
+      if (ctx.state === 'suspended') ctx.resume();
+      const source = ctx.createBufferSource();
+      const level = ctx.createGain();
+      source.buffer = buffer;
+      source.playbackRate.value = 0;
+      level.gain.value = 0;
+      source.connect(level).connect(ctx.destination);
+      source.start();
+
+      const duration = buffer.duration;
+      let target = 0;
+      let playhead = 0;
+      let last = performance.now();
+      let frame = 0;
+      let ended = false;
+
+      const tick = (now) => {
+        const dt = Math.min((now - last) / 1000, 0.05);
+        last = now;
+        const gap = target - playhead;
+        const moving = gap > SCRUB_DEADBAND;
+        const rate = moving ? Math.min(Math.max(gap / SCRUB_LAG, SCRUB_MIN_RATE), SCRUB_MAX_RATE) : 0;
+        source.playbackRate.value = rate;
+        level.gain.setTargetAtTime(moving ? volume * gain : 0, ctx.currentTime, 0.03);
+        playhead += rate * dt;
+        if (playhead >= duration) return stop(0.02);
+        frame = requestAnimationFrame(tick);
+      };
+
+      const stop = (fade) => {
+        if (ended) return;
+        ended = true;
+        cancelAnimationFrame(frame);
+        level.gain.setTargetAtTime(0, ctx.currentTime, fade);
+        source.stop(ctx.currentTime + fade * 5);
+      };
+
+      frame = requestAnimationFrame(tick);
+      return {
+        update(progress) {
+          target = Math.max(target, Math.min(progress, 1) * duration);
+        },
+        end() {
+          stop(0.04);
+        },
+      };
     },
     play(name, gain = 1) {
       try {

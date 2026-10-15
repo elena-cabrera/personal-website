@@ -48,6 +48,12 @@ function makeMovable(logo, target, sticker, area) {
   let settleTimer = 0;
   let pointer = null;
   let carry = null;
+  let peelSound = null;
+
+  const endPeelSound = () => {
+    peelSound?.end();
+    peelSound = null;
+  };
 
   const trackPointer = (event) => {
     pointer = { x: event.clientX, y: event.clientY };
@@ -61,6 +67,7 @@ function makeMovable(logo, target, sticker, area) {
 
   const startCarry = () => {
     if (carry || !pointer) return;
+    endPeelSound();
     // reset() ends the library's own drag and lays the sticker flat again, so
     // it can be shown at the drop point as soon as it is released.
     sticker.reset();
@@ -104,19 +111,23 @@ function makeMovable(logo, target, sticker, area) {
   };
 
   target.addEventListener('peelstart', () => {
-    sounds.play('lift');
+    endPeelSound();
+    peelSound = sounds.scrub('lift');
     clearTimeout(settleTimer);
     pointer = null;
     window.addEventListener('pointermove', trackPointer);
   });
   target.addEventListener('peelchange', (event) => {
-    if (sticker.getState().dragging && event.detail.progress >= CARRY_PROGRESS) {
+    if (!sticker.getState().dragging) return;
+    peelSound?.update(event.detail.progress);
+    if (event.detail.progress >= CARRY_PROGRESS) {
       // Let the library finish handling this pointer move before taking over.
       queueMicrotask(startCarry);
     }
   });
   target.addEventListener('peelend', () => {
     if (carry) return;
+    endPeelSound();
     sounds.play('stick', 0.6);
     window.removeEventListener('pointermove', trackPointer);
     clearTimeout(settleTimer);
