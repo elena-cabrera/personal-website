@@ -89,19 +89,45 @@ const posts = (await getCollection('blog')).sort(
     <section id="work" class="scroll-mt-14" data-reveal-group>
       <h2 class="section-title" data-reveal>work</h2>
       <p class="prose-body transition-colors" data-reveal>
-        I started my career as a Business Consultant and transitioned into a
-        <span class="prose-em">Product Engineer</span> role at a
-        <span class="prose-em">startup</span>, where I've been able to combine my
-        <span class="prose-em">technical</span> skills with my
-        <span class="prose-em">communication and leadership</span> skills, finding that
-        I love bringing products <span class="prose-em">from idea to reality</span>.
+        I started out as a Business Consultant, but soon realized I'd rather
+        <span class="prose-em">build things</span> than make slides about them. Since
+        then I've been working at <span class="prose-em">tech startups</span>, mixing the
+        <span class="prose-em">technical</span> side with the
+        <span class="prose-em">people</span> side and taking products
+        <span class="prose-em">from idea to reality</span>.
       </p>
       <ul class="mt-10 space-y-8 list-none pl-0">
         <li
           class="grid grid-cols-1 sm:grid-cols-[7.5rem_1fr] gap-x-5 gap-y-2 items-start"
           data-reveal-row
         >
-          <span class="work-date">2023 — Now</span>
+          <span class="work-date">2026 — Now</span>
+          <div class="min-w-0">
+            <h3 class="work-role transition-colors">
+              <span>Founding Engineer</span>
+              <span class="work-role__at">@</span>
+              <a href="https://quentax.ai/" class="work-company">
+                <img
+                  src="/assets/images/work/quentax.png"
+                  alt=""
+                  width="16"
+                  height="16"
+                  class="work-company__logo"
+                  loading="lazy"
+                />
+                <span>Quentax</span>
+              </a>
+            </h3>
+            <p class="mt-1.5 prose-body transition-colors">
+              Building the AI workforce for the accounting firms of the future.
+            </p>
+          </div>
+        </li>
+        <li
+          class="grid grid-cols-1 sm:grid-cols-[7.5rem_1fr] gap-x-5 gap-y-2 items-start"
+          data-reveal-row
+        >
+          <span class="work-date">2023 — 2026</span>
           <div class="min-w-0">
             <h3 class="work-role transition-colors">
               <span>Lead Product Engineer</span>
@@ -120,10 +146,10 @@ const posts = (await getCollection('blog')).sort(
             </h3>
             <div class="mt-1.5" data-work-expand>
               <p class="work-expandable prose-body transition-colors">
-                I lead the Product Team at SwitchFleet, a Spanish startup that creates
+                I led the Product Team at SwitchFleet, a Spanish startup that creates
                 software solutions to help companies measure and reduce their fleet's
-                carbon footprint. I'm responsible for the product strategy and
-                delivery. Since I joined, I've developed the company's data pipeline and
+                carbon footprint. I was responsible for the product strategy and
+                delivery. I developed the company's data pipeline and
                 built a B2B SaaS web application from scratch, from the initial idea to
                 the MVP and beyond.
               </p>
