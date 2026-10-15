@@ -204,7 +204,7 @@ const posts = (await getCollection('blog')).sort(
       </p>
       <ul class="mt-6 flex flex-wrap justify-between gap-y-5 list-none pl-0">
         <li class="tech-sticker" data-reveal>
-          <div class="tech-sticker__logo">
+          <div class="tech-sticker__logo" data-sticker-src="/assets/images/stack/python.webp">
             <img src="/assets/images/stack/python.webp" alt="" loading="lazy" />
           </div>
           <span class="text-xs text-gray-500 dark:text-zinc-500 transition-colors"
@@ -212,7 +212,7 @@ const posts = (await getCollection('blog')).sort(
           >
         </li>
         <li class="tech-sticker" data-reveal>
-          <div class="tech-sticker__logo">
+          <div class="tech-sticker__logo" data-sticker-src="/assets/images/stack/fastapi.png">
             <img src="/assets/images/stack/fastapi.png" alt="" loading="lazy" />
           </div>
           <span class="text-xs text-gray-500 dark:text-zinc-500 transition-colors"
@@ -220,7 +220,7 @@ const posts = (await getCollection('blog')).sort(
           >
         </li>
         <li class="tech-sticker" data-reveal>
-          <div class="tech-sticker__logo">
+          <div class="tech-sticker__logo" data-sticker-src="/assets/images/stack/vuejs.webp">
             <img src="/assets/images/stack/vuejs.webp" alt="" loading="lazy" />
           </div>
           <span class="text-xs text-gray-500 dark:text-zinc-500 transition-colors"
@@ -228,7 +228,7 @@ const posts = (await getCollection('blog')).sort(
           >
         </li>
         <li class="tech-sticker" data-reveal>
-          <div class="tech-sticker__logo">
+          <div class="tech-sticker__logo" data-sticker-src="/assets/images/stack/react.webp">
             <img src="/assets/images/stack/react.webp" alt="" loading="lazy" />
           </div>
           <span class="text-xs text-gray-500 dark:text-zinc-500 transition-colors"
@@ -236,7 +236,7 @@ const posts = (await getCollection('blog')).sort(
           >
         </li>
         <li class="tech-sticker" data-reveal>
-          <div class="tech-sticker__logo">
+          <div class="tech-sticker__logo" data-sticker-src="/assets/images/stack/nextjs.svg">
             <img src="/assets/images/stack/nextjs.svg" alt="" loading="lazy" />
           </div>
           <span class="text-xs text-gray-500 dark:text-zinc-500 transition-colors"
@@ -244,7 +244,7 @@ const posts = (await getCollection('blog')).sort(
           >
         </li>
         <li class="tech-sticker" data-reveal>
-          <div class="tech-sticker__logo">
+          <div class="tech-sticker__logo" data-sticker-src="/assets/images/stack/docker.svg">
             <img src="/assets/images/stack/docker.svg" alt="" loading="lazy" />
           </div>
           <span class="text-xs text-gray-500 dark:text-zinc-500 transition-colors"
@@ -348,5 +348,6 @@ const posts = (await getCollection('blog')).sort(
     import '../scripts/work-expand.js';
     import '../scripts/scroll-timeline.js';
     import '../scripts/reveal.js';
+    import '../scripts/tech-stickers.js';
   </script>
 </BaseLayout>
