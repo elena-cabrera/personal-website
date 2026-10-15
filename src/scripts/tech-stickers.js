@@ -5,7 +5,7 @@
  */
 const MODULE_SRC = '/vendor/sticker-forge/sticker-forge.es.js';
 
-const PULLED_OFF_RESET_MS = 450;
+const CARRY_PROGRESS = 0.98;
 const SETTLE_RESET_MS = 1500;
 
 const STICKER_OPTIONS = {
@@ -17,6 +17,10 @@ const STICKER_OPTIONS = {
   quality: 'medium',
 };
 
+let topZ = 1;
+
+const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+
 function supportsWebGL() {
   try {
     const canvas = document.createElement('canvas');
@@ -26,23 +30,90 @@ function supportsWebGL() {
   }
 }
 
-// Pulling a sticker past full peel drags it off its slot, and the release
-// spring only flattens the curl without moving it back. Snap it home once the
-// pointer is released and the spring has had time to settle.
-function keepOnPage(target, sticker) {
-  let timer = 0;
-  target.addEventListener('peelend', (event) => {
-    clearTimeout(timer);
-    const pulledOff = event.detail.progress >= 0.99;
-    timer = setTimeout(
-      () => {
-        if (!sticker.getState().dragging) sticker.reset();
-      },
-      pulledOff ? PULLED_OFF_RESET_MS : SETTLE_RESET_MS
-    );
+// Once a sticker is fully peeled it comes off the page: carry it with the
+// pointer and stick it back down wherever it is dropped inside the logo area.
+// A partial peel springs back on its own; the timer only snaps home a sticker
+// the release spring left out of place.
+function makeMovable(logo, target, sticker, area) {
+  const position = { x: 0, y: 0 };
+  let settleTimer = 0;
+  let pointer = null;
+  let carry = null;
+
+  const trackPointer = (event) => {
+    pointer = { x: event.clientX, y: event.clientY };
+    if (carry) moveCarry();
+  };
+
+  const moveCarry = () => {
+    const size = carry.offsetWidth;
+    carry.style.transform = `translate(${pointer.x - size / 2}px, ${pointer.y - size / 2}px) rotate(${carry.dataset.tilt}deg) scale(1.12)`;
+  };
+
+  const startCarry = () => {
+    if (carry || !pointer) return;
+    // reset() ends the library's own drag and lays the sticker flat again, so
+    // it can be shown at the drop point as soon as it is released.
+    sticker.reset();
+    target.style.visibility = 'hidden';
+    carry = document.createElement('img');
+    carry.className = 'tech-sticker__carry';
+    carry.src = logo.dataset.stickerSrc;
+    carry.alt = '';
+    carry.dataset.tilt = String(-Number(logo.dataset.stickerTilt));
+    document.body.appendChild(carry);
+    moveCarry();
+    window.addEventListener('pointerup', drop);
+    window.addEventListener('pointercancel', drop);
+  };
+
+  const drop = () => {
+    window.removeEventListener('pointerup', drop);
+    window.removeEventListener('pointercancel', drop);
+    window.removeEventListener('pointermove', trackPointer);
+    const bounds = area.getBoundingClientRect();
+    position.x = clamp(pointer.x, bounds.left, bounds.right) - bounds.left;
+    position.y = clamp(pointer.y, bounds.top, bounds.bottom) - bounds.top;
+    logo.dataset.moved = '';
+    place();
+    logo.style.zIndex = String(++topZ);
+    carry.remove();
+    carry = null;
+    target.style.visibility = '';
+  };
+
+  // Positions are stored relative to the logo area so they survive reflows.
+  const place = () => {
+    if (!('moved' in logo.dataset)) return;
+    target.style.transform = '';
+    const bounds = area.getBoundingClientRect();
+    const home = target.getBoundingClientRect();
+    const dx = bounds.left + position.x - (home.left + home.width / 2);
+    const dy = bounds.top + position.y - (home.top + home.height / 2);
+    target.style.transform = `translate(${dx}px, ${dy}px)`;
+  };
+
+  target.addEventListener('peelstart', () => {
+    clearTimeout(settleTimer);
+    pointer = null;
+    window.addEventListener('pointermove', trackPointer);
   });
-  target.addEventListener('peelstart', () => clearTimeout(timer));
+  target.addEventListener('peelchange', (event) => {
+    if (sticker.getState().dragging && event.detail.progress >= CARRY_PROGRESS) {
+      // Let the library finish handling this pointer move before taking over.
+      queueMicrotask(startCarry);
+    }
+  });
+  target.addEventListener('peelend', () => {
+    if (carry) return;
+    window.removeEventListener('pointermove', trackPointer);
+    clearTimeout(settleTimer);
+    settleTimer = setTimeout(() => {
+      if (!sticker.getState().dragging) sticker.reset();
+    }, SETTLE_RESET_MS);
+  });
   target.addEventListener('detachcomplete', () => sticker.reset());
+  window.addEventListener('resize', place);
 }
 
 async function upgrade(logos) {
@@ -53,7 +124,10 @@ async function upgrade(logos) {
     return;
   }
 
+  const area = logos[0].closest('ul');
   logos.forEach((logo, index) => {
+    const tilt = index % 2 ? 4 : -4;
+    logo.dataset.stickerTilt = String(tilt);
     const target = document.createElement('div');
     target.className = 'tech-sticker__canvas';
     logo.appendChild(target);
@@ -64,9 +138,9 @@ async function upgrade(logos) {
       ...STICKER_OPTIONS,
       // Sticker Forge only accepts absolute (http, data or blob) image URLs.
       source: { type: 'image', src: new URL(logo.dataset.stickerSrc, document.baseURI).href },
-      tilt: index % 2 ? 4 : -4,
+      tilt,
     })
-      .then((sticker) => keepOnPage(target, sticker))
+      .then((sticker) => makeMovable(logo, target, sticker, area))
       .catch(() => target.remove());
   });
 }

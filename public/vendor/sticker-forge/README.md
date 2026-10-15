@@ -13,3 +13,5 @@ Two edits on the minified file, tuned for small (~50px) logos:
 - `Math.min(this.artwork.width,this.artwork.height)*.13` -> `*.5` (2 matches):
   lifts the cap on `peel.grabWidth`, so a click anywhere on a small sticker
   grabs the nearest edge.
+- The peel audio loader decodes the inlined `data:` sounds with `atob`
+  instead of `fetch()`, which strict `connect-src` CSPs block.

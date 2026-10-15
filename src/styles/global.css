@@ -354,6 +354,23 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
   touch-action: none;
 }
 
+/* A fully peeled sticker following the pointer before it is dropped. */
+.tech-sticker__carry {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  width: 3.2rem;
+  height: 3.2rem;
+  object-fit: contain;
+  pointer-events: none;
+  filter:
+    drop-shadow(0 0 1.5px #fff)
+    drop-shadow(0 0 1.5px #fff)
+    drop-shadow(0 0 1px #fff)
+    drop-shadow(0 10px 14px rgba(0, 0, 0, 0.25));
+}
+
 /* Sticker Forge focuses the canvas on grab; it is not keyboard operable. */
 .tech-sticker__canvas canvas:focus {
   outline: none;
