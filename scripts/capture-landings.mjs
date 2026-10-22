@@ -40,6 +40,7 @@ const SITES = [
   { slug: 'anyformat', url: 'https://www.anyformat.ai/es' },
   { slug: 'vidiv', url: 'https://vidiv.com/' },
   { slug: 'dockset', url: 'https://dockset.app/' },
+  { slug: 'enginy', url: 'https://www.enginy.ai/' },
 ];
 
 const slugFilter = process.argv.slice(2).filter((arg) => !arg.startsWith('-'));

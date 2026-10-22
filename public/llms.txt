@@ -253,3 +253,18 @@ Collections: https://elenacabrera.xyz/collections?type=landing
   - Little-things feature grid: A six-card grid under The little things, taken care of uses mini dock illustrations for folders, shortcuts, position, AirDrop, and backup—quality-of-life proof in quiet cards.
   - Quote testimonial row: What people are saying. centers three light-gray quote cards with X handles, keeping social proof short and airy before the FAQ accordion begins.
   - Closing CTA with mascot: A warm textured Make yourself at home. band hosts a Get Dockset for Mac button, one-time pricing, and a faded octopus watermark, closing the cute-minimalist narrative.
+
+## Enginy
+- URL: https://www.enginy.ai/
+- Subpage: https://elenacabrera.xyz/collections/landings/enginy/
+- Tags: ai, enterprise
+- Design focus: High-contrast green-accent enterprise sales landing that sells through dense product UI mockups — list building, enrichment tables, sequence builders, and smart inbox — then closes on security badges, an interactive ROI calculator, and a bold black CTA band.
+- Screenshots:
+  - Centered all-in-one hero: A green pill eyebrow and Where sales begin headline sit above dual Book Demo / What's Enginy? CTAs, with an app.enginy.ai AI Finder browser mock answering Who do you want to sell to?.
+  - List-building feature grid: Find Your Ideal Customers opens a four-quadrant layout: ICP copy with a Factorial quote, funding/investor filter chips, natural-language AI chat suggestions, and intent-signal tag clouds.
+  - Enrichment table mockup: Know them well enough to connect frames a full dark-sidebar product shot — scored contact list, AI research bio, experience logos, and a recent-activity heatmap for Patrick Collison @ Stripe.
+  - Multichannel sequence builder: Engage them at scale pairs a vertical Send connection / Wait / Send message flow with deliverability and Human tone, at machine scale cards, plus a Factorial CEO quote beside GPT drafting UI.
+  - Testimonial and ROI stats: A Factorial leadership photo quote sits beside x2 conversion, 4 hrs saved per SDR, and x4.5 reply-rate metrics, then a grayscale customer logo row before Smart Inbox begins.
+  - Smart Inbox feature triad: Never miss a reply again grids an AI Draft reply composer, Slack #enginy-replies interest alerts, and an inbox list auto-tagged Meeting Booked / Interested for prioritization.
+  - Security badges and ROI calculator: Enterprise-Grade Security shows GDPR and ISO 27001 seals, then a dark We save you 4x what we cost calculator with green sliders for leads, conversion, ACV, and time saved.
+  - Black CTA and FAQ: A high-contrast Who do you want to sell to? band with dithered green arrows and Start using Enginy leads into a two-column FAQs About Our All-in-one Sales Platform accordion.

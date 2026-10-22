@@ -942,4 +942,64 @@ export const landingManifest: LandingManifestEntry[] = [
       },
     ],
   },
+  {
+    slug: 'enginy',
+    title: 'Enginy',
+    url: 'https://www.enginy.ai/',
+    tags: ['landing', 'ui', 'ai', 'enterprise'],
+    description:
+      'Enginy is an AI all-in-one B2B sales platform that finds and enriches prospects, runs multichannel outreach across email and social, and uses a smart inbox to draft replies and book meetings — Barcelona-based with GDPR and ISO 27001.',
+    designFocus:
+      'High-contrast green-accent enterprise sales landing that sells through dense product UI mockups — list building, enrichment tables, sequence builders, and smart inbox — then closes on security badges, an interactive ROI calculator, and a bold black CTA band.',
+    screenshots: [
+      {
+        file: asset('enginy', '01-hero.webp'),
+        title: 'Centered all-in-one hero',
+        caption:
+          'A green pill eyebrow and Where sales begin headline sit above dual Book Demo / What\'s Enginy? CTAs, with an app.enginy.ai AI Finder browser mock answering Who do you want to sell to?.',
+      },
+      {
+        file: asset('enginy', '02-section.webp'),
+        title: 'List-building feature grid',
+        caption:
+          'Find Your Ideal Customers opens a four-quadrant layout: ICP copy with a Factorial quote, funding/investor filter chips, natural-language AI chat suggestions, and intent-signal tag clouds.',
+      },
+      {
+        file: asset('enginy', '03-section.webp'),
+        title: 'Enrichment table mockup',
+        caption:
+          'Know them well enough to connect frames a full dark-sidebar product shot — scored contact list, AI research bio, experience logos, and a recent-activity heatmap for Patrick Collison @ Stripe.',
+      },
+      {
+        file: asset('enginy', '04-section.webp'),
+        title: 'Multichannel sequence builder',
+        caption:
+          'Engage them at scale pairs a vertical Send connection / Wait / Send message flow with deliverability and Human tone, at machine scale cards, plus a Factorial CEO quote beside GPT drafting UI.',
+      },
+      {
+        file: asset('enginy', '05-section.webp'),
+        title: 'Testimonial and ROI stats',
+        caption:
+          'A Factorial leadership photo quote sits beside x2 conversion, 4 hrs saved per SDR, and x4.5 reply-rate metrics, then a grayscale customer logo row before Smart Inbox begins.',
+      },
+      {
+        file: asset('enginy', '06-section.webp'),
+        title: 'Smart Inbox feature triad',
+        caption:
+          'Never miss a reply again grids an AI Draft reply composer, Slack #enginy-replies interest alerts, and an inbox list auto-tagged Meeting Booked / Interested for prioritization.',
+      },
+      {
+        file: asset('enginy', '07-section.webp'),
+        title: 'Security badges and ROI calculator',
+        caption:
+          'Enterprise-Grade Security shows GDPR and ISO 27001 seals, then a dark We save you 4x what we cost calculator with green sliders for leads, conversion, ACV, and time saved.',
+      },
+      {
+        file: asset('enginy', '08-section.webp'),
+        title: 'Black CTA and FAQ',
+        caption:
+          'A high-contrast Who do you want to sell to? band with dithered green arrows and Start using Enginy leads into a two-column FAQs About Our All-in-one Sales Platform accordion.',
+      },
+    ],
+  },
 ];
