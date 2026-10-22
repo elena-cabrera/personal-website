@@ -1002,4 +1002,64 @@ export const landingManifest: LandingManifestEntry[] = [
       },
     ],
   },
+  {
+    slug: 'gumloop',
+    title: 'Gumloop',
+    url: 'https://www.gumloop.com/',
+    tags: ['landing', 'ui', 'ai', 'enterprise'],
+    description:
+      'Gumloop is a multiplayer AI agent builder where anyone at a company can ship agents across models and integrations while IT keeps SSO, spend, audit logs, and VPC under one control plane.',
+    designFocus:
+      'Clean enterprise agent landing: white field, bold black type, and product-window mockups that carry the story — from team-built agents and a real agent browser to a spend control plane, dark enterprise-controls band, and logo-backed case studies.',
+    screenshots: [
+      {
+        file: asset('gumloop', '01-hero.webp'),
+        title: 'Agent builder hero',
+        caption:
+          'Build, share, optimize & control agents centers a macOS-window product mock — GTM Agent with Slack/HubSpot/Gong connectors, model picker, and AI Spend chips — under dual Get Started / Book a demo CTAs.',
+      },
+      {
+        file: asset('gumloop', '02-section.webp'),
+        title: 'Infrastructure logo wall',
+        caption:
+          'The agent infrastructure powering the world\'s most AI-native companies pairs 1B+ tasks / 307K+ agents stats with a grayscale logo grid (Shopify, Instacart, Gusto, Ramp…), then opens Let your experts build the agents.',
+      },
+      {
+        file: asset('gumloop', '03-section.webp'),
+        title: 'Expert-built agent panel',
+        caption:
+          'Let your experts build the agents lists triggers, connectors, and skills beside a Churn Prevention Agent chat mock that surfaces at-risk ARR accounts and plays — product UI as the proof, not illustration.',
+      },
+      {
+        file: asset('gumloop', '04-section.webp'),
+        title: 'Agent browser bento',
+        caption:
+          'A real browser for every agent uses a light bento: web-form automation with a purple agent cursor, CAPTCHA identity check, password vault, and session recording cards.',
+      },
+      {
+        file: asset('gumloop', '05-section.webp'),
+        title: 'Spend control plane',
+        caption:
+          'Your agents. Your spend. One control plane. spreads Insights cards for spend-per-model, spend-by-agent, and an agent-health gauge — ops dashboard chrome as marketing.',
+      },
+      {
+        file: asset('gumloop', '06-section.webp'),
+        title: 'Dark enterprise controls',
+        caption:
+          'Enterprise-grade controls flips to a dark band of usage monitoring charts, audit logs, VPC cloud marks, roles, SAML/SCIM, model restrictions, and SOC 2 / GDPR seals.',
+      },
+      {
+        file: asset('gumloop', '07-section.webp'),
+        title: 'Trust case-study grid',
+        caption:
+          'In agents, they trust lays a 2x2 of Gusto / Instacart / Samsara cards with ARR and win-rate metrics, keeping social proof typographic and card-quiet.',
+      },
+      {
+        file: asset('gumloop', '08-section.webp'),
+        title: 'Closing agent CTA',
+        caption:
+          'A soft gray Build your team of agents panel with Explore agents sits above a dense footer of use cases and competitor compares — one quiet close, then sitemap density.',
+      },
+    ],
+  },
 ];

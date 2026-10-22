@@ -41,6 +41,7 @@ const SITES = [
   { slug: 'vidiv', url: 'https://vidiv.com/' },
   { slug: 'dockset', url: 'https://dockset.app/' },
   { slug: 'enginy', url: 'https://www.enginy.ai/' },
+  { slug: 'gumloop', url: 'https://www.gumloop.com/' },
 ];
 
 const slugFilter = process.argv.slice(2).filter((arg) => !arg.startsWith('-'));
