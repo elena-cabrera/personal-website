@@ -253,3 +253,33 @@ Collections: https://elenacabrera.xyz/collections?type=landing
   - Little-things feature grid: A six-card grid under The little things, taken care of uses mini dock illustrations for folders, shortcuts, position, AirDrop, and backup—quality-of-life proof in quiet cards.
   - Quote testimonial row: What people are saying. centers three light-gray quote cards with X handles, keeping social proof short and airy before the FAQ accordion begins.
   - Closing CTA with mascot: A warm textured Make yourself at home. band hosts a Get Dockset for Mac button, one-time pricing, and a faded octopus watermark, closing the cute-minimalist narrative.
+
+## Enginy
+- URL: https://www.enginy.ai/
+- Subpage: https://elenacabrera.xyz/collections/landings/enginy/
+- Tags: ai, enterprise
+- Design focus: Tech-minimal enterprise sales landing: hairline grid on white, black type with a single green accent, and almost no decorative chrome — the product UI mockups (list building, enrichment tables, sequences, smart inbox) carry the page, then a quiet security/ROI close and one hard black CTA band.
+- Screenshots:
+  - Centered all-in-one hero: Sparse tech-minimal hero: green pill eyebrow, Where sales begin on a hairline grid, dual Book Demo / What's Enginy? CTAs, then a clean AI Finder browser mock asking Who do you want to sell to?.
+  - List-building feature grid: Find Your Ideal Customers divides a ruled four-quadrant layout — ICP copy with a short Factorial quote, funding/investor filter chips, natural-language AI suggestions, and intent-signal pills — without card clutter.
+  - Enrichment table mockup: Know them well enough to connect puts a full product chrome shot center stage: scored contact list, AI research bio, experience logos, and activity heatmap — dense UI, still framed with lots of white.
+  - Multichannel sequence builder: Engage them at scale keeps the sequence flow and GPT drafting panels airy and linear — Send connection / Wait / Send message beside deliverability and Human tone cards, plus one quiet Factorial quote.
+  - Testimonial and ROI stats: A single Factorial photo quote sits next to three ruled metrics (x2 conversion, 4 hrs saved, x4.5 reply rate) and a grayscale logo row — social proof stripped to numbers and space.
+  - Smart Inbox feature triad: Never miss a reply again grids three clean product panels — AI Draft composer, Slack #enginy-replies alert, auto-tagged inbox — same tech-minimal spacing, no extra illustration.
+  - Security badges and ROI calculator: Enterprise-Grade Security pairs two flat GDPR / ISO 27001 seals with a dark We save you 4x calculator — green sliders on black, still restrained rather than flashy.
+  - Black CTA and FAQ: One hard black Who do you want to sell to? band with dithered green arrows and Start using Enginy, then a sparse two-column FAQ accordion on the grid.
+
+## Gumloop
+- URL: https://www.gumloop.com/
+- Subpage: https://elenacabrera.xyz/collections/landings/gumloop/
+- Tags: ai, enterprise
+- Design focus: Clean enterprise agent landing: white field, bold black type, and product-window mockups that carry the story — from team-built agents and a real agent browser to a spend control plane, dark enterprise-controls band, and logo-backed case studies.
+- Screenshots:
+  - Agent builder hero: Build, share, optimize & control agents centers a macOS-window product mock — GTM Agent with Slack/HubSpot/Gong connectors, model picker, and AI Spend chips — under dual Get Started / Book a demo CTAs.
+  - Infrastructure logo wall: The agent infrastructure powering the world's most AI-native companies pairs 1B+ tasks / 307K+ agents stats with a grayscale logo grid (Shopify, Instacart, Gusto, Ramp…), then opens Let your experts build the agents.
+  - Expert-built agent panel: Let your experts build the agents lists triggers, connectors, and skills beside a Churn Prevention Agent chat mock that surfaces at-risk ARR accounts and plays — product UI as the proof, not illustration.
+  - Agent browser bento: A real browser for every agent uses a light bento: web-form automation with a purple agent cursor, CAPTCHA identity check, password vault, and session recording cards.
+  - Spend control plane: Your agents. Your spend. One control plane. spreads Insights cards for spend-per-model, spend-by-agent, and an agent-health gauge — ops dashboard chrome as marketing.
+  - Dark enterprise controls: Enterprise-grade controls flips to a dark band of usage monitoring charts, audit logs, VPC cloud marks, roles, SAML/SCIM, model restrictions, and SOC 2 / GDPR seals.
+  - Trust case-study grid: In agents, they trust lays a 2x2 of Gusto / Instacart / Samsara cards with ARR and win-rate metrics, keeping social proof typographic and card-quiet.
+  - Closing agent CTA: A soft gray Build your team of agents panel with Explore agents sits above a dense footer of use cases and competitor compares — one quiet close, then sitemap density.

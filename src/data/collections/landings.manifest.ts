@@ -942,4 +942,124 @@ export const landingManifest: LandingManifestEntry[] = [
       },
     ],
   },
+  {
+    slug: 'enginy',
+    title: 'Enginy',
+    url: 'https://www.enginy.ai/',
+    tags: ['landing', 'ui', 'ai', 'enterprise'],
+    description:
+      'Enginy is an AI all-in-one B2B sales platform — find and enrich prospects, multichannel outreach, smart inbox that drafts replies and books meetings — presented in a restrained tech-minimal shell; Barcelona-based with GDPR and ISO 27001.',
+    designFocus:
+      'Tech-minimal enterprise sales landing: hairline grid on white, black type with a single green accent, and almost no decorative chrome — the product UI mockups (list building, enrichment tables, sequences, smart inbox) carry the page, then a quiet security/ROI close and one hard black CTA band.',
+    screenshots: [
+      {
+        file: asset('enginy', '01-hero.webp'),
+        title: 'Centered all-in-one hero',
+        caption:
+          'Sparse tech-minimal hero: green pill eyebrow, Where sales begin on a hairline grid, dual Book Demo / What\'s Enginy? CTAs, then a clean AI Finder browser mock asking Who do you want to sell to?.',
+      },
+      {
+        file: asset('enginy', '02-section.webp'),
+        title: 'List-building feature grid',
+        caption:
+          'Find Your Ideal Customers divides a ruled four-quadrant layout — ICP copy with a short Factorial quote, funding/investor filter chips, natural-language AI suggestions, and intent-signal pills — without card clutter.',
+      },
+      {
+        file: asset('enginy', '03-section.webp'),
+        title: 'Enrichment table mockup',
+        caption:
+          'Know them well enough to connect puts a full product chrome shot center stage: scored contact list, AI research bio, experience logos, and activity heatmap — dense UI, still framed with lots of white.',
+      },
+      {
+        file: asset('enginy', '04-section.webp'),
+        title: 'Multichannel sequence builder',
+        caption:
+          'Engage them at scale keeps the sequence flow and GPT drafting panels airy and linear — Send connection / Wait / Send message beside deliverability and Human tone cards, plus one quiet Factorial quote.',
+      },
+      {
+        file: asset('enginy', '05-section.webp'),
+        title: 'Testimonial and ROI stats',
+        caption:
+          'A single Factorial photo quote sits next to three ruled metrics (x2 conversion, 4 hrs saved, x4.5 reply rate) and a grayscale logo row — social proof stripped to numbers and space.',
+      },
+      {
+        file: asset('enginy', '06-section.webp'),
+        title: 'Smart Inbox feature triad',
+        caption:
+          'Never miss a reply again grids three clean product panels — AI Draft composer, Slack #enginy-replies alert, auto-tagged inbox — same tech-minimal spacing, no extra illustration.',
+      },
+      {
+        file: asset('enginy', '07-section.webp'),
+        title: 'Security badges and ROI calculator',
+        caption:
+          'Enterprise-Grade Security pairs two flat GDPR / ISO 27001 seals with a dark We save you 4x calculator — green sliders on black, still restrained rather than flashy.',
+      },
+      {
+        file: asset('enginy', '08-section.webp'),
+        title: 'Black CTA and FAQ',
+        caption:
+          'One hard black Who do you want to sell to? band with dithered green arrows and Start using Enginy, then a sparse two-column FAQ accordion on the grid.',
+      },
+    ],
+  },
+  {
+    slug: 'gumloop',
+    title: 'Gumloop',
+    url: 'https://www.gumloop.com/',
+    tags: ['landing', 'ui', 'ai', 'enterprise'],
+    description:
+      'Gumloop is a multiplayer AI agent builder where anyone at a company can ship agents across models and integrations while IT keeps SSO, spend, audit logs, and VPC under one control plane.',
+    designFocus:
+      'Clean enterprise agent landing: white field, bold black type, and product-window mockups that carry the story — from team-built agents and a real agent browser to a spend control plane, dark enterprise-controls band, and logo-backed case studies.',
+    screenshots: [
+      {
+        file: asset('gumloop', '01-hero.webp'),
+        title: 'Agent builder hero',
+        caption:
+          'Build, share, optimize & control agents centers a macOS-window product mock — GTM Agent with Slack/HubSpot/Gong connectors, model picker, and AI Spend chips — under dual Get Started / Book a demo CTAs.',
+      },
+      {
+        file: asset('gumloop', '02-section.webp'),
+        title: 'Infrastructure logo wall',
+        caption:
+          'The agent infrastructure powering the world\'s most AI-native companies pairs 1B+ tasks / 307K+ agents stats with a grayscale logo grid (Shopify, Instacart, Gusto, Ramp…), then opens Let your experts build the agents.',
+      },
+      {
+        file: asset('gumloop', '03-section.webp'),
+        title: 'Expert-built agent panel',
+        caption:
+          'Let your experts build the agents lists triggers, connectors, and skills beside a Churn Prevention Agent chat mock that surfaces at-risk ARR accounts and plays — product UI as the proof, not illustration.',
+      },
+      {
+        file: asset('gumloop', '04-section.webp'),
+        title: 'Agent browser bento',
+        caption:
+          'A real browser for every agent uses a light bento: web-form automation with a purple agent cursor, CAPTCHA identity check, password vault, and session recording cards.',
+      },
+      {
+        file: asset('gumloop', '05-section.webp'),
+        title: 'Spend control plane',
+        caption:
+          'Your agents. Your spend. One control plane. spreads Insights cards for spend-per-model, spend-by-agent, and an agent-health gauge — ops dashboard chrome as marketing.',
+      },
+      {
+        file: asset('gumloop', '06-section.webp'),
+        title: 'Dark enterprise controls',
+        caption:
+          'Enterprise-grade controls flips to a dark band of usage monitoring charts, audit logs, VPC cloud marks, roles, SAML/SCIM, model restrictions, and SOC 2 / GDPR seals.',
+      },
+      {
+        file: asset('gumloop', '07-section.webp'),
+        title: 'Trust case-study grid',
+        caption:
+          'In agents, they trust lays a 2x2 of Gusto / Instacart / Samsara cards with ARR and win-rate metrics, keeping social proof typographic and card-quiet.',
+      },
+      {
+        file: asset('gumloop', '08-section.webp'),
+        title: 'Closing agent CTA',
+        caption:
+          'A soft gray Build your team of agents panel with Explore agents sits above a dense footer of use cases and competitor compares — one quiet close, then sitemap density.',
+      },
+    ],
+  },
 ];
