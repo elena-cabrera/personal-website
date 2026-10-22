@@ -948,57 +948,57 @@ export const landingManifest: LandingManifestEntry[] = [
     url: 'https://www.enginy.ai/',
     tags: ['landing', 'ui', 'ai', 'enterprise'],
     description:
-      'Enginy is an AI all-in-one B2B sales platform that finds and enriches prospects, runs multichannel outreach across email and social, and uses a smart inbox to draft replies and book meetings — Barcelona-based with GDPR and ISO 27001.',
+      'Enginy is an AI all-in-one B2B sales platform — find and enrich prospects, multichannel outreach, smart inbox that drafts replies and books meetings — presented in a restrained tech-minimal shell; Barcelona-based with GDPR and ISO 27001.',
     designFocus:
-      'High-contrast green-accent enterprise sales landing that sells through dense product UI mockups — list building, enrichment tables, sequence builders, and smart inbox — then closes on security badges, an interactive ROI calculator, and a bold black CTA band.',
+      'Tech-minimal enterprise sales landing: hairline grid on white, black type with a single green accent, and almost no decorative chrome — the product UI mockups (list building, enrichment tables, sequences, smart inbox) carry the page, then a quiet security/ROI close and one hard black CTA band.',
     screenshots: [
       {
         file: asset('enginy', '01-hero.webp'),
         title: 'Centered all-in-one hero',
         caption:
-          'A green pill eyebrow and Where sales begin headline sit above dual Book Demo / What\'s Enginy? CTAs, with an app.enginy.ai AI Finder browser mock answering Who do you want to sell to?.',
+          'Sparse tech-minimal hero: green pill eyebrow, Where sales begin on a hairline grid, dual Book Demo / What\'s Enginy? CTAs, then a clean AI Finder browser mock asking Who do you want to sell to?.',
       },
       {
         file: asset('enginy', '02-section.webp'),
         title: 'List-building feature grid',
         caption:
-          'Find Your Ideal Customers opens a four-quadrant layout: ICP copy with a Factorial quote, funding/investor filter chips, natural-language AI chat suggestions, and intent-signal tag clouds.',
+          'Find Your Ideal Customers divides a ruled four-quadrant layout — ICP copy with a short Factorial quote, funding/investor filter chips, natural-language AI suggestions, and intent-signal pills — without card clutter.',
       },
       {
         file: asset('enginy', '03-section.webp'),
         title: 'Enrichment table mockup',
         caption:
-          'Know them well enough to connect frames a full dark-sidebar product shot — scored contact list, AI research bio, experience logos, and a recent-activity heatmap for Patrick Collison @ Stripe.',
+          'Know them well enough to connect puts a full product chrome shot center stage: scored contact list, AI research bio, experience logos, and activity heatmap — dense UI, still framed with lots of white.',
       },
       {
         file: asset('enginy', '04-section.webp'),
         title: 'Multichannel sequence builder',
         caption:
-          'Engage them at scale pairs a vertical Send connection / Wait / Send message flow with deliverability and Human tone, at machine scale cards, plus a Factorial CEO quote beside GPT drafting UI.',
+          'Engage them at scale keeps the sequence flow and GPT drafting panels airy and linear — Send connection / Wait / Send message beside deliverability and Human tone cards, plus one quiet Factorial quote.',
       },
       {
         file: asset('enginy', '05-section.webp'),
         title: 'Testimonial and ROI stats',
         caption:
-          'A Factorial leadership photo quote sits beside x2 conversion, 4 hrs saved per SDR, and x4.5 reply-rate metrics, then a grayscale customer logo row before Smart Inbox begins.',
+          'A single Factorial photo quote sits next to three ruled metrics (x2 conversion, 4 hrs saved, x4.5 reply rate) and a grayscale logo row — social proof stripped to numbers and space.',
       },
       {
         file: asset('enginy', '06-section.webp'),
         title: 'Smart Inbox feature triad',
         caption:
-          'Never miss a reply again grids an AI Draft reply composer, Slack #enginy-replies interest alerts, and an inbox list auto-tagged Meeting Booked / Interested for prioritization.',
+          'Never miss a reply again grids three clean product panels — AI Draft composer, Slack #enginy-replies alert, auto-tagged inbox — same tech-minimal spacing, no extra illustration.',
       },
       {
         file: asset('enginy', '07-section.webp'),
         title: 'Security badges and ROI calculator',
         caption:
-          'Enterprise-Grade Security shows GDPR and ISO 27001 seals, then a dark We save you 4x what we cost calculator with green sliders for leads, conversion, ACV, and time saved.',
+          'Enterprise-Grade Security pairs two flat GDPR / ISO 27001 seals with a dark We save you 4x calculator — green sliders on black, still restrained rather than flashy.',
       },
       {
         file: asset('enginy', '08-section.webp'),
         title: 'Black CTA and FAQ',
         caption:
-          'A high-contrast Who do you want to sell to? band with dithered green arrows and Start using Enginy leads into a two-column FAQs About Our All-in-one Sales Platform accordion.',
+          'One hard black Who do you want to sell to? band with dithered green arrows and Start using Enginy, then a sparse two-column FAQ accordion on the grid.',
       },
     ],
   },
