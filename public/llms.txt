@@ -283,3 +283,57 @@ Collections: https://elenacabrera.xyz/collections?type=landing
   - Dark enterprise controls: Enterprise-grade controls flips to a dark band of usage monitoring charts, audit logs, VPC cloud marks, roles, SAML/SCIM, model restrictions, and SOC 2 / GDPR seals.
   - Trust case-study grid: In agents, they trust lays a 2x2 of Gusto / Instacart / Samsara cards with ARR and win-rate metrics, keeping social proof typographic and card-quiet.
   - Closing agent CTA: A soft gray Build your team of agents panel with Explore agents sits above a dense footer of use cases and competitor compares — one quiet close, then sitemap density.
+
+## Strawberry
+- URL: https://strawberrybrowser.com/
+- Subpage: https://elenacabrera.xyz/collections/landings/strawberry/
+- Tags: ai, browser, productivity
+- Design focus: Playful AI-browser landing on a white dot grid: colour-coded 3D companion mascots, product-window mockups with agent chat, official-companion hire cards, and a chatbots-vs-Strawberry split that sells in-tab collaboration over isolated chat.
+- Launch video: https://elenacabrera.xyz/collections/launch-videos/strawberry-1-0/
+- Screenshots:
+  - Companion hero with agent chat: AI teammates that work alongside you centers four colour-coded 3D companions perched on a browser mock — Growth Gary sourcing 50 leads — under dual Download for Mac / Contact Sales CTAs on a soft white field.
+  - Hire your next AI colleague: A split section pairs Hire your next AI colleague copy with Sales / Marketing / Founder companion figures at tiny desks, selling role-based agents before the 1.8 billion websites claim.
+  - 1.8 billion websites claim: There are 1.8 billion websites, Strawberry can use them all floats a dense SaaS icon cloud over an Automate anything… command bar, framing the browser as a shared workspace for you and your companion.
+  - Official companions grid: Hire one of our official companions lays a 3x2 card grid — Sales Sally, Talent Theo, Executive Ellis, Marketing Martin, Consulting Cora, plus Create your own — each with a monochrome character and Hire CTA.
+  - AI stack feature bento: Your entire AI stack in one place grids memory folders, branded visual outputs, meeting transcription chips, and If/Then automation cards — product capability without a bullet dump.
+  - Chatbots versus Strawberry: A two-column compare stacks cluttered chatbot windows with red X marks against a single Strawberry tab with a labelled companion cursor and green checks for in-tab research and team collaboration.
+  - Testimonial card grid: Loved by ambitious teams packs a 3x2 quote grid with headshots from Zapier, Float, and others, keeping social proof typographic and card-quiet before the security band.
+  - Chat-style FAQ: A FAQ presented as stacked message bubbles — white questions, one black answer — sits beside Contact Us / See how it works CTAs and a blue companion reading a book.
+
+# Launch videos
+
+Curated product launch films Elena keeps as motion and narrative references. Each entry links to a subpage with an embedded video, timeline, design highlights, and palette.
+
+Site: https://elenacabrera.xyz
+Collections: https://elenacabrera.xyz/collections?type=launch-video
+
+## Strawberry 1.0 launch
+- Source: https://x.com/charles_maddock/status/2114659351470247986
+- Product: https://strawberrybrowser.com/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/strawberry-1-0/
+- Company: Strawberry
+- Date: 2026-10-26
+- Duration: 1:30
+- Tags: ai, browser, productivity, motion
+- Description: 90-second, no-voiceover launch film: 3D AI 'companion' characters, kinetic type and abstracted app UIs on a white dot grid, driven by an upbeat electronic track and UI sound effects.
+- Landing: https://elenacabrera.xyz/collections/landings/strawberry/
+- Timeline:
+  - 0:00-0:05 Hook: Kinetic type ('You have plans', 'You want to move fast', 'You need a team') with characters running; establishes the need for speed and scale.
+  - 0:05-0:11 Solution: 'The AI team that works alongside you'; words take on the characters' colours, characters pop into a command bar.
+  - 0:11-0:30 Demo, sales: 'Book 100 sales calls' leads to automated LinkedIn outreach and Google Calendar filling up, then what companions can do across apps.
+  - 0:30-0:47 Demo, collaboration: Multiple coloured cursors build a Google Slides research deck in parallel.
+  - 0:47-0:57 Demo, admin: Google Meet note-taking, then Gmail follow-up, HubSpot update and the next call booked.
+  - 0:57-1:07 Demo, organisation: Cursors drag scattered Google Drive files into department folders.
+  - 1:08-1:16 Proof: '1.8 billion websites', floating SaaS icons, cascading testimonial cards, a ticking companions counter (267k+).
+  - 1:17-1:29 CTA: 'Discover a new way to work', character lineup, end card with logo, 'Download now for free', Mac/Windows buttons, URL.
+- Highlights:
+  - 0:01 Kinetic type with colour binding: Bold, tightly tracked sans; words swap in place and take on each character's colour, tying copy to the product.
+  - 0:10 Functional palette: Neutral white/grey dot grid plus soft accents, roughly purple #8762D9, coral #EB6B56, green #94C973, blue #75A9D2, each tied to a 'department' or companion.
+  - 0:18 Abstracted UI framing: Real apps (LinkedIn, Slides) shown as clean floating white cards with soft shadows and no browser chrome, so focus stays on the action.
+  - 0:27 Snappy motion and easing: Fast-in, slow-out; elements pop and scale with slight overshoot and slide off quickly, which reads as speed.
+  - 0:43 Oversized coloured cursors: Stylised cursors in the character palette make invisible AI actions tangible.
+  - 0:46 Multi-agent visualisation: Several cursors building one deck at once, a visual metaphor for a team working in parallel.
+  - 1:11 Layered social proof: Testimonial cards cascade and overlap, then a fast-ticking counter, so it reads as lots of praise without slowing the pace.
+  - 1:24 High-contrast end card: Characters stripped away: white, black/coral type, OS download buttons, URL. Zero ambiguity.
+- Narrative: A compressed Problem, Solution, Proof, Action arc built for social feeds. It hooks on a universal desire (move fast without the headcount), introduces the companions as the team, rapid-fires four tedious tasks being automated in familiar apps, overwhelms with scale and social proof, and lands on a frictionless free-download CTA.
+- Palette: #FFFFFF (approximate), #8762D9 (approximate), #EB6B56 (approximate), #94C973 (approximate), #75A9D2 (approximate), #111111 (approximate)

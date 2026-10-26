@@ -12,6 +12,8 @@ export type LandingManifestEntry = {
   description: string;
   designFocus: string;
   screenshots: LandingScreenshotManifest[];
+  /** Optional cross-link to a launch-video subpage slug */
+  relatedLaunchVideoSlug?: string;
 };
 
 const asset = (slug: string, file: string) =>
@@ -1059,6 +1061,67 @@ export const landingManifest: LandingManifestEntry[] = [
         title: 'Closing agent CTA',
         caption:
           'A soft gray Build your team of agents panel with Explore agents sits above a dense footer of use cases and competitor compares — one quiet close, then sitemap density.',
+      },
+    ],
+  },
+  {
+    slug: 'strawberry',
+    title: 'Strawberry',
+    url: 'https://strawberrybrowser.com/',
+    tags: ['landing', 'ui', 'ai', 'browser', 'productivity'],
+    relatedLaunchVideoSlug: 'strawberry-1-0',
+    description:
+      "Strawberry is an AI browser with built-in agent 'companions' that learn workflows and do real work across apps for teams — sourcing leads, drafting outreach, taking meeting notes, and automating browser tasks 24/7.",
+    designFocus:
+      'Playful AI-browser landing on a white dot grid: colour-coded 3D companion mascots, product-window mockups with agent chat, official-companion hire cards, and a chatbots-vs-Strawberry split that sells in-tab collaboration over isolated chat.',
+    screenshots: [
+      {
+        file: asset('strawberry', '01-hero.webp'),
+        title: 'Companion hero with agent chat',
+        caption:
+          'AI teammates that work alongside you centers four colour-coded 3D companions perched on a browser mock — Growth Gary sourcing 50 leads — under dual Download for Mac / Contact Sales CTAs on a soft white field.',
+      },
+      {
+        file: asset('strawberry', '02-section.webp'),
+        title: 'Hire your next AI colleague',
+        caption:
+          'A split section pairs Hire your next AI colleague copy with Sales / Marketing / Founder companion figures at tiny desks, selling role-based agents before the 1.8 billion websites claim.',
+      },
+      {
+        file: asset('strawberry', '03-section.webp'),
+        title: '1.8 billion websites claim',
+        caption:
+          'There are 1.8 billion websites, Strawberry can use them all floats a dense SaaS icon cloud over an Automate anything… command bar, framing the browser as a shared workspace for you and your companion.',
+      },
+      {
+        file: asset('strawberry', '04-section.webp'),
+        title: 'Official companions grid',
+        caption:
+          'Hire one of our official companions lays a 3x2 card grid — Sales Sally, Talent Theo, Executive Ellis, Marketing Martin, Consulting Cora, plus Create your own — each with a monochrome character and Hire CTA.',
+      },
+      {
+        file: asset('strawberry', '05-section.webp'),
+        title: 'AI stack feature bento',
+        caption:
+          'Your entire AI stack in one place grids memory folders, branded visual outputs, meeting transcription chips, and If/Then automation cards — product capability without a bullet dump.',
+      },
+      {
+        file: asset('strawberry', '06-section.webp'),
+        title: 'Chatbots versus Strawberry',
+        caption:
+          'A two-column compare stacks cluttered chatbot windows with red X marks against a single Strawberry tab with a labelled companion cursor and green checks for in-tab research and team collaboration.',
+      },
+      {
+        file: asset('strawberry', '07-section.webp'),
+        title: 'Testimonial card grid',
+        caption:
+          'Loved by ambitious teams packs a 3x2 quote grid with headshots from Zapier, Float, and others, keeping social proof typographic and card-quiet before the security band.',
+      },
+      {
+        file: asset('strawberry', '08-section.webp'),
+        title: 'Chat-style FAQ',
+        caption:
+          'A FAQ presented as stacked message bubbles — white questions, one black answer — sits beside Contact Us / See how it works CTAs and a blue companion reading a book.',
       },
     ],
   },

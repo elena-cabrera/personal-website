@@ -10,6 +10,7 @@ export const landings: LandingItem[] = landingManifest.map((entry) => ({
   tags: entry.tags,
   description: entry.description,
   designFocus: entry.designFocus,
+  relatedLaunchVideoSlug: entry.relatedLaunchVideoSlug,
   screenshots: entry.screenshots.map((shot) => ({
     src: shot.file,
     title: shot.title,

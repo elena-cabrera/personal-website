@@ -1,14 +1,21 @@
 import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { landingManifest } from '../src/data/collections/landings.manifest.ts';
+import { launchVideoManifest } from '../src/data/collections/launch-videos.manifest.ts';
 
 const SITE = 'https://elenacabrera.xyz';
 
-function businessTags(tags) {
-  return tags.filter((tag) => tag !== 'landing' && tag !== 'ui');
+function businessTags(tags, strip = ['landing', 'ui']) {
+  return tags.filter((tag) => !strip.includes(tag));
 }
 
-function buildLlmsTxt() {
+function formatClock(totalSec) {
+  const m = Math.floor(totalSec / 60);
+  const s = totalSec % 60;
+  return `${m}:${String(s).padStart(2, '0')}`;
+}
+
+function buildLandingsSection() {
   const lines = [
     '# Landing page design references',
     '',
@@ -28,6 +35,11 @@ function buildLlmsTxt() {
     lines.push(`- Subpage: ${subpage}`);
     lines.push(`- Tags: ${tags}`);
     lines.push(`- Design focus: ${entry.designFocus}`);
+    if (entry.relatedLaunchVideoSlug) {
+      lines.push(
+        `- Launch video: ${SITE}/collections/launch-videos/${entry.relatedLaunchVideoSlug}/`
+      );
+    }
     lines.push('- Screenshots:');
 
     for (const shot of entry.screenshots) {
@@ -37,7 +49,60 @@ function buildLlmsTxt() {
     lines.push('');
   }
 
-  return `${lines.join('\n').trim()}\n`;
+  return lines;
+}
+
+function buildLaunchVideosSection() {
+  const lines = [
+    '# Launch videos',
+    '',
+    'Curated product launch films Elena keeps as motion and narrative references. Each entry links to a subpage with an embedded video, timeline, design highlights, and palette.',
+    '',
+    `Site: ${SITE}`,
+    `Collections: ${SITE}/collections?type=launch-video`,
+    '',
+  ];
+
+  for (const entry of launchVideoManifest) {
+    const subpage = `${SITE}/collections/launch-videos/${entry.slug}/`;
+    const tags = businessTags(entry.tags, ['launch-video']).join(', ');
+
+    lines.push(`## ${entry.title}`);
+    lines.push(`- Source: ${entry.url}`);
+    lines.push(`- Product: ${entry.productUrl}`);
+    lines.push(`- Subpage: ${subpage}`);
+    lines.push(`- Company: ${entry.company}`);
+    lines.push(`- Date: ${entry.date}`);
+    lines.push(`- Duration: ${formatClock(entry.durationSec)}`);
+    lines.push(`- Tags: ${tags}`);
+    lines.push(`- Description: ${entry.description}`);
+    if (entry.relatedLandingSlug) {
+      lines.push(`- Landing: ${SITE}/collections/landings/${entry.relatedLandingSlug}/`);
+    }
+    lines.push('- Timeline:');
+    for (const beat of entry.timeline) {
+      lines.push(
+        `  - ${formatClock(beat.startSec)}-${formatClock(beat.endSec)} ${beat.label}: ${beat.purpose}`
+      );
+    }
+    lines.push('- Highlights:');
+    for (const highlight of entry.highlights) {
+      lines.push(
+        `  - ${highlight.timestampLabel} ${highlight.title}: ${highlight.explanation}`
+      );
+    }
+    lines.push(`- Narrative: ${entry.narrative}`);
+    lines.push(
+      `- Palette: ${entry.palette.map((s) => `${s.hex} (${s.label})`).join(', ')}`
+    );
+    lines.push('');
+  }
+
+  return lines;
+}
+
+function buildLlmsTxt() {
+  return `${[...buildLandingsSection(), ...buildLaunchVideosSection()].join('\n').trim()}\n`;
 }
 
 const content = buildLlmsTxt();

@@ -1,7 +1,7 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { getLandingBySlug, landings, landingSubpagePath } from '../../../data/collections/landings';
-import { faviconUrl } from '../../../data/collections';
+import { landings, landingSubpagePath } from '../../../data/collections/landings';
+import { faviconUrl, launchVideoSubpagePath } from '../../../data/collections';
 
 export function getStaticPaths() {
   return landings.map((landing) => ({
@@ -51,7 +51,7 @@ const businessTags = landing.tags.filter((tag) => tag !== 'landing' && tag !== '
           ))
         }
       </p>
-      <p>
+      <p class="landing-detail__links">
         <a
           href={landing.url}
           target="_blank"
@@ -60,6 +60,16 @@ const businessTags = landing.tags.filter((tag) => tag !== 'landing' && tag !== '
         >
           Visit site ↗
         </a>
+        {
+          landing.relatedLaunchVideoSlug ? (
+            <a
+              href={launchVideoSubpagePath(landing.relatedLaunchVideoSlug)}
+              class="landing-detail__visit"
+            >
+              Launch video
+            </a>
+          ) : null
+        }
       </p>
     </header>
 
