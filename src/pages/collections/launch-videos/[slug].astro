@@ -1,0 +1,184 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { launchVideos, launchVideoSubpagePath } from '../../../data/collections/launch-videos';
+import { faviconUrl, landingSubpagePath } from '../../../data/collections';
+
+export function getStaticPaths() {
+  return launchVideos.map((item) => ({
+    params: { slug: item.slug },
+    props: { item },
+  }));
+}
+
+const { item } = Astro.props;
+
+if (!item) {
+  return Astro.redirect('/collections/?type=launch-video');
+}
+
+const businessTags = item.tags.filter((tag) => tag !== 'launch-video');
+
+function formatClock(totalSec: number): string {
+  const m = Math.floor(totalSec / 60);
+  const s = totalSec % 60;
+  return `${m}:${String(s).padStart(2, '0')}`;
+}
+---
+
+<BaseLayout
+  title={`${item.title} — Launch video reference`}
+  description={item.description}
+  showBackButton={true}
+  wide={true}
+>
+  <main class="px-6 py-16 max-w-4xl mx-auto launch-detail">
+    <header class="launch-detail__header">
+      <p class="landing-detail__eyebrow">
+        <a href="/collections/?type=launch-video">collections</a>
+        <span aria-hidden="true"> / </span>
+        <span>Launch videos</span>
+      </p>
+      <div class="landing-detail__title-row">
+        <img
+          src={faviconUrl(item.productUrl)}
+          alt=""
+          width="20"
+          height="20"
+          class="landing-detail__icon"
+          loading="lazy"
+        />
+        <h1 class="section-title">{item.title}</h1>
+      </div>
+      <p class="prose-body">{item.description}</p>
+      <p class="landing-detail__tags">
+        {
+          businessTags.map((tag) => (
+            <a href={`/collections/?type=launch-video&tag=${encodeURIComponent(tag)}`}>{tag}</a>
+          ))
+        }
+      </p>
+      <p class="launch-detail__links">
+        <a
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="landing-detail__visit"
+        >
+          Watch on X ↗
+        </a>
+        <a
+          href={item.productUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="landing-detail__visit"
+        >
+          Product site ↗
+        </a>
+        {
+          item.relatedLandingSlug ? (
+            <a href={landingSubpagePath(item.relatedLandingSlug)} class="landing-detail__visit">
+              Landing
+            </a>
+          ) : null
+        }
+      </p>
+      <p class="launch-detail__meta">
+        {item.company}
+        <span aria-hidden="true"> · </span>
+        {item.date}
+        <span aria-hidden="true"> · </span>
+        {formatClock(item.durationSec)}
+      </p>
+    </header>
+
+    <section class="launch-detail__player" aria-label="Launch video">
+      <video
+        controls
+        playsinline
+        preload="metadata"
+        poster={item.video.poster}
+        src={item.video.src}
+      >
+      </video>
+    </section>
+
+    <section class="launch-detail__section" aria-labelledby="timeline-heading">
+      <h2 id="timeline-heading" class="launch-detail__section-title">Timeline</h2>
+      <ol class="launch-detail__timeline">
+        {
+          item.timeline.map((beat) => (
+            <li>
+              <span class="launch-detail__time">
+                {formatClock(beat.startSec)}–{formatClock(beat.endSec)}
+              </span>
+              <span class="launch-detail__beat-label">{beat.label}</span>
+              <p>{beat.purpose}</p>
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    <section class="launch-detail__section" aria-labelledby="highlights-heading">
+      <h2 id="highlights-heading" class="launch-detail__section-title">Design highlights</h2>
+      <div class="launch-detail__highlights">
+        {
+          item.highlights.map((highlight) => (
+            <figure class="launch-detail__highlight">
+              <img
+                src={highlight.frame}
+                alt={highlight.title}
+                loading="lazy"
+                width="1280"
+                height="720"
+              />
+              <figcaption>
+                <p class="launch-detail__time">{highlight.timestampLabel}</p>
+                <h3>{highlight.title}</h3>
+                <p>{highlight.explanation}</p>
+              </figcaption>
+            </figure>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="launch-detail__section" aria-labelledby="palette-heading">
+      <h2 id="palette-heading" class="launch-detail__section-title">Palette</h2>
+      <ul class="launch-detail__palette">
+        {
+          item.palette.map((swatch) => (
+            <li>
+              <span
+                class="launch-detail__swatch"
+                style={`background:${swatch.hex}`}
+                title={swatch.hex}
+              />
+              <span class="launch-detail__swatch-hex">{swatch.hex}</span>
+              <span class="launch-detail__swatch-label">{swatch.label}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="launch-detail__section" aria-labelledby="narrative-heading">
+      <h2 id="narrative-heading" class="launch-detail__section-title">Narrative</h2>
+      <p class="prose-body">{item.narrative}</p>
+    </section>
+
+    <footer class="landing-detail__footer">
+      <p class="prose-body">
+        Agent index:
+        <a href="/llms.txt">llms.txt</a>
+        ·
+        <a href="/collections/llms.txt">collections/llms.txt</a>
+      </p>
+      <p>
+        <a href={launchVideoSubpagePath(item.slug)} class="landing-detail__permalink">
+          {Astro.site?.origin ?? ''}{launchVideoSubpagePath(item.slug)}
+        </a>
+      </p>
+    </footer>
+  </main>
+</BaseLayout>
