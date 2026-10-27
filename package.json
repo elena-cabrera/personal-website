@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "astro dev",
     "generate:llms": "node --experimental-strip-types scripts/generate-llms-txt.mjs",
+    "capture:previews": "node scripts/capture-previews.mjs",
     "build": "npm run generate:llms && astro build",
     "preview": "astro preview",
     "astro": "astro"
@@ -17,5 +18,9 @@
     "@tailwindcss/vite": "^4.3.3",
     "astro": "^7.1.6",
     "tailwindcss": "^4.3.3"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1",
+    "sharp": "^0.35.5"
   }
 }

@@ -1,6 +1,6 @@
 /**
- * Floating live-site preview for collection cards.
- * Shows a bordered iframe tooltip while hovering a card with a mouse pointer.
+ * Floating static preview for collection cards.
+ * Shows an image, muted launch video, or favicon/title/domain fallback — never an iframe.
  */
 
 const root = document.querySelector('[data-collections]');
@@ -17,25 +17,40 @@ const preview = document.createElement('div');
 preview.className = 'collection-preview';
 preview.setAttribute('aria-hidden', 'true');
 
-const frame = document.createElement('iframe');
-frame.className = 'collection-preview__frame';
-frame.setAttribute('tabindex', '-1');
-frame.setAttribute('loading', 'lazy');
-frame.setAttribute(
-  'sandbox',
-  'allow-scripts allow-same-origin allow-forms allow-popups allow-popups-to-escape-sandbox'
-);
-frame.title = 'Site preview';
+const image = document.createElement('img');
+image.className = 'collection-preview__media collection-preview__image';
+image.alt = '';
+image.decoding = 'async';
+image.draggable = false;
 
-preview.appendChild(frame);
+const video = document.createElement('video');
+video.className = 'collection-preview__media collection-preview__video';
+video.muted = true;
+video.loop = true;
+video.playsInline = true;
+video.preload = 'metadata';
+video.setAttribute('disablePictureInPicture', '');
+
+const fallback = document.createElement('div');
+fallback.className = 'collection-preview__fallback';
+fallback.innerHTML = `
+  <img class="collection-preview__fallback-icon" alt="" width="28" height="28" decoding="async" />
+  <p class="collection-preview__fallback-title"></p>
+  <p class="collection-preview__fallback-domain"></p>
+`;
+
+const fallbackIcon = fallback.querySelector('.collection-preview__fallback-icon');
+const fallbackTitle = fallback.querySelector('.collection-preview__fallback-title');
+const fallbackDomain = fallback.querySelector('.collection-preview__fallback-domain');
+
+preview.append(image, video, fallback);
 document.body.appendChild(preview);
 
 let activeCard = null;
 let hideTimer = 0;
-let currentUrl = '';
+let currentKey = '';
 
 function isMouseLike(event) {
-  // Ignore touch / pen so mobile taps do not pin a floating preview.
   if ('pointerType' in event && event.pointerType) {
     return event.pointerType === 'mouse';
   }
@@ -68,44 +83,111 @@ function positionPreview(clientX, clientY) {
   preview.style.top = `${top}px`;
 }
 
+function stopVideo() {
+  video.pause();
+  video.removeAttribute('src');
+  video.load();
+}
+
+function showFallback(card) {
+  preview.dataset.mode = 'fallback';
+  image.removeAttribute('src');
+  image.hidden = true;
+  video.hidden = true;
+  stopVideo();
+  fallback.hidden = false;
+  fallbackIcon.src = card.dataset.previewFavicon || '';
+  fallbackTitle.textContent = card.dataset.previewTitle || '';
+  fallbackDomain.textContent = card.dataset.previewDomain || '';
+  preview.classList.remove('is-loading');
+}
+
+function showImage(src) {
+  preview.dataset.mode = 'image';
+  fallback.hidden = true;
+  video.hidden = true;
+  stopVideo();
+  image.hidden = false;
+  preview.classList.add('is-loading');
+  image.onload = () => {
+    preview.classList.remove('is-loading');
+  };
+  image.onerror = () => {
+    if (activeCard) showFallback(activeCard);
+  };
+  image.src = src;
+}
+
+function showVideo(src, poster) {
+  preview.dataset.mode = 'video';
+  fallback.hidden = true;
+  image.hidden = true;
+  image.removeAttribute('src');
+  video.hidden = false;
+  preview.classList.add('is-loading');
+  video.onloadeddata = () => {
+    preview.classList.remove('is-loading');
+  };
+  video.onerror = () => {
+    if (poster) {
+      showImage(poster);
+      return;
+    }
+    if (activeCard) showFallback(activeCard);
+  };
+  if (poster) video.poster = poster;
+  video.src = src;
+  const play = video.play();
+  if (play && typeof play.catch === 'function') {
+    play.catch(() => {
+      if (poster) showImage(poster);
+    });
+  }
+}
+
 function showPreview(card, clientX, clientY) {
   window.clearTimeout(hideTimer);
 
-  const link = card.querySelector('a[href]');
-  const url = card.dataset.previewUrl || (link?.getAttribute('href') ?? '');
-  if (!url || url.startsWith('#') || url.startsWith('/')) return;
+  const mode = card.dataset.previewMode || 'fallback';
+  const imageSrc = card.dataset.previewImage || '';
+  const videoSrc = card.dataset.previewVideo || '';
+  const poster = card.dataset.previewPoster || '';
+  const key = `${mode}|${imageSrc}|${videoSrc}|${poster}|${card.dataset.previewTitle || ''}`;
 
   activeCard = card;
 
-  if (url !== currentUrl) {
-    currentUrl = url;
-    preview.classList.add('is-loading');
-    frame.src = url;
+  if (key !== currentKey) {
+    currentKey = key;
+    if (mode === 'video' && videoSrc) {
+      showVideo(videoSrc, poster || imageSrc);
+    } else if (mode === 'image' && imageSrc) {
+      showImage(imageSrc);
+    } else {
+      showFallback(card);
+    }
   }
 
   positionPreview(clientX, clientY);
   preview.classList.add('is-visible');
 }
 
-frame.addEventListener('load', () => {
-  // Ignore blank clears; only reveal once a real page has painted.
-  if (!currentUrl) return;
-  preview.classList.remove('is-loading');
-});
-
 function hidePreview() {
   hideTimer = window.setTimeout(() => {
     activeCard = null;
     preview.classList.remove('is-visible');
+    if (preview.dataset.mode === 'video') {
+      video.pause();
+    }
   }, HIDE_DELAY_MS);
 }
 
 function clearPreview() {
   window.clearTimeout(hideTimer);
   activeCard = null;
-  currentUrl = '';
+  currentKey = '';
   preview.classList.remove('is-visible', 'is-loading');
-  frame.removeAttribute('src');
+  stopVideo();
+  image.removeAttribute('src');
 }
 
 function cardFromEvent(event) {
@@ -138,7 +220,6 @@ root.addEventListener('pointerout', (event) => {
   if (card === activeCard) hidePreview();
 });
 
-// mouse* fallback for environments that synthesize hover without pointer events
 root.addEventListener('mouseover', (event) => {
   const card = cardFromEvent(event);
   if (!card || card === activeCard) return;

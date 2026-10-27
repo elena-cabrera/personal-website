@@ -927,7 +927,7 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
   margin-top: 2rem;
 }
 
-/* Live site preview tooltip on collection card hover */
+/* Static image / muted video / fallback preview tooltip on collection card hover */
 .collection-preview {
   position: fixed;
   top: 0;
@@ -960,7 +960,7 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
   transform: translateY(0) scale(1);
 }
 
-.collection-preview.is-loading .collection-preview__frame {
+.collection-preview.is-loading .collection-preview__media {
   opacity: 0;
 }
 
@@ -973,17 +973,80 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
     0 0 0 1px rgba(255, 255, 255, 0.06);
 }
 
-.collection-preview__frame {
+.collection-preview__media {
   display: block;
-  width: 1280px;
-  height: 800px;
-  border: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
   background: #fff;
-  transform: scale(0.25);
-  transform-origin: top left;
   pointer-events: none;
   opacity: 1;
   transition: opacity 120ms ease;
+}
+
+.collection-preview[data-mode='fallback'] .collection-preview__media {
+  display: none;
+}
+
+.collection-preview__fallback {
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding: 1.25rem 1.35rem;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.45rem;
+  background:
+    radial-gradient(120% 90% at 12% 0%, rgba(0, 0, 0, 0.04), transparent 55%),
+    #f4f4f5;
+}
+
+.collection-preview[data-mode='fallback'] .collection-preview__fallback {
+  display: flex;
+}
+
+.dark .collection-preview__fallback {
+  background:
+    radial-gradient(120% 90% at 12% 0%, rgba(255, 255, 255, 0.05), transparent 55%),
+    #18181b;
+}
+
+.collection-preview__fallback-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.06);
+}
+
+.dark .collection-preview__fallback-icon {
+  background: #27272a;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+
+.collection-preview__fallback-title {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #18181b;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.dark .collection-preview__fallback-title {
+  color: #fafafa;
+}
+
+.collection-preview__fallback-domain {
+  margin: 0;
+  font-size: 0.75rem;
+  letter-spacing: 0.01em;
+  color: #71717a;
 }
 
 @media (prefers-reduced-motion: reduce) {
