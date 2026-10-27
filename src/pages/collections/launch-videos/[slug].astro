@@ -1,6 +1,10 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { launchVideos, launchVideoSubpagePath } from '../../../data/collections/launch-videos';
+import {
+  getLaunchVideoBySlug,
+  launchVideos,
+  launchVideoSubpagePath,
+} from '../../../data/collections/launch-videos';
 import { faviconUrl, landingSubpagePath } from '../../../data/collections';
 
 export function getStaticPaths() {
@@ -17,6 +21,8 @@ if (!item) {
 }
 
 const businessTags = item.tags.filter((tag) => tag !== 'launch-video');
+const foundVia = item.foundViaSlug ? getLaunchVideoBySlug(item.foundViaSlug) : undefined;
+const buildNotes = item.buildNotes;
 
 function formatClock(totalSec: number): string {
   const m = Math.floor(totalSec / 60);
@@ -57,6 +63,11 @@ function formatClock(totalSec: number): string {
           ))
         }
       </p>
+      <p class="launch-detail__pills" aria-label="Craft meta">
+        <span class={`launch-detail__pill${item.hasVoiceover ? '' : ' launch-detail__pill--muted'}`}>
+          {item.hasVoiceover ? 'Voiceover' : 'No voiceover'}
+        </span>
+      </p>
       <p class="launch-detail__links">
         <a
           href={item.url}
@@ -64,7 +75,7 @@ function formatClock(totalSec: number): string {
           rel="noopener noreferrer"
           class="landing-detail__visit"
         >
-          Watch on X ↗
+          Watch source ↗
         </a>
         <a
           href={item.productUrl}
@@ -81,6 +92,18 @@ function formatClock(totalSec: number): string {
             </a>
           ) : null
         }
+        {
+          buildNotes?.articleUrl ? (
+            <a
+              href={buildNotes.articleUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="landing-detail__visit"
+            >
+              How it was made (article) ↗
+            </a>
+          ) : null
+        }
       </p>
       <p class="launch-detail__meta">
         {item.company}
@@ -89,6 +112,14 @@ function formatClock(totalSec: number): string {
         <span aria-hidden="true"> · </span>
         {formatClock(item.durationSec)}
       </p>
+      {
+        foundVia ? (
+          <p class="launch-detail__credit prose-body">
+            Found via{' '}
+            <a href={launchVideoSubpagePath(foundVia.slug)}>Guli Moreno's Mila launch video research</a>
+          </p>
+        ) : null
+      }
     </header>
 
     <section class="launch-detail__player" aria-label="Launch video">
@@ -166,6 +197,73 @@ function formatClock(totalSec: number): string {
       <h2 id="narrative-heading" class="launch-detail__section-title">Narrative</h2>
       <p class="prose-body">{item.narrative}</p>
     </section>
+
+    {
+      buildNotes ? (
+        <section class="launch-detail__section" aria-labelledby="build-heading">
+          <h2 id="build-heading" class="launch-detail__section-title">How it was made</h2>
+          <p class="prose-body">
+            Built by Guli Moreno with{' '}
+            {buildNotes.tools.slice(0, 2).join(' + ')}
+            {buildNotes.articleUrl ? (
+              <>
+                .{' '}
+                <a href={buildNotes.articleUrl} target="_blank" rel="noopener noreferrer">
+                  Read the full article ↗
+                </a>
+              </>
+            ) : (
+              '.'
+            )}
+          </p>
+
+          <h3 class="launch-detail__subhead">Tools</h3>
+          <ul class="launch-detail__bullets">
+            {buildNotes.tools.map((tool) => (
+              <li>{tool}</li>
+            ))}
+          </ul>
+
+          <h3 class="launch-detail__subhead">Tips from the article</h3>
+          <ol class="launch-detail__tips">
+            {buildNotes.tips.map((tip) => (
+              <li>
+                <strong>{tip.title}</strong>
+                <p>{tip.body}</p>
+              </li>
+            ))}
+          </ol>
+
+          <h3 class="launch-detail__subhead">Craft lessons</h3>
+          <ul class="launch-detail__bullets">
+            {buildNotes.craftLessons.map((lesson) => (
+              <li>{lesson}</li>
+            ))}
+          </ul>
+
+          {buildNotes.articleDiffers ? (
+            <>
+              <h3 class="launch-detail__subhead">Article cut vs final</h3>
+              <p class="prose-body">{buildNotes.articleDiffers}</p>
+            </>
+          ) : null}
+
+          {buildNotes.references?.length ? (
+            <>
+              <h3 class="launch-detail__subhead">References studied</h3>
+              <ol class="launch-detail__refs">
+                {buildNotes.references.map((ref) => (
+                  <li>
+                    <a href={launchVideoSubpagePath(ref.slug)}>{ref.title}</a>
+                    {ref.note ? <span class="launch-detail__ref-note"> — {ref.note}</span> : null}
+                  </li>
+                ))}
+              </ol>
+            </>
+          ) : null}
+        </section>
+      ) : null
+    }
 
     <footer class="landing-detail__footer">
       <p class="prose-body">

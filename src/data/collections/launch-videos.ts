@@ -19,6 +19,12 @@ export const launchVideos: LaunchVideoItem[] = launchVideoManifest.map((entry) =
   narrative: entry.narrative,
   palette: entry.palette,
   relatedLandingSlug: entry.relatedLandingSlug,
+  hasVoiceover: entry.hasVoiceover,
+  foundViaSlug: entry.foundViaSlug,
+  buildNotes: entry.buildNotes,
+  note: entry.foundViaSlug
+    ? "Found via Guli Moreno's Mila launch video research"
+    : undefined,
 }));
 
 export function launchVideoSubpagePath(slug: string): string {

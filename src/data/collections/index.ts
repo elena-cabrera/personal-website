@@ -16,9 +16,12 @@ export type {
   CollectionType,
   LandingItem,
   LandingScreenshot,
+  LaunchVideoBuildNotes,
+  LaunchVideoBuildTip,
   LaunchVideoHighlight,
   LaunchVideoItem,
   LaunchVideoPaletteSwatch,
+  LaunchVideoReferenceLink,
   LaunchVideoTimelineBeat,
 } from './types';
 export { collectionTypes } from './types';
