@@ -94,6 +94,12 @@ export type CollectionItem = {
   foundViaSlug?: string;
   /** Launch-video: optional "How it was made" section */
   buildNotes?: LaunchVideoBuildNotes;
+  /**
+   * Optional hover preview image. When omitted, landings use the first screenshot,
+   * books use the cover, launch videos use the poster/video, and other types look
+   * for `/assets/images/collections/previews/<id>.webp`.
+   */
+  previewImage?: string;
 };
 
 export type LandingItem = CollectionItem & {

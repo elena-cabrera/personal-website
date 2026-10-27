@@ -1,5 +1,5 @@
 ---
-import { faviconUrl } from '../data/collections';
+import { faviconUrl, resolvePreviewMedia } from '../data/collections';
 import type { CollectionItem } from '../data/collections';
 import {
   isLandingItem,
@@ -36,7 +36,7 @@ const href = isLanding
   : isLaunchVideo
     ? launchVideoSubpagePath(item.slug)
     : item.url;
-const previewUrl = isLaunchVideo ? (item.productUrl ?? item.url) : item.url;
+const preview = resolvePreviewMedia(item);
 ---
 
 <li
@@ -45,7 +45,13 @@ const previewUrl = isLaunchVideo ? (item.productUrl ?? item.url) : item.url;
   data-type={item.type}
   data-tags={item.tags.join(' ')}
   data-search={search}
-  data-preview-url={previewUrl}
+  data-preview-mode={preview.mode}
+  data-preview-title={preview.title}
+  data-preview-domain={preview.domain}
+  data-preview-favicon={preview.favicon}
+  data-preview-image={preview.mode === 'image' ? preview.src : preview.mode === 'video' ? preview.poster : undefined}
+  data-preview-video={preview.mode === 'video' ? preview.src : undefined}
+  data-preview-poster={preview.mode === 'video' ? preview.poster : undefined}
 >
   <a
     href={href}

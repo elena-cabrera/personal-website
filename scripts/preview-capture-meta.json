@@ -1,0 +1,1260 @@
+{
+  "captured": 107,
+  "skipped": 0,
+  "failed": [
+    {
+      "id": "tool-gamma",
+      "url": "https://gamma.app/",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "tool-lorem-space",
+      "url": "https://lorem.space/",
+      "error": "page.goto: net::ERR_TIMED_OUT at https://lorem.space/\nCall log:\n  - navigating to \"https://lorem.space/\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "tool-playbooks",
+      "url": "https://playbooks.com/rules",
+      "error": "HTTP 404"
+    },
+    {
+      "id": "tool-png-to-svg",
+      "url": "https://www.adobe.com/express/feature/image/convert/png-to-svg",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "tool-fastwaitlist",
+      "url": "https://www.fastwaitlist.com/",
+      "error": "HTTP 503"
+    },
+    {
+      "id": "tool-stitch",
+      "url": "https://stitch.withgoogle.com/",
+      "error": "empty-page"
+    },
+    {
+      "id": "tool-lovable",
+      "url": "https://lovable.dev/",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "tool-basecoat",
+      "url": "https://basecoatui.com/kitchen-sink/",
+      "error": "HTTP 404"
+    },
+    {
+      "id": "tool-dice-ui",
+      "url": "https://www.diceui.com/",
+      "error": "HTTP 526"
+    },
+    {
+      "id": "tool-elevenlabs-ui",
+      "url": "https://ui.elevenlabs.io/docs/components/shimmering-text",
+      "error": "HTTP 429"
+    },
+    {
+      "id": "tool-wise-design",
+      "url": "https://wise.design/components",
+      "error": "HTTP 404"
+    },
+    {
+      "id": "tool-cursor-setup",
+      "url": "https://skylarbpayne.com/posts/my-cursor-setup",
+      "error": "HTTP 404"
+    },
+    {
+      "id": "tool-cursor-example",
+      "url": "https://skylarbpayne.com/posts/cursed-cursor#design-document",
+      "error": "HTTP 404"
+    }
+  ],
+  "results": [
+    {
+      "id": "tool-gemini",
+      "title": "Gemini",
+      "url": "https://gemini.google.com/app",
+      "ok": true,
+      "skipped": false,
+      "bytes": 6700,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-gemini.webp"
+    },
+    {
+      "id": "tool-copilot",
+      "title": "Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 8116,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-copilot.webp"
+    },
+    {
+      "id": "tool-recraft",
+      "title": "Recraft",
+      "url": "https://www.recraft.ai/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 24498,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-recraft.webp"
+    },
+    {
+      "id": "tool-face-to-sticker",
+      "title": "Face to sticker",
+      "url": "https://replicate.com/fofr/face-to-sticker",
+      "ok": true,
+      "skipped": false,
+      "bytes": 19250,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-face-to-sticker.webp"
+    },
+    {
+      "id": "tool-humva",
+      "title": "Humva",
+      "url": "https://humva.ai/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 4962,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-humva.webp"
+    },
+    {
+      "id": "tool-gamma",
+      "title": "Gamma",
+      "url": "https://gamma.app/",
+      "ok": false,
+      "skipped": false,
+      "bytes": null,
+      "error": "HTTP 403"
+    },
+    {
+      "id": "tool-reve",
+      "title": "Reve",
+      "url": "https://preview.reve.art/app",
+      "ok": true,
+      "skipped": false,
+      "bytes": 19766,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-reve.webp"
+    },
+    {
+      "id": "tool-new-email",
+      "title": "new.email",
+      "url": "https://new.email/chat",
+      "ok": true,
+      "skipped": false,
+      "bytes": 12342,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-new-email.webp"
+    },
+    {
+      "id": "tool-openai-academy",
+      "title": "OpenAI Academy",
+      "url": "https://academy.openai.com/home",
+      "ok": true,
+      "skipped": false,
+      "bytes": 17886,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-openai-academy.webp"
+    },
+    {
+      "id": "tool-gists",
+      "title": "Gists",
+      "url": "https://gist.github.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 17350,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-gists.webp"
+    },
+    {
+      "id": "tool-dax-formatter",
+      "title": "DAX Formatter",
+      "url": "https://www.daxformatter.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 15320,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-dax-formatter.webp"
+    },
+    {
+      "id": "tool-carbon",
+      "title": "Carbon",
+      "url": "https://carbon.now.sh/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 12134,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-carbon.webp"
+    },
+    {
+      "id": "tool-ray",
+      "title": "Ray.so",
+      "url": "https://www.ray.so/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 6632,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-ray.webp"
+    },
+    {
+      "id": "tool-regex-vis",
+      "title": "Regex Visualization",
+      "url": "https://regex-vis.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 6224,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-regex-vis.webp"
+    },
+    {
+      "id": "tool-graphviz",
+      "title": "Graphviz",
+      "url": "https://graphviz.org/gallery/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 23590,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-graphviz.webp"
+    },
+    {
+      "id": "tool-markmap",
+      "title": "Markmap",
+      "url": "https://markmap.js.org/repl",
+      "ok": true,
+      "skipped": false,
+      "bytes": 17686,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-markmap.webp"
+    },
+    {
+      "id": "tool-gitdiagram",
+      "title": "GitDiagram",
+      "url": "https://gitdiagram.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 13822,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-gitdiagram.webp"
+    },
+    {
+      "id": "tool-mockapi",
+      "title": "mockAPI",
+      "url": "https://mockapi.io/projects",
+      "ok": true,
+      "skipped": false,
+      "bytes": 6420,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-mockapi.webp"
+    },
+    {
+      "id": "tool-it-tools",
+      "title": "IT Tools",
+      "url": "https://it-tools.tech/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 16212,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-it-tools.webp"
+    },
+    {
+      "id": "tool-lorem-ipsum",
+      "title": "Lorem Ipsum",
+      "url": "https://loremipsum.io/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 21526,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-lorem-ipsum.webp"
+    },
+    {
+      "id": "tool-lorem-space",
+      "title": "Lorem.space",
+      "url": "https://lorem.space/",
+      "ok": false,
+      "skipped": false,
+      "bytes": null,
+      "error": "page.goto: net::ERR_TIMED_OUT at https://lorem.space/\nCall log:\n  - navigating to \"https://lorem.space/\", waiting until \"domcontentloaded\"\n"
+    },
+    {
+      "id": "tool-codi",
+      "title": "codi.link",
+      "url": "https://codi.link/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 1782,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-codi.webp"
+    },
+    {
+      "id": "tool-css-carousel",
+      "title": "CSS Carousel Configurator",
+      "url": "https://chrome.dev/carousel-configurator/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 9484,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-css-carousel.webp"
+    },
+    {
+      "id": "tool-playbooks",
+      "title": "Playbooks",
+      "url": "https://playbooks.com/rules",
+      "ok": false,
+      "skipped": false,
+      "bytes": null,
+      "error": "HTTP 404"
+    },
+    {
+      "id": "tool-skills-sh",
+      "title": "skills.sh",
+      "url": "https://skills.sh/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 11984,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-skills-sh.webp"
+    },
+    {
+      "id": "tool-mcp-so",
+      "title": "MCP Servers",
+      "url": "https://mcp.so/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 12228,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-mcp-so.webp"
+    },
+    {
+      "id": "tool-ai-dev-tasks",
+      "title": "ai-dev-tasks",
+      "url": "https://github.com/snarktank/ai-dev-tasks",
+      "ok": true,
+      "skipped": false,
+      "bytes": 13648,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-ai-dev-tasks.webp"
+    },
+    {
+      "id": "tool-fastapi-skill",
+      "title": "FastAPI skill",
+      "url": "https://github.com/fastapi/fastapi/blob/master/fastapi/.agents/skills/fastapi/SKILL.md",
+      "ok": true,
+      "skipped": false,
+      "bytes": 21880,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-fastapi-skill.webp"
+    },
+    {
+      "id": "tool-realtime-colors",
+      "title": "Realtime Colors",
+      "url": "https://www.realtimecolors.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 12340,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-realtime-colors.webp"
+    },
+    {
+      "id": "tool-pigment",
+      "title": "Pigment",
+      "url": "https://pigment.shapefactory.co/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 7576,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-pigment.webp"
+    },
+    {
+      "id": "tool-coolors",
+      "title": "Coolors",
+      "url": "https://coolors.co/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 18966,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-coolors.webp"
+    },
+    {
+      "id": "tool-learnui-gradient",
+      "title": "Gradient Generator",
+      "url": "https://www.learnui.design/tools/gradient-generator.html",
+      "ok": true,
+      "skipped": false,
+      "bytes": 12264,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-learnui-gradient.webp"
+    },
+    {
+      "id": "tool-gradii",
+      "title": "Gradii",
+      "url": "https://www.gradii.fun/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 2962,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-gradii.webp"
+    },
+    {
+      "id": "tool-krumzi",
+      "title": "Mesh Gradient",
+      "url": "https://www.krumzi.com/tools/mesh-gradient-generator",
+      "ok": true,
+      "skipped": false,
+      "bytes": 7556,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-krumzi.webp"
+    },
+    {
+      "id": "tool-colorpalette",
+      "title": "Color Palette",
+      "url": "https://colorpalette.pro/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 16978,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-colorpalette.webp"
+    },
+    {
+      "id": "tool-uicolors",
+      "title": "UI Colors",
+      "url": "https://uicolors.app/generate/180d13",
+      "ok": true,
+      "skipped": false,
+      "bytes": 20840,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-uicolors.webp"
+    },
+    {
+      "id": "tool-pppalette",
+      "title": "pppalette",
+      "url": "https://www.fffuel.co/pppalette/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 12250,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-pppalette.webp"
+    },
+    {
+      "id": "tool-scrollbar",
+      "title": "Scrollbar",
+      "url": "https://scrollbar.app/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 7544,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-scrollbar.webp"
+    },
+    {
+      "id": "tool-png-to-svg",
+      "title": "PNG to SVG",
+      "url": "https://www.adobe.com/express/feature/image/convert/png-to-svg",
+      "ok": false,
+      "skipped": false,
+      "bytes": null,
+      "error": "HTTP 403"
+    },
+    {
+      "id": "tool-removebg",
+      "title": "remove.bg",
+      "url": "https://www.remove.bg/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 15910,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-removebg.webp"
+    },
+    {
+      "id": "tool-photopea",
+      "title": "Photopea",
+      "url": "https://www.photopea.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 20220,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-photopea.webp"
+    },
+    {
+      "id": "tool-shots",
+      "title": "Shots",
+      "url": "https://shots.so/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 13372,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-shots.webp"
+    },
+    {
+      "id": "tool-logo-dev",
+      "title": "Logo.dev",
+      "url": "https://www.logo.dev/search",
+      "ok": true,
+      "skipped": false,
+      "bytes": 10988,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-logo-dev.webp"
+    },
+    {
+      "id": "tool-calligrapher",
+      "title": "Calligrapher.ai",
+      "url": "https://calligrapher.ai/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 2140,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-calligrapher.webp"
+    },
+    {
+      "id": "tool-transitions",
+      "title": "Transitions.dev",
+      "url": "https://transitions.dev/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 10352,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-transitions.webp"
+    },
+    {
+      "id": "tool-hero-patterns",
+      "title": "Hero Patterns",
+      "url": "https://heropatterns.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 12350,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-hero-patterns.webp"
+    },
+    {
+      "id": "tool-pageui",
+      "title": "Page UI",
+      "url": "https://pageui.shipixen.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 16828,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-pageui.webp"
+    },
+    {
+      "id": "tool-typedream",
+      "title": "Typedream",
+      "url": "https://typedream.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 14148,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-typedream.webp"
+    },
+    {
+      "id": "tool-framer",
+      "title": "Framer",
+      "url": "https://www.framer.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 17850,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-framer.webp"
+    },
+    {
+      "id": "tool-gitbook",
+      "title": "GitBook",
+      "url": "https://www.gitbook.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 13358,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-gitbook.webp"
+    },
+    {
+      "id": "tool-fastwaitlist",
+      "title": "FastWaitlist",
+      "url": "https://www.fastwaitlist.com/",
+      "ok": false,
+      "skipped": false,
+      "bytes": null,
+      "error": "HTTP 503"
+    },
+    {
+      "id": "tool-arcade",
+      "title": "Arcade",
+      "url": "https://www.arcade.software/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 8448,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-arcade.webp"
+    },
+    {
+      "id": "tool-reweb",
+      "title": "Reweb",
+      "url": "https://www.reweb.so/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 11464,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-reweb.webp"
+    },
+    {
+      "id": "tool-stitch",
+      "title": "Stitch",
+      "url": "https://stitch.withgoogle.com/",
+      "ok": false,
+      "skipped": false,
+      "bytes": null,
+      "error": "empty-page"
+    },
+    {
+      "id": "tool-relume",
+      "title": "Relume",
+      "url": "https://www.relume.io/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 22042,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-relume.webp"
+    },
+    {
+      "id": "tool-v0",
+      "title": "v0",
+      "url": "https://v0.dev/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 8554,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-v0.webp"
+    },
+    {
+      "id": "tool-bolt",
+      "title": "Bolt.new",
+      "url": "https://bolt.new/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 10704,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-bolt.webp"
+    },
+    {
+      "id": "tool-lovable",
+      "title": "Lovable",
+      "url": "https://lovable.dev/",
+      "ok": false,
+      "skipped": false,
+      "bytes": null,
+      "error": "HTTP 403"
+    },
+    {
+      "id": "tool-uiverse",
+      "title": "Uiverse",
+      "url": "https://uiverse.io/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 11446,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-uiverse.webp"
+    },
+    {
+      "id": "tool-magic-ui",
+      "title": "Magic UI",
+      "url": "https://magicui.design/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 11238,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-magic-ui.webp"
+    },
+    {
+      "id": "tool-21st",
+      "title": "21st.dev",
+      "url": "https://21st.dev/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 13088,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-21st.webp"
+    },
+    {
+      "id": "tool-aceternity",
+      "title": "Aceternity UI",
+      "url": "https://ui.aceternity.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 17732,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-aceternity.webp"
+    },
+    {
+      "id": "tool-basecoat",
+      "title": "Basecoat",
+      "url": "https://basecoatui.com/kitchen-sink/",
+      "ok": false,
+      "skipped": false,
+      "bytes": null,
+      "error": "HTTP 404"
+    },
+    {
+      "id": "tool-motion",
+      "title": "Motion",
+      "url": "https://motion.dev/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 10332,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-motion.webp"
+    },
+    {
+      "id": "tool-dice-ui",
+      "title": "Dice UI",
+      "url": "https://www.diceui.com/",
+      "ok": false,
+      "skipped": false,
+      "bytes": null,
+      "error": "HTTP 526"
+    },
+    {
+      "id": "tool-untitled-ui",
+      "title": "Untitled UI",
+      "url": "https://www.untitledui.com/react",
+      "ok": true,
+      "skipped": false,
+      "bytes": 9732,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-untitled-ui.webp"
+    },
+    {
+      "id": "tool-reui",
+      "title": "ReUI",
+      "url": "https://reui.io/blocks",
+      "ok": true,
+      "skipped": false,
+      "bytes": 17086,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-reui.webp"
+    },
+    {
+      "id": "tool-animate-ui",
+      "title": "Animate UI",
+      "url": "https://animate-ui.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 2498,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-animate-ui.webp"
+    },
+    {
+      "id": "tool-reshaped",
+      "title": "Reshaped",
+      "url": "https://reshaped.so/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 12786,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-reshaped.webp"
+    },
+    {
+      "id": "tool-elevenlabs-ui",
+      "title": "ElevenLabs UI",
+      "url": "https://ui.elevenlabs.io/docs/components/shimmering-text",
+      "ok": false,
+      "skipped": false,
+      "bytes": null,
+      "error": "HTTP 429"
+    },
+    {
+      "id": "tool-aicss",
+      "title": "AIcss",
+      "url": "https://www.aicss.dev/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 7432,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-aicss.webp"
+    },
+    {
+      "id": "tool-wise-design",
+      "title": "Wise Design",
+      "url": "https://wise.design/components",
+      "ok": false,
+      "skipped": false,
+      "bytes": null,
+      "error": "HTTP 404"
+    },
+    {
+      "id": "tool-opensource-ui",
+      "title": "Opensource UI",
+      "url": "https://opensourceui.in",
+      "ok": true,
+      "skipped": false,
+      "bytes": 7596,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-opensource-ui.webp"
+    },
+    {
+      "id": "tool-shadercn",
+      "title": "shadercn",
+      "url": "https://www.shadercn.run/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 9946,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-shadercn.webp"
+    },
+    {
+      "id": "tool-svgl",
+      "title": "SVG Logos",
+      "url": "https://svgl.app/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 14844,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-svgl.webp"
+    },
+    {
+      "id": "tool-icones",
+      "title": "Icônes",
+      "url": "https://icones.js.org/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 14586,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-icones.webp"
+    },
+    {
+      "id": "tool-icon-horse",
+      "title": "Icon Horse",
+      "url": "https://icon.horse/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 11936,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-icon-horse.webp"
+    },
+    {
+      "id": "tool-undraw",
+      "title": "unDraw",
+      "url": "https://undraw.co/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 9698,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-undraw.webp"
+    },
+    {
+      "id": "tool-icoon",
+      "title": "Icoon",
+      "url": "https://www.icoon.co/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 25332,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-icoon.webp"
+    },
+    {
+      "id": "tool-nucleo",
+      "title": "Nucleo",
+      "url": "https://nucleoapp.com/app/?library=ui",
+      "ok": true,
+      "skipped": false,
+      "bytes": 10210,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-nucleo.webp"
+    },
+    {
+      "id": "tool-excalidraw",
+      "title": "Excalidraw",
+      "url": "https://excalidraw.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 6070,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-excalidraw.webp"
+    },
+    {
+      "id": "tool-mermaid",
+      "title": "Mermaid",
+      "url": "https://mermaid.live/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 10472,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-mermaid.webp"
+    },
+    {
+      "id": "tool-tldraw",
+      "title": "tldraw",
+      "url": "https://www.tldraw.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 3666,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-tldraw.webp"
+    },
+    {
+      "id": "tool-drawio",
+      "title": "draw.io",
+      "url": "https://app.diagrams.net/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 9040,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-drawio.webp"
+    },
+    {
+      "id": "tool-lucid",
+      "title": "Lucid",
+      "url": "https://lucid.co/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 12572,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-lucid.webp"
+    },
+    {
+      "id": "tool-seline",
+      "title": "Seline",
+      "url": "https://seline.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 9106,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-seline.webp"
+    },
+    {
+      "id": "tool-umami",
+      "title": "Umami",
+      "url": "https://umami.is/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 10340,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-umami.webp"
+    },
+    {
+      "id": "tool-mdn-html",
+      "title": "MDN HTML elements",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+      "ok": true,
+      "skipped": false,
+      "bytes": 24832,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/tool-mdn-html.webp"
+    },
+    {
+      "id": "tool-cursor-setup",
+      "title": "Cursor setup",
+      "url": "https://skylarbpayne.com/posts/my-cursor-setup",
+      "ok": false,
+      "skipped": false,
+      "bytes": null,
+      "error": "HTTP 404"
+    },
+    {
+      "id": "tool-cursor-example",
+      "title": "Cursor example",
+      "url": "https://skylarbpayne.com/posts/cursed-cursor#design-document",
+      "ok": false,
+      "skipped": false,
+      "bytes": null,
+      "error": "HTTP 404"
+    },
+    {
+      "id": "inspo-dribbble",
+      "title": "Dribbble",
+      "url": "https://dribbble.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 16856,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/inspo-dribbble.webp"
+    },
+    {
+      "id": "inspo-mobbin",
+      "title": "Mobbin",
+      "url": "https://mobbin.com/discover/apps/web/latest",
+      "ok": true,
+      "skipped": false,
+      "bytes": 10328,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/inspo-mobbin.webp"
+    },
+    {
+      "id": "inspo-navbar",
+      "title": "Navbar Gallery",
+      "url": "https://www.navbar.gallery/browse",
+      "ok": true,
+      "skipped": false,
+      "bytes": 13048,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/inspo-navbar.webp"
+    },
+    {
+      "id": "inspo-bento",
+      "title": "Bento Grids",
+      "url": "https://bentogrids.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 19040,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/inspo-bento.webp"
+    },
+    {
+      "id": "inspo-h1",
+      "title": "H1 Gallery",
+      "url": "https://h1gallery.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 8932,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/inspo-h1.webp"
+    },
+    {
+      "id": "inspo-cta",
+      "title": "CTA.gallery",
+      "url": "https://www.cta.gallery/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 20582,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/inspo-cta.webp"
+    },
+    {
+      "id": "inspo-footer",
+      "title": "Footer Gallery",
+      "url": "https://www.footer.design/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 15020,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/inspo-footer.webp"
+    },
+    {
+      "id": "inspo-404s",
+      "title": "404s.design",
+      "url": "https://www.404s.design/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 9936,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/inspo-404s.webp"
+    },
+    {
+      "id": "inspo-aura",
+      "title": "Aura",
+      "url": "https://www.aura.build/browse/components?order=popular&time=month&page=1",
+      "ok": true,
+      "skipped": false,
+      "bytes": 19128,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/inspo-aura.webp"
+    },
+    {
+      "id": "personal-jace",
+      "title": "Jace",
+      "url": "https://ja.mt/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 4688,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-jace.webp"
+    },
+    {
+      "id": "personal-benji-taylor",
+      "title": "Benji Taylor",
+      "url": "https://benji.org/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 9378,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-benji-taylor.webp"
+    },
+    {
+      "id": "personal-charles-shin",
+      "title": "Charles Shin",
+      "url": "https://ch.sh/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 7674,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-charles-shin.webp"
+    },
+    {
+      "id": "personal-fay",
+      "title": "Fay",
+      "url": "https://faydakrouri.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 5442,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-fay.webp"
+    },
+    {
+      "id": "personal-dominik-sobe",
+      "title": "Dominik Sobe",
+      "url": "https://dominiksobe.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 11484,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-dominik-sobe.webp"
+    },
+    {
+      "id": "personal-thorsten-ball",
+      "title": "Thorsten Ball",
+      "url": "https://thorstenball.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 11828,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-thorsten-ball.webp"
+    },
+    {
+      "id": "personal-samwho",
+      "title": "samwho",
+      "url": "https://samwho.dev/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 8444,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-samwho.webp"
+    },
+    {
+      "id": "personal-ange-zanetti",
+      "title": "Ange Zanetti",
+      "url": "https://angezanetti.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 2938,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-ange-zanetti.webp"
+    },
+    {
+      "id": "personal-rodney-shen",
+      "title": "Rodney Shen",
+      "url": "https://rodney.lol/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 14450,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-rodney-shen.webp"
+    },
+    {
+      "id": "personal-lee-robinson",
+      "title": "Lee Robinson",
+      "url": "https://leerob.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 24380,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-lee-robinson.webp"
+    },
+    {
+      "id": "personal-guli",
+      "title": "Guli",
+      "url": "https://www.gulipad.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 1390,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-guli.webp"
+    },
+    {
+      "id": "personal-matt-rothenberg",
+      "title": "Matt Rothenberg",
+      "url": "https://mattrothenberg.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 19656,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-matt-rothenberg.webp"
+    },
+    {
+      "id": "personal-jonny-belton",
+      "title": "Jonny Belton",
+      "url": "https://jonnybelton.co/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 5790,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-jonny-belton.webp"
+    },
+    {
+      "id": "personal-william-jansson",
+      "title": "William Jansson",
+      "url": "https://williamjansson.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 3564,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-william-jansson.webp"
+    },
+    {
+      "id": "personal-jakub-krehel",
+      "title": "Jakub Krehel",
+      "url": "https://jakub.kr/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 7724,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-jakub-krehel.webp"
+    },
+    {
+      "id": "personal-gavin-nelson",
+      "title": "Gavin Nelson",
+      "url": "https://nelson.co/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 3586,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-gavin-nelson.webp"
+    },
+    {
+      "id": "personal-dani-diestre",
+      "title": "Dani Diestre",
+      "url": "https://www.danidiestre.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 9534,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-dani-diestre.webp"
+    },
+    {
+      "id": "personal-alex-sheard",
+      "title": "Alex Sheard",
+      "url": "https://alexsheard.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 6940,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-alex-sheard.webp"
+    },
+    {
+      "id": "personal-taseen-tanvir",
+      "title": "Taseen Tanvir",
+      "url": "https://tanvir.io/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 8736,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-taseen-tanvir.webp"
+    },
+    {
+      "id": "personal-felipe-cardona",
+      "title": "Felipe Cardona",
+      "url": "https://www.felipecardona.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 8836,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-felipe-cardona.webp"
+    },
+    {
+      "id": "personal-mike-barton",
+      "title": "Mike Barton",
+      "url": "https://www.mikes.cv/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 6826,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-mike-barton.webp"
+    }
+  ]
+}
