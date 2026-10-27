@@ -307,6 +307,70 @@ Curated product launch films Elena keeps as motion and narrative references. Eac
 Site: https://elenacabrera.xyz
 Collections: https://elenacabrera.xyz/collections?type=launch-video
 
+## Mila (Capchase)
+- Source: https://x.com/GuliMoreno/status/2110370319638954119
+- Product: https://www.capchase.com/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Company: Capchase
+- Date: 2026-10-14
+- Duration: 0:53
+- Voiceover: no
+- Tags: ai, fintech, motion
+- Description: 53-second, no-voiceover motion-graphics launch for Capchase's AI deal-desk agent Mila: inbox chaos, Meet Mila on the bass drop, a frosted proposal demo, then scale and a finance.new end card. Made by Guli Moreno with Claude Code + HyperFrames; track Terminal Velocity by Cospe (Epidemic Sound).
+- Timeline:
+  - 0:00-0:03 Problem: Typed 'Traditional vendor financing is broken.' on a blank field; 'is broken.' goes bold on a tense typing beat.
+  - 0:03-0:11 Overwhelm: Vertical waterfall of financing emails motion-blurs; three late-night chat bubbles and a notification pile on as the music builds.
+  - 0:11-0:14 Pivot: Screen clears; 'But it doesn't have to be that way.' types, then a lavender highlight block; riser into silence.
+  - 0:14-0:17 Meet Mila: Drop: concentric rings, fluid orange/peach orb, 'Meet Mila.'
+  - 0:17-0:30 Demo: Orb docks into 'Ask Mila anything'; quote → credit check → proposal card → upfront tweak → Send → Pay now → Signed, on a macro zoom of the orb gradient.
+  - 0:30-0:35 Channels: Quick cuts: 'Just ask.' then Via Gmail / Slack / finance.new in a light theme with real product UI.
+  - 0:35-0:40 Callback: Same frantic bubbles return; Mila answers instantly with approvals and send confirmations.
+  - 0:40-0:45 Scale: Camera pulls back to an infinite isometric card grid: 'A 24/7 deal desk.' / 'With instant answers.'
+  - 0:45-0:53 CTA: Orange circular wipe to Capchase lockup, tagline 'Vendor financing at the speed of sales.', cursor clicks finance.new.
+- Highlights:
+  - 0:02 Typing as rhythm: Keystrokes land on the tense beat so the problem line feels scored, not just typed.
+  - 0:08 Motion blur for overwhelm: Email rows streak vertically; speed itself becomes the metaphor for a broken desk.
+  - 0:14 Highlight block as gear-shift: Lavender selection on the pivot line telegraphs the cut into silence before the drop.
+  - 0:16 Orb as character: The orange/peach orb is logo, loader and avatar in one object that carries the Meet Mila hit.
+  - 0:24 Macro-gradient backgrounds: Demo cards sit on a zoomed slice of the same orb gradient, so UI and brand stay one surface.
+  - 0:37 Callback resolves the problem: The same late-night pings return with instant Mila replies — problem shot paid off, not abandoned.
+  - 0:42 Isometric infinite grid: One card becomes a plane of deal-desk tiles; scale without a number counter.
+- Narrative: Problem, pivot, Meet Mila on the drop, step-by-step demo, channels, callback that answers the opening chaos, scale, then end card. No voiceover — on-screen type and the Epidemic track carry the arc.
+- Palette: #F5F6F8 (bg), #111111 (text), #E85D36 (Mila / emphasis), #F69D79 (peach), #D2C4ED (lavender pivot), #FFFFFF (cards)
+- How it was made:
+  - Tools: Claude Code; HyperFrames (HTML + GSAP → MP4); Epidemic Sound (Terminal Velocity by Cospe); ffmpeg / contact sheets / librosa / whisper for reference analysis
+  - Article: https://www.gulipad.com/writings/mila-launch-video
+  - Tip — Start with references, not the brief: Rank and study launch films before product context, music, or script. Shared references beat a cold brief.
+  - Tip — Music first, drop on 'Meet Mila': Pick the track before visuals and lock cuts to measured onsets. The bass drop lands on Meet Mila; the logo lands on the last hit.
+  - Tip — Be blunt, but say what works: Reviews can be harsh ("teletienda", "AI slop") if they also name the beat that is already right and ask for more of it.
+  - Tip — Commit what's good: Git commits are save points and a clear signal not to rewrite the parts that already work.
+  - Tip — Course-correct on the go: Send mid-task nudges instead of waiting for a full pass to finish.
+  - Tip — Ask for its opinion: When a half of the film stalls, ask what is missing and let the model propose the next move.
+  - Tip — Keep the taste calls: Human picks SFX links, tagline, and message-carrying lines; the agent handles execution and measurement.
+  - Craft: Reference music often hits hardest ~70% in after 1–2s of silence; Attio uses a sub swell, Raycast slams every cut, Rippling peaks on the product name and the logo.
+  - Craft: Script rule: ~12 headline lines max, one idea per film, product carries the story, single CTA.
+  - Craft: Camera never stalls: constant drift plus punch-ins (shared expo.out curve); more short overlapping scenes beat fewer long ones.
+  - Craft: Transitions should morph what is already on screen (Attio approach), not hard-cut to new content.
+  - Craft: Avoid AI-slop: number counters, glitches, crack effects, cheesy SFX.
+  - Craft: Epidemic Creator plan excludes brand marketing — need Business/Enterprise and swap preview stems for licensed masters.
+  - Article vs final: The article's in-chat cut (30 fps) differs from the final X post (60 fps) after ~20s: opening line is 'Traditional vendor financing is broken.' (not 'Software and hardware…'); the 'Just ask.' / Via channels section is light-theme with real Gmail and Slack UIs instead of dark glass; scale line is 'A 24/7 deal desk. With instant answers.'; end tagline is 'Vendor financing at the speed of sales.' not '…speed of tech.'
+  - References studied:
+    - Ask Attio (1 — Guli's top pick): https://elenacabrera.xyz/collections/launch-videos/attio-ask-attio/
+    - New Raycast — Coming 2026 (2): https://elenacabrera.xyz/collections/launch-videos/raycast-coming-2026/
+    - Reception by ElevenLabs (3): https://elenacabrera.xyz/collections/launch-videos/elevenlabs-reception/
+    - Claude Slides, Design & Docs (4): https://elenacabrera.xyz/collections/launch-videos/claude-slides-design-docs/
+    - Harvey II (5): https://elenacabrera.xyz/collections/launch-videos/harvey-ii/
+    - Rippling AI (Added later as a key structure reference (two peaks: product name + logo)): https://elenacabrera.xyz/collections/launch-videos/rippling-ai/
+    - Ramp Accounting Bench: https://elenacabrera.xyz/collections/launch-videos/ramp-accounting-bench/
+    - Hebbia Projects: https://elenacabrera.xyz/collections/launch-videos/hebbia-projects/
+    - Linear Agent: https://elenacabrera.xyz/collections/launch-videos/linear-agent/
+    - Ramp Policy Agent (Weakest of the set; kept as fintech reference): https://elenacabrera.xyz/collections/launch-videos/ramp-policy-agent/
+    - Superhuman power tools: https://elenacabrera.xyz/collections/launch-videos/superhuman/
+    - Cursor 2.0: https://elenacabrera.xyz/collections/launch-videos/cursor-2-0/
+    - Notion 3.0 Agents: https://elenacabrera.xyz/collections/launch-videos/notion-3-0-agents/
+    - Krea 2: https://elenacabrera.xyz/collections/launch-videos/krea-2/
+    - Chatly × Flowjam: https://elenacabrera.xyz/collections/launch-videos/chatly-flowjam/
+
 ## Strawberry 1.0 launch
 - Source: https://x.com/charles_maddock/status/2114659351470247986
 - Product: https://strawberrybrowser.com/
@@ -314,9 +378,11 @@ Collections: https://elenacabrera.xyz/collections?type=launch-video
 - Company: Strawberry
 - Date: 2026-10-26
 - Duration: 1:30
+- Voiceover: no
 - Tags: ai, browser, productivity, motion
 - Description: 90-second, no-voiceover launch film: 3D AI 'companion' characters, kinetic type and abstracted app UIs on a white dot grid, driven by an upbeat electronic track and UI sound effects.
 - Landing: https://elenacabrera.xyz/collections/landings/strawberry/
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
 - Timeline:
   - 0:00-0:05 Hook: Kinetic type ('You have plans', 'You want to move fast', 'You need a team') with characters running; establishes the need for speed and scale.
   - 0:05-0:11 Solution: 'The AI team that works alongside you'; words take on the characters' colours, characters pop into a command bar.
@@ -337,3 +403,424 @@ Collections: https://elenacabrera.xyz/collections?type=launch-video
   - 1:24 High-contrast end card: Characters stripped away: white, black/coral type, OS download buttons, URL. Zero ambiguity.
 - Narrative: A compressed Problem, Solution, Proof, Action arc built for social feeds. It hooks on a universal desire (move fast without the headcount), introduces the companions as the team, rapid-fires four tedious tasks being automated in familiar apps, overwhelms with scale and social proof, and lands on a frictionless free-download CTA.
 - Palette: #FFFFFF (approximate), #8762D9 (approximate), #EB6B56 (approximate), #94C973 (approximate), #75A9D2 (approximate), #111111 (approximate)
+
+## Ramp Accounting Bench
+- Source: https://www.youtube.com/watch?v=hrkp_DIHTk8
+- Product: https://labs.ramp.com/ramp-accounting-bench
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/ramp-accounting-bench/
+- Company: Ramp
+- Date: 2026-09-18
+- Duration: 0:55
+- Voiceover: no
+- Tags: ai, fintech, analytics, motion
+- Description: Editorial, typography-led launch of Ramp Accounting Bench: vintage adding-machine props, 22 simulated companies / 137 tasks, then scatter and bar charts of model scores. No voiceover; strings and piano.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:03 Intro: 3D vintage cash register on warm off-white: 'INTRODUCING / Ramp Accounting Bench'.
+  - 0:03-0:10 Setup: Companies (22), tasks (137), rubrics by accounting pros — left-third copy, right-two-thirds machine printing cards.
+  - 0:10-0:23 Example task: Allowance for doubtful accounts; machine prints TURN 01–05 receipt cards while a display counts the turns.
+  - 0:23-0:41 Results: Scatter with model logos and a dashed Pareto frontier, then a grouped bar chart of how models compare.
+  - 0:41-0:50 Mistakes: Common mistakes bars compress into a 100% stacked bar, duplicated per model.
+  - 0:50-0:55 CTA: Ramp Accounting Bench lockup and labs.ramp.com URL.
+- Highlights:
+  - 0:07 Editorial grid: Left third holds kickers and headlines; right two-thirds stay visual — magazine layout, not a product tour.
+  - 0:05 Vintage machine + AI data: Anachronistic adding machine printing modern benchmark cards makes the subject feel tangible.
+  - 0:18 Agent turns as receipts: Each agent turn lands as a printed receipt strip instead of a UI timeline.
+  - 0:26 Scatter + Pareto: Model logos build on a scatter; a dashed frontier draws the performance envelope.
+  - 0:29 Giant metric callouts: Huge tabular figures (49.7% mean reward, 21.2% Pass@3) do the proof work without voiceover.
+  - 0:46 Bar morphs to stacked: Common-mistakes bars compress into 100% stacked bars so composition stays continuous.
+- Narrative: Introduce the bench as an object, define companies/tasks/rubrics, walk one example through printed turns, prove with charts, then URL. Editorial and quiet — strings, no VO.
+- Palette: #F4F3EE (warm off-white), #111111 (ink), #8C8C8C (grey), #D59B7D (terracotta), #B6899E (mauve), #87A9A2 (sage)
+
+## Claude Slides, Design & Docs
+- Source: https://www.youtube.com/watch?v=To5nrYqvR44
+- Product: https://claude.ai/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/claude-slides-design-docs/
+- Company: Anthropic
+- Date: 2026-09-16
+- Duration: 1:35
+- Voiceover: no
+- Tags: ai, productivity, motion, ui
+- Description: 95-second continuous workflow for a fictional 'Varde 2.0' launch kit: chat → slides → social artboards → multiplayer doc, ending in a share delight and logo compress. No voiceover; synth and tactile UI SFX.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:03 Hook: Cream field, serif headline 'Create docs, slides, and designs. Same conversation.' morphs into Docs/Slides/Design chips; 'Now in beta'.
+  - 0:03-0:17 Chat → deck: Claude chat greets Frankie; zip upload and prompt to build a readiness deck; 'Your deck is ready — eight slides, one job each.'
+  - 0:17-0:32 Slide edit: Inline edit on a slide line, theme shifts to teal as the bass kicks in.
+  - 0:32-0:57 Social artboards: Overlay chat asks to mock social images; four artboards (16:9 / 1:1 / 4:5 / 9:16) update accent colour together.
+  - 0:57-1:21 Multiplayer doc: One-pager with clarifying multiple-choice; named cursors Claude/Frankie/Zak type and comment.
+  - 1:21-1:35 Share + logo: Share with orange glow and confetti; 'Claude makes it. You steer it.' box-select compresses into the Claude logo.
+- Highlights:
+  - 0:02 Headline words → UI chips: Display words morph into Docs/Slides/Design chips so the promise becomes the product chrome.
+  - 0:36 Overlay chat on canvas: Chat sits on the slide instead of leaving the canvas — same-conversation made literal.
+  - 0:56 Four artboards at once: All aspect ratios restyle together; one decision, many outputs.
+  - 1:01 Clarifying multiple-choice: Chat asks a structured choice mid-doc instead of dumping a draft.
+  - 1:10 Multiplayer cursor choreography: Named cursors make co-editing visible and paced.
+  - 1:22 Share confetti: Orange glow + confetti as a micro-delight on Share.
+  - 1:30 Tagline compresses into logo: Box-select squeezes the closing line into the Claude mark.
+- Narrative: One conversation, three surfaces. Hook on same-conversation creation, demo slides then social then a shared doc, celebrate share, end on the logo. Product motion does the talking.
+- Palette: #FCFAF8 (warm off-white), #1E1E1E (charcoal), #D96D55 (Claude rust), #36B2B2 (teal demo), #E5E5E5 (grey)
+
+## Reception by ElevenLabs
+- Source: https://www.youtube.com/watch?v=3RojrjVVFSg
+- Product: https://reception.ai/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/elevenlabs-reception/
+- Company: ElevenLabs
+- Date: 2026-09-16
+- Duration: 0:33
+- Voiceover: yes
+- Tags: ai, productivity, motion
+- Description: 33-second kinetic-type launch from missed business calls to a calm AI receptionist. Male narrator plus AI/caller dialogue over halftone grids, 3D props and glass chat bubbles.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:08 Problem triad: White kinetic type + 3D props assemble: appointment, book a job, schedule a meeting — phone rings 'INCOMING CALL'.
+  - 0:08-0:13 Nobody around: Clutter over shifting halftone: 'But nobody's around to pickup.'
+  - 0:13-0:15 Until now: Red-orange halftone floods, morphs into a glowing orb in deep space.
+  - 0:15-0:23 Conversation: Orb softens into colour; glass bubbles of receptionist ↔ caller booking dialogue (spoken).
+  - 0:23-0:30 Claim + lineup: Black: 'Stop missing calls…' blurs into 'Stop losing clients.'; three agent cards (Informational / Receptionist / Reservation).
+  - 0:30-0:33 Logo: Green laser sweep reveals Reception.ai / ElevenAgents.
+- Highlights:
+  - 0:02 Kinetic type grid: Scattered objects assemble into a grid while type states the call reason.
+  - 0:06 3D objects vs flat type: Hard hat, vest, crane against flat headlines sell industry context fast.
+  - 0:08 Halftone gradient transitions: Halftone colour fields bridge scenes without hard cuts.
+  - 0:14 Halftone-to-orb morph: Problem colour collapses into the product orb — Until now as a visual flip.
+  - 0:20 Glass chat bubbles: Frosted bubbles on a blurred field make the conversation the product.
+  - 0:26 Kinetic text replacement: Claim blurs and is replaced mid-phrase for a sharper punchline.
+  - 0:28 Glowing dark glass cards: Three agent types as backlighted glass tiles before the logo.
+- Narrative: Problem triad of missed calls, Until now colour flip, product as a spoken conversation, tightened claim, agent lineup, logo. Voiceover + dialogue are the craft distinction.
+- Palette: #F6F6F4 (cream), #050505 (black), #FF5A36 (orange), #67A042 (green), #4B8CC8 (blue)
+
+## Harvey II
+- Source: https://www.youtube.com/watch?v=31_moi-cVXg
+- Product: https://www.harvey.ai/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/harvey-ii/
+- Company: Harvey
+- Date: 2026-08-18
+- Duration: 1:00
+- Voiceover: yes
+- Tags: ai, enterprise, motion
+- Description: 60-second textured paper/paint collage film for Harvey II: scattered legal matter becomes a memory-driven workspace. Female voiceover over classical strings; 3D primitives and labelled multiplayer cursors.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:10 Collage: Paper textures, paint and legal snippets converge into a black 3D cube.
+  - 0:10-0:16 Workspace: Collage snaps to UI; isometric Project Titan hub with Agents/Tasks/Past context/Memories.
+  - 0:16-0:29 Memory: Acme Acquisition workspace; textured cube with pill callouts for memories, BLUF preference, templates.
+  - 0:29-0:40 Intelligence: Geometric abstractions; serif letters 'INFORMATION' snap to 'Intelligence.'
+  - 0:40-0:53 Review + tasks: Circular frames around web/file review; hub fills with parallel task cards.
+  - 0:53-1:00 Collab + logo: Multiplayer cursors (Senior Partner, General Counsel); cube unfolds to H logo.
+- Highlights:
+  - 0:10 Collage to UI: Abstract paper/paint material resolves into crisp product chrome.
+  - 0:14 Isometric UI hub: Project Titan as a mind-map hub framed by stone-textured 3D corners.
+  - 0:26 Textured 3D primitives: Rotating cube keeps the collage material language inside the product story.
+  - 0:26 Pill callouts: Thin-line callouts radiate memories and preferences from one object.
+  - 0:36 Information → Intelligence: Scattered serif letters snap into the sharper claim.
+  - 0:54 Labelled collaborative cursors: Role-named cursors sell multiplayer legal work.
+  - 0:58 Cube unfolds to logo: Texture peels open to the H in negative space.
+- Narrative: Scattered legal matter coalesces into a remembered workspace, proves parallel review, then lands on collaboration and the mark. VO + strings; collage craft over UI polish alone.
+- Palette: #F4F4F4 (paper), #2D2D2D (charcoal), #8E848D (mauve), #AAB9BA (slate blue), #DCD6CD (warm grey)
+
+## Krea 2
+- Source: https://x.com/krea_ai/status/2054207481421975829
+- Product: https://www.krea.ai/k2
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/krea-2/
+- Company: Krea
+- Date: 2026-05-12
+- Duration: 1:07
+- Voiceover: yes
+- Tags: ai, motion, ui
+- Description: 67-second Swiss black-on-white launch for Krea 2: brand type as a neutral canvas for explosive imagery, silhouette restyles, abstract dials, then a black-hole collapse into the k logo. Calm female voiceover.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:06 Intro: Collage clears to white: 'This is Krea 2' / 'An image model' / 'made for aesthetics' over a full-bleed slideshow.
+  - 0:07-0:15 Any style: Create in any style — horse silhouette filled by a scan line through neon, pointillism, cartoon.
+  - 0:16-0:30 Moodboard → you: Upload/moodboard beat; portrait with orbiting style cycles; OS-blue selection on 'it'.
+  - 0:31-0:50 Gets better + controls: Typed 'The better it gets'; Z-axis cascade of variations; Creativity/Randomness/Style strength dials restyle live.
+  - 0:51-1:07 Logo: Galaxy of images zooms out and collapses into the k mark; krea.ai/k2.
+- Highlights:
+  - 0:02 Blank canvas contrast: Brand type steps back so imagery can explode on white.
+  - 0:06 Text as window: Letterforms mask a rapid slideshow underneath.
+  - 0:10 Silhouette scan-line restyle: One outline, many styles painted through by a scan.
+  - 0:31 OS text-selection highlight: System-blue selection on a single word as a product wink.
+  - 0:36 Z-axis iteration cascade: Variations stack into depth instead of a flat grid.
+  - 0:45 Line/dial controls: Thin scrubber and dotted dial over live restyles — unique controls made visible.
+  - 1:02 Collapse into logo: Image galaxy sucks into a point that becomes the k.
+- Narrative: Announce the model, prove any-style control, show personalisation and unique dials, then vacuum everything into the mark. VO is calm; type stays Swiss and sparse.
+- Palette: #FFFFFF (bg), #000000 (type), #A6C8FF (selection blue), #FF2A85 (neon pink), #0033CC (deep blue)
+
+## Hebbia Projects
+- Source: https://www.youtube.com/watch?v=yoLe4_XscqA
+- Product: https://www.hebbia.com/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/hebbia-projects/
+- Company: Hebbia
+- Date: 2026-04-21
+- Duration: 0:45
+- Voiceover: no
+- Tags: ai, enterprise, productivity
+- Description: 45-second editorial launch for Hebbia Projects: serif type over live-action b-roll into a dark-mode workspace demo (create / collaborate / automate), ending on a copper monolith. No voiceover; pulsing electronic. Includes filmed b-roll.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:05 Intro: Split-screen b-roll, serif 'INTRODUCING PROJECTS', corner metadata Spring 2026; shared-intelligence line.
+  - 0:05-0:11 Into UI: Black typed text becomes the dark UI header for Project Alpha / ACME sell-side.
+  - 0:11-0:25 Create/Collaborate/Automate: Off-white sidebar with blue progress dot; draft R1 process letter with searching/reading pills, publish, feed.
+  - 0:25-0:37 Background agents: Sidebar centres on always-on agents; dashboard widgets with floating avatars.
+  - 0:38-0:45 Outro: Dark copper ridged abstract, sliced type, Hebbia logo, metadata returns.
+- Highlights:
+  - 0:02 Split-screen montage: Live b-roll beside serif intro type — institutional tone before UI.
+  - 0:04 High-contrast serif on dark: Garamond-like display carries the positioning line.
+  - 0:06 Typewriter into UI header: Typed statement becomes the project chrome without a cut.
+  - 0:14 Progress sidebar: Create/Collaborate/Automate with a moving blue dot as the spine.
+  - 0:18 Sequential loading pills: Searching / Reading CIM… pills stage agent work in order.
+  - 0:32 Floating avatars on widgets: People presence on dashboard tiles for collaboration.
+  - 0:40 Metallic monolith outro: Copper ridged abstract closes the film with brand weight.
+- Narrative: Editorial cold open, type lands inside the product, walk Create→Collaborate→Automate, show always-on agents, exit on a material brand beat. No VO.
+- Palette: #0A0A0A (black), #FFFFFF (white), #171717 (near-black), #F3F2EE (off-white), #513EE8 (indigo), #375DFB (blue dot)
+
+## Linear Agent
+- Source: https://www.youtube.com/watch?v=mRql2VJ99gM
+- Product: https://linear.app/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/linear-agent/
+- Company: Linear
+- Date: 2026-03-24
+- Duration: 0:55
+- Voiceover: no
+- Tags: ai, devtools, productivity, motion
+- Description: 55-second cinematic continuous shot through dark Linear UI: Ask Linear finds loading bugs, plans an optimistic-loading refactor, generates a PRD and architecture diagram. No voiceover; dark synth to bass drop.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:11 Ask: Slow pan over blurred workspace; Ask Linear pill; types 'Find issues with loading performance'.
+  - 0:11-0:21 Findings → plan: Pill expands to chat with 13 bugs; prompt to plan optimistic loading refactor.
+  - 0:21-0:40 PRD + diagram: Fast pan to generating doc with table; architecture boxes then arrows; zoom out to doc + chat.
+  - 0:40-0:45 Summary: Card: 'I created the PRD around the issues you surfaced.'
+  - 0:45-0:55 Tagline: Black: 'Linear. At your command.' with purple-blue sweep and logo.
+- Highlights:
+  - 0:02 Shallow depth of field: UI treated like cinema glass — focus pulls sell seriousness.
+  - 0:06 Vignette spotlight: Dark falloff keeps attention on the Ask pill.
+  - 0:12 Pill morphs into chat: Search control expands into the agent panel without a hard cut.
+  - 0:22 Spatial camera pans: One continuous move through workspace → doc.
+  - 0:26 Generative text reveal: PRD body types on with table structure emerging.
+  - 0:32 Diagram boxes then arrows: Architecture draws boxes first, then connects — readable generation.
+  - 0:48 Chromatic sweep on tagline: Purple-blue wash under the closing line.
+- Narrative: Question → structured findings → plan → PRD/diagram → quiet command tagline. Cinematic camera, no VO; agent work is the story.
+- Palette: #08080A (bg), #1A1A1F (panel), #FFFFFF (text), #8A8A93 (muted), #7A73E7 (accent)
+
+## Chatly × Flowjam
+- Source: https://vimeo.com/1175426523
+- Product: https://www.flowjam.com/chatly
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/chatly-flowjam/
+- Company: Chatly
+- Date: 2026-03-20
+- Duration: 0:52
+- Voiceover: yes
+- Tags: ai, productivity, motion
+- Description: 52-second problem-solution film by Flowjam for Chatly: dark 3D void of scattered AI tools, then one white canvas morphing chat → doc → slides → sheet → site. Male voiceover.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:10 Messy AI: Dark 3D space: 'AI can do a lot' → 'Messy'; tab explosion and logos flying at camera.
+  - 0:10-0:12 Pivot: 'This ends today.' / 'with Chatly.' logo.
+  - 0:12-0:23 Chat: White chat, oversized cursor, flower-shop prompt, Claude/GPT/Gemini switcher.
+  - 0:23-0:48 One canvas morphs: Colour-coded pills: Documents → Slides → Sheets → Sites with Publish.
+  - 0:48-0:52 Logo: 3D silver logo spins and flattens on dark.
+- Highlights:
+  - 0:02 Depth of field in 3D void: Foreground UI blurs into a dark void of floating chrome.
+  - 0:08 Logo explosion toward camera: AI marks rush the lens to sell scattered distraction.
+  - 0:14 Oversized cursor typing: Giant cursor makes the first prompt feel directed, not automated.
+  - 0:24 Colour-coded feature pills: Docs blue / Slides orange / Sheets green / Sites lavender glow as modes.
+  - 0:31 Canvas morphs between formats: Same surface becomes deck, sheet, site — one product, many shapes.
+  - 0:48 Cursor-driven storytelling: Cursor leads Publish and the close of the demo.
+  - 0:49 3D logo spin to flat: Silver mark flattens onto black as the end card.
+- Narrative: Chaos of many AI tools, hard pivot to Chatly, then one canvas that becomes every work format. VO carries the problem line; morphs do the product proof.
+- Palette: #121212 (void), #FFFFFF (ui), #7CA5F5 (docs blue), #E35E45 (slides orange), #35C759 (sheets green), #DDBDF2 (sites lavender)
+
+## Rippling AI
+- Source: https://www.youtube.com/watch?v=Ve6565BeUxI
+- Product: https://www.rippling.com/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/rippling-ai/
+- Company: Rippling
+- Date: 2026-03-18
+- Duration: 1:00
+- Voiceover: no
+- Tags: ai, enterprise, productivity, motion
+- Description: 60-second kinetic-type launch for Rippling AI: query with deep data-layer context, act on bonuses, cite sources and scope permissions. No voiceover; driving synth. Key structure reference in Guli's Mila research.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:09 Hook: Spark into prompt 'Who are my top performers in Support?'; rich answer; user starts 'Holy s' and is cut off.
+  - 0:09-0:22 Positioning: Introducing Rippling AI — deep access to the data layer, full context, better decisions, instant reports, logic you can see; chips orbit type.
+  - 0:22-0:34 Act: Risk query → attrition table; 'Enough talk / Save time with action'; bonus flow to Done.
+  - 0:34-0:48 Trust: Cites sources, hover profile, math typed line by line; scopes permissions with a dry 'Nice try.'
+  - 0:48-1:00 Close: Every employee has Rippling at their fingertips over blurred queries; RIPPLING AI logo.
+- Highlights:
+  - 0:09 Holy s interrupt cut: User reaction cut mid-type sells the answer quality with humour.
+  - 0:14 Chips orbit typography: UI chips circle bold statements so data feels in motion around the claim.
+  - 0:20 Stacked better better rhythm: Word repetition as a beat, not a typo.
+  - 0:29 Keyword colour shift: 'action' flips mint to mark the act chapter.
+  - 0:36 Glass magnifier sweep: Trust section opens with a lens over the UI.
+  - 0:38 Inline hover profile card: Source citation as a tangible hover card.
+  - 0:41 Math typed line by line: Shows its work as incremental arithmetic, not a dumped total.
+  - 0:48 Dry 'Nice try.' card: Permissions denial lands as a deadpan card.
+- Narrative: Query → position the data layer → act → prove trust (citations, math, scopes) → logo. Two structural peaks (product name, logo) made it a later Mila reference.
+- Palette: #000000 (bg), #FFFFFF (type), #1C1C1C (panel), #8B2C7A (AI spark), #34D399 (mint), #3B82F6 (blue)
+
+## Ask Attio
+- Source: https://www.youtube.com/watch?v=HSVVMgExV9U
+- Product: https://attio.com/ask
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/attio-ask-attio/
+- Company: Attio
+- Date: 2026-02-04
+- Duration: 0:47
+- Voiceover: no
+- Tags: ai, productivity, motion, ui
+- Description: 47-second typography-driven launch of Ask Attio: every email/call/note becomes Universal Context™, then slot-machine predicates under a fixed Ask Attio. No voiceover; synced sound design. Guli's #1 reference for Mila.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:07 Hook: Good morning.; Ask or search anything → 'How do I win this deal'; Thinking…; black iris wipe.
+  - 0:07-0:21 Sources: creates signal; montage Every email / call / note / web search on a white grid.
+  - 0:21-0:32 Context: Ticker of record types; 'Everything is context' → Universal Context™ with dotted data horizon.
+  - 0:32-0:38 Ask: Ask Attio fixed left; grey predicates cycle and accelerate.
+  - 0:38-0:47 Tagline: Morphs to 'Ask more from CRM.'; isometric Attio logo and attio.com/ask.
+- Highlights:
+  - 0:02 UI abstraction: Floating search and meeting chrome without heavy product chrome.
+  - 0:06 Iris wipe to black: Black circle wipe as a gear change into the under-the-hood chapter.
+  - 0:11 Cascading staggered windows: Every email as stacked windows on a white grid.
+  - 0:26 Kinetic ticker: Horizontal record-type ticker as the data firehose.
+  - 0:31 Dotted data horizon: Arc of vertical dotted lines rising like a data skyline.
+  - 0:35 Slot-machine predicates: Fixed Ask Attio; grey completions spin and click.
+  - 0:41 Morphing tagline: Ask Attio becomes 'Ask more from CRM.' before the logo build.
+- Narrative: Relatable question, under-the-hood signal from every source, Universal Context, then every task you can ask — Ask more from CRM. Morph transitions, not hard cuts.
+- Palette: #FFFFFF (bg), #000000 (dark scenes), #111111 (UI text), #F9F9F9 (UI fills), #8C8C8C (cycling grey), #EAEAEA (grid)
+
+## Ramp Policy Agent
+- Source: https://www.youtube.com/watch?v=Dq9-WUeZD0w
+- Product: https://ramp.com/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/ramp-policy-agent/
+- Company: Ramp
+- Date: 2026-01-12
+- Duration: 2:03
+- Voiceover: yes
+- Tags: ai, fintech, enterprise
+- Description: 123-second slide-deck explainer for Ramp Policy Agent: floating expense UI, accuracy claims, status cards, workflow builder, manager-vs-agent matrix, then real-app setup. Female voiceover. Guli called it the weakest of the set; kept as fintech reference.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:16 Intro: Logo, Introducing Policy Agent; blue gradient with floating 'Can I expense this chair?' and approval states.
+  - 0:16-0:49 Claims + statuses: 85% reviews / 99%+ accuracy slide; three cards Approval / Requires review / Rejection with tooltip zoom.
+  - 0:49-1:30 Workflow + matrix: When these conditions… builder; Manager vs Ramp Agent throughput matrix (50–100/day vs 10,000+).
+  - 1:30-1:52 Dashboard: Policy dashboard charts.
+  - 1:52-2:03 Real UI: Live app 'Set up your policy agent' and logo.
+- Highlights:
+  - 0:08 Floating UI composition: Expense and fraud cards float on a blue field as concept UI.
+  - 0:08 Glow pulse on AI: Soft glow marks agent decisions in the mock.
+  - 0:18 Slide-deck layout: Bullet claim slide — presentation grammar more than film grammar.
+  - 0:29 Contextual micro-zoom: Push-in on an (i) tooltip for detail without leaving the card.
+  - 0:32 Colour-coded status cards: Green / amber / red recommendation states at a glance.
+  - 1:05 Old vs new matrix: Manager throughput vs agent scale as a comparison table.
+  - 1:54 Concept to real UI: Mock language gives way to the actual setup screen.
+- Narrative: Explainer arc: introduce, claim accuracy, show decision states and workflow, prove scale vs managers, land in the real product. VO-led; useful as a fintech counterexample to tighter kinetic films.
+- Palette: #000000 (bg), #F4F5F7 (surface), #E6F4EA (green), #FFF3E0 (amber), #FCE8E6 (red), #3B82F6 (blue)
+
+## New Raycast — Coming 2026
+- Source: https://www.youtube.com/watch?v=Mi173xGb0ZA
+- Product: https://www.raycast.com/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/raycast-coming-2026/
+- Company: Raycast
+- Date: 2025-12-18
+- Duration: 0:39
+- Voiceover: no
+- Tags: ai, devtools, productivity, motion
+- Description: 39-second dark frosted-glass fly-through of redesigned Raycast in one continuous camera move, ending on a beat-synced typographic strobe. No voiceover. Guli's #2 Mila reference.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:08 Search + hotkey: Glass pill search types clip → Clipboard History; Configure / Set Hotkey; ⌥⌘V keycaps; Saved.
+  - 0:08-0:19 History → emoji → voice: Pan through clipboard thumbs/swatches, emoji grid with elastic highlight, voice waveform pill.
+  - 0:19-0:27 AI focus session: Prompt to get Linear issues and start Focus Session; Checking for updates… then black silence.
+  - 0:27-0:39 Strobe CTA: Bass drop; strobe feature cards; NEW RAYCAST / COMING 2026; rotating logo.
+- Highlights:
+  - 0:02 Frosted glass over dark silk: Glass search pill on a moving dark field sets the material language.
+  - 0:08 3D keycap press: ⌥⌘V keycaps depress as a tactile micro-interaction.
+  - 0:08 One continuous camera move: No hard cuts through the product tour — camera does the editing.
+  - 0:10 Rich inline previews: Thumbs and colour swatches inside clipboard history.
+  - 0:14 Elastic highlight snapping: Emoji selection snaps with stretch.
+  - 0:18 Ambient voice waveform: Voice input as a calm waveform pill.
+  - 0:30 Typographic strobe on the bass: Feature cards flash on the drop after a silent breath.
+- Narrative: Continuous product fly-through locked to music, silence, then a strobe feature dump and Coming 2026. Slam-on-every-cut energy Guli studied for Mila.
+- Palette: #000000 (bg), #1A1A1A (glass), #FFFFFF (type), #FF6363 (coral), #56C2FF (blue), #F58331 (orange)
+
+## Superhuman power tools
+- Source: https://www.youtube.com/watch?v=nJUylrt1OdU
+- Product: https://superhuman.com/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/superhuman/
+- Company: Superhuman
+- Date: 2025-10-30
+- Duration: 1:02
+- Voiceover: yes
+- Tags: ai, productivity, motion
+- Description: 62-second hand-drawn 2D stick-figure film (with live-action speaker cuts) personifying Mail, Grammarly and Coda as robot sidekicks rescuing an overwhelmed worker. Spoken performance / voiceover.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:10 Overwhelm: Speaker cut; blue box-head robot and purple figure; dizzy worker under handwritten PROJECTS/EMAILS/READING…
+  - 0:10-0:20 False win: Inbox Zero celebration crushed by 49 NEW EMAILS; Help me; four robots overwhelm.
+  - 0:20-0:33 Sidekicks: One caped hero splits into MAIL / GRAMMARLY / CODA; Mail sorts into Important / Today / Starred / Other.
+  - 0:33-0:45 Helpers: Grammarly suggestions; Coda rescues a figure drowning in paper.
+  - 0:45-1:02 Close: Trio pose; 'AI that works where you work.'; superhuman.com on light purple.
+- Highlights:
+  - 0:02 Wobbly hand-drawn 2D: Illustration style stands apart from polished SaaS UI tours.
+  - 0:09 Handwritten words crowd the frame: Marker labels physically overwhelm the character.
+  - 0:12 Inbox-zero envelope squash: Giant envelope gag undoes the false win.
+  - 0:13 Live-action interruptions: Speaker cuts break the animation for emphasis.
+  - 0:28 Apps as robot sidekicks: Mail / Grammarly / Coda personified as a squad.
+  - 0:33 Sorting replaces UI: Priority buckets shown as physical sorting, not inbox chrome.
+  - 0:45 Drowning in paper: Literal metaphor for doc overload before the Coda save.
+- Narrative: Overwhelm, false inbox-zero, too many helpers, then three named sidekicks and a workplace AI close. Character comedy instead of UI glass.
+- Palette: #7B49B6 (purple), #D9383A (red), #3983D6 (blue), #11A680 (green), #E55C3E (orange), #EADCF8 (light purple)
+
+## Cursor 2.0
+- Source: https://www.youtube.com/watch?v=An8IM-kPyms
+- Product: https://cursor.com/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/cursor-2-0/
+- Company: Cursor
+- Date: 2025-10-29
+- Duration: 1:04
+- Voiceover: no
+- Tags: ai, devtools, productivity, motion
+- Description: 64-second light UI walkthrough of Cursor 2.0: Composer model, agents tab, multi-model parallel runs, unified review, built-in browser. No voiceover; percussive bongos and synth.
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:08 Composer: 3D cube flattens to logo + 2.0; Introducing Composer with black-vs-grey bar chart.
+  - 0:08-0:33 Agents + multi-model: New Cursor built for agents; parallel Sonnet / GPT-5 Fast / Composer columns.
+  - 0:33-1:01 Review + browser: Unified diffs; built-in browser with select-element prompt updating layout.
+  - 1:01-1:04 Outro: Black; white cube into CURSOR logo.
+- Highlights:
+  - 0:01 3D-to-2D logo: Cube spins flat into the 2.0 mark.
+  - 0:06 Black-vs-grey bar chart: Composer called out by contrast, not colour noise.
+  - 0:10 Typographic signposts: Each UI beat is announced with a clean statement line.
+  - 0:23 Parallel multi-model columns: Three models work the same task side by side.
+  - 0:28 Sped-up generation: Generation time-lapse keeps the runtime short.
+  - 0:52 Prompt on selected element: Browser agent attached to a concrete DOM node.
+  - 1:02 Dark outro punctuation: Hard cut to black logo as a period.
+- Narrative: Name the model, show the agent IDE, parallelise models, review, browser, logo. Signposted chapters; no VO.
+- Palette: #F8F8F8 (bg), #1A1A1A (ink), #E5E5E5 (chrome), #F0FDF4 (diff add), #FEF2F2 (diff remove), #3B82F6 (accent)
+
+## Notion 3.0 Agents
+- Source: https://www.youtube.com/watch?v=R1cF4T4lgI4
+- Product: https://www.notion.com/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/notion-3-0-agents/
+- Company: Notion
+- Date: 2025-09-18
+- Duration: 1:30
+- Voiceover: no
+- Tags: ai, productivity, motion
+- Description: 90-second playful character demo of Notion 3.0 Agents — customise 'Lucky the Bug Wrangler', run cross-app work with a visible thinking sidebar, zoom out to a grid of agents. No voiceover; upbeat track and themed SFX (horse whinny).
+- Found via: https://elenacabrera.xyz/collections/launch-videos/mila-capchase/
+- Timeline:
+  - 0:00-0:10 Assign: Line-drawn faces: You assign / Agents do the work; Andy's OS personalize sheet.
+  - 0:10-0:34 Persona + prompt: Accessory carousel, cowboy Lucky Bug Wrangler, Howdy; prompt scales up as transition into Thinking…
+  - 0:35-1:12 Work: Dashboard generates; thinking sidebar searches Notion/Slack/Mail; assignees fill; transcripts update statuses.
+  - 1:13-1:29 Scale + CTA: Yeehaw, all complete; infinite agent grid; faces return — Get started at notion.com.
+- Highlights:
+  - 0:02 Character faces as brand motif: Line faces bookend the film as the agent metaphor.
+  - 0:12 Accessory carousel: Hats and props make customisation tactile.
+  - 0:20 Persona-themed copy + SFX: Howdy, Partner! and a whinny lock the Bug Wrangler bit.
+  - 0:24 Prompt scales as transition: Typed prompt grows to fill the frame into the next scene.
+  - 0:40 Visible thinking sidebar: Searched Notion 27 / Slack 14 / Mail 21 — work made countable.
+  - 0:50 Cascading table fill: Assignee column populates in cascade.
+  - 1:19 Infinite agent grid: One finished card zooms out to a field of agents.
+- Narrative: Customise a character agent, watch it think across apps, celebrate completion, reveal a whole team of agents. Playful SFX; no VO.
+- Palette: #F8F8F6 (bg), #000000 (ink), #2383E2 (blue frame), #F5F4F0 (beige), #D9EADD (green tag), #FDECC8 (yellow tag)

@@ -74,10 +74,16 @@ function buildLaunchVideosSection() {
     lines.push(`- Company: ${entry.company}`);
     lines.push(`- Date: ${entry.date}`);
     lines.push(`- Duration: ${formatClock(entry.durationSec)}`);
+    lines.push(`- Voiceover: ${entry.hasVoiceover ? 'yes' : 'no'}`);
     lines.push(`- Tags: ${tags}`);
     lines.push(`- Description: ${entry.description}`);
     if (entry.relatedLandingSlug) {
       lines.push(`- Landing: ${SITE}/collections/landings/${entry.relatedLandingSlug}/`);
+    }
+    if (entry.foundViaSlug) {
+      lines.push(
+        `- Found via: ${SITE}/collections/launch-videos/${entry.foundViaSlug}/`
+      );
     }
     lines.push('- Timeline:');
     for (const beat of entry.timeline) {
@@ -95,6 +101,31 @@ function buildLaunchVideosSection() {
     lines.push(
       `- Palette: ${entry.palette.map((s) => `${s.hex} (${s.label})`).join(', ')}`
     );
+    if (entry.buildNotes) {
+      lines.push('- How it was made:');
+      lines.push(`  - Tools: ${entry.buildNotes.tools.join('; ')}`);
+      if (entry.buildNotes.articleUrl) {
+        lines.push(`  - Article: ${entry.buildNotes.articleUrl}`);
+      }
+      for (const tip of entry.buildNotes.tips) {
+        lines.push(`  - Tip — ${tip.title}: ${tip.body}`);
+      }
+      for (const lesson of entry.buildNotes.craftLessons) {
+        lines.push(`  - Craft: ${lesson}`);
+      }
+      if (entry.buildNotes.articleDiffers) {
+        lines.push(`  - Article vs final: ${entry.buildNotes.articleDiffers}`);
+      }
+      if (entry.buildNotes.references?.length) {
+        lines.push('  - References studied:');
+        for (const ref of entry.buildNotes.references) {
+          const note = ref.note ? ` (${ref.note})` : '';
+          lines.push(
+            `    - ${ref.title}${note}: ${SITE}/collections/launch-videos/${ref.slug}/`
+          );
+        }
+      }
+    }
     lines.push('');
   }
 

@@ -35,6 +35,28 @@ export type LaunchVideoPaletteSwatch = {
   label: string;
 };
 
+export type LaunchVideoBuildTip = {
+  title: string;
+  body: string;
+};
+
+export type LaunchVideoReferenceLink = {
+  slug: string;
+  title: string;
+  /** Optional ranking / role note, e.g. "1 — Guli's top pick" */
+  note?: string;
+};
+
+export type LaunchVideoBuildNotes = {
+  tools: string[];
+  articleUrl?: string;
+  tips: LaunchVideoBuildTip[];
+  craftLessons: string[];
+  /** How the article/in-chat cut differs from the final published cut */
+  articleDiffers?: string;
+  references?: LaunchVideoReferenceLink[];
+};
+
 export type CollectionItem = {
   id: string;
   type: CollectionType;
@@ -66,6 +88,12 @@ export type CollectionItem = {
   narrative?: string;
   palette?: LaunchVideoPaletteSwatch[];
   relatedLandingSlug?: string;
+  /** Launch-video: whether the film uses spoken narration */
+  hasVoiceover?: boolean;
+  /** Launch-video: optional credit linking back to another entry */
+  foundViaSlug?: string;
+  /** Launch-video: optional "How it was made" section */
+  buildNotes?: LaunchVideoBuildNotes;
 };
 
 export type LandingItem = CollectionItem & {
@@ -89,4 +117,7 @@ export type LaunchVideoItem = CollectionItem & {
   highlights: LaunchVideoHighlight[];
   narrative: string;
   palette: LaunchVideoPaletteSwatch[];
+  hasVoiceover: boolean;
+  foundViaSlug?: string;
+  buildNotes?: LaunchVideoBuildNotes;
 };
