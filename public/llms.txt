@@ -307,6 +307,36 @@ Curated product launch films Elena keeps as motion and narrative references. Eac
 Site: https://elenacabrera.xyz
 Collections: https://elenacabrera.xyz/collections?type=launch-video
 
+## Karumi — AI CSM
+- Source: https://www.linkedin.com/posts/pablo-omenaca-muro_your-csms-onboard-your-best-50-accounts-activity-7520847482231111680-cj-x
+- Product: https://karumi.ai/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/karumi-ai-csm/
+- Company: Karumi (YC F25)
+- Date: 2026-10-27
+- Duration: 1:00
+- Voiceover: yes
+- Tags: ai, productivity, motion
+- Description: 60-second launch film for Karumi's AI CSM: low-fi UI wireframes over fluid warm halftone/dot-matrix backgrounds. Dialogue voiceover between a confused user and the Karumi AI; electronic track goes tense, drops to silence on 'Meet Karumi.', then restarts upbeat with crisp UI SFX. Posted by Pablo Omenaca on LinkedIn.
+- Timeline:
+  - 0:00-0:13 User monologue: Over the app: 'Okay...' 'where do I connect my domain?' 'Wait...' 'Did I already set up permissions?' 'This is so difficult!' 'Yeah, I'll come back later.'
+  - 0:14-0:19 Broken onboarding: 'Onboarding processes are broken.' / 'Users want to ask and get what they need instantly.' surrounded by popping question tooltips ('? What's step 2 of 47?', '? How do I configure SSO?', '? Where do I invite my team?'...).
+  - 0:20-0:21 Meet Karumi: Silence, then 'Meet Karumi.'
+  - 0:22-0:26 Positioning: 'An onboarding specialist for every customer that talks / listens / shows. Instantly.' (slot-machine verb swap).
+  - 0:27-0:29 Ask: 'Ask anything...' / 'Connecting...'
+  - 0:30-0:49 Voice chat demo: Floating widget dialogue: 'Hmm, how can I start using this tool?' > 'Hi, let's get you live in three quick steps. First, your domain.' > 'Sure, it's acme.com.' > 'Connected. Now drop your contact list right here.' > 'Perfect. Your first campaign is ready. Shall I send it?' > 'Oh! That was easy. Send it.' while Karumi's own red cursor clicks through the real app.
+  - 0:50-0:51 Proof: 'You're live' / 'Onboarding complete - 3 of 3 steps' + success chime.
+  - 0:52-0:58 CTA: 'Stop losing users who get lost' / 'With live AI onboarding by Karumi'.
+- Highlights:
+  - 0:03 Simplified UI wireframes: Grey blocks, focus on the action — low-fi app chrome so the struggle stays readable.
+  - 0:05 Halftone topography background: Fluid warm halftone / dot-matrix field under the floating UI.
+  - 0:09 Diegetic typography: Type moves with the camera so the confused monologue feels inside the scene.
+  - 0:13 Pixel-block grid transitions: Pixel-block grid bridges scenes as the monologue tips into the problem beat.
+  - 0:17 Anxiety tooltip cloud: Question tooltips pop around 'Users want…' — '? What's step 2 of 47?', '? How do I configure SSO?', '? Where do I invite my team?'…
+  - 0:33 Floating chat UI: Voice chat widget with waveform and typing over the real app.
+  - 0:41 Ghost cursor automation: Karumi's branded red cursor clicks through the app while the dialogue runs.
+- Narrative: Problem (lost users churn) > silence + reveal 'Meet Karumi' > voice demo, AI clicks the app > proof 'You're live' > CTA. Music: tense ticking beat, cut to silence at 20s, upbeat bassline restarts at 21s, success chime at 50s.
+- Palette: #FFFFFF (white), #F9EBE6 (light peach), #E85D45 (coral (brand)), #D93D26 (deep orange), #1A1A1A (near black)
+
 ## Mila (Capchase)
 - Source: https://x.com/GuliMoreno/status/2110370319638954119
 - Product: https://www.capchase.com/

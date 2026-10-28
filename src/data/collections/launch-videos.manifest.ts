@@ -75,6 +75,145 @@ const viaMila = 'mila-capchase' as const;
 
 export const launchVideoManifest: LaunchVideoManifestEntry[] = [
   {
+    slug: 'karumi-ai-csm',
+    title: 'Karumi — AI CSM',
+    company: 'Karumi (YC F25)',
+    url: 'https://www.linkedin.com/posts/pablo-omenaca-muro_your-csms-onboard-your-best-50-accounts-activity-7520847482231111680-cj-x',
+    productUrl: 'https://karumi.ai/',
+    date: '2026-10-27',
+    durationSec: 60,
+    tags: ['launch-video', 'ai', 'productivity', 'motion'],
+    description:
+      "60-second launch film for Karumi's AI CSM: low-fi UI wireframes over fluid warm halftone/dot-matrix backgrounds. Dialogue voiceover between a confused user and the Karumi AI; electronic track goes tense, drops to silence on 'Meet Karumi.', then restarts upbeat with crisp UI SFX. Posted by Pablo Omenaca on LinkedIn.",
+    video: {
+      src: videoAsset('karumi-ai-csm', 'video.mp4'),
+      poster: videoAsset('karumi-ai-csm', 'poster.webp'),
+    },
+    hasVoiceover: true,
+    timeline: [
+      {
+        startSec: 0,
+        endSec: 13,
+        label: 'User monologue',
+        purpose:
+          "Over the app: 'Okay...' 'where do I connect my domain?' 'Wait...' 'Did I already set up permissions?' 'This is so difficult!' 'Yeah, I'll come back later.'",
+      },
+      {
+        startSec: 14,
+        endSec: 19,
+        label: 'Broken onboarding',
+        purpose:
+          "'Onboarding processes are broken.' / 'Users want to ask and get what they need instantly.' surrounded by popping question tooltips ('? What's step 2 of 47?', '? How do I configure SSO?', '? Where do I invite my team?'...).",
+      },
+      {
+        startSec: 20,
+        endSec: 21,
+        label: 'Meet Karumi',
+        purpose: "Silence, then 'Meet Karumi.'",
+      },
+      {
+        startSec: 22,
+        endSec: 26,
+        label: 'Positioning',
+        purpose:
+          "'An onboarding specialist for every customer that talks / listens / shows. Instantly.' (slot-machine verb swap).",
+      },
+      {
+        startSec: 27,
+        endSec: 29,
+        label: 'Ask',
+        purpose: "'Ask anything...' / 'Connecting...'",
+      },
+      {
+        startSec: 30,
+        endSec: 49,
+        label: 'Voice chat demo',
+        purpose:
+          "Floating widget dialogue: 'Hmm, how can I start using this tool?' > 'Hi, let's get you live in three quick steps. First, your domain.' > 'Sure, it's acme.com.' > 'Connected. Now drop your contact list right here.' > 'Perfect. Your first campaign is ready. Shall I send it?' > 'Oh! That was easy. Send it.' while Karumi's own red cursor clicks through the real app.",
+      },
+      {
+        startSec: 50,
+        endSec: 51,
+        label: 'Proof',
+        purpose: "'You're live' / 'Onboarding complete - 3 of 3 steps' + success chime.",
+      },
+      {
+        startSec: 52,
+        endSec: 58,
+        label: 'CTA',
+        purpose:
+          "'Stop losing users who get lost' / 'With live AI onboarding by Karumi'.",
+      }
+    ],
+    highlights: [
+      {
+        title: 'Simplified UI wireframes',
+        timestampSec: 3,
+        timestampLabel: '0:03',
+        frame: asset('karumi-ai-csm', '01-simplified-ui-wireframes.webp'),
+        explanation:
+          'Grey blocks, focus on the action — low-fi app chrome so the struggle stays readable.',
+      },
+      {
+        title: 'Halftone topography background',
+        timestampSec: 5,
+        timestampLabel: '0:05',
+        frame: asset('karumi-ai-csm', '02-halftone-topography.webp'),
+        explanation:
+          'Fluid warm halftone / dot-matrix field under the floating UI.',
+      },
+      {
+        title: 'Diegetic typography',
+        timestampSec: 9,
+        timestampLabel: '0:09',
+        frame: asset('karumi-ai-csm', '03-diegetic-typography.webp'),
+        explanation:
+          'Type moves with the camera so the confused monologue feels inside the scene.',
+      },
+      {
+        title: 'Pixel-block grid transitions',
+        timestampSec: 13,
+        timestampLabel: '0:13',
+        frame: asset('karumi-ai-csm', '04-pixel-block-transitions.webp'),
+        explanation:
+          'Pixel-block grid bridges scenes as the monologue tips into the problem beat.',
+      },
+      {
+        title: 'Anxiety tooltip cloud',
+        timestampSec: 17,
+        timestampLabel: '0:17',
+        frame: asset('karumi-ai-csm', '05-anxiety-tooltip-cloud.webp'),
+        explanation:
+          "Question tooltips pop around 'Users want…' — '? What's step 2 of 47?', '? How do I configure SSO?', '? Where do I invite my team?'…",
+      },
+      {
+        title: 'Floating chat UI',
+        timestampSec: 33,
+        timestampLabel: '0:33',
+        frame: asset('karumi-ai-csm', '06-floating-chat-ui.webp'),
+        explanation:
+          'Voice chat widget with waveform and typing over the real app.',
+      },
+      {
+        title: 'Ghost cursor automation',
+        timestampSec: 41,
+        timestampLabel: '0:41',
+        frame: asset('karumi-ai-csm', '07-ghost-cursor-automation.webp'),
+        explanation:
+          "Karumi's branded red cursor clicks through the app while the dialogue runs.",
+      }
+    ],
+    narrative:
+      "Problem (lost users churn) > silence + reveal 'Meet Karumi' > voice demo, AI clicks the app > proof 'You're live' > CTA. Music: tense ticking beat, cut to silence at 20s, upbeat bassline restarts at 21s, success chime at 50s.",
+    palette: [
+      { hex: '#FFFFFF', label: 'white' },
+      { hex: '#F9EBE6', label: 'light peach' },
+      { hex: '#E85D45', label: 'coral (brand)' },
+      { hex: '#D93D26', label: 'deep orange' },
+      { hex: '#1A1A1A', label: 'near black' }
+    ],
+  },
+  {
     slug: 'mila-capchase',
     title: 'Mila (Capchase)',
     company: 'Capchase',
