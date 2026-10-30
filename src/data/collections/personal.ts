@@ -151,4 +151,22 @@ export const personal: CollectionItem[] = [
     description: 'Software designer',
     tags: ['personal', 'design'],
   },
+  {
+    id: 'personal-amir',
+    type: 'personal',
+    title: 'Amir',
+    url: 'https://amirmxt.com/',
+    description:
+      'Minimal personal page: bold left-aligned headline beside a 3D isometric desk illustration, then Currently/Previously/Based rows and pill social links.',
+    tags: ['personal', 'design'],
+  },
+  {
+    id: 'personal-adil-mania',
+    type: 'personal',
+    title: 'Adil Mania',
+    url: 'https://www.adilmania.com/',
+    description:
+      'Scroll-story memoir with watercolor chapter illustrations, centered lowercase serif storybook type, and a "scroll to turn the page" cue.',
+    tags: ['personal', 'design'],
+  },
 ];

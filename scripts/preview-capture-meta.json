@@ -1,5 +1,5 @@
 {
-  "captured": 107,
+  "captured": 109,
   "skipped": 0,
   "failed": [
     {
@@ -1255,6 +1255,26 @@
       "bytes": 6826,
       "error": null,
       "path": "/workspace/public/assets/images/collections/previews/personal-mike-barton.webp"
+    },
+    {
+      "id": "personal-amir",
+      "title": "Amir",
+      "url": "https://amirmxt.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 12214,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-amir.webp"
+    },
+    {
+      "id": "personal-adil-mania",
+      "title": "Adil Mania",
+      "url": "https://www.adilmania.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 8296,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-adil-mania.webp"
     }
   ]
 }
