@@ -300,6 +300,19 @@ Collections: https://elenacabrera.xyz/collections?type=landing
   - Testimonial card grid: Loved by ambitious teams packs a 3x2 quote grid with headshots from Zapier, Float, and others, keeping social proof typographic and card-quiet before the security band.
   - Chat-style FAQ: A FAQ presented as stacked message bubbles — white questions, one black answer — sits beside Contact Us / See how it works CTAs and a blue companion reading a book.
 
+## EdgeBar
+- URL: https://edgebar.xyz/
+- Subpage: https://elenacabrera.xyz/collections/landings/edgebar/
+- Tags: productivity
+- Design focus: Apple-clean macOS utility landing that sells the gesture through a photoreal trackpad hero with orange/blue edge overlays, then hardware-plus-HUD dual panels, pastel feature cards, and real menu-bar settings chrome.
+- Screenshots:
+  - Trackpad-edge hero: Slide to adjust. gradients orange-to-blue in the headline above a Buy CTA and a top-down MacBook photo with glowing Brightness and Volume strips on the trackpad edges.
+  - Hardware and HUD dual panel: A dark Volume on the right. Brightness on the left. band pairs the edge-lit trackpad photo with the native macOS volume HUD, proving the gesture maps to familiar OS chrome.
+  - Pastel feature card grid: More than two edges. opens an eight-card grid—Quick Mute, Media Strip, Haptics, Fine Control, and more—each with a soft pastel illustration and a one-line gesture explanation.
+  - Menu bar settings chrome: Lives in your menu bar. floats two realistic dropdowns side by side—At a glance controls and Set once preferences—selling depth through actual product UI, not icons.
+  - Reddit and X testimonials: Heard on Reddit and X centers a masonry quote grid with platform marks and avatars, using community praise as the main social-proof surface before pricing.
+  - One-time pricing and changelog: A $9 lifetime Buy card with checkmarks sits beside a What’s new changelog, closing with one-time pricing, version proof, and a quiet MacBase badge in the footer.
+
 # Launch videos
 
 Curated product launch films Elena keeps as motion and narrative references. Each entry links to a subpage with an embedded video, timeline, design highlights, and palette.

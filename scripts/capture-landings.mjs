@@ -42,9 +42,8 @@ const SITES = [
   { slug: 'dockset', url: 'https://dockset.app/' },
   { slug: 'enginy', url: 'https://www.enginy.ai/' },
   { slug: 'gumloop', url: 'https://www.gumloop.com/' },
-];
-
-const slugFilter = process.argv.slice(2).filter((arg) => !arg.startsWith('-'));
+  { slug: 'edgebar', url: 'https://edgebar.xyz/' },
+];const slugFilter = process.argv.slice(2).filter((arg) => !arg.startsWith('-'));
 const sitesToCapture =
   slugFilter.length > 0 ? SITES.filter((site) => slugFilter.includes(site.slug)) : SITES;
 
