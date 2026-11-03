@@ -1125,4 +1125,52 @@ export const landingManifest: LandingManifestEntry[] = [
       },
     ],
   },
+  {
+    slug: 'edgebar',
+    title: 'EdgeBar',
+    url: 'https://edgebar.xyz/',
+    tags: ['landing', 'ui', 'productivity'],
+    description:
+      'EdgeBar turns your MacBook trackpad edges into smooth volume and brightness controls.',
+    designFocus:
+      'Apple-clean macOS utility landing that sells the gesture through a photoreal trackpad hero with orange/blue edge overlays, then hardware-plus-HUD dual panels, pastel feature cards, and real menu-bar settings chrome.',
+    screenshots: [
+      {
+        file: asset('edgebar', '01-hero.webp'),
+        title: 'Trackpad-edge hero',
+        caption:
+          'Slide to adjust. gradients orange-to-blue in the headline above a Buy CTA and a top-down MacBook photo with glowing Brightness and Volume strips on the trackpad edges.',
+      },
+      {
+        file: asset('edgebar', '02-section.webp'),
+        title: 'Hardware and HUD dual panel',
+        caption:
+          'A dark Volume on the right. Brightness on the left. band pairs the edge-lit trackpad photo with the native macOS volume HUD, proving the gesture maps to familiar OS chrome.',
+      },
+      {
+        file: asset('edgebar', '03-section.webp'),
+        title: 'Pastel feature card grid',
+        caption:
+          'More than two edges. opens an eight-card grid—Quick Mute, Media Strip, Haptics, Fine Control, and more—each with a soft pastel illustration and a one-line gesture explanation.',
+      },
+      {
+        file: asset('edgebar', '04-section.webp'),
+        title: 'Menu bar settings chrome',
+        caption:
+          'Lives in your menu bar. floats two realistic dropdowns side by side—At a glance controls and Set once preferences—selling depth through actual product UI, not icons.',
+      },
+      {
+        file: asset('edgebar', '05-section.webp'),
+        title: 'Reddit and X testimonials',
+        caption:
+          'Heard on Reddit and X centers a masonry quote grid with platform marks and avatars, using community praise as the main social-proof surface before pricing.',
+      },
+      {
+        file: asset('edgebar', '06-section.webp'),
+        title: 'One-time pricing and changelog',
+        caption:
+          'A $9 lifetime Buy card with checkmarks sits beside a What’s new changelog, closing with one-time pricing, version proof, and a quiet MacBase badge in the footer.',
+      },
+    ],
+  },
 ];
