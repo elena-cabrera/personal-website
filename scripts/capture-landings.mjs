@@ -43,7 +43,10 @@ const SITES = [
   { slug: 'enginy', url: 'https://www.enginy.ai/' },
   { slug: 'gumloop', url: 'https://www.gumloop.com/' },
   { slug: 'edgebar', url: 'https://edgebar.xyz/' },
-];const slugFilter = process.argv.slice(2).filter((arg) => !arg.startsWith('-'));
+  { slug: 'maisa', url: 'https://maisa.ai/' },
+];
+
+const slugFilter = process.argv.slice(2).filter((arg) => !arg.startsWith('-'));
 const sitesToCapture =
   slugFilter.length > 0 ? SITES.filter((site) => slugFilter.includes(site.slug)) : SITES;
 
