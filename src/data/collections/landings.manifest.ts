@@ -1173,4 +1173,64 @@ export const landingManifest: LandingManifestEntry[] = [
       },
     ],
   },
+  {
+    slug: 'maisa',
+    title: 'Maisa',
+    url: 'https://maisa.ai/',
+    tags: ['landing', 'ui', 'ai', 'enterprise'],
+    description:
+      "Deploy AI with confidence in regulated industries. Maisa's Digital Workers automate your most demanding processes, reliably, traceably, and auditably.",
+    designFocus:
+      'Editorial enterprise AI landing that pairs serif Digital Workers headlines with ruled process-trace heroes, cinematic client split panels, partner-colored metric carousels, dark forest-green economics charts, and Gartner report fans.',
+    screenshots: [
+      {
+        file: asset('maisa', '01-hero.webp'),
+        title: 'Serif Digital Workers hero',
+        caption:
+          'Give your hardest processes to Digital Workers splits a large serif headline left of regulated-work body copy, above a wood-grain ruled canvas with stacked process-trace steps like Application received and ID documents verified.',
+      },
+      {
+        file: asset('maisa', '02-section.webp'),
+        title: 'Cinematic client split',
+        caption:
+          'Our clients speak for us pairs a dusk Santander cityscape quote from Chief AI Officer Ignacio Bernal with an Indigo Park video still promising four processes in production in three months.',
+      },
+      {
+        file: asset('maisa', '03-section.webp'),
+        title: 'Partner-branded metrics',
+        caption:
+          'Real Work Ready for Santander tints the layout with Santander red—logo block, divider, and serif 100s / 3 month proof—so enterprise logos temporarily own the metrics band.',
+      },
+      {
+        file: asset('maisa', '04-section.webp'),
+        title: 'How-it-works tab panel',
+        caption:
+          'How Maisa gets the work done uses a cream accordion of Onboard / Knowledge Processing Unit / traces / train-your-models beside a dark “What do you want to delegate?” Studio prompt.',
+      },
+      {
+        file: asset('maisa', '05-section.webp'),
+        title: 'Forest-green economics chart',
+        caption:
+          'A deep forest-green band stacks Own your intelligence with Change the economics of AI, where a Per Token vs Maisa SLM cost chart leads into Up to 90x cheaper per run on an owned SLM.',
+      },
+      {
+        file: asset('maisa', '06-section.webp'),
+        title: '1-3-6 deployment photo',
+        caption:
+          'Get value from day one overlays a sunlit desk photo with Build / Pilot / Go-Live timeline pills and a Request Demo CTA, selling a six-week path from scoped use case to production.',
+      },
+      {
+        file: asset('maisa', '07-section.webp'),
+        title: 'Industry vertical filmstrip',
+        caption:
+          'For the work that has to be right opens a cinematic Banking & Finance panel with stacked automation labels and View use cases, beside narrower Engineering, Insurance, and Manufacturing film strips.',
+      },
+      {
+        file: asset('maisa', '08-section.webp'),
+        title: 'Gartner report fan',
+        caption:
+          'Recognized by Gartner across reports that shape Enterprise AI centers a fanned set of pastel report covers—Business Process Automation up front—above a Request the reports secondary CTA.',
+      },
+    ],
+  },
 ];

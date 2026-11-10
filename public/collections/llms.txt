@@ -313,6 +313,21 @@ Collections: https://elenacabrera.xyz/collections?type=landing
   - Reddit and X testimonials: Heard on Reddit and X centers a masonry quote grid with platform marks and avatars, using community praise as the main social-proof surface before pricing.
   - One-time pricing and changelog: A $9 lifetime Buy card with checkmarks sits beside a What’s new changelog, closing with one-time pricing, version proof, and a quiet MacBase badge in the footer.
 
+## Maisa
+- URL: https://maisa.ai/
+- Subpage: https://elenacabrera.xyz/collections/landings/maisa/
+- Tags: ai, enterprise
+- Design focus: Editorial enterprise AI landing that pairs serif Digital Workers headlines with ruled process-trace heroes, cinematic client split panels, partner-colored metric carousels, dark forest-green economics charts, and Gartner report fans.
+- Screenshots:
+  - Serif Digital Workers hero: Give your hardest processes to Digital Workers splits a large serif headline left of regulated-work body copy, above a wood-grain ruled canvas with stacked process-trace steps like Application received and ID documents verified.
+  - Cinematic client split: Our clients speak for us pairs a dusk Santander cityscape quote from Chief AI Officer Ignacio Bernal with an Indigo Park video still promising four processes in production in three months.
+  - Partner-branded metrics: Real Work Ready for Santander tints the layout with Santander red—logo block, divider, and serif 100s / 3 month proof—so enterprise logos temporarily own the metrics band.
+  - How-it-works tab panel: How Maisa gets the work done uses a cream accordion of Onboard / Knowledge Processing Unit / traces / train-your-models beside a dark “What do you want to delegate?” Studio prompt.
+  - Forest-green economics chart: A deep forest-green band stacks Own your intelligence with Change the economics of AI, where a Per Token vs Maisa SLM cost chart leads into Up to 90x cheaper per run on an owned SLM.
+  - 1-3-6 deployment photo: Get value from day one overlays a sunlit desk photo with Build / Pilot / Go-Live timeline pills and a Request Demo CTA, selling a six-week path from scoped use case to production.
+  - Industry vertical filmstrip: For the work that has to be right opens a cinematic Banking & Finance panel with stacked automation labels and View use cases, beside narrower Engineering, Insurance, and Manufacturing film strips.
+  - Gartner report fan: Recognized by Gartner across reports that shape Enterprise AI centers a fanned set of pastel report covers—Business Process Automation up front—above a Request the reports secondary CTA.
+
 # Launch videos
 
 Curated product launch films Elena keeps as motion and narrative references. Each entry links to a subpage with an embedded video, timeline, design highlights, and palette.
