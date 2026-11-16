@@ -169,4 +169,13 @@ export const personal: CollectionItem[] = [
       'Scroll-story memoir with watercolor chapter illustrations, centered lowercase serif storybook type, and a "scroll to turn the page" cue.',
     tags: ['personal', 'design'],
   },
+  {
+    id: 'personal-bharadwhat',
+    type: 'personal',
+    title: 'Vijay Bharadwaj',
+    url: 'https://www.bharadwhat.com/',
+    description:
+      'Minimal white personal site with a huge high-contrast display name, left-rail nav, and scrapbook photo collage; hovering nav and company links sweeps a pink–coral–gold–blue rainbow gradient across the letters as the text gently scales up.',
+    tags: ['personal', 'design'],
+  },
 ];
