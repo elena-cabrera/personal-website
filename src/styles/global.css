@@ -1543,3 +1543,69 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
   color: #a1a1aa;
   text-transform: lowercase;
 }
+
+/* Home contact LinkedIn: subtle rainbow text sweep on hover/focus */
+.contact-linkedin {
+  display: inline-block;
+  transform-origin: 50% 50%;
+  transition: transform 0.18s cubic-bezier(0.22, 1, 0.36, 1);
+  outline-offset: 0.15em;
+  background-image: linear-gradient(
+    90deg,
+    currentColor 0% 33.33%,
+    #c69bc4 40%,
+    #ed705a 45%,
+    #efb94f 50%,
+    #b9c8e8 55%,
+    #5f8fe0 60%,
+    currentColor 66.67% 100%
+  );
+  background-size: 300% 100%;
+  background-position: 100% 0;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.contact-linkedin:hover,
+.contact-linkedin:focus-visible {
+  transform: scale(1.03);
+  animation: contact-linkedin-sweep 0.7s cubic-bezier(0.4, 0, 0.2, 1) both;
+}
+
+@keyframes contact-linkedin-sweep {
+  from {
+    background-position: 100% 0;
+  }
+  to {
+    background-position: 0 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .contact-linkedin {
+    transition: none;
+    background-image: none;
+    -webkit-text-fill-color: currentColor;
+  }
+
+  .contact-linkedin:hover,
+  .contact-linkedin:focus-visible {
+    transform: none;
+    animation: none;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+      90deg,
+      #c69bc4,
+      #ed705a,
+      #efb94f,
+      #b9c8e8,
+      #5f8fe0
+    );
+    background-size: 100% 100%;
+    background-position: 0 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+}
