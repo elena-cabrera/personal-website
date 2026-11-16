@@ -1,5 +1,5 @@
 {
-  "captured": 109,
+  "captured": 110,
   "skipped": 0,
   "failed": [
     {
@@ -810,7 +810,7 @@
     },
     {
       "id": "tool-icones",
-      "title": "Icônes",
+      "title": "Ic\u00f4nes",
       "url": "https://icones.js.org/",
       "ok": true,
       "skipped": false,
@@ -1275,6 +1275,16 @@
       "bytes": 8296,
       "error": null,
       "path": "/workspace/public/assets/images/collections/previews/personal-adil-mania.webp"
+    },
+    {
+      "id": "personal-bharadwhat",
+      "title": "Vijay Bharadwaj",
+      "url": "https://www.bharadwhat.com/",
+      "ok": true,
+      "skipped": false,
+      "bytes": 15058,
+      "error": null,
+      "path": "/workspace/public/assets/images/collections/previews/personal-bharadwhat.webp"
     }
   ]
 }
