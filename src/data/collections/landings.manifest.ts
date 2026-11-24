@@ -1233,4 +1233,136 @@ export const landingManifest: LandingManifestEntry[] = [
       },
     ],
   },
+  {
+    slug: 'rogo',
+    title: 'Rogo',
+    url: 'https://rogo.com/',
+    tags: ['landing', 'ui', 'ai', 'fintech', 'enterprise'],
+    description:
+      'Rogo is AI for investment banks and financial institutions—agents, firm data, and governed context for deal and coverage workflows.',
+    designFocus:
+      'Institutional fintech AI landing: embossed dark-green serif hero, then cream sticky feature panels with product UI, cinematic partnership media, oversized stats, compliance icon grids, and a faint ROGO watermark footer.',
+    screenshots: [
+      {
+        file: asset('rogo', '01-hero.webp'),
+        title: 'Embossed green serif hero',
+        caption:
+          'Built for Finance centers a display serif on a deep emerald field with a subtle embossed tile texture, thin investment announcement bar, and a translucent Request demo pill.',
+      },
+      {
+        file: asset('rogo', '02-section.webp'),
+        title: 'Future-of-work feature split',
+        caption:
+          'The future of financial work switches to warm cream: serif section title above a split of LBO-model spreadsheet chrome and Accelerate your output copy with soft rounded product cards.',
+      },
+      {
+        file: asset('rogo', '03-section.webp'),
+        title: 'Sticky agent workflow panel',
+        caption:
+          'A sticky left stack of agent task chips (Excel, Salesforce, memos) pairs with a right scroll-spy list—Accelerate / Unify / Context / Deploy—where the active line is black and neighbors fade gray.',
+      },
+      {
+        file: asset('rogo', '04-section.webp'),
+        title: 'Unify data table mock',
+        caption:
+          'Unify your data in one place keeps the same sticky rhythm while the left panel swaps to a People / Companies / Deals table with relationship rows—product UI as the proof surface.',
+      },
+      {
+        file: asset('rogo', '05-section.webp'),
+        title: 'Forward Deployed Bankers media',
+        caption:
+          'Partnership tailored to your firm centers a large rounded cinematic still of bankers in a wood-paneled office with Watch video overlay—editorial photography instead of more dashboard chrome.',
+      },
+      {
+        file: asset('rogo', '06-section.webp'),
+        title: 'Enterprise scale stats',
+        caption:
+          'Results at enterprise scale sets three oversized sans numerals (60K+ / 200K+ / 450+) on white before a hard cut into a solid forest-green band.',
+      },
+      {
+        file: asset('rogo', '07-section.webp'),
+        title: 'Institutional security grid',
+        caption:
+          'A dark-green Security built for institutional finance band pairs lowercase serif type with a 3x2 translucent compliance icon grid—SOC 2, ISO 27001, GDPR, CCPA, ISO 42001, EU AI Act.',
+      },
+      {
+        file: asset('rogo', '08-section.webp'),
+        title: 'Watermark sitemap footer',
+        caption:
+          'A light footer lays five link columns over a giant faint outlined ROGO serif watermark, closing with the same forest-green Request demo pill in the sticky nav.',
+      },
+    ],
+  },
+  {
+    slug: 'assemble',
+    title: 'Assemble',
+    url: 'https://www.onassemble.com/',
+    tags: ['landing', 'ui', 'productivity'],
+    description:
+      'Assemble is a calendar-native project workspace—files, notes, conversations, and to-dos on a visual timeline—with a scroll-scrubbed hero manifesto and a high-contrast ghost-wordmark footer.',
+    designFocus:
+      'Framer-award creative-productivity landing: soft-3D calendar hero, then a long dark scroll-scrub manifesto with inline lime icons, bento product cards, and a black footer with massive ghost Assemble type plus Yes/No lime CTA.',
+    screenshots: [
+      {
+        file: asset('assemble', '01-hero.webp'),
+        title: 'Soft-3D calendar hero',
+        caption:
+          'Organize your projects in time. centers bold sans type with a pale-yellow highlight on time., floating soft-3D calendar/camera/doc icons on hairline grid lines, and a peek of calendar product UI below Start Free.',
+      },
+      {
+        file: asset('assemble', '02-hero-scroll.webp'),
+        title: 'Hero scroll — dark manifesto start',
+        caption:
+          'On scroll the light hero flips to matte black: a floating pill nav with lime Start Free, and a centered manifesto where early lines are bright and later lines sit dim gray—scroll-scrub typography begin.',
+      },
+      {
+        file: asset('assemble', '03-hero-scroll.webp'),
+        title: 'Hero scroll — line highlight mid',
+        caption:
+          'Mid-scrub lights more manifesto lines to white while lime inline icons (grid, wand, flower, lasso, clock) punctuate the sentence as visual syllables inside the copy.',
+      },
+      {
+        file: asset('assemble', '05-hero-scroll.webp'),
+        title: 'Hero scroll — manifesto complete',
+        caption:
+          'Late scrub fully lights the stripped-it-all-away / organize by time close, then a large rounded media panel begins rising from the bottom—handoff from type story into product surface.',
+      },
+      {
+        file: asset('assemble', '06-section.webp'),
+        title: 'Timeline feature bento',
+        caption:
+          'All you need is a timeline. opens a soft-shadow bento: task detail card, Shift Effortlessly flow with hand cursor, and a Projects list crossed by a Today marker—product chrome in quiet cards.',
+      },
+      {
+        file: asset('assemble', '07-section.webp'),
+        title: 'Proof asset cards',
+        caption:
+          'Add anything. We mean anything. continues the bento rhythm with proofing, approval, and document cards—hi-res asset workflows shown as modular UI tiles on white.',
+      },
+      {
+        file: asset('assemble', '08-section.webp'),
+        title: 'Login-free review links',
+        caption:
+          'Login-free collaboration for all. pairs Present copy with share-link and guest-review UI, keeping the same airy card language for external review without signup.',
+      },
+      {
+        file: asset('assemble', '10-section.webp'),
+        title: 'Testimonial into orbital close',
+        caption:
+          'A black testimonial band with portrait + quote curves via a large concave edge into a white dotted-grid field where soft-3D cubes orbit a faint circle—bridge into the closing CTA.',
+      },
+      {
+        file: asset('assemble', '11-footer.webp'),
+        title: 'Ready Yes/No CTA',
+        caption:
+          'Ready to get organized? centers a white card with oversized lime Yes and outlined No buttons over a dotted orbital field, then drops into the black footer wordmark below.',
+      },
+      {
+        file: asset('assemble', '12-footer-bottom.webp'),
+        title: 'Ghost wordmark footer',
+        caption:
+          'The black footer splits Follow our journey + X on the left from a ruled link column (Pricing, Changelog, Roadmap…) on the right, over a massive low-contrast Assemble ghost wordmark and hexagonal mark.',
+      },
+    ],
+  },
 ];
