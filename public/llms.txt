@@ -367,6 +367,38 @@ Curated product launch films Elena keeps as motion and narrative references. Eac
 Site: https://elenacabrera.xyz
 Collections: https://elenacabrera.xyz/collections?type=launch-video
 
+## Meet Stack
+- Source: https://assets.ramp.com/nextjs/videos/meet-stack-a.mp4
+- Product: https://ramp.com/stack
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/ramp-stack/
+- Company: Ramp
+- Date: 2026-06-02
+- Duration: 1:07
+- Voiceover: no
+- Tags: ai, fintech, productivity, motion
+- Description: 67-second no-voiceover launch film for Ramp Stack, the AI operating system for finance teams: lime stepped-plane intro, prepaid-insurance schedule workflow (clarify → plan approve → CSV → journal → QuickBooks), then an infinite zoom-out across a department-scale canvas. Upbeat electronic track with crisp UI foley. Elena finds it muuuuy molón.
+- Landing: https://elenacabrera.xyz/collections/landings/ramp/
+- Timeline:
+  - 0:00-0:02 Intro: 3D venetian-blind / stepped-paper planes on glowing lime-yellow; 'Introducing' / 'Stack' / 'by ramp'.
+  - 0:02-0:08 Request: White dashboard 'Good morning, Tina', 'Close the books' progress; types 'Help me update the prepaid insurance schedule this month', yellow up-arrow submit, 7-dot hexagon loader.
+  - 0:08-0:20 Clarification: 'Thinking'/'Working' statuses; clarifies Prepaid-Insurance-Schedule.csv and GL account '6100 - Insurance Expense'.
+  - 0:20-0:27 Plan approval: 'Created plan. Review and approve to start.' side panel (Goal, Triggers, Instructions, Success criteria); yellow Approve.
+  - 0:27-0:37 Extraction: Reads CSV, finds 2 new prepaids ($6,000 ABC Insurance, $12,000 SecureTech); spreadsheet rows land with soft blue/lavender gradient highlight.
+  - 0:37-0:46 Journal entry: Dotted task-tree 'Task > Drafting journal entry'; debit/credit table populates for amortization.
+  - 0:46-0:52 Post to QuickBooks: Yellow 'Post to QuickBooks' → Posting… → Posted; mark task complete.
+  - 0:52-1:00 Scale reveal: Dashboard progress jumps; camera pulls back across a huge canvas of dozens of parallel accounting tasks and many cursors.
+  - 1:00-1:07 Outro: Back to lime stepped planes; 'AI built for accounting', ramp logo.
+- Highlights:
+  - 0:01 Venetian-blind 3D title: Stepped paper planes with lime glow tuck the Stack lockup into depth — brand first, no product chrome yet.
+  - 0:07 7-dot hexagon loader: After submit, a minimal black hexagon of seven dots becomes the agent’s thinking signature on empty grey.
+  - 0:27 Radial glow on Approve: Camera punches into the lime Approve CTA; a soft radial glow marks the click — same treatment returns on Post to QuickBooks.
+  - 0:35 Soft row gradient highlight: New prepaid rows paint in with a lateral blue/lavender wash so insertion reads as intentional, not a hard flash.
+  - 0:41 Dotted task-tree: Working status expands into a dotted connector 'Task > Drafting journal entry' — micro-motion that makes the next step feel authored.
+  - 0:47 Post to QuickBooks glow: Same lime primary + radial click glow as Approve, now committing the amortization entry into QuickBooks.
+  - 0:56 Infinite canvas zoom-out: Camera pulls back across dozens of parallel close tasks and cursors — the OS-scale punchline after one prepaid workflow.
+- Narrative: Tedious close-the-books hook → AI clarifies and asks for plan approval (trust) → executes across CSV, spreadsheet, journal, and QuickBooks → climax zoom-out to an OS running the whole department. No VO; upbeat electronic plucks building to synths with crisp UI foley. Snappy fast-in/slow-out easing throughout.
+- Palette: #FFFFFF (white), #F9F9F9 (surface), #1A1A1A (ink), #8C8C8C (grey), #E8FF54 (lime accent), #50A060 (success green), #DFEAF8 (lavender highlight)
+
 ## Karumi — AI CSM
 - Source: https://www.linkedin.com/posts/pablo-omenaca-muro_your-csms-onboard-your-best-50-accounts-activity-7520847482231111680-cj-x
 - Product: https://karumi.ai/
