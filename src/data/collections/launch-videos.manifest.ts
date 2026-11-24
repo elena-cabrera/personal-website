@@ -75,6 +75,158 @@ const viaMila = 'mila-capchase' as const;
 
 export const launchVideoManifest: LaunchVideoManifestEntry[] = [
   {
+    slug: 'ramp-stack',
+    title: 'Meet Stack',
+    company: 'Ramp',
+    url: 'https://assets.ramp.com/nextjs/videos/meet-stack-a.mp4',
+    productUrl: 'https://ramp.com/stack',
+    date: '2026-06-02',
+    durationSec: 67,
+    tags: ['launch-video', 'ai', 'fintech', 'productivity', 'motion'],
+    description:
+      "67-second no-voiceover launch film for Ramp Stack, the AI operating system for finance teams: lime stepped-plane intro, prepaid-insurance schedule workflow (clarify → plan approve → CSV → journal → QuickBooks), then an infinite zoom-out across a department-scale canvas. Upbeat electronic track with crisp UI foley. Elena finds it muuuuy molón.",
+    video: {
+      src: videoAsset('ramp-stack', 'video.mp4'),
+      poster: videoAsset('ramp-stack', 'poster.webp'),
+    },
+    relatedLandingSlug: 'ramp',
+    hasVoiceover: false,
+    timeline: [
+      {
+        startSec: 0,
+        endSec: 2,
+        label: 'Intro',
+        purpose:
+          "3D venetian-blind / stepped-paper planes on glowing lime-yellow; 'Introducing' / 'Stack' / 'by ramp'.",
+      },
+      {
+        startSec: 2,
+        endSec: 8,
+        label: 'Request',
+        purpose:
+          "White dashboard 'Good morning, Tina', 'Close the books' progress; types 'Help me update the prepaid insurance schedule this month', yellow up-arrow submit, 7-dot hexagon loader.",
+      },
+      {
+        startSec: 8,
+        endSec: 20,
+        label: 'Clarification',
+        purpose:
+          "'Thinking'/'Working' statuses; clarifies Prepaid-Insurance-Schedule.csv and GL account '6100 - Insurance Expense'.",
+      },
+      {
+        startSec: 20,
+        endSec: 27,
+        label: 'Plan approval',
+        purpose:
+          "'Created plan. Review and approve to start.' side panel (Goal, Triggers, Instructions, Success criteria); yellow Approve.",
+      },
+      {
+        startSec: 27,
+        endSec: 37,
+        label: 'Extraction',
+        purpose:
+          'Reads CSV, finds 2 new prepaids ($6,000 ABC Insurance, $12,000 SecureTech); spreadsheet rows land with soft blue/lavender gradient highlight.',
+      },
+      {
+        startSec: 37,
+        endSec: 46,
+        label: 'Journal entry',
+        purpose:
+          "Dotted task-tree 'Task > Drafting journal entry'; debit/credit table populates for amortization.",
+      },
+      {
+        startSec: 46,
+        endSec: 52,
+        label: 'Post to QuickBooks',
+        purpose:
+          "Yellow 'Post to QuickBooks' → Posting… → Posted; mark task complete.",
+      },
+      {
+        startSec: 52,
+        endSec: 60,
+        label: 'Scale reveal',
+        purpose:
+          'Dashboard progress jumps; camera pulls back across a huge canvas of dozens of parallel accounting tasks and many cursors.',
+      },
+      {
+        startSec: 60,
+        endSec: 67,
+        label: 'Outro',
+        purpose:
+          "Back to lime stepped planes; 'AI built for accounting', ramp logo.",
+      },
+    ],
+    highlights: [
+      {
+        title: 'Venetian-blind 3D title',
+        timestampSec: 1,
+        timestampLabel: '0:01',
+        frame: asset('ramp-stack', '01-venetian-blind-title.webp'),
+        explanation:
+          'Stepped paper planes with lime glow tuck the Stack lockup into depth — brand first, no product chrome yet.',
+      },
+      {
+        title: '7-dot hexagon loader',
+        timestampSec: 7.4,
+        timestampLabel: '0:07',
+        frame: asset('ramp-stack', '02-hexagon-loader.webp'),
+        explanation:
+          'After submit, a minimal black hexagon of seven dots becomes the agent’s thinking signature on empty grey.',
+      },
+      {
+        title: 'Radial glow on Approve',
+        timestampSec: 26.5,
+        timestampLabel: '0:27',
+        frame: asset('ramp-stack', '03-approve-radial-glow.webp'),
+        explanation:
+          'Camera punches into the lime Approve CTA; a soft radial glow marks the click — same treatment returns on Post to QuickBooks.',
+      },
+      {
+        title: 'Soft row gradient highlight',
+        timestampSec: 35,
+        timestampLabel: '0:35',
+        frame: asset('ramp-stack', '04-row-gradient-highlight.webp'),
+        explanation:
+          'New prepaid rows paint in with a lateral blue/lavender wash so insertion reads as intentional, not a hard flash.',
+      },
+      {
+        title: 'Dotted task-tree',
+        timestampSec: 41,
+        timestampLabel: '0:41',
+        frame: asset('ramp-stack', '05-task-tree.webp'),
+        explanation:
+          "Working status expands into a dotted connector 'Task > Drafting journal entry' — micro-motion that makes the next step feel authored.",
+      },
+      {
+        title: 'Post to QuickBooks glow',
+        timestampSec: 46.5,
+        timestampLabel: '0:47',
+        frame: asset('ramp-stack', '06-post-quickbooks.webp'),
+        explanation:
+          'Same lime primary + radial click glow as Approve, now committing the amortization entry into QuickBooks.',
+      },
+      {
+        title: 'Infinite canvas zoom-out',
+        timestampSec: 56,
+        timestampLabel: '0:56',
+        frame: asset('ramp-stack', '07-infinite-canvas-zoom.webp'),
+        explanation:
+          'Camera pulls back across dozens of parallel close tasks and cursors — the OS-scale punchline after one prepaid workflow.',
+      },
+    ],
+    narrative:
+      'Tedious close-the-books hook → AI clarifies and asks for plan approval (trust) → executes across CSV, spreadsheet, journal, and QuickBooks → climax zoom-out to an OS running the whole department. No VO; upbeat electronic plucks building to synths with crisp UI foley. Snappy fast-in/slow-out easing throughout.',
+    palette: [
+      { hex: '#FFFFFF', label: 'white' },
+      { hex: '#F9F9F9', label: 'surface' },
+      { hex: '#1A1A1A', label: 'ink' },
+      { hex: '#8C8C8C', label: 'grey' },
+      { hex: '#E8FF54', label: 'lime accent' },
+      { hex: '#50A060', label: 'success green' },
+      { hex: '#DFEAF8', label: 'lavender highlight' },
+    ],
+  },
+  {
     slug: 'karumi-ai-csm',
     title: 'Karumi — AI CSM',
     company: 'Karumi (YC F25)',
