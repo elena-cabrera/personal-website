@@ -367,6 +367,104 @@ Curated product launch films Elena keeps as motion and narrative references. Eac
 Site: https://elenacabrera.xyz
 Collections: https://elenacabrera.xyz/collections?type=launch-video
 
+## Nexor — Product update
+- Source: https://es.linkedin.com/posts/theoscarvibes_hoy-es-d%C3%ADa-de-anuncios-top-siempre-me-activity-7530696878917844992-PKXE
+- Product: https://www.getnexor.ai
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/nexor-product-update/
+- Company: Nexor
+- Date: 2026-11-23
+- Duration: 0:53
+- Voiceover: yes
+- Tags: ai, productivity, motion
+- Description: 53-second product-update film for Nexor (posted by Oscar Morales): magenta mesh intro into three features — Nexor MCP, Computer Use, Customer Support — ending on getnexor.ai. Male voiceover over a continuous track. Kept for the intro animation and brand colors.
+- Timeline:
+  - 0:00-0:03 Intro: Wordmark 'nexor' on grainy magenta/pink fluid mesh over black; the arrowhead replacing the 'o' morphs into seven rounded waveform bars; gradient settles toward solid black.
+  - 0:03-0:06 Product update: Iridescent 'Product update' pill and 'Three new ways to put Nexor to work.'
+  - 0:06-0:19 01/03 Nexor MCP: '01 / 03 Nexor MCP — Connect your agents to any MCP server.'; dark chat UI (Runway Store / WhatsApp) beside a Shopify via-MCP inventory panel.
+  - 0:19-0:33 02/03 Computer Use: '02 / 03 Computer Use — Where there was no integration, now there's Nexor.'; light CRM Contacts UI with pink handwritten 'watch it work', then dark Computer-use session steps and 'no API needed'.
+  - 0:33-0:47 03/03 Customer Support: '03 / 03 Customer Support — Sales and support. One agent, one number.'; dark WhatsApp inbox for Daniel Ortiz with pink 'real orders', then human handoff to Jordan · Support team.
+  - 0:47-0:53 Outro: 'Available now' then getnexor.ai on black.
+- Highlights:
+  - 0:01 Magenta mesh wordmark: Grainy magenta/pink fluid mesh behind the nexor lockup — the brand-color beat Elena kept this film for.
+  - 0:02 Arrow → waveform morph: The 'o' arrowhead springs into seven rounded vertical bars — the intro motion that carries the whole open.
+  - 0:04 Iridescent Product update pill: Pink/yellow/cyan iridescent capsule on black bridges the mesh intro into the feature list.
+  - 0:07 Magenta progress accent: '01 / 03' with a rose-magenta active segment — brand accent reused as chapter punctuation.
+  - 0:31 Handwritten 'watch it work': Pink marker note over the light CRM Contacts table — same rose family as the intro mesh.
+  - 0:40 Handwritten 'real orders': Same handwritten rose callout on the dark support inbox, pointing at a live order reply.
+  - 0:50 getnexor.ai end card: Quiet white URL on black after Available now — no extra chrome.
+- Narrative: Kept for the intro animation and brand colors more than the feature tour. Mesh wordmark → iridescent Product update pill → three numbered chapters (MCP, Computer Use, Customer Support) with pink handwritten callouts that echo the intro rose → Available now / getnexor.ai. Male voiceover over a continuous backing track.
+- Palette: #000000 (black), #18181B (panel), #FFFFFF (type), #C05567 (magenta mesh), #FF7F98 (handwriting rose), #54C9A3 (success green)
+
+## Karumi — Inbound Agent
+- Source: https://www.linkedin.com/posts/pablo-omenaca-muro_your-inbound-can-now-run-itself-your-best-activity-7526633055390834688-Dpc1
+- Product: https://karumi.ai/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/karumi-inbound-agent/
+- Company: Karumi (YC F25)
+- Date: 2026-11-12
+- Duration: 1:10
+- Voiceover: yes
+- Tags: ai, productivity, motion
+- Description: 70-second launch film for Karumi's inbound agent (posted by Pablo Omenaca): cream/coral UI, pixel-dissolve and halftone transitions, live Plexora demo, voice transcript with coral highlights, then insight and stat cards. Energetic electronic track with male narrator plus a synthesized visitor voice. Elena loves the animations.
+- Timeline:
+  - 0:00-0:04 Hook: Three dots expand into 'Your inbound can now run itself.' ('itself' in coral); pixel block-dissolve into the Karumi mark on fluid halftone.
+  - 0:04-0:08 Meet Karumi: 'Meet Karumi, your inbound agent. Visitors ask it anything.' Floating topic words (pricing / security / SSO).
+  - 0:08-0:13 Plexora live: Plexora dashboard; Ask Karumi springs from bottom-left; 'Showing Plexora live'; qualifies while they explore.
+  - 0:13-0:15 Doesn't wait: 'Karumi doesn't wait for a form.'
+  - 0:15-0:21 Book a demo: Book-a-demo page, 'Visitor from LinkedIn', chat 'Hi! I'm Karumi…', VP Sales / 300-person team.
+  - 0:21-0:30 Voice transcript: Live voice transcript with coral word highlighting; crosshair annotations and tags (300 seats, HubSpot) snap around Sarah Kim · VP Sales.
+  - 0:30-0:36 Shows them: 'Karumi shows them' Q4 pipeline, date picker, 'Brief for Daniel', punch-in camera + stacked cards.
+  - 0:36-0:40 Real buyers: 'So sales only talks to real buyers.' Calendar with three meetings.
+  - 0:40-0:45 Subscribe → onboard: Pricing card Subscribe → checkmark → morphs into 'Welcome to Plexora' onboarding; 'and Karumi onboards them too.'
+  - 0:45-0:54 Insight: 'And every conversation comes back as insight.' Cascading insight cards with mono labels.
+  - 0:54-1:03 Stats: Staggered stat cards: +23% more pipeline, 95% fewer unqualified meetings, +300% more signups.
+  - 1:03-1:10 CTA: 'Engage every visitor, and turn them into customers.' / 'With Karumi' logo.
+- Highlights:
+  - 0:03 Coral 'itself' title: Hook line lands with 'itself.' in brand coral — color as the punch word.
+  - 0:04 Pixel dissolve into logo: Block pixels dissolve into fluid halftone around the Karumi mark — the motion language Elena loves.
+  - 0:09 Widget spring on Plexora: Ask Karumi springs from the dock; coral cursor and live badge over the cream dashboard.
+  - 0:22 Voice transcript card: Listening card on peach/coral halftone with mono crosshair labels — motion around a quiet UI object.
+  - 0:28 Coral word highlights: Live transcript paints '300-person' and key verbs coral while tags (300 seats, HubSpot) snap on.
+  - 0:43 Subscribe morphs to onboard: Pricing Subscribe resolves into Welcome to Plexora onboarding with Karumi still guiding.
+  - 0:56 Stat card on halftone: +23% more pipeline on the same fluid coral halftone field — proof beat that reuses the open texture.
+- Narrative: Elena loves this one for the animations: pixel dissolve, widget spring, snap annotations, coral transcript highlights, card morphs, cascading insights, counting stats. Male narrator over energetic electronic/synth-pop; a synthesized visitor voice (Sarah) around 0:21–0:30; UI pops, clicks, keyboard and swooshes throughout.
+- Palette: #F3F1ED (cream), #E77251 (coral), #F0D0C0 (peach), #1A1A1A (ink), #FFFFFF (cards)
+
+## Exponential — new brand
+- Source: https://es.linkedin.com/posts/go-exponential_hoy-lanzamos-un-nuevo-exponential-con-la-activity-7530588280585830400-onrb
+- Product: https://es.linkedin.com/school/go-exponential/
+- Subpage: https://elenacabrera.xyz/collections/launch-videos/exponential-new-brand/
+- Company: Exponential
+- Date: 2026-11-23
+- Duration: 0:42
+- Voiceover: no
+- Tags: motion, ui
+- Description: 42-second brand film for The Exponential Fellowship (brand by Pablo González González): a^x on black, electric-blue JOIN CTAs, pixel-font community beats, device mockups, split-flap departures board, liquid-chrome close. No product voiceover — classical soprano vocal with short synced UI SFX. Elena likes it because it's simple, uses opera music instead of a typical launch track, and the sound effects are subtle but on-point.
+- Timeline:
+  - 0:00-0:01 Mark: White italic serif 'a^x' centered on black.
+  - 0:01-0:03 Join: Electric-blue 'JOIN EXPONENTIAL' pill with cursor click.
+  - 0:03-0:06 Thesis: 'Talent is evenly distributed, Opportunities…' builds on black.
+  - 0:06-0:08 Toggle: Pill toggle: FIND THEM / CONNECT THEM / LAUNCH THEM.
+  - 0:08-0:13 Globe search: Wireframe globe + search typing 'A bridge to the frontier' with blue arcs.
+  - 0:13-0:19 Community: 'Join the COMMUNITY / LAUNCHPAD / FELLOWSHIP' with pixel-font keywords; photos and logos pop around.
+  - 0:19-0:22 Events: 'Come to the next event' with 3D event cards (Exponential Beers Madrid, Exponential in SF).
+  - 0:22-0:24 Welcome: 'Welcome to the new Exponential.' ('the new' in electric blue).
+  - 0:24-0:27 Founders live here: Device mockup; full-screen pixel type 'SPAIN'S FUTURE FOUNDERS LIVE HERE'.
+  - 0:27-0:29 Specs: UI with exposed Figma-style type specs (h2 40/48, body 16/26).
+  - 0:29-0:33 Site mockups: Dark site mockups on devices.
+  - 0:33-0:35 Departures: Split-flap departures board: Spanish cities → SAN FRANCISCO (and NEW YORK) with company names.
+  - 0:35-0:39 Rapid cuts: Rapid menu/UI cuts as the vocal peaks.
+  - 0:39-0:42 Chrome mark: Cut to black; a^x morphs into liquid chrome.
+- Highlights:
+  - 0:00 a^x on black: Tiny italic serif mark — the whole film stays this spare.
+  - 0:02 JOIN EXPONENTIAL button: One electric-blue pill and a cursor — simplicity as the brand move.
+  - 0:07 FIND / CONNECT / LAUNCH toggle: Mono pill toggle ticks through the three verbs without extra scenery.
+  - 0:14 COMMUNITY pixel + photos: Pixel-font keyword with orbiting event photos snapping in — still sparse, just denser.
+  - 0:26 SPAIN'S FUTURE FOUNDERS: Full-bleed pixel headline on the dark site mock — brand type at product scale.
+  - 0:34 Split-flap departures board: Spanish cities flipping toward SAN FRANCISCO — the fellowship story as a Solari board.
+  - 0:40 Liquid chrome a^x: Mark returns as molten chrome after the vocal peak — quiet end punctuation.
+- Narrative: Simple black/white/blue brand film scored with a classical soprano vocal (sung, not a product voiceover) instead of a typical launch electronic track. Sound design is first-class: short UI SFX locked to cuts — click ~0:02 on JOIN, airy whoosh as thesis type builds ~0:03–0:05, toggle ticks ~0:06–0:07, keyboard on globe search ~0:08–0:11, image-snap pops ~0:13–0:18, swooshes on event cards ~0:19–0:21, metallic whoosh on the phone/device beat ~0:24–0:26, split-flap flutter ~0:33–0:34, then the vocal peaks through rapid UI cuts ~0:35–0:38 before an echo/decay into the chrome a^x.
+- Palette: #000000 (black), #FFFFFF (type), #0078FF (electric blue), #1F1F1F (near-black UI), #333333 (grey)
+
 ## Meet Stack
 - Source: https://assets.ramp.com/nextjs/videos/meet-stack-a.mp4
 - Product: https://ramp.com/stack
