@@ -75,6 +75,477 @@ const viaMila = 'mila-capchase' as const;
 
 export const launchVideoManifest: LaunchVideoManifestEntry[] = [
   {
+    slug: 'nexor-product-update',
+    title: 'Nexor — Product update',
+    company: 'Nexor',
+    url: 'https://es.linkedin.com/posts/theoscarvibes_hoy-es-d%C3%ADa-de-anuncios-top-siempre-me-activity-7530696878917844992-PKXE',
+    productUrl: 'https://www.getnexor.ai',
+    date: '2026-11-23',
+    durationSec: 53,
+    tags: ['launch-video', 'ai', 'productivity', 'motion'],
+    description:
+      "53-second product-update film for Nexor (posted by Oscar Morales): magenta mesh intro into three features — Nexor MCP, Computer Use, Customer Support — ending on getnexor.ai. Male voiceover over a continuous track. Kept for the intro animation and brand colors.",
+    video: {
+      src: videoAsset('nexor-product-update', 'video.mp4'),
+      poster: videoAsset('nexor-product-update', 'poster.webp'),
+    },
+    hasVoiceover: true,
+    timeline: [
+      {
+        startSec: 0,
+        endSec: 3,
+        label: 'Intro',
+        purpose:
+          "Wordmark 'nexor' on grainy magenta/pink fluid mesh over black; the arrowhead replacing the 'o' morphs into seven rounded waveform bars; gradient settles toward solid black.",
+      },
+      {
+        startSec: 3,
+        endSec: 6,
+        label: 'Product update',
+        purpose:
+          "Iridescent 'Product update' pill and 'Three new ways to put Nexor to work.'",
+      },
+      {
+        startSec: 6,
+        endSec: 19,
+        label: '01/03 Nexor MCP',
+        purpose:
+          "'01 / 03 Nexor MCP — Connect your agents to any MCP server.'; dark chat UI (Runway Store / WhatsApp) beside a Shopify via-MCP inventory panel.",
+      },
+      {
+        startSec: 19,
+        endSec: 33,
+        label: '02/03 Computer Use',
+        purpose:
+          "'02 / 03 Computer Use — Where there was no integration, now there's Nexor.'; light CRM Contacts UI with pink handwritten 'watch it work', then dark Computer-use session steps and 'no API needed'.",
+      },
+      {
+        startSec: 33,
+        endSec: 47,
+        label: '03/03 Customer Support',
+        purpose:
+          "'03 / 03 Customer Support — Sales and support. One agent, one number.'; dark WhatsApp inbox for Daniel Ortiz with pink 'real orders', then human handoff to Jordan · Support team.",
+      },
+      {
+        startSec: 47,
+        endSec: 53,
+        label: 'Outro',
+        purpose: "'Available now' then getnexor.ai on black.",
+      },
+    ],
+    highlights: [
+      {
+        title: 'Magenta mesh wordmark',
+        timestampSec: 1,
+        timestampLabel: '0:01',
+        frame: asset('nexor-product-update', '01-magenta-mesh-wordmark.webp'),
+        explanation:
+          'Grainy magenta/pink fluid mesh behind the nexor lockup — the brand-color beat Elena kept this film for.',
+      },
+      {
+        title: 'Arrow → waveform morph',
+        timestampSec: 1.5,
+        timestampLabel: '0:02',
+        frame: asset('nexor-product-update', '02-waveform-morph.webp'),
+        explanation:
+          "The 'o' arrowhead springs into seven rounded vertical bars — the intro motion that carries the whole open.",
+      },
+      {
+        title: 'Iridescent Product update pill',
+        timestampSec: 4,
+        timestampLabel: '0:04',
+        frame: asset('nexor-product-update', '03-iridescent-product-pill.webp'),
+        explanation:
+          'Pink/yellow/cyan iridescent capsule on black bridges the mesh intro into the feature list.',
+      },
+      {
+        title: 'Magenta progress accent',
+        timestampSec: 6.5,
+        timestampLabel: '0:07',
+        frame: asset('nexor-product-update', '04-magenta-progress-accent.webp'),
+        explanation:
+          "'01 / 03' with a rose-magenta active segment — brand accent reused as chapter punctuation.",
+      },
+      {
+        title: "Handwritten 'watch it work'",
+        timestampSec: 31,
+        timestampLabel: '0:31',
+        frame: asset('nexor-product-update', '05-handwritten-watch-it-work.webp'),
+        explanation:
+          'Pink marker note over the light CRM Contacts table — same rose family as the intro mesh.',
+      },
+      {
+        title: "Handwritten 'real orders'",
+        timestampSec: 40,
+        timestampLabel: '0:40',
+        frame: asset('nexor-product-update', '06-handwritten-real-orders.webp'),
+        explanation:
+          'Same handwritten rose callout on the dark support inbox, pointing at a live order reply.',
+      },
+      {
+        title: 'getnexor.ai end card',
+        timestampSec: 50,
+        timestampLabel: '0:50',
+        frame: asset('nexor-product-update', '07-getnexor-endcard.webp'),
+        explanation:
+          'Quiet white URL on black after Available now — no extra chrome.',
+      },
+    ],
+    narrative:
+      'Kept for the intro animation and brand colors more than the feature tour. Mesh wordmark → iridescent Product update pill → three numbered chapters (MCP, Computer Use, Customer Support) with pink handwritten callouts that echo the intro rose → Available now / getnexor.ai. Male voiceover over a continuous backing track.',
+    palette: [
+      { hex: '#000000', label: 'black' },
+      { hex: '#18181B', label: 'panel' },
+      { hex: '#FFFFFF', label: 'type' },
+      { hex: '#C05567', label: 'magenta mesh' },
+      { hex: '#FF7F98', label: 'handwriting rose' },
+      { hex: '#54C9A3', label: 'success green' },
+    ],
+  },
+  {
+    slug: 'karumi-inbound-agent',
+    title: 'Karumi — Inbound Agent',
+    company: 'Karumi (YC F25)',
+    url: 'https://www.linkedin.com/posts/pablo-omenaca-muro_your-inbound-can-now-run-itself-your-best-activity-7526633055390834688-Dpc1',
+    productUrl: 'https://karumi.ai/',
+    date: '2026-11-12',
+    durationSec: 70,
+    tags: ['launch-video', 'ai', 'productivity', 'motion'],
+    description:
+      "70-second launch film for Karumi's inbound agent (posted by Pablo Omenaca): cream/coral UI, pixel-dissolve and halftone transitions, live Plexora demo, voice transcript with coral highlights, then insight and stat cards. Energetic electronic track with male narrator plus a synthesized visitor voice. Elena loves the animations.",
+    video: {
+      src: videoAsset('karumi-inbound-agent', 'video.mp4'),
+      poster: videoAsset('karumi-inbound-agent', 'poster.webp'),
+    },
+    hasVoiceover: true,
+    timeline: [
+      {
+        startSec: 0,
+        endSec: 4,
+        label: 'Hook',
+        purpose:
+          "Three dots expand into 'Your inbound can now run itself.' ('itself' in coral); pixel block-dissolve into the Karumi mark on fluid halftone.",
+      },
+      {
+        startSec: 4,
+        endSec: 8,
+        label: 'Meet Karumi',
+        purpose:
+          "'Meet Karumi, your inbound agent. Visitors ask it anything.' Floating topic words (pricing / security / SSO).",
+      },
+      {
+        startSec: 8,
+        endSec: 13,
+        label: 'Plexora live',
+        purpose:
+          "Plexora dashboard; Ask Karumi springs from bottom-left; 'Showing Plexora live'; qualifies while they explore.",
+      },
+      {
+        startSec: 13,
+        endSec: 15,
+        label: "Doesn't wait",
+        purpose: "'Karumi doesn't wait for a form.'",
+      },
+      {
+        startSec: 15,
+        endSec: 21,
+        label: 'Book a demo',
+        purpose:
+          "Book-a-demo page, 'Visitor from LinkedIn', chat 'Hi! I'm Karumi…', VP Sales / 300-person team.",
+      },
+      {
+        startSec: 21,
+        endSec: 30,
+        label: 'Voice transcript',
+        purpose:
+          'Live voice transcript with coral word highlighting; crosshair annotations and tags (300 seats, HubSpot) snap around Sarah Kim · VP Sales.',
+      },
+      {
+        startSec: 30,
+        endSec: 36,
+        label: 'Shows them',
+        purpose:
+          "'Karumi shows them' Q4 pipeline, date picker, 'Brief for Daniel', punch-in camera + stacked cards.",
+      },
+      {
+        startSec: 36,
+        endSec: 40,
+        label: 'Real buyers',
+        purpose: "'So sales only talks to real buyers.' Calendar with three meetings.",
+      },
+      {
+        startSec: 40,
+        endSec: 45,
+        label: 'Subscribe → onboard',
+        purpose:
+          "Pricing card Subscribe → checkmark → morphs into 'Welcome to Plexora' onboarding; 'and Karumi onboards them too.'",
+      },
+      {
+        startSec: 45,
+        endSec: 54,
+        label: 'Insight',
+        purpose:
+          "'And every conversation comes back as insight.' Cascading insight cards with mono labels.",
+      },
+      {
+        startSec: 54,
+        endSec: 63,
+        label: 'Stats',
+        purpose:
+          'Staggered stat cards: +23% more pipeline, 95% fewer unqualified meetings, +300% more signups.',
+      },
+      {
+        startSec: 63,
+        endSec: 70,
+        label: 'CTA',
+        purpose:
+          "'Engage every visitor, and turn them into customers.' / 'With Karumi' logo.",
+      },
+    ],
+    highlights: [
+      {
+        title: "Coral 'itself' title",
+        timestampSec: 2.5,
+        timestampLabel: '0:03',
+        frame: asset('karumi-inbound-agent', '01-coral-itself-title.webp'),
+        explanation:
+          "Hook line lands with 'itself.' in brand coral — color as the punch word.",
+      },
+      {
+        title: 'Pixel dissolve into logo',
+        timestampSec: 3.8,
+        timestampLabel: '0:04',
+        frame: asset('karumi-inbound-agent', '02-pixel-dissolve-logo.webp'),
+        explanation:
+          'Block pixels dissolve into fluid halftone around the Karumi mark — the motion language Elena loves.',
+      },
+      {
+        title: 'Widget spring on Plexora',
+        timestampSec: 9,
+        timestampLabel: '0:09',
+        frame: asset('karumi-inbound-agent', '03-widget-spring-plexora.webp'),
+        explanation:
+          'Ask Karumi springs from the dock; coral cursor and live badge over the cream dashboard.',
+      },
+      {
+        title: 'Voice transcript card',
+        timestampSec: 22,
+        timestampLabel: '0:22',
+        frame: asset('karumi-inbound-agent', '04-voice-transcript-card.webp'),
+        explanation:
+          'Listening card on peach/coral halftone with mono crosshair labels — motion around a quiet UI object.',
+      },
+      {
+        title: 'Coral word highlights',
+        timestampSec: 28,
+        timestampLabel: '0:28',
+        frame: asset('karumi-inbound-agent', '05-coral-word-highlights.webp'),
+        explanation:
+          "Live transcript paints '300-person' and key verbs coral while tags (300 seats, HubSpot) snap on.",
+      },
+      {
+        title: 'Subscribe morphs to onboard',
+        timestampSec: 43,
+        timestampLabel: '0:43',
+        frame: asset('karumi-inbound-agent', '06-onboarding-morph.webp'),
+        explanation:
+          'Pricing Subscribe resolves into Welcome to Plexora onboarding with Karumi still guiding.',
+      },
+      {
+        title: 'Stat card on halftone',
+        timestampSec: 56,
+        timestampLabel: '0:56',
+        frame: asset('karumi-inbound-agent', '07-stat-card-halftone.webp'),
+        explanation:
+          '+23% more pipeline on the same fluid coral halftone field — proof beat that reuses the open texture.',
+      },
+    ],
+    narrative:
+      "Elena loves this one for the animations: pixel dissolve, widget spring, snap annotations, coral transcript highlights, card morphs, cascading insights, counting stats. Male narrator over energetic electronic/synth-pop; a synthesized visitor voice (Sarah) around 0:21–0:30; UI pops, clicks, keyboard and swooshes throughout.",
+    palette: [
+      { hex: '#F3F1ED', label: 'cream' },
+      { hex: '#E77251', label: 'coral' },
+      { hex: '#F0D0C0', label: 'peach' },
+      { hex: '#1A1A1A', label: 'ink' },
+      { hex: '#FFFFFF', label: 'cards' },
+    ],
+  },
+  {
+    slug: 'exponential-new-brand',
+    title: 'Exponential — new brand',
+    company: 'Exponential',
+    url: 'https://es.linkedin.com/posts/go-exponential_hoy-lanzamos-un-nuevo-exponential-con-la-activity-7530588280585830400-onrb',
+    productUrl: 'https://es.linkedin.com/school/go-exponential/',
+    date: '2026-11-23',
+    durationSec: 42,
+    tags: ['launch-video', 'motion', 'ui'],
+    description:
+      "42-second brand film for The Exponential Fellowship (brand by Pablo González González): a^x on black, electric-blue JOIN CTAs, pixel-font community beats, device mockups, split-flap departures board, liquid-chrome close. No product voiceover — classical soprano vocal with short synced UI SFX. Elena likes it because it's simple, uses opera music instead of a typical launch track, and the sound effects are subtle but on-point.",
+    video: {
+      src: videoAsset('exponential-new-brand', 'video.mp4'),
+      poster: videoAsset('exponential-new-brand', 'poster.webp'),
+    },
+    hasVoiceover: false,
+    timeline: [
+      {
+        startSec: 0,
+        endSec: 1,
+        label: 'Mark',
+        purpose: "White italic serif 'a^x' centered on black.",
+      },
+      {
+        startSec: 1,
+        endSec: 3,
+        label: 'Join',
+        purpose: "Electric-blue 'JOIN EXPONENTIAL' pill with cursor click.",
+      },
+      {
+        startSec: 3,
+        endSec: 6,
+        label: 'Thesis',
+        purpose: "'Talent is evenly distributed, Opportunities…' builds on black.",
+      },
+      {
+        startSec: 6,
+        endSec: 8,
+        label: 'Toggle',
+        purpose: 'Pill toggle: FIND THEM / CONNECT THEM / LAUNCH THEM.',
+      },
+      {
+        startSec: 8,
+        endSec: 13,
+        label: 'Globe search',
+        purpose:
+          "Wireframe globe + search typing 'A bridge to the frontier' with blue arcs.",
+      },
+      {
+        startSec: 13,
+        endSec: 19,
+        label: 'Community',
+        purpose:
+          "'Join the COMMUNITY / LAUNCHPAD / FELLOWSHIP' with pixel-font keywords; photos and logos pop around.",
+      },
+      {
+        startSec: 19,
+        endSec: 22,
+        label: 'Events',
+        purpose:
+          "'Come to the next event' with 3D event cards (Exponential Beers Madrid, Exponential in SF).",
+      },
+      {
+        startSec: 22,
+        endSec: 24,
+        label: 'Welcome',
+        purpose: "'Welcome to the new Exponential.' ('the new' in electric blue).",
+      },
+      {
+        startSec: 24,
+        endSec: 27,
+        label: 'Founders live here',
+        purpose:
+          "Device mockup; full-screen pixel type 'SPAIN'S FUTURE FOUNDERS LIVE HERE'.",
+      },
+      {
+        startSec: 27,
+        endSec: 29,
+        label: 'Specs',
+        purpose: 'UI with exposed Figma-style type specs (h2 40/48, body 16/26).',
+      },
+      {
+        startSec: 29,
+        endSec: 33,
+        label: 'Site mockups',
+        purpose: 'Dark site mockups on devices.',
+      },
+      {
+        startSec: 33,
+        endSec: 35,
+        label: 'Departures',
+        purpose:
+          'Split-flap departures board: Spanish cities → SAN FRANCISCO (and NEW YORK) with company names.',
+      },
+      {
+        startSec: 35,
+        endSec: 39,
+        label: 'Rapid cuts',
+        purpose: 'Rapid menu/UI cuts as the vocal peaks.',
+      },
+      {
+        startSec: 39,
+        endSec: 42,
+        label: 'Chrome mark',
+        purpose: 'Cut to black; a^x morphs into liquid chrome.',
+      },
+    ],
+    highlights: [
+      {
+        title: 'a^x on black',
+        timestampSec: 0.3,
+        timestampLabel: '0:00',
+        frame: asset('exponential-new-brand', '01-ax-mark-black.webp'),
+        explanation:
+          'Tiny italic serif mark — the whole film stays this spare.',
+      },
+      {
+        title: 'JOIN EXPONENTIAL button',
+        timestampSec: 1.8,
+        timestampLabel: '0:02',
+        frame: asset('exponential-new-brand', '02-join-exponential-button.webp'),
+        explanation:
+          'One electric-blue pill and a cursor — simplicity as the brand move.',
+      },
+      {
+        title: 'FIND / CONNECT / LAUNCH toggle',
+        timestampSec: 6.5,
+        timestampLabel: '0:07',
+        frame: asset('exponential-new-brand', '03-find-connect-launch-toggle.webp'),
+        explanation:
+          'Mono pill toggle ticks through the three verbs without extra scenery.',
+      },
+      {
+        title: 'COMMUNITY pixel + photos',
+        timestampSec: 14,
+        timestampLabel: '0:14',
+        frame: asset('exponential-new-brand', '04-community-pixel-photos.webp'),
+        explanation:
+          'Pixel-font keyword with orbiting event photos snapping in — still sparse, just denser.',
+      },
+      {
+        title: "SPAIN'S FUTURE FOUNDERS",
+        timestampSec: 25.5,
+        timestampLabel: '0:26',
+        frame: asset('exponential-new-brand', '05-spains-future-founders.webp'),
+        explanation:
+          'Full-bleed pixel headline on the dark site mock — brand type at product scale.',
+      },
+      {
+        title: 'Split-flap departures board',
+        timestampSec: 33.5,
+        timestampLabel: '0:34',
+        frame: asset('exponential-new-brand', '06-split-flap-board.webp'),
+        explanation:
+          'Spanish cities flipping toward SAN FRANCISCO — the fellowship story as a Solari board.',
+      },
+      {
+        title: 'Liquid chrome a^x',
+        timestampSec: 39.5,
+        timestampLabel: '0:40',
+        frame: asset('exponential-new-brand', '07-liquid-chrome-ax.webp'),
+        explanation:
+          'Mark returns as molten chrome after the vocal peak — quiet end punctuation.',
+      },
+    ],
+    narrative:
+      "Simple black/white/blue brand film scored with a classical soprano vocal (sung, not a product voiceover) instead of a typical launch electronic track. Sound design is first-class: short UI SFX locked to cuts — click ~0:02 on JOIN, airy whoosh as thesis type builds ~0:03–0:05, toggle ticks ~0:06–0:07, keyboard on globe search ~0:08–0:11, image-snap pops ~0:13–0:18, swooshes on event cards ~0:19–0:21, metallic whoosh on the phone/device beat ~0:24–0:26, split-flap flutter ~0:33–0:34, then the vocal peaks through rapid UI cuts ~0:35–0:38 before an echo/decay into the chrome a^x.",
+    palette: [
+      { hex: '#000000', label: 'black' },
+      { hex: '#FFFFFF', label: 'type' },
+      { hex: '#0078FF', label: 'electric blue' },
+      { hex: '#1F1F1F', label: 'near-black UI' },
+      { hex: '#333333', label: 'grey' },
+    ],
+  },
+  {
     slug: 'ramp-stack',
     title: 'Meet Stack',
     company: 'Ramp',
