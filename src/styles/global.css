@@ -687,7 +687,7 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
 }
 
 .collections-row__label {
-  flex: 0 0 3.2rem;
+  flex: 0 0 3.5rem;
   margin-top: 0.28rem;
   font-family: "Geist Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
   font-size: 0.7rem;
@@ -1132,6 +1132,14 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
   font-size: 0.65rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.landing-detail__tags--style {
+  margin-top: -0.35rem;
+}
+
+.landing-detail__tags--style a {
+  border-style: dashed;
 }
 
 .landing-detail__tags a {

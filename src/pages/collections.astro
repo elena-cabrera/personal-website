@@ -5,10 +5,12 @@ import {
   collectionItems,
   typeLabels,
   typeOrder,
-  uniqueTags,
+  uniqueBusinessTags,
+  uniqueStyleTags,
 } from '../data/collections';
 
-const tags = uniqueTags(collectionItems);
+const tags = uniqueBusinessTags(collectionItems);
+const styleTags = uniqueStyleTags(collectionItems);
 const typeCounts = Object.fromEntries(
   typeOrder.map((type) => [type, collectionItems.filter((item) => item.type === type).length])
 );
@@ -65,6 +67,23 @@ const typeCounts = Object.fromEntries(
         <div class="collections-chips collections-chips--wrap" role="group" aria-label="Filter by tag">
           {
             tags.map((tag) => (
+              <button type="button" class="collections-tag" data-tag-filter={tag}>
+                {tag}
+              </button>
+            ))
+          }
+        </div>
+      </div>
+
+      <div class="collections-row" data-style-tag-row hidden={styleTags.length === 0}>
+        <span class="collections-row__label">style</span>
+        <div
+          class="collections-chips collections-chips--wrap"
+          role="group"
+          aria-label="Filter by visual style"
+        >
+          {
+            styleTags.map((tag) => (
               <button type="button" class="collections-tag" data-tag-filter={tag}>
                 {tag}
               </button>

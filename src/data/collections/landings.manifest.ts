@@ -9,6 +9,8 @@ export type LandingManifestEntry = {
   title: string;
   url: string;
   tags: string[];
+  /** Visual style tags from the controlled landing vocabulary */
+  styleTags: string[];
   description: string;
   designFocus: string;
   screenshots: LandingScreenshotManifest[];
@@ -25,6 +27,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Superlogical',
     url: 'https://superlogical.com/',
     tags: ['landing', 'ui', 'devtools', 'productivity', 'ai'],
+    styleTags: ['sans-serif', 'minimal', 'techy', 'gradient'],
     description:
       'Superlogical is building a terminal multiplexer and broader work multiplexer that unifies developer environments, agents, CI, and production systems into durable sessions.',
     designFocus:
@@ -61,6 +64,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Typo',
     url: 'https://www.typo.so/',
     tags: ['landing', 'ui', 'productivity', 'ai'],
+    styleTags: ['sans-serif', 'playful', 'cool', 'pastel'],
     description:
       'Typo is a modular personal workspace for creating, organizing, and sharing pages with blocks for audio, social links, docs, and publishing.',
     designFocus:
@@ -115,6 +119,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'EliseAI',
     url: 'https://eliseai.com/healthai',
     tags: ['landing', 'ui', 'ai', 'health', 'enterprise'],
+    styleTags: ['sans-serif', 'corporate', 'cool', 'gradient'],
     description:
       'EliseAI provides AI automation for healthcare practices, handling patient communication, scheduling, billing follow-ups, and EHR-integrated workflows across voice, text, email, and chat.',
     designFocus:
@@ -169,6 +174,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Visitors',
     url: 'https://visitors.now/',
     tags: ['landing', 'ui', 'analytics'],
+    styleTags: ['sans-serif', 'minimal', 'cool', 'gradient'],
     description:
       'Visitors is a privacy-first, revenue-focused web analytics platform offering realtime tracking, visitor profiles, Core Web Vitals, Stripe revenue attribution, and GDPR-compliant analytics without cookie banners.',
     designFocus:
@@ -211,6 +217,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Kapia',
     url: 'https://kapia.co/',
     tags: ['landing', 'ui', 'ai', 'enterprise', 'productivity'],
+    styleTags: ['sans-serif', 'editorial', 'pastel'],
     description:
       'Kapia maps a company\'s operational knowledge from documents, tickets, and tools into AI systems and agents that follow real business processes, exceptions, and tribal rules.',
     designFocus:
@@ -241,6 +248,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Midday',
     url: 'https://midday.ai/',
     tags: ['landing', 'ui', 'fintech', 'invoicing', 'productivity'],
+    styleTags: ['serif', 'minimal', 'monochrome'],
     description:
       'Midday is a business finance platform that centralizes invoicing, time tracking, banking transactions, and project data for founders and studios.',
     designFocus:
@@ -295,6 +303,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Arche',
     url: 'https://thearcheproject.com/',
     tags: ['landing', 'ui', 'ai', 'devtools', 'productivity'],
+    styleTags: ['serif', 'mono', 'editorial', 'orange', 'gradient'],
     description:
       'Arche is a free, open-source agentic core that connects team knowledge, tools, and specialized AI agents across models and apps to automate busywork without vendor lock-in.',
     designFocus:
@@ -349,6 +358,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'ngrok',
     url: 'https://ngrok.com/',
     tags: ['landing', 'ui', 'devtools', 'ai', 'enterprise'],
+    styleTags: ['serif', 'dark', 'techy', 'gradient'],
     description:
       'ngrok is developer infrastructure for routing and securing traffic to apps, APIs, and AI models, spanning localhost sharing, cloud gateways, and an AI Gateway for model routing.',
     designFocus:
@@ -397,6 +407,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Ramp',
     url: 'https://ramp.com/',
     tags: ['landing', 'ui', 'fintech', 'ai', 'enterprise'],
+    styleTags: ['sans-serif', 'corporate', 'minimal', 'lime'],
     description:
       'Ramp is a spend management platform combining corporate cards, expenses, bill payments, and AI agents for finance teams.',
     designFocus:
@@ -451,6 +462,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Aside',
     url: 'https://aside.com/',
     tags: ['landing', 'ui', 'ai', 'browser', 'productivity'],
+    styleTags: ['sans-serif', 'minimal', 'cool', 'pastel'],
     description:
       'Aside is an AI-native browser and agent platform that performs real web tasks across logged-in apps, with local memory, benchmark-leading agent performance, and a built-in password manager for agents.',
     designFocus:
@@ -499,6 +511,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Granola',
     url: 'https://www.granola.ai/',
     tags: ['landing', 'ui', 'ai', 'productivity'],
+    styleTags: ['serif', 'editorial', 'minimal', 'lime'],
     description:
       'Granola is an AI notepad for back-to-back meetings that captures notes, actions, and memory without joining calls as a visible bot.',
     designFocus:
@@ -553,6 +566,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'heyclicky',
     url: 'https://www.heyclicky.com/',
     tags: ['landing', 'ui', 'ai', 'productivity'],
+    styleTags: ['sans-serif', 'playful', 'monochrome'],
     description:
       'heyclicky is a free macOS AI buddy that watches your screen on demand to teach software, answer questions, spawn voice-controlled agents, and connect to tools like Gmail and Notion.',
     designFocus:
@@ -595,6 +609,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Acctual',
     url: 'https://www.acctual.com/',
     tags: ['landing', 'ui', 'fintech', 'invoicing', 'crypto'],
+    styleTags: ['sans-serif', 'minimal', 'monochrome'],
     description:
       'Acctual is a no-subscription invoicing platform for freelancers and agencies that lets clients pay by card, bank transfer, or stablecoin with same-day payouts and QuickBooks/Xero sync.',
     designFocus:
@@ -643,6 +658,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Corgi',
     url: 'https://www.corgi.insure/',
     tags: ['landing', 'ui', 'insurance', 'fintech', 'enterprise', 'ai'],
+    styleTags: ['sans-serif', 'corporate', 'playful', 'orange'],
     description:
       'Corgi is an AI-native, full-stack insurance platform for technology startups, offering instant quotes and stage-based coverage packages from pre-seed through growth.',
     designFocus:
@@ -679,6 +695,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Tempo',
     url: 'https://tempo.xyz/',
     tags: ['landing', 'ui', 'fintech', 'crypto', 'enterprise'],
+    styleTags: ['serif', 'editorial', 'monochrome'],
     description:
       'Tempo is a payments-first Layer 1 blockchain incubated by Stripe and Paradigm, built as a stablecoin-native settlement layer for global payments, embedded finance, and agentic commerce.',
     designFocus:
@@ -721,6 +738,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Goldsand',
     url: 'https://goldsand.fi/',
     tags: ['landing', 'ui', 'fintech', 'crypto'],
+    styleTags: ['serif', 'editorial', 'minimal', 'warm'],
     description:
       'Goldsand is a Shariah-compliant high-yield savings app that shares stablecoin payment-network fees with users, offering up to 7% returns without interest-based riba.',
     designFocus:
@@ -769,6 +787,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'anyformat',
     url: 'https://www.anyformat.ai/es',
     tags: ['landing', 'ui', 'ai', 'enterprise'],
+    styleTags: ['sans-serif', 'techy', 'corporate', 'cool'],
     description:
       'anyformat is an AI document processing platform that parses, extracts, classifies, splits, and validates messy documents into clean structured data, with EU data residency, ISO 27001, and self-hosting options.',
     designFocus:
@@ -829,6 +848,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Vidiv',
     url: 'https://vidiv.com/',
     tags: ['landing', 'ui', 'ai', 'enterprise'],
+    styleTags: ['serif', 'sans-serif', 'editorial', 'pastel'],
     description:
       'Vidiv builds AI conversational agents for phone and chat that handle customer service, lead qualification, and outbound calls across channels and 30+ languages for Spanish enterprises.',
     designFocus:
@@ -889,6 +909,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Dockset',
     url: 'https://dockset.app/',
     tags: ['landing', 'ui', 'productivity'],
+    styleTags: ['serif', 'minimal', 'editorial', 'monochrome'],
     description:
       'Dockset is a macOS app for saving and switching Dock layouts, plus a separate Custom Dock with widgets like Stock, Calendar, Now Playing, Stripe, and Shopify.',
     designFocus:
@@ -949,6 +970,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Enginy',
     url: 'https://www.enginy.ai/',
     tags: ['landing', 'ui', 'ai', 'enterprise'],
+    styleTags: ['sans-serif', 'minimal', 'techy', 'green'],
     description:
       'Enginy is an AI all-in-one B2B sales platform — find and enrich prospects, multichannel outreach, smart inbox that drafts replies and books meetings — presented in a restrained tech-minimal shell; Barcelona-based with GDPR and ISO 27001.',
     designFocus:
@@ -1009,6 +1031,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Gumloop',
     url: 'https://www.gumloop.com/',
     tags: ['landing', 'ui', 'ai', 'enterprise'],
+    styleTags: ['sans-serif', 'minimal', 'techy', 'monochrome'],
     description:
       'Gumloop is a multiplayer AI agent builder where anyone at a company can ship agents across models and integrations while IT keeps SSO, spend, audit logs, and VPC under one control plane.',
     designFocus:
@@ -1069,6 +1092,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Strawberry',
     url: 'https://strawberrybrowser.com/',
     tags: ['landing', 'ui', 'ai', 'browser', 'productivity'],
+    styleTags: ['sans-serif', 'playful', 'minimal', 'pastel'],
     relatedLaunchVideoSlug: 'strawberry-1-0',
     description:
       "Strawberry is an AI browser with built-in agent 'companions' that learn workflows and do real work across apps for teams — sourcing leads, drafting outreach, taking meeting notes, and automating browser tasks 24/7.",
@@ -1130,6 +1154,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'EdgeBar',
     url: 'https://edgebar.xyz/',
     tags: ['landing', 'ui', 'productivity'],
+    styleTags: ['sans-serif', 'minimal', 'gradient'],
     description:
       'EdgeBar turns your MacBook trackpad edges into smooth volume and brightness controls.',
     designFocus:
@@ -1178,6 +1203,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Maisa',
     url: 'https://maisa.ai/',
     tags: ['landing', 'ui', 'ai', 'enterprise'],
+    styleTags: ['serif', 'editorial', 'corporate', 'warm'],
     description:
       "Deploy AI with confidence in regulated industries. Maisa's Digital Workers automate your most demanding processes, reliably, traceably, and auditably.",
     designFocus:
@@ -1238,6 +1264,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Rogo',
     url: 'https://rogo.com/',
     tags: ['landing', 'ui', 'ai', 'fintech', 'enterprise'],
+    styleTags: ['serif', 'dark', 'corporate', 'green'],
     description:
       'Rogo is AI for investment banks and financial institutions—agents, firm data, and governed context for deal and coverage workflows.',
     designFocus:
@@ -1298,6 +1325,7 @@ export const landingManifest: LandingManifestEntry[] = [
     title: 'Assemble',
     url: 'https://www.onassemble.com/',
     tags: ['landing', 'ui', 'productivity'],
+    styleTags: ['sans-serif', 'minimal', 'playful', 'lime'],
     description:
       'Assemble is a calendar-native project workspace—files, notes, conversations, and to-dos on a visual timeline—with a scroll-scrubbed hero manifesto and a high-contrast ghost-wordmark footer.',
     designFocus:
@@ -1362,6 +1390,73 @@ export const landingManifest: LandingManifestEntry[] = [
         title: 'Ghost wordmark footer',
         caption:
           'The black footer splits Follow our journey + X on the left from a ruled link column (Pricing, Changelog, Roadmap…) on the right, over a massive low-contrast Assemble ghost wordmark and hexagonal mark.',
+      },
+    ],
+  },
+  {
+    slug: 'applied-compute',
+    title: 'Applied Compute',
+    url: 'https://www.appliedcompute.com/',
+    tags: ['landing', 'ui', 'ai', 'enterprise'],
+    styleTags: ['serif', 'minimal', 'techy', 'editorial', 'orange', 'monochrome'],
+    description:
+      'Applied Compute builds AC2—the AI supercloud for open models—to train, serve, and continuously improve models you own, with researchers working beside your engineers.',
+    designFocus:
+      'Editorial AI-infra landing: serif Built, Not Bought hero over a mouse-reactive orange grid, animated interlocking logo, Platform mega-menu with isometric orange line drawings, dotted multimodal illustrations, monochrome partner grid, and a quiet orange-mark footer.',
+    screenshots: [
+      {
+        file: asset('applied-compute', '01-hero.webp'),
+        title: 'Serif hero with orange mark',
+        caption:
+          'THE AI SUPERCLOUD FOR OPEN MODELS sits in orange caps above a centered serif The Best AI is Built, Not Bought on a faint technical grid, with the animated interlocking orange logo in the nav and a Learn more pill CTA.',
+      },
+      {
+        file: asset('applied-compute', '02-hero-mouse-tl.webp'),
+        title: 'Interactive hero — mouse top-left',
+        caption:
+          'Moving the cursor into the upper-left hero lights a cluster of small orange isometric blocks on the grid—proof the background is a mouse-reactive particle field, not a static texture.',
+      },
+      {
+        file: asset('applied-compute', '03-hero-mouse-br.webp'),
+        title: 'Interactive hero — mouse bottom-right',
+        caption:
+          'The same hero with the cursor lower-right redistributes the orange grid cells toward that quadrant, capturing the interactive animation across frames instead of a single still.',
+      },
+      {
+        file: asset('applied-compute', '05-platform-menu.webp'),
+        title: 'Platform nav mega-menu',
+        caption:
+          'Platform opens a floating white card with Training, Inference, and Routing—each row paired with a tiny orange isometric line illustration (stacked slabs, node ring, route paths) that matches the site’s diagram language.',
+      },
+      {
+        file: asset('applied-compute', '06-illustrations.webp'),
+        title: 'Train dotted-circle illustration',
+        caption:
+          'Train it. Serve it. Improve it. opens a TRAIN band: a bordered dotted-circle field labeled TEXT / IMAGES / CODE / DATA opposite sans feature copy—abstract multimodal illustration as the product metaphor.',
+      },
+      {
+        file: asset('applied-compute', '07-section.webp'),
+        title: 'Animated multimodal field',
+        caption:
+          'Hovering the Train illustration ignites orange dots in the TEXT region with a thin connector from the label—another mouse-reactive isometric/particle treatment mid-page.',
+      },
+      {
+        file: asset('applied-compute', '08-partner-logos.webp'),
+        title: 'Minimalist partner logo grid',
+        caption:
+          'A hairline 6×2 monochrome logo grid (Cognition, NVIDIA, Clay, Decagon…) sits under the hero; one cell picks up an orange underline on hover—quiet social proof without a logo carousel.',
+      },
+      {
+        file: asset('applied-compute', '09-section.webp'),
+        title: 'AC2 training dashboard chrome',
+        caption:
+          'Built and used every day by frontier researchers embeds a full AC2 product window—sidebar Runs/Project/Deployments, CodeQAGrader step chart, and token table—in light chrome with orange active states.',
+      },
+      {
+        file: asset('applied-compute', '10-footer.webp'),
+        title: 'Orange-mark sitemap footer',
+        caption:
+          'Above a serif News & Research card row, the footer plants a large orange interlocking mark beside COMPANY / CONNECT columns and a monospace legal bar (SOC 2, Terms, Privacy) on white.',
       },
     ],
   },

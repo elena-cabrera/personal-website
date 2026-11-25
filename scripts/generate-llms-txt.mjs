@@ -2,11 +2,12 @@ import { mkdir, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 import { landingManifest } from '../src/data/collections/landings.manifest.ts';
 import { launchVideoManifest } from '../src/data/collections/launch-videos.manifest.ts';
+import { isLandingStyleTag } from '../src/data/collections/style-tags.ts';
 
 const SITE = 'https://elenacabrera.xyz';
 
 function businessTags(tags, strip = ['landing', 'ui']) {
-  return tags.filter((tag) => !strip.includes(tag));
+  return tags.filter((tag) => !strip.includes(tag) && !isLandingStyleTag(tag));
 }
 
 function formatClock(totalSec) {
@@ -29,11 +30,13 @@ function buildLandingsSection() {
   for (const entry of landingManifest) {
     const subpage = `${SITE}/collections/landings/${entry.slug}/`;
     const tags = businessTags(entry.tags).join(', ');
+    const style = (entry.styleTags ?? []).join(', ');
 
     lines.push(`## ${entry.title}`);
     lines.push(`- URL: ${entry.url}`);
     lines.push(`- Subpage: ${subpage}`);
     lines.push(`- Tags: ${tags}`);
+    if (style) lines.push(`- Style: ${style}`);
     lines.push(`- Design focus: ${entry.designFocus}`);
     if (entry.relatedLaunchVideoSlug) {
       lines.push(

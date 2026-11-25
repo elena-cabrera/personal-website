@@ -1,7 +1,11 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { landings, landingSubpagePath } from '../../../data/collections/landings';
-import { faviconUrl, launchVideoSubpagePath } from '../../../data/collections';
+import {
+  faviconUrl,
+  isLandingStyleTag,
+  launchVideoSubpagePath,
+} from '../../../data/collections';
 
 export function getStaticPaths() {
   return landings.map((landing) => ({
@@ -16,7 +20,10 @@ if (!landing) {
   return Astro.redirect('/collections/?type=landing');
 }
 
-const businessTags = landing.tags.filter((tag) => tag !== 'landing' && tag !== 'ui');
+const businessTags = landing.tags.filter(
+  (tag) => tag !== 'landing' && tag !== 'ui' && !isLandingStyleTag(tag)
+);
+const styleTags = landing.styleTags ?? landing.tags.filter(isLandingStyleTag);
 ---
 
 <BaseLayout
@@ -51,6 +58,15 @@ const businessTags = landing.tags.filter((tag) => tag !== 'landing' && tag !== '
           ))
         }
       </p>
+      {
+        styleTags.length > 0 ? (
+          <p class="landing-detail__tags landing-detail__tags--style">
+            {styleTags.map((tag) => (
+              <a href={`/collections/?type=landing&tag=${encodeURIComponent(tag)}`}>{tag}</a>
+            ))}
+          </p>
+        ) : null
+      }
       <p class="landing-detail__links">
         <a
           href={landing.url}
