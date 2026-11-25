@@ -8,7 +8,7 @@ export default defineConfig({
   site: 'https://elenacabrera.xyz',
   // Keep whitespace between inline tags (e.g. "from <span>")
   compressHTML: false,
-  integrations: [sitemap()],
+  integrations: [sitemap({ filter: (page) => !page.includes('/lab/') })],
   vite: {
     plugins: [tailwindcss()],
   },

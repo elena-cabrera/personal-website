@@ -9,6 +9,7 @@ interface Props {
   description?: string;
   showBackButton?: boolean;
   wide?: boolean;
+  noindex?: boolean;
 }
 
 const {
@@ -16,6 +17,7 @@ const {
   description = 'I am a Builder. I enjoy creating software products and solving problems in creative ways.',
   showBackButton = false,
   wide = false,
+  noindex = false,
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -28,6 +30,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content={description} />
     <meta name="generator" content={Astro.generator} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
