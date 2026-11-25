@@ -108,6 +108,8 @@ export type LandingItem = CollectionItem & {
   screenshots: LandingScreenshot[];
   designFocus: string;
   description: string;
+  /** Controlled visual-style tags (also included in `tags` for filtering) */
+  styleTags: string[];
 };
 
 export type LaunchVideoItem = CollectionItem & {

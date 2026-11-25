@@ -8,6 +8,11 @@ import {
   launchVideoSubpagePath,
 } from './launch-videos';
 import { personal } from './personal';
+import {
+  isLandingStyleTag,
+  landingStyleTags,
+  partitionCollectionTags,
+} from './style-tags';
 import { tools } from './tools';
 import type { CollectionItem, CollectionType, LandingItem, LaunchVideoItem } from './types';
 
@@ -81,3 +86,24 @@ export function faviconUrl(url: string): string {
 export function uniqueTags(items: CollectionItem[]): string[] {
   return [...new Set(items.flatMap((item) => item.tags))].sort((a, b) => a.localeCompare(b));
 }
+
+/** Business/domain tags only — excludes the landing style vocabulary. */
+export function uniqueBusinessTags(items: CollectionItem[]): string[] {
+  return uniqueTags(items).filter((tag) => !isLandingStyleTag(tag));
+}
+
+/**
+ * Style tags present on the given items, ordered by the controlled vocabulary
+ * (not alphabetically) so the Style filter row stays stable.
+ */
+export function uniqueStyleTags(items: CollectionItem[]): string[] {
+  const present = new Set(items.flatMap((item) => item.tags).filter(isLandingStyleTag));
+  return landingStyleTags.filter((tag) => present.has(tag));
+}
+
+export {
+  isLandingStyleTag,
+  landingStyleTags,
+  partitionCollectionTags,
+};
+export type { LandingStyleTag } from './style-tags';

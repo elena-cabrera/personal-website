@@ -7,7 +7,9 @@ export const landings: LandingItem[] = landingManifest.map((entry) => ({
   title: entry.title,
   url: entry.url,
   slug: entry.slug,
-  tags: entry.tags,
+  // Style tags ride along in `tags` so search + ?tag= filters work unchanged.
+  tags: [...entry.tags, ...entry.styleTags],
+  styleTags: entry.styleTags,
   description: entry.description,
   designFocus: entry.designFocus,
   relatedLaunchVideoSlug: entry.relatedLaunchVideoSlug,

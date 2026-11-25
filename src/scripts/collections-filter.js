@@ -86,6 +86,13 @@ function syncButtons(state) {
     button.classList.toggle('is-active', on);
     button.setAttribute('aria-pressed', on ? 'true' : 'false');
   }
+
+  // Hide the whole Style row when no style tags apply to the active type filter.
+  const styleRow = root.querySelector('[data-style-tag-row]');
+  if (styleRow instanceof HTMLElement) {
+    const styleButtons = [...styleRow.querySelectorAll('[data-tag-filter]')];
+    styleRow.hidden = styleButtons.length === 0 || styleButtons.every((btn) => btn.hidden);
+  }
 }
 
 function apply(state) {

@@ -44,6 +44,9 @@ const SITES = [
   { slug: 'gumloop', url: 'https://www.gumloop.com/' },
   { slug: 'edgebar', url: 'https://edgebar.xyz/' },
   { slug: 'maisa', url: 'https://maisa.ai/' },
+  { slug: 'rogo', url: 'https://rogo.com/' },
+  { slug: 'assemble', url: 'https://www.onassemble.com/' },
+  { slug: 'applied-compute', url: 'https://www.appliedcompute.com/' },
 ];
 
 const slugFilter = process.argv.slice(2).filter((arg) => !arg.startsWith('-'));
