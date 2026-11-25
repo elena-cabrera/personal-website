@@ -8,7 +8,7 @@ const posts = (await getCollection('blog')).sort(
 );
 ---
 
-<BaseLayout>
+<BaseLayout handwritten>
   <main class="px-4 py-16 flex flex-col gap-20 max-w-[46rem] mx-auto">
     <section id="hero" class="flex gap-4 items-start">
       <img
@@ -24,8 +24,15 @@ const posts = (await getCollection('blog')).sort(
             class="font-semibold text-gray-900 dark:text-white transition-colors"
             >hi, I'm Elena.</span
           >
-          I am a Builder. I enjoy creating software products and solving problems in
-          creative ways.
+          I am a <span class="ink-circle" data-ink>
+            Builder
+            <svg viewBox="0 0 160 56" preserveAspectRatio="none" aria-hidden="true">
+              <path
+                pathLength="100"
+                d="M 22 10 C 60 1, 135 2, 152 20 C 166 36, 120 52, 70 51 C 22 50, 2 38, 9 22 C 14 11, 34 6, 52 6"
+              ></path>
+            </svg>
+          </span>. I enjoy creating software products and solving problems in creative ways.
         </p>
         <p class="flex gap-2 items-center mt-2">
           <a
@@ -70,11 +77,13 @@ const posts = (await getCollection('blog')).sort(
     </section>
 
     <section id="about-me" class="scroll-mt-14" data-reveal-group>
-      <h2 class="section-title" data-reveal>about me</h2>
+      <h2 class="section-title section-title--noted" data-reveal>
+        about me <span class="hand-note">the short version</span>
+      </h2>
       <div class="space-y-4">
         <p class="prose-body transition-colors" data-reveal>
-          Based in <span class="prose-em">Madrid</span>, but originally from
-          <span class="prose-em">Lanzarote</span>. Always enjoyed building stuff and
+          Based in <mark class="marker">Madrid</mark>, but originally from
+          <mark class="marker marker--pink">Lanzarote</mark>. Always enjoyed building stuff and
           learning new things, I guess that's why I'm drawn to startups and
           entrepreneurship.
         </p>
@@ -87,10 +96,12 @@ const posts = (await getCollection('blog')).sort(
     </section>
 
     <section id="work" class="scroll-mt-14" data-reveal-group>
-      <h2 class="section-title" data-reveal>work</h2>
+      <h2 class="section-title section-title--noted" data-reveal>
+        work <span class="hand-note">so far</span>
+      </h2>
       <p class="prose-body transition-colors" data-reveal>
         I started out as a Business Consultant, but soon realized I'd rather
-        <span class="prose-em">build things</span> than make slides about them. Since
+        <mark class="marker">build things</mark> than make slides about them. Since
         then I've been working at <span class="prose-em">tech startups</span>, mixing the
         <span class="prose-em">technical</span> side with the
         <span class="prose-em">people</span> side and taking products
@@ -278,10 +289,19 @@ const posts = (await getCollection('blog')).sort(
           >
         </li>
       </ul>
+      <p class="margin-note" data-reveal>
+        <svg viewBox="0 0 80 50" aria-hidden="true">
+          <path d="M74 8 C 52 2, 30 10, 26 26 C 23 38, 14 42, 6 40"></path>
+          <path d="M12 34 L 5 40 L 13 45"></path>
+        </svg>
+        <span>psst… you can<br />peel these off</span>
+      </p>
     </section>
 
     <section id="projects" class="scroll-mt-14" data-reveal-group>
-      <h2 class="section-title" data-reveal>projects</h2>
+      <h2 class="section-title section-title--noted" data-reveal>
+        projects <span class="hand-note">a couple</span>
+      </h2>
       <ul class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2 list-none pl-0">
         <li
           class="group rounded-lg p-1 -m-2 hover:bg-gray-100 dark:hover:bg-zinc-900 hover:shadow-sm transition-all duration-200"
@@ -377,7 +397,9 @@ const posts = (await getCollection('blog')).sort(
     </section>
 
     <section id="blog" class="scroll-mt-14" data-reveal-group>
-      <h2 class="section-title" data-reveal>blog</h2>
+      <h2 class="section-title section-title--noted" data-reveal>
+        blog <span class="hand-note">occasional</span>
+      </h2>
       <ul class="mt-2 flex flex-col gap-3">
         {
           posts.map((post) => (
@@ -393,14 +415,17 @@ const posts = (await getCollection('blog')).sort(
       </ul>
     </section>
 
-    <p id="contact" class="scroll-mt-14 prose-body transition-colors" data-reveal>
-      Always looking for a nice chat. Say hi on
-      <a
-        href="https://www.linkedin.com/in/elena-cabrera-casquet/"
-        class="contact-linkedin font-medium text-gray-700 dark:text-zinc-300"
-        >LinkedIn</a
-      >.
-    </p>
+    <div id="contact" class="scroll-mt-14" data-reveal>
+      <p class="prose-body transition-colors">
+        Always looking for a nice chat. Say hi on
+        <a
+          href="https://www.linkedin.com/in/elena-cabrera-casquet/"
+          class="contact-linkedin font-medium text-gray-700 dark:text-zinc-300"
+          >LinkedIn</a
+        >.
+      </p>
+      <p class="sign-off" data-ink>Elena</p>
+    </div>
   </main>
 
   <script>
@@ -408,5 +433,6 @@ const posts = (await getCollection('blog')).sort(
     import '../scripts/scroll-timeline.js';
     import '../scripts/reveal.js';
     import '../scripts/tech-stickers.js';
+    import '../scripts/ink.js';
   </script>
 </BaseLayout>

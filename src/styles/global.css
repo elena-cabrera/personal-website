@@ -1617,3 +1617,218 @@ html.js-reveal [data-reveal-row].is-revealed .min-w-0 {
     background-clip: text;
   }
 }
+
+/* Handmade marks. Ink is ballpoint blue; the page stays white / zinc. */
+.section-title--noted {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.15rem 0.6rem;
+}
+
+.hand-note {
+  font-family: "Caveat", cursive;
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1;
+  color: #2b59c3;
+  transform: rotate(-2deg);
+}
+
+.dark .hand-note {
+  color: #8fb0ff;
+}
+
+.marker {
+  --c: 255, 214, 92;
+  color: inherit;
+  margin: 0 -0.2em;
+  padding: 0.04em 0.28em 0.08em;
+  border-radius: 0.7em 0.28em;
+  background-color: transparent;
+  background-image:
+    linear-gradient(
+      100deg,
+      rgba(var(--c), 0) 0.9%,
+      rgba(var(--c), 0.85) 2.4%,
+      rgba(var(--c), 0.5) 5.8%,
+      rgba(var(--c), 0.22) 93%,
+      rgba(var(--c), 0.75) 96%,
+      rgba(var(--c), 0) 98%
+    ),
+    linear-gradient(183deg, rgba(var(--c), 0) 0%, rgba(var(--c), 0.4) 8%, rgba(var(--c), 0) 15%);
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+.marker--pink {
+  --c: 255, 160, 190;
+}
+
+.dark .marker {
+  --c: 236, 204, 84;
+  color: #1c1917;
+  background-image: linear-gradient(
+    100deg,
+    rgba(var(--c), 0) 0%,
+    rgba(var(--c), 0.96) 3%,
+    rgba(var(--c), 0.84) 50%,
+    rgba(var(--c), 0.96) 96%,
+    rgba(var(--c), 0) 100%
+  );
+}
+
+.dark .marker--pink {
+  --c: 240, 164, 186;
+  color: #1c1917;
+}
+
+.ink-circle {
+  position: relative;
+  display: inline-block;
+  margin-right: 0.2em;
+  font-weight: 600;
+  color: #18181b;
+  white-space: nowrap;
+}
+
+.dark .ink-circle {
+  color: #fafafa;
+}
+
+.ink-circle svg {
+  position: absolute;
+  left: -14%;
+  top: -42%;
+  width: 124%;
+  height: 184%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.ink-circle path {
+  fill: none;
+  stroke: #2b59c3;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+}
+
+.ink-circle.is-drawn path {
+  animation: ink-draw 900ms cubic-bezier(0.65, 0, 0.35, 1) 120ms forwards;
+}
+
+.dark .ink-circle path {
+  stroke: #8fb0ff;
+}
+
+@keyframes ink-draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#tech-stack {
+  position: relative;
+}
+
+.margin-note {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.1rem;
+  width: fit-content;
+  margin-top: 1.35rem;
+  font-family: "Caveat", cursive;
+  font-size: 1.35rem;
+  font-weight: 500;
+  line-height: 1.05;
+  color: #2b59c3;
+  transform: rotate(-2deg);
+  transform-origin: left center;
+}
+
+.margin-note svg {
+  width: 2.4rem;
+  height: 1.5rem;
+  margin-left: 1.1rem;
+  transform: rotate(78deg);
+}
+
+.margin-note path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.dark .margin-note {
+  color: #8fb0ff;
+}
+
+@media (min-width: 1100px) {
+  .margin-note {
+    position: absolute;
+    left: calc(100% + 0.35rem);
+    bottom: 0.35rem;
+    flex-direction: row;
+    align-items: flex-end;
+    width: max-content;
+    margin-top: 0;
+    transform: rotate(-3deg);
+    transform-origin: left bottom;
+  }
+
+  .margin-note svg {
+    width: 3.4rem;
+    height: 2.1rem;
+    margin: 0 0 0.85rem;
+    transform: none;
+  }
+}
+
+.sign-off {
+  width: fit-content;
+  margin-top: 0.85rem;
+  font-family: "Homemade Apple", cursive;
+  font-size: 1.45rem;
+  line-height: 1.7;
+  color: #27272a;
+  transform: rotate(-4deg);
+  transform-origin: left center;
+  clip-path: inset(0 100% 0 0);
+}
+
+.sign-off.is-drawn {
+  animation: ink-reveal 1.3s cubic-bezier(0.55, 0.1, 0.35, 1) 80ms forwards;
+}
+
+.dark .sign-off {
+  color: #e4e4e7;
+}
+
+@keyframes ink-reveal {
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ink-circle path {
+    stroke-dashoffset: 0;
+  }
+
+  .ink-circle.is-drawn path,
+  .sign-off.is-drawn {
+    animation: none;
+  }
+
+  .sign-off {
+    clip-path: none;
+  }
+}
